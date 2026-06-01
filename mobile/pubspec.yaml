@@ -1,0 +1,60 @@
+name: rag_akademik
+description: "Chatbot Pedoman Akademik — RAG System berbasis STKI"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Networking
+  dio: ^5.4.3+1
+  pretty_dio_logger: ^1.3.1
+
+  # Functional Programming (Either, Option)
+  fpdart: ^1.1.0
+
+  # File Picker — untuk upload PDF
+  file_picker: ^8.0.3
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  gap: ^3.0.1
+  shimmer: ^3.0.0
+
+  # Utilities
+  equatable: ^2.0.5
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.4.0
+  custom_lint: ^0.6.4
+  riverpod_lint: ^2.3.10
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
