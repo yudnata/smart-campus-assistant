@@ -15,6 +15,7 @@ Gunakan HANYA informasi dari dokumen pedoman akademik berikut untuk menjawab per
 Jika informasi tidak ada di dalam dokumen, katakan "Maaf, informasi tersebut tidak ditemukan dalam pedoman akademik."
 Jangan mengarang (halusinasi) informasi tambahan.
 Gunakan bahasa yang ramah, profesional, dan mudah dipahami.
+PENTING: Selalu sertakan kutipan sumber (bab, prodi, atau nama dokumen asli) di akhir jawaban Anda sebagai bukti validitas berdasarkan metadata yang tersedia.
 
 ---
 KONTEKS DOKUMEN:
@@ -37,9 +38,34 @@ def chat_rag(question: str, top_k: int, db: Session):
     # Kita menggunakan ORDER BY embedding <=> query_vector
     
     query = f"""
-        SELECT id, content, metadata, 1 - (embedding <=> :vector) AS similarity
-        FROM documents
-        ORDER BY embedding <=> :vector
+        WITH semantic_search AS (
+            SELECT id, 
+                   content, 
+                   metadata, 
+                   RANK() OVER (ORDER BY embedding <=> :vector) AS rank
+            FROM documents
+            ORDER BY embedding <=> :vector
+            LIMIT :top_k
+        ),
+        keyword_search AS (
+            SELECT id, 
+                   content, 
+                   metadata, 
+                   RANK() OVER (ORDER BY ts_rank_cd(to_tsvector('simple', content), plainto_tsquery('simple', :query_text)) DESC) AS rank
+            FROM documents
+            WHERE to_tsvector('simple', content) @@ plainto_tsquery('simple', :query_text)
+            ORDER BY ts_rank_cd(to_tsvector('simple', content), plainto_tsquery('simple', :query_text)) DESC
+            LIMIT :top_k
+        )
+        SELECT 
+            COALESCE(s.id, k.id) AS id,
+            COALESCE(s.content, k.content) AS content,
+            COALESCE(s.metadata, k.metadata) AS metadata,
+            -- Rumus Reciprocal Rank Fusion (RRF)
+            (1.0 / (60 + COALESCE(s.rank, 10000))) + (1.0 / (60 + COALESCE(k.rank, 10000))) AS rrf_score
+        FROM semantic_search s
+        FULL OUTER JOIN keyword_search k ON s.id = k.id
+        ORDER BY rrf_score DESC
         LIMIT :top_k
     """
     
@@ -48,7 +74,7 @@ def chat_rag(question: str, top_k: int, db: Session):
     
     results = db.execute(
         text(query),
-        {"vector": vector_str, "top_k": top_k}
+        {"vector": vector_str, "top_k": top_k, "query_text": question}
     ).fetchall()
     
     chunks_found = len(results)
@@ -63,7 +89,7 @@ def chat_rag(question: str, top_k: int, db: Session):
     # 3. Siapkan konteks untuk LLM
     context_text = "\n\n".join([f"Sumber: {row.metadata.get('source', 'Unknown')} - Teks: {row.content}" for row in results])
     
-    top_similarity = results[0].similarity if chunks_found > 0 else 0.0
+    top_similarity = results[0].rrf_score if chunks_found > 0 else 0.0
     
     # 4. Generate jawaban dengan LLM
     prompt = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
@@ -80,7 +106,7 @@ def chat_rag(question: str, top_k: int, db: Session):
         sources.append({
             "page": row.metadata.get("page", 1),
             "preview": row.content[:150] + "...",
-            "similarity": float(row.similarity),
+            "similarity": float(row.rrf_score), # Kita mapping rrf_score ke similarity untuk frontend
             "source": row.metadata.get("source", "Unknown")
         })
         
