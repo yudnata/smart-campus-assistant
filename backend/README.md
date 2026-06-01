@@ -12,18 +12,17 @@ Alur kerja sistem dibagi menjadi dua fase utama: **Fase Ingestion (Pemasukan Dat
 
 Fase ini bertanggung jawab untuk mengubah dokumen sumber (seperti PDF Pedoman Akademik atau halaman Website) menjadi format matematis yang dapat dipahami dan dicari oleh komputer.
 
-1. **Pengumpulan Teks (Parsing)**
-   Dokumen dari berbagai format diekstraksi menjadi teks biasa (string). Dalam sistem ini, `PyPDFLoader` digunakan untuk membaca teks per halaman dari berkas PDF, sementara `WebBaseLoader` men-scrape elemen teks dari HTML.
+1. **Pengumpulan Teks & Metadata (Parsing)**
+   Dokumen dari berbagai format diekstraksi menjadi teks biasa (string). Dalam sistem ini, `PDFPlumberLoader` digunakan karena keakuratannya menjaga struktur tabel, didukung dengan `CSVLoader` dan `JSON` parser untuk data terstruktur, serta `WebBaseLoader` untuk HTML. Saat pengunggahan, metadata khusus (seperti `prodi` dan `bab`) dapat disisipkan untuk mempertajam pencarian.
    
-2. **Pemecahan Teks (Chunking)**
-   Teks yang panjang tidak dapat langsung dimasukkan ke dalam basis data karena konteksnya terlalu luas dan melampaui batas masukan model AI. Oleh karena itu, teks dipecah menjadi unit-unit kecil yang disebut *chunks* (potongan). 
-   Sistem ini menggunakan teknik `RecursiveCharacterTextSplitter` yang memotong teks setiap 500 karakter dengan sedikit tumpang tindih (*overlap* sebesar 50 karakter) agar tidak ada kalimat krusial yang terpotong di tengah jalan.
+2. **Pemecahan Teks (Semantic Chunking)**
+   Teks dipecah menjadi unit-unit kecil (*chunks*). Sistem ini menggunakan `RecursiveCharacterTextSplitter` yang memotong teks setiap 1500 karakter dengan tumpang tindih (*overlap*) sebesar 200 karakter. Ukuran ini menjaga konteks aturan (seperti syarat kelulusan) tetap utuh dalam satu bagian.
 
 3. **Penyandian Vektor (Embedding)**
-   Setiap *chunk* teks kemudian dikonversi menjadi representasi vektor numerik (deretan angka). Sistem ini menggunakan model bahasa khusus bernama `all-MiniLM-L6-v2` yang menghasilkan ruang vektor berdimensi 384. Model ini sangat efisien dalam menangkap relasi semantik (makna kalimat).
+   Setiap *chunk* teks dikonversi menjadi representasi vektor numerik (berdimensi 384) menggunakan model `all-MiniLM-L6-v2`.
 
 4. **Penyimpanan (Indexing)**
-   Teks asli ( *chunk* ), metadata (sumber dokumen, nomor halaman), dan representasi vektor numeriknya disimpan bersamaan ke dalam PostgreSQL yang telah dilengkapi dengan ekstensi `pgvector`. Struktur ini memungkinkan basis data untuk memproses perhitungan matematis jarak antar vektor.
+   Teks asli, metadata, dan vektor disimpan ke dalam PostgreSQL. Database ini memanfaatkan ekstensi `pgvector` untuk pencarian vektor matematis dan fitur bawaan PostgreSQL `tsvector` untuk pencarian teks penuh (Full Text Search).
 
 ---
 
@@ -31,17 +30,17 @@ Fase ini bertanggung jawab untuk mengubah dokumen sumber (seperti PDF Pedoman Ak
 
 Fase ini berlangsung secara otomatis (dan dalam waktu sepersekian detik) setiap kali pengguna mengirimkan pertanyaan (kueri) melalui aplikasi Mobile atau antarmuka Web.
 
-1. **Vektorisasi Kueri Pengguna**
-   Pertanyaan yang dikirimkan oleh pengguna ("Berapa SKS maksimal di semester 3?") ditangkap oleh *endpoint API* (`/api/chat`). Teks pertanyaan ini kemudian diubah menjadi vektor numerik menggunakan model embedding yang sama persis seperti pada Fase Ingestion (`all-MiniLM-L6-v2`).
+1. **Pencarian Ganda (Hybrid Search Retrieval)**
+   Pertanyaan pengguna ditangkap oleh `/api/chat` dan sistem langsung menjalankan DUA metode pencarian secara paralel ke dalam database PostgreSQL:
+   - **Vector Search (Dense Retrieval):** Mengubah pertanyaan menjadi vektor lalu mencari kedekatan makna (*Cosine Similarity*) menggunakan `pgvector`.
+   - **Keyword Search (Sparse Retrieval):** Melakukan pencarian kecocokan kata persis menggunakan *Full Text Search* (`to_tsvector` dan `plainto_tsquery`), yang sangat ampuh untuk menangkap singkatan lokal kampus (misal: "UKT", "KRS").
 
-2. **Pencarian Relevansi (Vector Retrieval)**
-   Sistem melakukan pencarian pada tabel PostgreSQL menggunakan metrik **Cosine Similarity** (atau Cosine Distance). Basis data menghitung kedekatan (sudut kemiripan) antara vektor pertanyaan pengguna dengan puluhan ribu vektor *chunk* yang ada di dalam database.
-   Hanya *Top-K* dokumen (misalnya 5 potongan teks dengan nilai kedekatan tertinggi) yang diambil. Ini adalah esensi utama dari STKI tradisional yang ditingkatkan dengan pencarian berbasis kedekatan semantik.
+2. **Penggabungan Peringkat (Reciprocal Rank Fusion - RRF)**
+   Hasil dari kedua metode pencarian digabungkan dan diurutkan ulang menggunakan algoritma *Reciprocal Rank Fusion* (RRF). Algoritma ini memastikan bahwa dokumen yang memiliki makna relevan sekaligus mengandung kata kunci persis akan naik ke peringkat teratas. Hanya dokumen *Top-K* terbaik yang diambil.
 
 3. **Injeksi Konteks (Prompt Formulation)**
-   Kelima teks yang paling relevan (beserta metadatanya) tersebut digabungkan ke dalam sebuah templat instruksi (*Prompt*) yang dirancang khusus.
-   Contoh format logika templat:
-   > "Anda adalah asisten akademik. Berdasarkan dokumen berikut: [Teks 1], [Teks 2]... Tolong jawab pertanyaan ini: [Pertanyaan Pengguna]. Jangan mengarang jawaban di luar konteks."
+   Teks yang paling relevan beserta metadatanya disuntikkan ke dalam *Prompt* LLM. 
+   LLM diinstruksikan dengan ketat untuk **selalu mengutip sumber (bab/prodi/nama dokumen)** di akhir jawabannya dan dilarang keras mengarang jawaban (mencegah *hallucination*).
 
 4. **Penyempurnaan Bahasa (LLM Generation)**
    *Prompt* yang berisi konteks pasti tersebut dikirimkan ke Large Language Model (misalnya Gemini 1.5 Flash atau GPT-4o-mini). Karena LLM telah dikunci oleh instruksi untuk hanya menggunakan konteks yang disediakan (hasil *retrieval* STKI), masalah halusinasi LLM dapat ditekan hingga mendekati nol. LLM membaca fakta matematis hasil *retrieval* dan menyusunnya menjadi kalimat manusiawi yang komprehensif.
