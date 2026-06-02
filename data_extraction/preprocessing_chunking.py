@@ -98,10 +98,10 @@ def infer_doc_type(filename: str) -> str:
 # CLEANING LANJUTAN UNTUK RAG
 # ============================================================
 
-REPEATED_FOOTER_RE = re.compile(
-    r"^(?:[ivxlcdm]+|\d+)?\s*"
-    r"Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024"
-    r"\s*(?:[ivxlcdm]+|\d+)?$",
+FOOTER_INLINE_RE = re.compile(
+    r"\b(?:[ivxlcdm]+|\d+)?\s*"
+    r"Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana\s+20(?:22|24)"
+    r"\s*(?:[ivxlcdm]+|\d+)?\b",
     re.IGNORECASE,
 )
 
@@ -152,13 +152,13 @@ def clean_markdown_line(line: str) -> str:
     if EMPTY_EXTRACTION_RE.match(line):
         return ""
 
-    if REPEATED_FOOTER_RE.match(line):
-        return ""
-
-    # Menghapus page footer/header yang bentuknya kadang menempel angka/romawi.
-    if "Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024" in line:
-        if len(line) < 95:
-            return ""
+    # Menghapus footer/header yang berdiri sendiri atau menempel pada kalimat.
+    # Contoh yang dibersihkan:
+    # "132 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024"
+    # "Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 295"
+    # "294 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022"
+    line = FOOTER_INLINE_RE.sub(" ", line)
+    line = re.sub(r"\s+", " ", line).strip()
 
     return line
 
@@ -208,13 +208,10 @@ def clean_markdown_for_rag(markdown_text: str) -> str:
 # PARSING METADATA DAN STRUKTUR MARKDOWN
 # ============================================================
 
-SOURCE_META_RE = re.compile(
-    r"<!--\s*source:\s*(?P<source>[^|>]+?)"
-    r"(?:\s*\|\s*page:\s*(?P<page>\d+))?"
-    r"(?:\s*\|\s*type:\s*(?P<type>[^|>]+))?"
-    r".*?-->",
-    re.IGNORECASE,
-)
+# Metadata comment dibuat oleh data_loading.py, contohnya:
+# <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 49 | type: text -->
+# Parsing dilakukan dengan split "|", bukan regex lazy, agar source_file tidak terpotong menjadi "B" atau "K".
+SOURCE_META_RE = re.compile(r"^<!--\s*(.*?)\s*-->$", re.IGNORECASE)
 
 PAGE_HEADING_RE = re.compile(r"^#{1,3}\s*Halaman\s+(\d+)", re.IGNORECASE)
 
@@ -222,11 +219,9 @@ SECTION_HEADING_RE = re.compile(
     r"^("
     r"BAGIAN\s+\d+\.?\s+.+|"
     r"LAMPIRAN\s+[A-Z]\.?\s+.+|"
-    r"\d+(?:\.\d+)+\.?\s+.+|"
-    r"\d+\.\s+.+|"
-    r"[A-Z]\.\s+.+|"
+    r"\d+(?:\.\d+)+\.?\s+.+|"      # contoh: 4.2 Cuti Akademik, 10.7 Jalur Kelulusan
     r"SEMESTER\s+.+|"
-    r"[IVXLC]+\.\s+.+|"
+    r"[IVXLC]+\.\s+.+|"            # contoh: II. PERKULIAHAN DAN PEMBELAJARAN
     r"KEGIATAN AKADEMIK LAINNYA.+"
     r")$",
     re.IGNORECASE,
@@ -236,18 +231,39 @@ MARKDOWN_TABLE_RE = re.compile(r"^\|.*\|$")
 
 
 def extract_metadata_from_comment(line: str) -> dict[str, Any] | None:
+    """
+    Membaca metadata dari komentar HTML.
+
+    Masalah sebelumnya:
+    Regex lama memakai pola lazy dan optional group, sehingga source:
+    "Buku Pedoman Akademik Sarjana FT 2024.pdf" bisa terbaca hanya menjadi "B".
+
+    Fungsi ini lebih aman karena membaca pasangan key-value berdasarkan pemisah "|".
+    """
     match = SOURCE_META_RE.match(line.strip())
 
     if not match:
         return None
 
-    source = (match.group("source") or "").strip()
-    page = match.group("page")
-    meta_type = (match.group("type") or "").strip()
+    content = match.group(1).strip()
+    parts = [part.strip() for part in content.split("|") if part.strip()]
+
+    metadata: dict[str, str] = {}
+
+    for part in parts:
+        if ":" not in part:
+            continue
+
+        key, value = part.split(":", 1)
+        metadata[key.strip().lower()] = value.strip()
+
+    source = metadata.get("source", "")
+    page = metadata.get("page")
+    meta_type = metadata.get("type", "")
 
     return {
         "source_file": source,
-        "page": int(page) if page else None,
+        "page": int(page) if page and page.isdigit() else None,
         "source_type": meta_type,
     }
 
@@ -283,6 +299,94 @@ def is_section_heading(line: str) -> bool:
 
 def is_markdown_table_line(line: str) -> bool:
     return MARKDOWN_TABLE_RE.match(line.strip()) is not None
+
+
+def split_markdown_table_row(row: str) -> list[str]:
+    """
+    Memecah satu baris Markdown table menjadi list cell sederhana.
+    """
+    row = row.strip().strip("|")
+    return [cell.strip() for cell in row.split("|")]
+
+
+def is_table_separator_row(row: str) -> bool:
+    """
+    Mengecek baris separator Markdown table, misalnya:
+    |---|---|---|
+    """
+    cells = split_markdown_table_row(row)
+
+    if not cells:
+        return False
+
+    return all(re.fullmatch(r":?-{3,}:?", cell.strip()) for cell in cells)
+
+
+def calendar_table_to_blocks(
+    table_text: str,
+    source_file: str,
+    fallback_page: int | None,
+    fallback_section: str,
+) -> list[TextBlock]:
+    """
+    Khusus kalender akademik:
+    tabel tidak disimpan sebagai satu blok besar, tetapi dipecah per baris kegiatan.
+
+    Format input yang diharapkan:
+    | Halaman | Bagian | Kegiatan | Waktu |
+    |---|---|---|---|
+    | 2 | II. PERKULIAHAN DAN PEMBELAJARAN | Pembayaran UKT | 17 Juli - 15 Agustus 2025 |
+    """
+    rows = [row.strip() for row in table_text.splitlines() if row.strip()]
+    if len(rows) < 3:
+        return []
+
+    header_cells = [cell.lower() for cell in split_markdown_table_row(rows[0])]
+
+    required_columns = ["halaman", "bagian", "kegiatan", "waktu"]
+    if not all(column in header_cells for column in required_columns):
+        return []
+
+    index_map = {name: header_cells.index(name) for name in required_columns}
+    blocks: list[TextBlock] = []
+
+    for row in rows[2:]:
+        if is_table_separator_row(row):
+            continue
+
+        cells = split_markdown_table_row(row)
+
+        if len(cells) < len(header_cells):
+            cells = cells + [""] * (len(header_cells) - len(cells))
+
+        page_text = cells[index_map["halaman"]].strip()
+        section = cells[index_map["bagian"]].strip() or fallback_section
+        activity = cells[index_map["kegiatan"]].strip()
+        date_text = cells[index_map["waktu"]].strip()
+
+        if not activity and not date_text:
+            continue
+
+        page = int(page_text) if page_text.isdigit() else fallback_page
+
+        text = (
+            f"Bagian: {section}\n"
+            f"Kegiatan: {activity}\n"
+            f"Waktu: {date_text}"
+        ).strip()
+
+        block = make_block(
+            text=text,
+            source_file=source_file,
+            page=page,
+            section=section,
+            block_type="calendar_row",
+        )
+
+        if block:
+            blocks.append(block)
+
+    return blocks
 
 
 def normalize_paragraph_lines(lines: list[str]) -> str:
@@ -360,6 +464,22 @@ def parse_markdown_to_blocks(markdown_text: str, fallback_source_file: str) -> l
             return
 
         table_text = "\n".join(table_buffer).strip()
+
+        # Khusus Kalender Akademik, tabel dipecah per baris kegiatan
+        # supaya satu kegiatan dan waktunya tidak terpotong saat chunking.
+        if infer_doc_type(current_source) == "kalender_akademik":
+            calendar_blocks = calendar_table_to_blocks(
+                table_text=table_text,
+                source_file=current_source,
+                fallback_page=current_page,
+                fallback_section=current_section,
+            )
+
+            if calendar_blocks:
+                blocks.extend(calendar_blocks)
+                table_buffer = []
+                return
+
         block = make_block(
             text=table_text,
             source_file=current_source,
@@ -666,7 +786,13 @@ def chunk_blocks(
                 chunks.append(chunk)
                 chunk_index += 1
 
-            overlap_blocks = get_overlap_blocks(buffer, overlap_chars)
+            # Kalender tidak memakai overlap agar baris kegiatan tidak terduplikasi
+            # di beberapa chunk berbeda.
+            if buffer and buffer[0].doc_type == "kalender_akademik":
+                overlap_blocks = []
+            else:
+                overlap_blocks = get_overlap_blocks(buffer, overlap_chars)
+
             buffer = overlap_blocks.copy()
             buffer_chars = sum(len(item.text) for item in buffer)
 

@@ -36,25 +36,25 @@ dan Perencanaan
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 3 | type: text -->
 
-TIM PENYUSUN TIM PENYUSUN Pengarah: Prof. Ir. Linawati, M.Eng.Sc, Ph.D (Dekan) Penanggung Jawab: Prof. Ir. I Nyoman Budiarsa, MT., Ph.D., IPU (W.D. I) Ir. Kadek Diana Harmayani, ST., MT., PhD., IPM., ASEAN Eng. (W.D. II) I Gusti Ketut Sukadana, ST., MT. ( W.D. III) Tri Anggraini Prajnawrdhi, ST, MT,MURP, PhD (Koprodi Arsitektur) Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D (Koprodi T. Sipil) Dr. Gede Sukadarmika, ST, M.Sc. (Koprodi T. Elektro) Dr. I Putu Lokantara, ST, MT (Koprodi T. Mesin) Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. (Koprodi Teknologi Informasi) Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT (Koprodi Teknik Industri) Ni Made Yudantini, ST, M.Sc., Ph.D (Koordinator UP3M) Ketua: Dr.Eng. I Made Agus Dwi Suarjaya, ST., M.Eng Sekretaris: Gede Pringgana, ST.,MT.,Ph.D Anggota: Ir. Putu Deskarta, MASc I Wayan Sukadarma, S.Sos. Ni Made Yudantini, ST, M.Sc., Ph.D A.A. Ngurah Manik Wirayudha, SH Ni Made Mitha Mahastuti, ST.,MT Ni Ketut Tjitra Juni, S.E. Dr. Ir. I Nyoman Susanta, S.T., M.Erg. I Ketut Rawan I Gusti Ayu Garnita Darmaputri, ST., MT A.A. Ayu Oka Mayun Damayanti, ST I Gusti Ngurah Putu Tenaya, ST.,MT Ni Nyoman Ratna Dewantari, S.E. Dr. Ir. I Made Suarda, M.Eng Putu Ayu Sasmita Devi, S.E. Ir. Fajar Purnama, ST., M.Eng., Ph.D. Kadek Hendra Gunawan, S.Kom I Putu Elba Duta Nugraha, S.T., M.T. I Gusti Ayu Sinta Kusumadewi, S.E. Dr. Ir. I Nyoman Setiawan, MT I Ketut Widiantara I Gede Andy Andika Parahita, S.Si., M.T. I Made Alit Dwipayana, S.T. Ni Luh Putu Lilis Sinta Setiawati, S.T., M.T. Ni Gusti Ayu Ketut Bayu Suprastini, S.E. Dr. Eng. Ni Made Pertiwi Jaya, ST., M.Si., M.Eng. Ni Nym Mestia Wendy Gustiariningsih, S.Pd I Ketut Wijana, S.E., M.M. IGAA Chandra Dewi, A.Md.AK., S.Pd Ni Made Narti, SH Editing Layout dan Desain Cover: Dr.Eng. I Made Agus Dwi Suarjaya, ST., M.Eng Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 i
+TIM PENYUSUN TIM PENYUSUN Pengarah: Prof. Ir. Linawati, M.Eng.Sc, Ph.D (Dekan) Penanggung Jawab: Prof. Ir. I Nyoman Budiarsa, MT., Ph.D., IPU (W.D. I) Ir. Kadek Diana Harmayani, ST., MT., PhD., IPM., ASEAN Eng. (W.D. II) I Gusti Ketut Sukadana, ST., MT. ( W.D. III) Tri Anggraini Prajnawrdhi, ST, MT,MURP, PhD (Koprodi Arsitektur) Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D (Koprodi T. Sipil) Dr. Gede Sukadarmika, ST, M.Sc. (Koprodi T. Elektro) Dr. I Putu Lokantara, ST, MT (Koprodi T. Mesin) Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. (Koprodi Teknologi Informasi) Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT (Koprodi Teknik Industri) Ni Made Yudantini, ST, M.Sc., Ph.D (Koordinator UP3M) Ketua: Dr.Eng. I Made Agus Dwi Suarjaya, ST., M.Eng Sekretaris: Gede Pringgana, ST.,MT.,Ph.D Anggota: Ir. Putu Deskarta, MASc I Wayan Sukadarma, S.Sos. Ni Made Yudantini, ST, M.Sc., Ph.D A.A. Ngurah Manik Wirayudha, SH Ni Made Mitha Mahastuti, ST.,MT Ni Ketut Tjitra Juni, S.E. Dr. Ir. I Nyoman Susanta, S.T., M.Erg. I Ketut Rawan I Gusti Ayu Garnita Darmaputri, ST., MT A.A. Ayu Oka Mayun Damayanti, ST I Gusti Ngurah Putu Tenaya, ST.,MT Ni Nyoman Ratna Dewantari, S.E. Dr. Ir. I Made Suarda, M.Eng Putu Ayu Sasmita Devi, S.E. Ir. Fajar Purnama, ST., M.Eng., Ph.D. Kadek Hendra Gunawan, S.Kom I Putu Elba Duta Nugraha, S.T., M.T. I Gusti Ayu Sinta Kusumadewi, S.E. Dr. Ir. I Nyoman Setiawan, MT I Ketut Widiantara I Gede Andy Andika Parahita, S.Si., M.T. I Made Alit Dwipayana, S.T. Ni Luh Putu Lilis Sinta Setiawati, S.T., M.T. Ni Gusti Ayu Ketut Bayu Suprastini, S.E. Dr. Eng. Ni Made Pertiwi Jaya, ST., M.Si., M.Eng. Ni Nym Mestia Wendy Gustiariningsih, S.Pd I Ketut Wijana, S.E., M.M. IGAA Chandra Dewi, A.Md.AK., S.Pd Ni Made Narti, SH Editing Layout dan Desain Cover: Dr.Eng. I Made Agus Dwi Suarjaya, ST., M.Eng
 
 # Halaman 4
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 4 | type: text -->
 
-SAMBUTAN DEKAN SAMBUTAN DEKAN OM Swastiastu, Puji syukur dipanjatkan kehadapan Ida Sang Hyang Widhi Wasa / Tuhan Yang Maha Esa, karena berkat rahmat-Nya, maka Buku Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 ini dapat diterbitkan tepat pada waktunya. Pada kesempatan ini, ucapan terima kasih yang sebesar-besarnya disampaikan kepada semua pihak, atas kerja keras yang tulus, telah membantu dalam pelaksanaan revisi dan penerbitan Buku Pedoman Akademik Program Sarjana ini. Tujuan revisi Buku Pedoman Akademik ini adalah agar berbagai informasi yang disajikan dalam buku ini dapat disesuaikan dengan perkembangan terakhir, sehingga dapat dimanfaatkan oleh Civitas Akademika Fakultas Teknik Universitas Udayana untuk memperlancar proses pembelajaran. Buku Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 ini bersifat mengikat untuk semua program studi Sarjana di lingkungan Fakultas Teknik Universitas Udayana. Akhir kata, semoga Buku Pedoman Akademik Program Sarjana ini dapat dimanfaatkan secara optimal oleh semua pihak, sehingga program-program akademik yang telah disusun dapat berjalan dengan tertib, lancar dan efisien. OM, Santi Santi Santi, OM Jimbaran, 15 Agustus 2024 Fakultas Teknik Universitas Udayana Dekan, Prof. Ir. Linawati, M.Eng.Sc, Ph.D NIP 196608241991032001 i Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024
+SAMBUTAN DEKAN SAMBUTAN DEKAN OM Swastiastu, Puji syukur dipanjatkan kehadapan Ida Sang Hyang Widhi Wasa / Tuhan Yang Maha Esa, karena berkat rahmat-Nya, maka Buku ini dapat diterbitkan tepat pada waktunya. Pada kesempatan ini, ucapan terima kasih yang sebesar-besarnya disampaikan kepada semua pihak, atas kerja keras yang tulus, telah membantu dalam pelaksanaan revisi dan penerbitan Buku Pedoman Akademik Program Sarjana ini. Tujuan revisi Buku Pedoman Akademik ini adalah agar berbagai informasi yang disajikan dalam buku ini dapat disesuaikan dengan perkembangan terakhir, sehingga dapat dimanfaatkan oleh Civitas Akademika Fakultas Teknik Universitas Udayana untuk memperlancar proses pembelajaran. Buku ini bersifat mengikat untuk semua program studi Sarjana di lingkungan Fakultas Teknik Universitas Udayana. Akhir kata, semoga Buku Pedoman Akademik Program Sarjana ini dapat dimanfaatkan secara optimal oleh semua pihak, sehingga program-program akademik yang telah disusun dapat berjalan dengan tertib, lancar dan efisien. OM, Santi Santi Santi, OM Jimbaran, 15 Agustus 2024 Fakultas Teknik Universitas Udayana Dekan, Prof. Ir. Linawati, M.Eng.Sc, Ph.D NIP 196608241991032001
 
 # Halaman 5
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 5 | type: text -->
 
-LAMBANG UNIVERSITAS UDAYANA LAMBANG UNIVERSITAS UDAYANA Lambang Universitas Udayana dikenal dengan sebutan Widya Cakra Prawartana yang maknanya pemutaran roda ilmu pengetahuan berdasarkan Pancasila dengan moto Taki-Takining Sewaka Guna Widya , yang berarti sebagai penuntut ilmu wajiblah mengejar pengetahuan dan kebajikan.Lambang ini berwujud sebuah lingkaran yang menyerupai roda atau cakra. Pada bagian tengah terdapat padma atau bunga teratai dengan delapan helai daun, yang melambangkan kesucian Tuhan Yang Maha Esa sebagai sila pertama Pancasila. Lingkaran atau roda tersebut memiliki empat buah jari-jari atau ruji yang melambangkan kekuatan yang membaja dari empat sila lainnya dari Pancasila. Pada bagian luar dari jari-jari lingkaran atau roda tersebut terdapat tiga buah lingkaran konsentris. Lingkaran konsentris berada di tengah dibentuk oleh 54 buah titik sebagai ratna permata yang melambangkan rangkaian ilmu pengetahuan yang diberikan di Universitas Udayana. Widya Cakra Prawartana berwarna kuning keemasan yang melambangkan matahari terbit dengan warna dasar biru yang melambangkan warna langit. Lambang ini mengandung makna dan harapan bahwa senantiasa menerangi kegelapan atau kebodohan sehingga dapat mensejahterakan dunia. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 ii
+LAMBANG UNIVERSITAS UDAYANA LAMBANG UNIVERSITAS UDAYANA Lambang Universitas Udayana dikenal dengan sebutan Widya Cakra Prawartana yang maknanya pemutaran roda ilmu pengetahuan berdasarkan Pancasila dengan moto Taki-Takining Sewaka Guna Widya , yang berarti sebagai penuntut ilmu wajiblah mengejar pengetahuan dan kebajikan.Lambang ini berwujud sebuah lingkaran yang menyerupai roda atau cakra. Pada bagian tengah terdapat padma atau bunga teratai dengan delapan helai daun, yang melambangkan kesucian Tuhan Yang Maha Esa sebagai sila pertama Pancasila. Lingkaran atau roda tersebut memiliki empat buah jari-jari atau ruji yang melambangkan kekuatan yang membaja dari empat sila lainnya dari Pancasila. Pada bagian luar dari jari-jari lingkaran atau roda tersebut terdapat tiga buah lingkaran konsentris. Lingkaran konsentris berada di tengah dibentuk oleh 54 buah titik sebagai ratna permata yang melambangkan rangkaian ilmu pengetahuan yang diberikan di Universitas Udayana. Widya Cakra Prawartana berwarna kuning keemasan yang melambangkan matahari terbit dengan warna dasar biru yang melambangkan warna langit. Lambang ini mengandung makna dan harapan bahwa senantiasa menerangi kegelapan atau kebodohan sehingga dapat mensejahterakan dunia.
 
 # Halaman 6
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 6 | type: text -->
 
-LAMBANG UNIVERSITAS UDAYANA BENDERA FAKULTAS TEKNIK UNIVERSITAS UDAYANA FAKULTAS TEKNIK Bendera berbentuk empat persegi panjang dengan perbandingan 3 (tiga) banding 2 (dua) berwarna dasar biru, di tengah-tengahnya terdapat lambang Universitas Udayana (Widya Cakra Prawata) yang berwarna kuning keemasan. Bentuk, ukuran, dan penggunaan bendera Unud sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Rektor. Bendera Fakultas Teknik Universitas Udayana memiliki pola dasar yang sama dengan bendera Unud dengan tambahan warna hitam dengan lebar 1/10 dari panjang bendera yang diletakkan di sisi bendera yang berdekatan dengan tiang bendera. Seperti halnya bendera Universitas Udayana, bendera Fakultas Teknik digunakan pada upacara akademik atau upa cara lainnya. Tatacara penggunaan bendera tersebut diatur dengan Peraturan Rektor. iv Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024
+LAMBANG UNIVERSITAS UDAYANA BENDERA FAKULTAS TEKNIK UNIVERSITAS UDAYANA FAKULTAS TEKNIK Bendera berbentuk empat persegi panjang dengan perbandingan 3 (tiga) banding 2 (dua) berwarna dasar biru, di tengah-tengahnya terdapat lambang Universitas Udayana (Widya Cakra Prawata) yang berwarna kuning keemasan. Bentuk, ukuran, dan penggunaan bendera Unud sebagaimana dimaksud pada ayat (1) ditetapkan dengan Peraturan Rektor. Bendera Fakultas Teknik Universitas Udayana memiliki pola dasar yang sama dengan bendera Unud dengan tambahan warna hitam dengan lebar 1/10 dari panjang bendera yang diletakkan di sisi bendera yang berdekatan dengan tiang bendera. Seperti halnya bendera Universitas Udayana, bendera Fakultas Teknik digunakan pada upacara akademik atau upa cara lainnya. Tatacara penggunaan bendera tersebut diatur dengan Peraturan Rektor.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 6 | type: table | table_index: 2 -->
 
@@ -65,19 +65,19 @@ LAMBANG UNIVERSITAS UDAYANA BENDERA FAKULTAS TEKNIK UNIVERSITAS UDAYANA FAKULTAS
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 7 | type: text -->
 
-PIMPINAN FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2019-2023 PIMPINAN FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2019-2023 DEKAN Prof. Ir. Linawati, M.EngSc., PhD. WAKIL DEKAN WAKIL DEKAN WAKIL DEKAN Bidang Akademik dan Bidang Umum dan Bidang Kemahasiswaan Perencanaan Keuangan dan Informasi Prof. Ir. I Nyoman Budiarsa, MT., Ir. Kadek Diana Harmayani, ST., I Gusti Ketut Sukadana, ST., MT. Ph.D., IPU, ASEAN Eng MT., PhD., IPM., ASEAN Eng. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 v
+PIMPINAN FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2019-2023 PIMPINAN FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2019-2023 DEKAN Prof. Ir. Linawati, M.EngSc., PhD. WAKIL DEKAN WAKIL DEKAN WAKIL DEKAN Bidang Akademik dan Bidang Umum dan Bidang Kemahasiswaan Perencanaan Keuangan dan Informasi Prof. Ir. I Nyoman Budiarsa, MT., Ir. Kadek Diana Harmayani, ST., I Gusti Ketut Sukadana, ST., MT. Ph.D., IPU, ASEAN Eng MT., PhD., IPM., ASEAN Eng.
 
 # Halaman 8
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 8 | type: text -->
 
-SENAT FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2022-2026 SENAT FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2022-2026 Ketua: Prof.Dr.Eng. Ir. Made Sucipta, ST, MT Sekretaris: Dr. Ir. I Nyoman Setiawan, MT Ketua Komisi 1: Prof. Ir. Putu Alit Suthanaya, ST ,M.EngSc, Ph.D Sekretaris Komisi 1: Ni Ketut Agusintadewi, ST, MT, Ph.D Anggota Komisi 1: Prof. Ir. I Nyoman Budiarsa, M.T., Ph.D., IPU Prof. Dewa Made Priyantha Wedagama, ST., MT.. M.Sc., Ph.D Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Tri Anggraini Prajnawrdhi, ST, MT, MURP, PhD Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D Dr. Gede Sukadarmika, ST, M.Sc. Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. Ida Ayu Rai Widhiawati, S.T., M.T. Prof. Ir. Made Sukrawa, MSCE, Ph.D. Prof. Dr. Ir. I Made Alit Karyawan Salain, DEA Prof. Dr. Nyoman Gunantara, S.T., M.T. Prof.Ir. I Ketut Sudarsana, S.T., Ph.D. Prof. Ir. Ni Made Ary Esta Dewi Wirastuti, S.T., M.Sc., Ph.D. Prof. Dr. Ir., I Made Oka Widyantara, S.T., M.T., IPU., ASEAN Ketua Komisi 2: Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT Sekretaris Komisi 2: Dr. A.A. Kompiang Oka Sudana, S.Kom., M.T. Anggota Komisi 2: Prof. Ir. Linawati, M.Eng.Sc, Ph.D. Prof. Dr. Ir. I Dewa Ketut Sudarsana, M.T. Dr. I Putu Lokantara, ST, MT Prof. Ir. Ngakan Putu Sueca, MT.Ars, Ph.D Prof. Dr. Ir. Anak Agung Ayu Oka Saraswati, MT Prof. Gusti Ayu Made Suartika, S.T., M.Eng.Sc., Ph.D Prof. Dr. Ir. Nyoman Budiartha RM., MSc Prof. Dr. Ir. Ngakan Made Anom Wiryasa, M.T. Prof. Ir. Ida Ayu Dwi Giriantari, M.Eng.Sc.,Ph.D. Prof. Ir. I Gusti Bagus Wijaya Kusuma, Ph.D. Prof. Dr.Eng. Ni Nyoman Pujianiki, S.T., M.T., M.Eng. Prof.Dr.Ir. I Ketut Suarsana, M.T. Prof. Dr. Ir. Ni Wayan Sri Ariyani, M.M., IPM., Prof. Dr. Ir. I Gusti Ngurah Nitya Santhiarsa, M.T. Dr. Ir. A.A. Gde Agung Yana, ST., MT. vi Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024
+SENAT FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2022-2026 SENAT FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2022-2026 Ketua: Prof.Dr.Eng. Ir. Made Sucipta, ST, MT Sekretaris: Dr. Ir. I Nyoman Setiawan, MT Ketua Komisi 1: Prof. Ir. Putu Alit Suthanaya, ST ,M.EngSc, Ph.D Sekretaris Komisi 1: Ni Ketut Agusintadewi, ST, MT, Ph.D Anggota Komisi 1: Prof. Ir. I Nyoman Budiarsa, M.T., Ph.D., IPU Prof. Dewa Made Priyantha Wedagama, ST., MT.. M.Sc., Ph.D Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Tri Anggraini Prajnawrdhi, ST, MT, MURP, PhD Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D Dr. Gede Sukadarmika, ST, M.Sc. Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. Ida Ayu Rai Widhiawati, S.T., M.T. Prof. Ir. Made Sukrawa, MSCE, Ph.D. Prof. Dr. Ir. I Made Alit Karyawan Salain, DEA Prof. Dr. Nyoman Gunantara, S.T., M.T. Prof.Ir. I Ketut Sudarsana, S.T., Ph.D. Prof. Ir. Ni Made Ary Esta Dewi Wirastuti, S.T., M.Sc., Ph.D. Prof. Dr. Ir., I Made Oka Widyantara, S.T., M.T., IPU., ASEAN Ketua Komisi 2: Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT Sekretaris Komisi 2: Dr. A.A. Kompiang Oka Sudana, S.Kom., M.T. Anggota Komisi 2: Prof. Ir. Linawati, M.Eng.Sc, Ph.D. Prof. Dr. Ir. I Dewa Ketut Sudarsana, M.T. Dr. I Putu Lokantara, ST, MT Prof. Ir. Ngakan Putu Sueca, MT.Ars, Ph.D Prof. Dr. Ir. Anak Agung Ayu Oka Saraswati, MT Prof. Gusti Ayu Made Suartika, S.T., M.Eng.Sc., Ph.D Prof. Dr. Ir. Nyoman Budiartha RM., MSc Prof. Dr. Ir. Ngakan Made Anom Wiryasa, M.T. Prof. Ir. Ida Ayu Dwi Giriantari, M.Eng.Sc.,Ph.D. Prof. Ir. I Gusti Bagus Wijaya Kusuma, Ph.D. Prof. Dr.Eng. Ni Nyoman Pujianiki, S.T., M.T., M.Eng. Prof.Dr.Ir. I Ketut Suarsana, M.T. Prof. Dr. Ir. Ni Wayan Sri Ariyani, M.M., IPM., Prof. Dr. Ir. I Gusti Ngurah Nitya Santhiarsa, M.T. Dr. Ir. A.A. Gde Agung Yana, ST., MT.
 
 # Halaman 9
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 9 | type: text -->
 
-SENAT FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2022-2026 Ketua Komisi 3: Prof. Dr. Ir. Made Sudarma, MASc., IPU., ASEAN Eng. Sekretaris Komisi 3: Ir. Kadek Diana Harmayani, ST., MT., PhD., IPM., ASEAN Eng. Anggota Komisi 3: I Gusti Ketut Sukadana, S.T., M.T. Dr. I Made Widiyarta, ST, M.Eng.Sc. Prof.Dr.Ir. Syamsul Alam Paturusi, MSP. Prof. Ir. I Wayan Redana, MA.Sc., Ph.D Prof. Ir. I Nyoman Arya Thanaya, ME, Ph.D Prof. Ir. Ngakan Putu Gede Suardana, MT, Ph.D. IPU.,ASEAN Eng. Prof. I Dewa Gede Ary Subagia, S.T., M.T., Ph.D Prof. I Wayan Widhiada, S.T., M.Sc., Ph.D Prof. Dr. Tjokorda Gde Tirta Nindhia, ST, MT Prof. Dr. I Ketut Gede Darma Putra, S.Kom., M.T. Prof. Dr. Ir. I Nyoman Sutarja, M.S. Prof. Dr. Ir. I Made Adhika, M.S.P. Prof. I Nyoman Suprapta Winaya, S.T., M.A.Sc., Ph.D. Prof. Dr. Ir. I Dewa Gede Agung Diasana Putra, S.T., M.T., IPU. Dr. I Ketut Mudra, ST, MT Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 vii
+SENAT FAKULTAS TEKNIK UNIVERSITAS UDAYANA PERIODE 2022-2026 Ketua Komisi 3: Prof. Dr. Ir. Made Sudarma, MASc., IPU., ASEAN Eng. Sekretaris Komisi 3: Ir. Kadek Diana Harmayani, ST., MT., PhD., IPM., ASEAN Eng. Anggota Komisi 3: I Gusti Ketut Sukadana, S.T., M.T. Dr. I Made Widiyarta, ST, M.Eng.Sc. Prof.Dr.Ir. Syamsul Alam Paturusi, MSP. Prof. Ir. I Wayan Redana, MA.Sc., Ph.D Prof. Ir. I Nyoman Arya Thanaya, ME, Ph.D Prof. Ir. Ngakan Putu Gede Suardana, MT, Ph.D. IPU.,ASEAN Eng. Prof. I Dewa Gede Ary Subagia, S.T., M.T., Ph.D Prof. I Wayan Widhiada, S.T., M.Sc., Ph.D Prof. Dr. Tjokorda Gde Tirta Nindhia, ST, MT Prof. Dr. I Ketut Gede Darma Putra, S.Kom., M.T. Prof. Dr. Ir. I Nyoman Sutarja, M.S. Prof. Dr. Ir. I Made Adhika, M.S.P. Prof. I Nyoman Suprapta Winaya, S.T., M.A.Sc., Ph.D. Prof. Dr. Ir. I Dewa Gede Agung Diasana Putra, S.T., M.T., IPU. Dr. I Ketut Mudra, ST, MT
 
 # Halaman 10
 
@@ -332,7 +332,7 @@ BAGIAN 12. PROGRAM STUDI TEKNIK LINGKUNGAN......................................
 LAMPIRAN A. DAFTAR PEGAWAI .......................................................... 271
 A.1 Pegawai Dekanat Fakultas Teknik .................................................. 271 A.2 Pegawai Program Studi Sarjana Arsitektur ............................................ 275 A.3 Pegawai Program Studi Sarjana Teknik Sipil .......................................... 276 A.4 Pegawai Program Studi Sarjana Teknik Elektro ........................................ 27 A.5 Pegawai Program Studi Sarjana Teknik Mesin ......................................... 279 A.6 Pegawai Program Studi Sarjana Teknologi Informasi ................................... 280 A.7 Pegawai Progra Studi Sarjana Teknik Industri ......................................... 280 A.8 Pegawai Program Studi Sarjana Teknik Lingkungan .................................... 281 A.9 Pegawai Program Pascasarjana Fakultas Teknik ....................................... 281 A.10 Pegawai Program Profesi Arsitektur ............................................... 282
 LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA ............................. 285
-B.1 Pimpinan Fakultas Teknik Program Reguler Pada Tiap Periode............................ 285 B.2 Pimpinan Fakultas Teknik Program Nonreguler Pada Tiap Periode ......................... 290 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 xii
+B.1 Pimpinan Fakultas Teknik Program Reguler Pada Tiap Periode............................ 285 B.2 Pimpinan Fakultas Teknik Program Nonreguler Pada Tiap Periode .........................
 
 # Halaman 16
 
@@ -342,31 +342,31 @@ B.1 Pimpinan Fakultas Teknik Program Reguler Pada Tiap Periode..................
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 17 | type: text -->
 
-DAFTAR TABEL DAFTAR TABEL Tabel 2.1 Status Akreditasi Nasional Program Studi ............................................ 12 Tabel 2.2 Status Akreditasi/Sertifikasi Internasional Program Studi ............................... 12 Tabel 2.3 Rekapitulasi Jumlah Tenaga Akademik (Dosen) Fakultas Teknik Unud .................... 14 Tabel 2.4 Tenaga Kependidikan di Lingkungan Fakultas Teknik Unud ............................. 15 Tabel 3.1 Pengambilan Beban Kredit ......................................................... 38 Tabel 3.2 Aturan Pemindahan Markah Mentah Menjadi Nilai Relatif Menurut PAP .................... 40 Tabel 3.3 Skala Penilaian Akhir ............................................................. 41 Tabel 3.4 Predikat Kelulusan ............................................................... 42 Tabel 6.1 Susunan Ketua Laboratorium dan Kepala Studio Perancangan PSA Unud Periode 202-2026 . 86 Tabel 6.2 Urutan Mata Kuliah PSA 2024 ...................................................... 96 Tabel 6.3 Sebaran Mata Kuliah Tiap Semester PSA Unud (2020 dan 202) .......................... 98 Tabel 6.4 32 Mata Kuliah Pilihan Program Sarjana PSA Unud 2024 ............................... 102 Tabel 6.5 Mata Kuliah Prasyarat Program Sarjana PSA Unud .................................... 102 Tabel 7.1 Keterkaitan Profil Lulusan, CPL/SKL, dan Bahan Kajian ................................ 123 Tabel 7.2 Rincian Mata Kuliah Wajib Kurikulum PSTS 2024 ..................................... 125 Tabel 7.3 Rincian Mata Kuliah Pilihan Kurikulum PSTS 2024.................................... 129 Tabel 8.1 Daftar Dosen Program Studi Teknik Elektro .......................................... 141 Tabel 8.2 Capaian pembelajaran (CP) Program Studi Teknik Elektro .............................. 153 Tabel 8.3 Tabel Matrik Hubungan CP dengan Profil Lulusan .................................... 156 Tabel 8.4 Jumlah SKS PS (minimum untuk kelulusan) ......................................... 158 Tabel 8.5 Sebaran Mata Kuliah Umum untuk Semester 1-3 ...................................... 159 Tabel 8.6 Sebaran Mata Kuliah Bidang Studi Energi dan Sistem Tenaga Listrik ..................... 159 Tabel 8.7 Mata Kuliah Pilihan Bidang Studi Energi dan Sistem Tenaga Listrik ...................... 160 Tabel 8.8 Sebaran Mata Kuliah Bidang Studi Teknik Telekomunikasi Multimedia ................... 160 Tabel 8.9 Mata Kuliah Pilihan Bidang Studi Teknik Telekomunikasi Multimedia ..................... 161 Tabel 8.10 Sebaran Mata Kuliah Bidang Studi Teknik Elektronika, Kendali dan Robotika ............. 162 Tabel 8.1 Mata Kuliah Pilihan Bidang Studi Teknik Elektronika, Kendali dan Robotika .............. 162 Tabel 8.12 Sebaran Mata Kuliah Bidang Studi Teknik Komputer ................................. 163 Tabel 8.13 Mata Kuliah Pilihan Bidang Studi Teknik Komputer .................................. 164 Tabel 8.14 CP pada setiap Mata Kuliah Mata Kuliah Umum untuk Semester 1-3 .................... 164 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 xv
+DAFTAR TABEL DAFTAR TABEL Tabel 2.1 Status Akreditasi Nasional Program Studi ............................................ 12 Tabel 2.2 Status Akreditasi/Sertifikasi Internasional Program Studi ............................... 12 Tabel 2.3 Rekapitulasi Jumlah Tenaga Akademik (Dosen) Fakultas Teknik Unud .................... 14 Tabel 2.4 Tenaga Kependidikan di Lingkungan Fakultas Teknik Unud ............................. 15 Tabel 3.1 Pengambilan Beban Kredit ......................................................... 38 Tabel 3.2 Aturan Pemindahan Markah Mentah Menjadi Nilai Relatif Menurut PAP .................... 40 Tabel 3.3 Skala Penilaian Akhir ............................................................. 41 Tabel 3.4 Predikat Kelulusan ............................................................... 42 Tabel 6.1 Susunan Ketua Laboratorium dan Kepala Studio Perancangan PSA Unud Periode 202-2026 . 86 Tabel 6.2 Urutan Mata Kuliah PSA 2024 ...................................................... 96 Tabel 6.3 Sebaran Mata Kuliah Tiap Semester PSA Unud (2020 dan 202) .......................... 98 Tabel 6.4 32 Mata Kuliah Pilihan Program Sarjana PSA Unud 2024 ............................... 102 Tabel 6.5 Mata Kuliah Prasyarat Program Sarjana PSA Unud .................................... 102 Tabel 7.1 Keterkaitan Profil Lulusan, CPL/SKL, dan Bahan Kajian ................................ 123 Tabel 7.2 Rincian Mata Kuliah Wajib Kurikulum PSTS 2024 ..................................... 125 Tabel 7.3 Rincian Mata Kuliah Pilihan Kurikulum PSTS 2024.................................... 129 Tabel 8.1 Daftar Dosen Program Studi Teknik Elektro .......................................... 141 Tabel 8.2 Capaian pembelajaran (CP) Program Studi Teknik Elektro .............................. 153 Tabel 8.3 Tabel Matrik Hubungan CP dengan Profil Lulusan .................................... 156 Tabel 8.4 Jumlah SKS PS (minimum untuk kelulusan) ......................................... 158 Tabel 8.5 Sebaran Mata Kuliah Umum untuk Semester 1-3 ...................................... 159 Tabel 8.6 Sebaran Mata Kuliah Bidang Studi Energi dan Sistem Tenaga Listrik ..................... 159 Tabel 8.7 Mata Kuliah Pilihan Bidang Studi Energi dan Sistem Tenaga Listrik ...................... 160 Tabel 8.8 Sebaran Mata Kuliah Bidang Studi Teknik Telekomunikasi Multimedia ................... 160 Tabel 8.9 Mata Kuliah Pilihan Bidang Studi Teknik Telekomunikasi Multimedia ..................... 161 Tabel 8.10 Sebaran Mata Kuliah Bidang Studi Teknik Elektronika, Kendali dan Robotika ............. 162 Tabel 8.1 Mata Kuliah Pilihan Bidang Studi Teknik Elektronika, Kendali dan Robotika .............. 162 Tabel 8.12 Sebaran Mata Kuliah Bidang Studi Teknik Komputer ................................. 163 Tabel 8.13 Mata Kuliah Pilihan Bidang Studi Teknik Komputer .................................. 164 Tabel 8.14 CP pada setiap Mata Kuliah Mata Kuliah Umum untuk Semester 1-3 ....................
 
 # Halaman 18
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 18 | type: text -->
 
-DAFTAR TABEL Tabel 8.15 CP pada setiap Mata Kuliah Bidang Studi Energi dan Sistem Tenaga Listrik .............. 165 Tabel 8.16 CP pada setiap Mata Kuliah Bidang Studi Teknik Telekomunikasi Multimedia ............. 16 Tabel 8.17 CP pada setiap Mata Kuliah Bidang Studi Teknik Elektronika, Kendali dan Robotika ....... 167 Tabel 8.18 Capaian Pembelajaran pada setiap Mata Kuliah Bidang Studi Teknik Komputer ........... 168 Tabel 8.19 Rekapitulasi Capaian Pembelajaran pada masing-masing Bidang Studi ................. 168 Tabel 8.20 Bahan Kajian Teknik Elektro ..................................................... 169 Tabel 10.1 Menuju Visi Teknologi Informasi 2024 ............................................. 21 Tabel 10.2 Profil Lulusan ................................................................. 20 Tabel 10.3 Capaian Pembelajaran Lulusan ................................................... 20 Tabel 10.4 Matriks hubungan Antara Profil dan Capaian Pembelajaran Lulusan .................... 21 Tabel 10.5 Hubungan CPL dengan 4 unsur CPL Kerangka Kualifikasi Nasional Indonesia (KNI) ...... 21 Tabel 10.6 Struktur Kurikulum 202 ......................................................... 22 Tabel 10.7 Mata Kuliah Pilihan Bidang Minat ................................................. 25 Tabel 1.1 Profil Lulusan PSTI FT Unud .................................................... 242 Tabel 1.2 Capaian Pembelajaran Lulusan PSTI FT Unud...................................... 242 Tabel 1.3 Jumlah Minimal Mata Kuliah setiap Kategori pada Kurikulum Inti BKSTI ................. 24 Tabel 1.4 Daftar Mata Kuliah yang termasuk pada setiap Kategori Kurikulum BKSTI ............... 24 Tabel 1.5 Struktur Kurikulum PSTI FT Unud Tahun 2023 – 2028 ............................... 246 Tabel 1.6 Mata Kuliah Pilihan PSTI FT Unud ................................................ 247 Tabel 1.7 Daftar Mata Kuliah untuk Konversi Program MBKM PSTI FT Unud ..................... 250 Tabel 12.1. Sebaran Mata Kuliah Per Semester Program Studi Sarjana Teknik Lingkungan Kurikulum Merdeka Belajar Kampus Merdeka ................................................... 259 Tabel 12.2. Sebaran Mata Kuliah Pilihan Program Studi Sarjana Teknik Lingkungan Kurikulum Merdeka Belajar Kampus Merdeka .......................................................... 261 Tabel 12.3. Daftar Mata Kuliah Konversi MBKM PSTL ......................................... 262 xvi Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024
+DAFTAR TABEL Tabel 8.15 CP pada setiap Mata Kuliah Bidang Studi Energi dan Sistem Tenaga Listrik .............. 165 Tabel 8.16 CP pada setiap Mata Kuliah Bidang Studi Teknik Telekomunikasi Multimedia ............. 16 Tabel 8.17 CP pada setiap Mata Kuliah Bidang Studi Teknik Elektronika, Kendali dan Robotika ....... 167 Tabel 8.18 Capaian Pembelajaran pada setiap Mata Kuliah Bidang Studi Teknik Komputer ........... 168 Tabel 8.19 Rekapitulasi Capaian Pembelajaran pada masing-masing Bidang Studi ................. 168 Tabel 8.20 Bahan Kajian Teknik Elektro ..................................................... 169 Tabel 10.1 Menuju Visi Teknologi Informasi 2024 ............................................. 21 Tabel 10.2 Profil Lulusan ................................................................. 20 Tabel 10.3 Capaian Pembelajaran Lulusan ................................................... 20 Tabel 10.4 Matriks hubungan Antara Profil dan Capaian Pembelajaran Lulusan .................... 21 Tabel 10.5 Hubungan CPL dengan 4 unsur CPL Kerangka Kualifikasi Nasional Indonesia (KNI) ...... 21 Tabel 10.6 Struktur Kurikulum 202 ......................................................... 22 Tabel 10.7 Mata Kuliah Pilihan Bidang Minat ................................................. 25 Tabel 1.1 Profil Lulusan PSTI FT Unud .................................................... 242 Tabel 1.2 Capaian Pembelajaran Lulusan PSTI FT Unud...................................... 242 Tabel 1.3 Jumlah Minimal Mata Kuliah setiap Kategori pada Kurikulum Inti BKSTI ................. 24 Tabel 1.4 Daftar Mata Kuliah yang termasuk pada setiap Kategori Kurikulum BKSTI ............... 24 Tabel 1.5 Struktur Kurikulum PSTI FT Unud Tahun 2023 – 2028 ............................... 246 Tabel 1.6 Mata Kuliah Pilihan PSTI FT Unud ................................................ 247 Tabel 1.7 Daftar Mata Kuliah untuk Konversi Program MBKM PSTI FT Unud ..................... 250 Tabel 12.1. Sebaran Mata Kuliah Per Semester Program Studi Sarjana Teknik Lingkungan Kurikulum Merdeka Belajar Kampus Merdeka ................................................... 259 Tabel 12.2. Sebaran Mata Kuliah Pilihan Program Studi Sarjana Teknik Lingkungan Kurikulum Merdeka Belajar Kampus Merdeka .......................................................... 261 Tabel 12.3. Daftar Mata Kuliah Konversi MBKM PSTL ......................................... 262
 
 # Halaman 19
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 19 | type: text -->
 
-DAFTAR GAMBAR DAFTAR GAMBAR Gambar 2.1 Perkembangan Peneriman Mahasiswa Baru Program Sarjana......................... 13 Gambar 2.2 Perkembangan Jumlah Lulusan Program Sarjana .................................... 14 Gambar 2.3 Struktur organisasi Fakultas Teknik ............................................... 16 Gambar 2.4 Struktur Organisasi Program Studi ................................................ 19 Gambar 2.5 Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jimbaran ............. 24 Gambar 2.6 Legend Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jimbaran ...... 25 Gambar 2.7 Lokasi Fakultas Teknik di Kampus Universitas Udayana Jl. P.B. Sudirman, Denpasar ...... 26 Gambar 3.1. Prosedur banding nilai mahasiswa ............................................... 41 Gambar 5.1 Struktur Organisasi Mahasiswa FT Unud ........................................... 6 Gambar 5.2 Kegiatan PKMB ............................................................... 67 Gambar 5.3 Kegiatan PKMB merupakan pengenalan dunia kampus .............................. 68 Gambar 5.4 Kegiatan Seminar Teknik ........................................................ 69 Gambar 5.5 Kegiatan BKFT melibatkan seluruh civitas akademika dan alumni ...................... 69 Gambar 5.6 Kegiatan PKM yang bertujuan untuk menumbuhkan kreativitas dan kompetitif ........... 69 Gambar 5.7 Kegiatan Porseni yang dikuti oleh mahasiswa Fakultas Teknik ........................ 70 Gambar 5.8 Kegiatan POR Teknik ........................................................... 70 Gambar 5.9 Kegiatan Jegeg Bagus Teknik .................................................... 71 Gambar 5.10 Kegiatan TBTN merupakan salah satu kegiatan Pengabdian pada Masyarakat ........... 71 Gambar 5.1 Kegiatan TFT merupakan turnamen futsal bergengsi ................................ 72 Gambar 5.12 Kegiatan GrAnaT merupakan suatu event musik aliran musik Underground ............. 72 Gambar 5.13 Kegiatan Kelompok Studi Robot ................................................. 72 Gambar 5.14 Kegiatan Kelompok Studi Otomotif ............................................... 73 Gambar 5.15 Kegiatan Kelompok Studi Roket ................................................. 73 Gambar 5.16 Kegiatan Kelompok UREKA ..................................................... 73 Gambar 5.17 Kegiatan Kelompok IEE Udayana University Student Branch ........................ 74 Gambar 5.18 Kegiatan Kelompok Studi Cipta Loka ............................................. 74 Gambar 5.19 Mekanisme administrasi pencapaian poin SKP mahasiswa ........................... 76 Gambar 6.1 Profil lulusan PSA Unud ......................................................... 86 Gambar 6.2 Susunan Bidang Ilmu Arsitektur Program Sarjana PSA Unud.......................... 95 Gambar 6.3 Fasilitas Penunjang Perkuliahan PSA Unud ........................................ 103 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 xvi
+DAFTAR GAMBAR DAFTAR GAMBAR Gambar 2.1 Perkembangan Peneriman Mahasiswa Baru Program Sarjana......................... 13 Gambar 2.2 Perkembangan Jumlah Lulusan Program Sarjana .................................... 14 Gambar 2.3 Struktur organisasi Fakultas Teknik ............................................... 16 Gambar 2.4 Struktur Organisasi Program Studi ................................................ 19 Gambar 2.5 Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jimbaran ............. 24 Gambar 2.6 Legend Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jimbaran ...... 25 Gambar 2.7 Lokasi Fakultas Teknik di Kampus Universitas Udayana Jl. P.B. Sudirman, Denpasar ...... 26 Gambar 3.1. Prosedur banding nilai mahasiswa ............................................... 41 Gambar 5.1 Struktur Organisasi Mahasiswa FT Unud ........................................... 6 Gambar 5.2 Kegiatan PKMB ............................................................... 67 Gambar 5.3 Kegiatan PKMB merupakan pengenalan dunia kampus .............................. 68 Gambar 5.4 Kegiatan Seminar Teknik ........................................................ 69 Gambar 5.5 Kegiatan BKFT melibatkan seluruh civitas akademika dan alumni ...................... 69 Gambar 5.6 Kegiatan PKM yang bertujuan untuk menumbuhkan kreativitas dan kompetitif ........... 69 Gambar 5.7 Kegiatan Porseni yang dikuti oleh mahasiswa Fakultas Teknik ........................ 70 Gambar 5.8 Kegiatan POR Teknik ........................................................... 70 Gambar 5.9 Kegiatan Jegeg Bagus Teknik .................................................... 71 Gambar 5.10 Kegiatan TBTN merupakan salah satu kegiatan Pengabdian pada Masyarakat ........... 71 Gambar 5.1 Kegiatan TFT merupakan turnamen futsal bergengsi ................................ 72 Gambar 5.12 Kegiatan GrAnaT merupakan suatu event musik aliran musik Underground ............. 72 Gambar 5.13 Kegiatan Kelompok Studi Robot ................................................. 72 Gambar 5.14 Kegiatan Kelompok Studi Otomotif ............................................... 73 Gambar 5.15 Kegiatan Kelompok Studi Roket ................................................. 73 Gambar 5.16 Kegiatan Kelompok UREKA ..................................................... 73 Gambar 5.17 Kegiatan Kelompok IEE Udayana University Student Branch ........................ 74 Gambar 5.18 Kegiatan Kelompok Studi Cipta Loka ............................................. 74 Gambar 5.19 Mekanisme administrasi pencapaian poin SKP mahasiswa ........................... 76 Gambar 6.1 Profil lulusan PSA Unud ......................................................... 86 Gambar 6.2 Susunan Bidang Ilmu Arsitektur Program Sarjana PSA Unud.......................... 95 Gambar 6.3 Fasilitas Penunjang Perkuliahan PSA Unud ........................................
 
 # Halaman 20
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 20 | type: text -->
 
-DAFTAR GAMBAR Gambar 6.4 Tugas Mimesis Studio Estetika Bentuk ........................................... 105 Gambar 6.5 Kegiatan Studio Perancangan Arsitektur sebagai mata kuliah inti PSA Unud ............ 105 Gambar 6.6 Ujian Studio Tugas Akhir ...................................................... 106 Gambar 6.7 Laboratorium Grafis dan Komunikasi Arsitektur .................................... 106 Gambar 6.8 Perlengkapan Laboratorium Keprofesian Arsitek ................................... 107 Gambar 6.9 Hasil Kajian Laboratorium Urban dan Pariwisata ................................... 107 Gambar 6.10 Maket Struktur dan Desain Arsitektur ............................................ 108 Gambar 6.1 Laboratorium Arsitektur Etnik dan Bersejarah..................................... 109 Gambar 7.1 Salah satu ruang kuliah ........................................................ 131 Gambar 7.2 Ruang Dosen ................................................................. 132 Gambar 7.3 Pengujian Tekan Beton ........................................................ 132 Gambar 7.4 Loading Frame ............................................................... 132 Gambar 7.5 Pengujian Balok .............................................................. 132 Gambar 7.6 Alat SEM .................................................................... 13 Gambar 7.7 Alat AS ..................................................................... 13 Gambar 7.8 Alat XRD ..................................................................... 13 Gambar 7.9 Kegiatan di Laboratorium Mekanika Tanah ........................................ 13 Gambar 7.10 Alat UTM ................................................................... 134 Gambar 7.1 Praktikum Perkerasan ........................................................ 134 Gambar 7.12 Survei dan Studi Laboratorium Transportasi ...................................... 134 Gambar 7.13 Kegiatan Laboratorium Ilmu Ukur Tanah ......................................... 135 Gambar 7.14 Praktikum Hidrolika dan Hidrologi .............................................. 135 Gambar 7.15 Alat Pengukur Arus SEBA ..................................................... 135 Gambar 7.16 Alat Survey Baltimetri ......................................................... 135 Gambar 7.19 Kegiatan di Laboratorium Fisika ................................................ 136 Gambar 7.17 Laboratorium Komputer ....................................................... 136 Gambar 7.18 Kegiatan Laboratorium Manajemen Konstruksi .................................... 136 Gambar 8.1 Ruang Baca .................................................................. 176 Gambar 8.2a Kegiatan di Laboratorium Dasar Teknik Elektro ................................... 176 Gambar 8.2b Kegiatan di Laboratorium Dasar Teknik Elektro ................................... 17 Gambar 8.2c Kegiatan di Laboratorium Dasar Teknik Elektro ................................... 17 Gambar 8.3 Kegiatan di Laboratorium Sistem Telekomunikasi .................................. 17 Gambar 8.4 Kegiatan di Laboratorium Sistem Kendali ......................................... 178 Gambar 8.5 Kegiatan di Laboratorium Riset Manajemen Energi Listrik ............................ 178 Gambar 8.6 Kegiatan di Laboratorium Konversi Energi ........................................ 178 Gambar 8.7 Fasilitas Laboratorium Komputer ................................................ 179 Gambar 8.8 Fasilitas Lab. Instalasi Listrik ................................................... 179 Gambar 8.9 Kegiatan di Laboratorium Rangkaian Logika dan Mikroprosesor ...................... 179 Gambar 8.10 Kegiatan di Workshop ........................................................ 179 Gambar 8.1 Kegiatan di Ruang Dosen ...................................................... 180 Gambar 8.12 Ruang Administrasi .......................................................... 180 Gambar 8.13 PLTS Hybrid (Pilot Project Smart Grid in Microgrid ) ............................... 180 xvii Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024
+DAFTAR GAMBAR Gambar 6.4 Tugas Mimesis Studio Estetika Bentuk ........................................... 105 Gambar 6.5 Kegiatan Studio Perancangan Arsitektur sebagai mata kuliah inti PSA Unud ............ 105 Gambar 6.6 Ujian Studio Tugas Akhir ...................................................... 106 Gambar 6.7 Laboratorium Grafis dan Komunikasi Arsitektur .................................... 106 Gambar 6.8 Perlengkapan Laboratorium Keprofesian Arsitek ................................... 107 Gambar 6.9 Hasil Kajian Laboratorium Urban dan Pariwisata ................................... 107 Gambar 6.10 Maket Struktur dan Desain Arsitektur ............................................ 108 Gambar 6.1 Laboratorium Arsitektur Etnik dan Bersejarah..................................... 109 Gambar 7.1 Salah satu ruang kuliah ........................................................ 131 Gambar 7.2 Ruang Dosen ................................................................. 132 Gambar 7.3 Pengujian Tekan Beton ........................................................ 132 Gambar 7.4 Loading Frame ............................................................... 132 Gambar 7.5 Pengujian Balok .............................................................. 132 Gambar 7.6 Alat SEM .................................................................... 13 Gambar 7.7 Alat AS ..................................................................... 13 Gambar 7.8 Alat XRD ..................................................................... 13 Gambar 7.9 Kegiatan di Laboratorium Mekanika Tanah ........................................ 13 Gambar 7.10 Alat UTM ................................................................... 134 Gambar 7.1 Praktikum Perkerasan ........................................................ 134 Gambar 7.12 Survei dan Studi Laboratorium Transportasi ...................................... 134 Gambar 7.13 Kegiatan Laboratorium Ilmu Ukur Tanah ......................................... 135 Gambar 7.14 Praktikum Hidrolika dan Hidrologi .............................................. 135 Gambar 7.15 Alat Pengukur Arus SEBA ..................................................... 135 Gambar 7.16 Alat Survey Baltimetri ......................................................... 135 Gambar 7.19 Kegiatan di Laboratorium Fisika ................................................ 136 Gambar 7.17 Laboratorium Komputer ....................................................... 136 Gambar 7.18 Kegiatan Laboratorium Manajemen Konstruksi .................................... 136 Gambar 8.1 Ruang Baca .................................................................. 176 Gambar 8.2a Kegiatan di Laboratorium Dasar Teknik Elektro ................................... 176 Gambar 8.2b Kegiatan di Laboratorium Dasar Teknik Elektro ................................... 17 Gambar 8.2c Kegiatan di Laboratorium Dasar Teknik Elektro ................................... 17 Gambar 8.3 Kegiatan di Laboratorium Sistem Telekomunikasi .................................. 17 Gambar 8.4 Kegiatan di Laboratorium Sistem Kendali ......................................... 178 Gambar 8.5 Kegiatan di Laboratorium Riset Manajemen Energi Listrik ............................ 178 Gambar 8.6 Kegiatan di Laboratorium Konversi Energi ........................................ 178 Gambar 8.7 Fasilitas Laboratorium Komputer ................................................ 179 Gambar 8.8 Fasilitas Lab. Instalasi Listrik ................................................... 179 Gambar 8.9 Kegiatan di Laboratorium Rangkaian Logika dan Mikroprosesor ...................... 179 Gambar 8.10 Kegiatan di Workshop ........................................................ 179 Gambar 8.1 Kegiatan di Ruang Dosen ...................................................... 180 Gambar 8.12 Ruang Administrasi .......................................................... 180 Gambar 8.13 PLTS Hybrid (Pilot Project Smart Grid in Microgrid ) ............................... 180
 
 # Halaman 21
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 21 | type: text -->
 
-DAFTAR GAMBAR Gambar 9.1 Roadmap Mata Kuliah Bersyarat ................................................. 198 Gambar 9.2 Ruang Kuliah Program Studi Teknik Mesin ........................................ 19 Gambar 9.3 Laboratorium Fisika Dasar ...................................................... 19 Gambar 9.4 Laboratorium Material ......................................................... 20 Gambar 9.5 Laboratorium Teknik Tenaga Listrik .............................................. 20 Gambar 9.6 Laboratorium Proses Produksi .................................................. 20 Gambar 9.7 Laboratorium Fenomena Dasar .................................................. 201 Gambar 9.8 Laboratorium Perpindahan Panas ................................................ 201 Gambar 9.9 Laboratorium Pembakaran dan Motor Bakar ....................................... 202 Gambar 9.10 Laboratorium Mesin Fluida .................................................... 202 Gambar 9.1 Laboratorium Refrigerasi ...................................................... 202 Gambar 9.12 Laboratorium Analisa Bahan ................................................... 203 Gambar 9.13 Laboratorium Komputer ....................................................... 203 Gambar 9.14 Ruang Administrasi Program Studi Teknik Mesin .................................. 204 Gambar 9.15 Ruang Ketua Program Studi Teknik Mesin ........................................ 204 Gambar 9.16 Ruang Dosen Program Studi Teknik Mesin ....................................... 204 Gambar 9.17 Ruang Sidang Program Studi Teknik Mesin ....................................... 205 Gambar 9.18 Ruang Belajar (Study Rom)................................................... 205 Gambar 9.19 Taman Internet Program Studi Teknik Mesin ...................................... 206 Gambar 10.1 Ruangan Laboratorium Komputasi .............................................. 231 Gambar 10.2 Kegiatan Laboratorium Internet dan Mobile ....................................... 231 Gambar 10.3 Kegiatan Laboratorium Teknologi Terintegrasi .................................... 232 Gambar 10.4 Kegiatan Laboratorium Teknologi Terintegrasi .................................... 232 Gambar 10.5 Kegiatan Laboratorium Augmented Reality....................................... 23 Gambar 10.6 Kegiatan di Laboratorium Image Procesing ..................................... 23 Gambar 10.7 Kegiatan Seminar di ruang Aula SwasTIka ....................................... 234 Gambar 10.8 Kegiatan Pertemuan di ruang Aula SwasTIka ..................................... 234 Gambar 10.9 Kegiatan openSUSE Asia Sumit 2019, 5-6 Oktober 2019 .......................... 235 Gambar 1.1 Peta jalan mata kuliah PSTI FT Unud ........................................... 249 Gambar 1.2 Laboratorium Sistem Manufaktur ............................................... 251 Gambar 1.3 Laboratorium Fisika Dasar ..................................................... 251 Gambar 12.1. Roadmap Kurikulum Program Studi Sarjana Teknik Lingkungan ..................... 264 Gambar 12.2. Praktikum Lapangan Sampling Air Permukan dan Pengujian Parameter Fisika, Kimia, dan Biologi Kualitas Air di Laboratorium Kualitas Air ....................................... 265 Gambar 12.3. Water Treatment Kit (Koagulasi-Flokulasi, Sedimentasi, Filtrasi) dan Wastewater Treatment Kit (Tangki Aerasi-Sedimentasi) Untuk Pelaksanan Uji Coba Pengolahan Air dan Praktikum Mata Kuliah Unit Operasi dan Unit Proses PSTL ........................................... 26 Gambar 12.4. Praktikum Lapangan Analisa Volume dan Densitas Limbah Padat yang Dilakukan Dengan Peralatan Laboratorium Limbah Padat dan B3 Program Studi Sarjana Teknik Lingkungan..... 267 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 xix
+DAFTAR GAMBAR Gambar 9.1 Roadmap Mata Kuliah Bersyarat ................................................. 198 Gambar 9.2 Ruang Kuliah Program Studi Teknik Mesin ........................................ 19 Gambar 9.3 Laboratorium Fisika Dasar ...................................................... 19 Gambar 9.4 Laboratorium Material ......................................................... 20 Gambar 9.5 Laboratorium Teknik Tenaga Listrik .............................................. 20 Gambar 9.6 Laboratorium Proses Produksi .................................................. 20 Gambar 9.7 Laboratorium Fenomena Dasar .................................................. 201 Gambar 9.8 Laboratorium Perpindahan Panas ................................................ 201 Gambar 9.9 Laboratorium Pembakaran dan Motor Bakar ....................................... 202 Gambar 9.10 Laboratorium Mesin Fluida .................................................... 202 Gambar 9.1 Laboratorium Refrigerasi ...................................................... 202 Gambar 9.12 Laboratorium Analisa Bahan ................................................... 203 Gambar 9.13 Laboratorium Komputer ....................................................... 203 Gambar 9.14 Ruang Administrasi Program Studi Teknik Mesin .................................. 204 Gambar 9.15 Ruang Ketua Program Studi Teknik Mesin ........................................ 204 Gambar 9.16 Ruang Dosen Program Studi Teknik Mesin ....................................... 204 Gambar 9.17 Ruang Sidang Program Studi Teknik Mesin ....................................... 205 Gambar 9.18 Ruang Belajar (Study Rom)................................................... 205 Gambar 9.19 Taman Internet Program Studi Teknik Mesin ...................................... 206 Gambar 10.1 Ruangan Laboratorium Komputasi .............................................. 231 Gambar 10.2 Kegiatan Laboratorium Internet dan Mobile ....................................... 231 Gambar 10.3 Kegiatan Laboratorium Teknologi Terintegrasi .................................... 232 Gambar 10.4 Kegiatan Laboratorium Teknologi Terintegrasi .................................... 232 Gambar 10.5 Kegiatan Laboratorium Augmented Reality....................................... 23 Gambar 10.6 Kegiatan di Laboratorium Image Procesing ..................................... 23 Gambar 10.7 Kegiatan Seminar di ruang Aula SwasTIka ....................................... 234 Gambar 10.8 Kegiatan Pertemuan di ruang Aula SwasTIka ..................................... 234 Gambar 10.9 Kegiatan openSUSE Asia Sumit 2019, 5-6 Oktober 2019 .......................... 235 Gambar 1.1 Peta jalan mata kuliah PSTI FT Unud ........................................... 249 Gambar 1.2 Laboratorium Sistem Manufaktur ............................................... 251 Gambar 1.3 Laboratorium Fisika Dasar ..................................................... 251 Gambar 12.1. Roadmap Kurikulum Program Studi Sarjana Teknik Lingkungan ..................... 264 Gambar 12.2. Praktikum Lapangan Sampling Air Permukan dan Pengujian Parameter Fisika, Kimia, dan Biologi Kualitas Air di Laboratorium Kualitas Air ....................................... 265 Gambar 12.3. Water Treatment Kit (Koagulasi-Flokulasi, Sedimentasi, Filtrasi) dan Wastewater Treatment Kit (Tangki Aerasi-Sedimentasi) Untuk Pelaksanan Uji Coba Pengolahan Air dan Praktikum Mata Kuliah Unit Operasi dan Unit Proses PSTL ........................................... 26 Gambar 12.4. Praktikum Lapangan Analisa Volume dan Densitas Limbah Padat yang Dilakukan Dengan Peralatan Laboratorium Limbah Padat dan B3 Program Studi Sarjana Teknik Lingkungan.....
 
 # Halaman 22
 
@@ -396,7 +396,7 @@ Tahapan pembangunan pendidikan nasional pada RPJM-4 tahun 2020-2024 yang menekan
 Assessment)
 4. Memfasilitasi berbagai jenis kesempatan belajar (Merdeka belajar-kampus merdeka)
 5. Siklus sistematik P-D-C-A (Plan, Do, Check, Act atau Rencanakan, Kerjakan, Periksa,
-Tindak lanjuti) Fakultas Teknik juga telah melakukan reorientasi pada kurikulum setiap program studi untuk memfasilitasi kebijakan Merdeka Belajar Kampus Merdeka yang pada prinsipnya, kebijakan Kampus Merdeka ini memberi kebebasan dan otonomi kepada lembaga Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 1
+Tindak lanjuti) Fakultas Teknik juga telah melakukan reorientasi pada kurikulum setiap program studi untuk memfasilitasi kebijakan Merdeka Belajar Kampus Merdeka yang pada prinsipnya, kebijakan Kampus Merdeka ini memberi kebebasan dan otonomi kepada lembaga
 
 # Halaman 26
 
@@ -454,7 +454,7 @@ prinsip tata kelola pendidikan tinggi yang efektif dan efisien;
 5. Tersedianya dan meningkatnya sarana prasarana pendidikan tinggi yang memadai,
 berkualitas, dan merata di semua unit kerja untuk mendukung penyelenggaraan Tri Dharma PT yang bermutu dan berdaya saing internasional;
 6. Terjalinnya kerjasama di berbagai bidang dengan berbagai pihak, baik di dalam maupun
-di luar negeri, untuk meningkatkan mutu pelaksanaan Tridharma Perguruan Tinggi, dan mutu pelayanan pendidikan tinggi di FT Unud. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 3
+di luar negeri, untuk meningkatkan mutu pelaksanaan Tridharma Perguruan Tinggi, dan mutu pelayanan pendidikan tinggi di FT Unud.
 
 # Halaman 28
 
@@ -534,6 +534,8 @@ Kuliah di Universitas Udayana
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 31 | type: text -->
 
+GAMBARAN UMUM
+
 # Halaman 32
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 32 | type: text -->
@@ -548,7 +550,7 @@ BAGIAN 2. GAMBARAN UMUM
 2.1.1 Pendirian Fakultas Teknik
 Fakultas Teknik Universitas Udayana secara resmi berdiri pada tanggal 1 Oktober
 1965 dengan Surat Keputusan Menteri PTIP No. 248/Sek/P.U/1965, tanggal 20 Oktober
-1965, yang terdiri dari dua Program Studi yaitu Program Studi Arsitektur dan Program Studi Seni Rupa. Sebagai latar belakang pendirian Fakultas Teknik Universitas Udayana, adalah dalam rangka pelestarian, pengembangan kebudayaan Daerah Bali pada khususnya dan kebudayaan nasional pada umumnya, terutama di dalam menghadapi pembangunan dan perkembangan kepariwisataan. Secara fisik perkembangan itu banyak menyangkut bidang-bidang kearsitekturan dan kesenirupaan, yaitu suatu potensi yang mempunyai nilai tersendiri di dalam kehidupan kebudayaan Bali, selain untuk menampung aspirasi masyarakat khususnya calon-calon mahasiswa dari Bali yang ingin melanjutkan pendidikan seni dan teknologi pada jenjang pendidikan tinggi. Untuk maksud tersebut budayawan di Bali khususnya di kalangan Universitas Udayana merintis jalan untuk mendirikan pendidikan tinggi yang relevan yaitu pendidikan tinggi bidang arsitektur dan seni rupa. Maka pada tahun 1965, dibentuklah panitia yang disebut Panitia Persiapan Fakultas Teknik Universitas Udayana dengan susunan sebagai berikut: Ketua (merangkap anggota): Prof. Dr. Ida Bagus Mantra (Rektor Universitas Udayana) Sekretaris (merangkap anggota): Drs. Soedarminto (Dosen Fakultas Kedokteran Universitas Udayana) Anggota: Ir. I Gusti Ngurah Jelantik dr. R. Moerdowo (Dosen Fakultas Kedokteran Universitas Udayana) Panitia ini berhasil mendirikan Fakultas Teknik Universitas Udayana dengan dua Program Studi yaitu Program Studi Arsitektur dan Program Studi Seni Rupa. Sebagai Pimpinan pertama: Prof. Dr. Ida Bagus Mantra sebagai pejabat dekan dan Drs. Soedarminto sebagai sekretaris dekan. Dengan demikian, tahun 1965 Fakultas Teknik merupakan fakultas kelima di lingkungan Universitas Udayana, dan dengan Surat Keputusan Menteri PTIP Nomor 248 Tahun 1965 terhitung tanggal 1 Oktober 1965 secara resmi dan sah menjadi Fakultas Teknik Universitas Udayana. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 9
+1965, yang terdiri dari dua Program Studi yaitu Program Studi Arsitektur dan Program Studi Seni Rupa. Sebagai latar belakang pendirian Fakultas Teknik Universitas Udayana, adalah dalam rangka pelestarian, pengembangan kebudayaan Daerah Bali pada khususnya dan kebudayaan nasional pada umumnya, terutama di dalam menghadapi pembangunan dan perkembangan kepariwisataan. Secara fisik perkembangan itu banyak menyangkut bidang-bidang kearsitekturan dan kesenirupaan, yaitu suatu potensi yang mempunyai nilai tersendiri di dalam kehidupan kebudayaan Bali, selain untuk menampung aspirasi masyarakat khususnya calon-calon mahasiswa dari Bali yang ingin melanjutkan pendidikan seni dan teknologi pada jenjang pendidikan tinggi. Untuk maksud tersebut budayawan di Bali khususnya di kalangan Universitas Udayana merintis jalan untuk mendirikan pendidikan tinggi yang relevan yaitu pendidikan tinggi bidang arsitektur dan seni rupa. Maka pada tahun 1965, dibentuklah panitia yang disebut Panitia Persiapan Fakultas Teknik Universitas Udayana dengan susunan sebagai berikut: Ketua (merangkap anggota): Prof. Dr. Ida Bagus Mantra (Rektor Universitas Udayana) Sekretaris (merangkap anggota): Drs. Soedarminto (Dosen Fakultas Kedokteran Universitas Udayana) Anggota: Ir. I Gusti Ngurah Jelantik dr. R. Moerdowo (Dosen Fakultas Kedokteran Universitas Udayana) Panitia ini berhasil mendirikan Fakultas Teknik Universitas Udayana dengan dua Program Studi yaitu Program Studi Arsitektur dan Program Studi Seni Rupa. Sebagai Pimpinan pertama: Prof. Dr. Ida Bagus Mantra sebagai pejabat dekan dan Drs. Soedarminto sebagai sekretaris dekan. Dengan demikian, tahun 1965 Fakultas Teknik merupakan fakultas kelima di lingkungan Universitas Udayana, dan dengan Surat Keputusan Menteri PTIP Nomor 248 Tahun 1965 terhitung tanggal 1 Oktober 1965 secara resmi dan sah menjadi Fakultas Teknik Universitas Udayana.
 
 # Halaman 34
 
@@ -579,7 +581,7 @@ baru pada semester ganjil tahun ajaran 2015/2016. Pada tahun 2014, Fakultas Tekn
 11. Program Studi Magister Teknik Mesin (Jenjang pendidikan S2)
 12. Program Studi Doktor Ilmu Teknik (Jenjang pendidikan S3)
 13. Program Studi Pendidikan Profesi Arsitek (Jenjang Profesi)
-Program-program studi tersebut telah diakreditasi oleh BAN-PT, LAM Teknik dan LAM INFOKOM dengan rincian peringkat, nomor SK dan rentang waktu akreditasi dicantumkan pada Tabel 2.1. Selain itu, Program Studi Sarjana Teknik Mesin juga telah dinilai dan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 11
+Program-program studi tersebut telah diakreditasi oleh BAN-PT, LAM Teknik dan LAM INFOKOM dengan rincian peringkat, nomor SK dan rentang waktu akreditasi dicantumkan pada Tabel 2.1. Selain itu, Program Studi Sarjana Teknik Mesin juga telah dinilai dan
 
 # Halaman 36
 
@@ -677,7 +679,7 @@ Mahasiswa yang terdaftar dan aktif pada Program Sarjana Fakultas Teknik hingga S
 C. Jumlah Lulusan Program Sarjana
 Dalam melaksanakan kegiatan pendidikan sejak sejak tahun 1987 hingga Yudisium periode September tahun 2024, Program Sarjana di lingkungan Fakultas Teknik telah berhasil meluluskan mahasiswa sebanyak 13.777 orang, dimana jumlah lulusan tiap Prodi Sarjana dalam rentang waktu 5 tahun terakhir dapat dilihat pada Gambar 2.2.
 D. Jumlah Tenaga Akademik dan Kualifikasi Pendidikannya
-Untuk melaksanakan Tri Dharma Perguruan Tinggi, Fakultas Teknik memiliki Tenaga Akademik (Dosen) yang merupakan kelompok pendidik profesional dan ilmuwan yang bertugas mengembangkan dan menyebarluaskan ilmu pengetahuan dan teknologi melalui pendidikan, penelitian, dan pengabdian kepada masyarakat. Rekapitulasi jumlah Tenaga Akademik (dosen) di Fakultas Teknik yang tersebar di masing-masing prodi berdasarkan jabatan fungsional dan jenjang pendidikan dapat dilihat pada Tabel 2.3. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 13
+Untuk melaksanakan Tri Dharma Perguruan Tinggi, Fakultas Teknik memiliki Tenaga Akademik (Dosen) yang merupakan kelompok pendidik profesional dan ilmuwan yang bertugas mengembangkan dan menyebarluaskan ilmu pengetahuan dan teknologi melalui pendidikan, penelitian, dan pengabdian kepada masyarakat. Rekapitulasi jumlah Tenaga Akademik (dosen) di Fakultas Teknik yang tersebar di masing-masing prodi berdasarkan jabatan fungsional dan jenjang pendidikan dapat dilihat pada Tabel 2.3.
 
 # Halaman 38
 
@@ -849,7 +851,7 @@ dan alumni di lingkungan fakultas.
 D. Program Studi merupakan kesatuan kegiatan pendidikan dan pembelajaran yang
 memiliki kurikulum dan metode pembelajaran tertentu dalam satu jenis pendidikan akademik, pendidikan profesi, dan/atau pendidikan vokasi. Program studi dipimpin oleh Koordinator Program Studi (Koprodi) yang ditunjuk oleh Rektor. Koprodi bertugas memimpin pelaksanaan kegiatan Tri Dharma Peguruan Tinggi pada tingkat Program Studi sesuai dengan visi dan misi Fakultas. Struktur organisasi pada tingkat Program Studi dapat dilihat pada Gambar 2.4, beserta penjelasan fungsi tiap unsur dibawah organisasi tersebut.
 E. Laboratorium/Bengkel/Studio merupakan perangkat penunjang pelaksanaan
-pendidikan di lingkungan fakultas, yang dipimpin oleh seorang tenaga fungsional yang keahliannya telah memenuhi persyaratan sesuai dengan cabang ilmu pengetahuan dan teknologi, yang mempunyai tugas melakukan kegiatan dalam cabang ilmu pengetahuan dan teknologi sebagai penunjang pelaksanaan tugas pendidikan, penelitian, dan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 17
+pendidikan di lingkungan fakultas, yang dipimpin oleh seorang tenaga fungsional yang keahliannya telah memenuhi persyaratan sesuai dengan cabang ilmu pengetahuan dan teknologi, yang mempunyai tugas melakukan kegiatan dalam cabang ilmu pengetahuan dan teknologi sebagai penunjang pelaksanaan tugas pendidikan, penelitian, dan
 
 # Halaman 42
 
@@ -898,7 +900,7 @@ memiliki tugas sebagai berikut:
 1. Memimpin pelaksanaan kegiatan Dharma Peguruan Tinggi pada tingkat Program
 Studi sesuai dengan visi dan misi Fakultas.
 2. Merencanakan, melaksanakan, mengontrol, mengevaluasi, mendokumentasikan dan
-mengembangkan sumberdaya pendidikan di Program Studi dan kebijakan Senat Fakultas. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 19
+mengembangkan sumberdaya pendidikan di Program Studi dan kebijakan Senat Fakultas.
 
 # Halaman 44
 
@@ -956,7 +958,7 @@ Pelaksanaan Tri Dharma Perguruan Tinggi yang kedua adalah bidang penelitian. Pro
 1. Program Pembinaan, diarahkan untuk menghasilkan penelitian mandiri, publikasi
 bertaraf nasional maupun internasional, dan peningkatan budaya meneliti yang produktif. Program ini mencakup penelitian dosen muda, penelitian dasar, penelitian masalah lingkungan dan lain-lain.
 2. Program Penelitian Mandiri, lebih diarahkan untuk menciptakan inovasi dan
-pengembangan ipteks. Program ini mencakup penelitian hibah bersaing yang dilaksanakan secara kompetitif dan ditetapkan melalui Majelis Penelitian Perguruan Tinggi (MPPT). Kegiatan penelitian yang dilakukan oleh dosen maupun mahasiswa umumnya berupa penelitian berkelompok yang memerlukan pengumpulan data melalui survei. Penelitian yang dilakukan oleh mahasiswa secara mandiri masih berkaitan dengan tugas akhir mahasiswa dengan arahan dosen pembimbingnya. Prosedur dalam melaksanakan penelitian mengacu Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 21
+pengembangan ipteks. Program ini mencakup penelitian hibah bersaing yang dilaksanakan secara kompetitif dan ditetapkan melalui Majelis Penelitian Perguruan Tinggi (MPPT). Kegiatan penelitian yang dilakukan oleh dosen maupun mahasiswa umumnya berupa penelitian berkelompok yang memerlukan pengumpulan data melalui survei. Penelitian yang dilakukan oleh mahasiswa secara mandiri masih berkaitan dengan tugas akhir mahasiswa dengan arahan dosen pembimbingnya. Prosedur dalam melaksanakan penelitian mengacu
 
 # Halaman 46
 
@@ -996,7 +998,7 @@ Untuk melaksanakan praktikum, Program Studi Teknik Sipil, Teknik Mesin, dan Tekn
 7. Gedung Lab Teknik
 Gedung 4 lantai ini berisikan lab-lab prodi yang bernaung di Fakultas Teknik, termasuk ruang kuliah, ruang studio, ruang tugas akhir, lab computer, serta area praktek energi surya pada bagian atapnya.
 2.5.2 Kampus Denpasar
-Kampus Fakultas Teknik di Denpasar memiliki fasilitas berupa beberapa ruang administrasi dan ruang kuliah yang dimanfaatkan untuk menunjang kegiatan perkuliahan Program Pascasarjana. Gambar 2.5 dan Gambar 2.6 menunjukkan peta lokasi gedung- gedung Fakultas Teknik yang berada dalam lingkungan kompleks Universitas Udayana di Denpasar. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 23
+Kampus Fakultas Teknik di Denpasar memiliki fasilitas berupa beberapa ruang administrasi dan ruang kuliah yang dimanfaatkan untuk menunjang kegiatan perkuliahan Program Pascasarjana. Gambar 2.5 dan Gambar 2.6 menunjukkan peta lokasi gedung- gedung Fakultas Teknik yang berada dalam lingkungan kompleks Universitas Udayana di Denpasar.
 
 # Halaman 48
 
@@ -1010,7 +1012,7 @@ Gambar 2.5 Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jim
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 49 | type: text -->
 
 BAGIAN 2. GAMBARAN UMUM
-Gambar 2.6 Legend Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jimbaran Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 25
+Gambar 2.6 Legend Lokasi Fakultas Teknik di Kampus Universitas Udayana di Bukit – Jimbaran
 
 # Halaman 50
 
@@ -1030,6 +1032,8 @@ Gambar 2.7 Lokasi Fakultas Teknik di Kampus Universitas Udayana Jl. P.B. Sudirma
 # Halaman 51
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 51 | type: text -->
+
+SISTEM PENDIDIKAN
 
 # Halaman 52
 
@@ -1051,7 +1055,7 @@ Nilai 1 (satu) sks pada bentuk pembelajaran kuliah, responsi dan tutorial, menca
 B. Pembelajaran Seminar atau bentuk pembelajaran lain yang sejenis
 Nilai 1 (satu) sks pada bentuk pembelajaran seminar atau bentuk pembelajaran lain yang sejenis, mencakup: a) kegiatan belajar tatap muka 100 (seratus) menit per minggu; dan b) kegiatan belajar mandiri 70 (tujuh puluh) menit per minggu.
 C. Pembelajaran Praktikum di Laboratorium, Praktik Studio, Praktik Bengkel, Praktik
-Lapangan, Penelitian, Pengabdian Kepada Masyarakat, dan pembelajaran lain yang setara Nilai 1 (satu) sks pada bentuk pembelajaran praktikum, praktik studio, praktik bengkel, praktik lapangan, penelitian, pengabdian kepada masyarakat, dan/atau bentuk pembelajaran lain yang setara, adalah 170 (seratus tujuh puluh) menit per minggu. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 29
+Lapangan, Penelitian, Pengabdian Kepada Masyarakat, dan pembelajaran lain yang setara Nilai 1 (satu) sks pada bentuk pembelajaran praktikum, praktik studio, praktik bengkel, praktik lapangan, penelitian, pengabdian kepada masyarakat, dan/atau bentuk pembelajaran lain yang setara, adalah 170 (seratus tujuh puluh) menit per minggu.
 
 # Halaman 54
 
@@ -1115,7 +1119,7 @@ rendah lektor; dan
 6. Mendapat persetujuan dan kesanggupan pembiayaan pendidikan dari orang tua/wali
 dan/atau pihak lain. Seleksi mahasiswa yang mendaftar Program Percepatan adalah
 1. Seleksi Program Percepatan dilaksanakan pada masing-masing fakultas penyelenggara
-sesuai jadwal yang telah ditetapkan. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 31
+sesuai jadwal yang telah ditetapkan.
 
 # Halaman 56
 
@@ -1186,7 +1190,7 @@ adalah membimbing mahasiswa dalam pelaksanaan praktik kerja dan program MBKM.
 peraturan rektor dan buku panduan.
 3.2.3 Pembimbing Pembuatan Tugas Akhir atau Skripsi
 1. Setiap dosen dengan jabatan fungsional minimal Asisiten Ahli dan pendidikan minimal S2
-berhak sebagai pembimbing Skripsi atau Tugas Akhir, sesuai yang diatur dalam Peraturan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Republik Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 33
+berhak sebagai pembimbing Skripsi atau Tugas Akhir, sesuai yang diatur dalam Peraturan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Republik
 
 # Halaman 58
 
@@ -1226,7 +1230,7 @@ semester genap didasarkan atas Indek Prestasi Semester (IPS) semester sebelumnya
 5. Pelaksanaan proses pembelajaran dilakukan dengan pendekatan Outcome Based
 Education (OBE).
 6. Pelaksanaan proses pembelajaran dilakukan berbasis teknologi informasi dan
-komunikasi dengan modus ganda (blended learning). Berbasis teknologi informasi dan komunikasi adalah penggunaan teknologi informasi komunikasi untuk memfasilitasi komunikasi dan interaksi pembelajaran, sedangkan modus ganda (blended learning) adalah penyelenggaraan pendidikan pada program studi secara tatap muka dan daring (online). Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 35
+komunikasi dengan modus ganda (blended learning). Berbasis teknologi informasi dan komunikasi adalah penggunaan teknologi informasi komunikasi untuk memfasilitasi komunikasi dan interaksi pembelajaran, sedangkan modus ganda (blended learning) adalah penyelenggaraan pendidikan pada program studi secara tatap muka dan daring (online).
 
 # Halaman 60
 
@@ -1262,7 +1266,7 @@ Ukuran keberhasilan mahasiswa selama masa studi dinyatakan dengan Indeks Prestas
 3.7.1 Batas Beban Studi
 Beban studi minimal per semester adalah 12 (dua belas) sks dan beban studi maksimal per semester adalah 24 (dua puluh empat) sks. Sedangkan beban studi yang wajar adalah 16 (enam belas) – 20 (dua puluh) sks, kecuali bagi mahasiswa yang menyisakan sks dibawah 12 sks.
 3.7.2 Pengambilan Beban Kredit
-Pada Semester I mahasiswa baru wajib mengambil sistem paket beban studi sesuai kurikulum Program Studi masing-masing. Pada semester selanjutnya beban studi yang boleh diambil mahasiswa ditetapkan berdasarkan Indeks Prestasi Semester (IPS) yang dicapai pada semester sebelumnya dengan ketentuan seperti pada Tabel 3.1. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 37
+Pada Semester I mahasiswa baru wajib mengambil sistem paket beban studi sesuai kurikulum Program Studi masing-masing. Pada semester selanjutnya beban studi yang boleh diambil mahasiswa ditetapkan berdasarkan Indeks Prestasi Semester (IPS) yang dicapai pada semester sebelumnya dengan ketentuan seperti pada Tabel 3.1.
 
 # Halaman 62
 
@@ -1311,7 +1315,7 @@ yang dilakukan secara terintegrasi, dengan ketentuan sebagai berikut. a. Prinsip
 2. Teknik dan instrumental penilaian terdiri atas observasi, partisipasi, unjuk kerja, tes
 tertulis, tes lisan, dan angket, dengan ketentuan sebagai berikut. a. Instrumen penilaian terdiri atas penilaian proses, dalam bentuk rubrik dan/atau penilaian hasil dalam bentuk portofolio atau karya desain b. Penilaian sikap dapat menggunakan teknik penilaian observasi. c. Penilaian penguasaan pengetahuan, keterampilan umum, dan keterampilan khusus dilakukan dengan memilih satu atau kombinasi dari berbagi teknik dan instrumen penilaian. d. Penilaian proses belajar memiliki bobot lebih besar atau sama dengan 60% dan penilaian hasil belajar memiliki bobot lebih kecil atau sama dengan 40%. e. Penilaian sikap memiliki bobot antara 25-40% dari keseluruhan ranah: pengetahuan, keterampilan dan sikap. f. Hasil akhir penilaian merupakan integrasi antara berbagai teknik dan instrumen penilaian yang digunakan.
 3. Mekanisme penilaian terdiri atas:
-a. menyusun, menyampaikan, menyepakati tahap, teknik, instrumen, kriteria, indikator, dan bobot penilaian antara penilai dan yang dinilai sesuai dengan rencana pembelajaran; b. melaksanakan proses penilaian sesuai dengan tahap, teknik, instrumen, kriteria, indikator, dan bobot penilaian yang memuat prinsip penilaian; c. memberikan umpan balik dan kesempatan untuk mempertanyakan hasil penilaian kepada mahasiswa; dan d. mendokumentasikan penilaian proses dan hasil belajar mahasiswa secara akuntabel dan transparan. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 39
+a. menyusun, menyampaikan, menyepakati tahap, teknik, instrumen, kriteria, indikator, dan bobot penilaian antara penilai dan yang dinilai sesuai dengan rencana pembelajaran; b. melaksanakan proses penilaian sesuai dengan tahap, teknik, instrumen, kriteria, indikator, dan bobot penilaian yang memuat prinsip penilaian; c. memberikan umpan balik dan kesempatan untuk mempertanyakan hasil penilaian kepada mahasiswa; dan d. mendokumentasikan penilaian proses dan hasil belajar mahasiswa secara akuntabel dan transparan.
 
 # Halaman 64
 
@@ -1361,7 +1365,7 @@ Kelulusan mahasiswa mengikuti ketentuan sebagai berikut.
 1. Mahasiswa program sarjana dinyatakan lulus apabila telah menempuh seluruh beban
 belajar yang ditetapkan dan memiliki capaian pembelajaran lulusan yang ditargetkan oleh program studi dengan indeks prestasi kumulatif (IPK) lebih besar atau sama dengan 2,75 (dua koma tujuh lima).
 2. Kelulusan mahasiswa program sarjana dinyatakan dengan predikat cukup, memuaskan,
-sangat memuaskan atau dengan pujian dengan kriteria: a. Mahasiswa dinyatakan lulus dengan predikat cukup apabila mencapai IPK minimal 2,75 (dua koma tujuh lima) dengan Lama studi maksimum 7 tahun dan Minimal nilai adalah C. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 41
+sangat memuaskan atau dengan pujian dengan kriteria: a. Mahasiswa dinyatakan lulus dengan predikat cukup apabila mencapai IPK minimal 2,75 (dua koma tujuh lima) dengan Lama studi maksimum 7 tahun dan Minimal nilai adalah C.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 65 | type: table | table_index: 1 -->
 
@@ -1426,7 +1430,7 @@ diberikan peringatan berupa : mengisi surat pernyataan bermeterai bersedia menye
 1. Mahasiswa dapat dinyatakan lulus program, apabila yang bersangkutan telah lulus
 semua mata kuliah dan ujian akhir program dengan IPK minimal 2,75 dan nilai minimal C untuk jenjang sarjana.
 2. Mahasiswa putus studi dan sanksi
-a. Mahasiswa yang dinyatakan gagal studi tergolong kelompok mahasiswa putus studi (drop out). b. Mahasiswa yang 2 (dua) semester berturut-turut tidak mendaftarkan diri tanpa cuti akademik, dianggap mengundurkan diri. Kecuali dalam keadaan force majeure harus ada surat keterangan dari yang berwenang. c. Mahasiswa yang tidak mempunyai nilai selama dua semester tanpa sepengetahuan Dekan, dianggap mengundurkan diri atau putus studi kecuali sedang menyelesaikan tugas akhir/Skripsi. d. Mahasiswa yang mendapatkan peringatan 2 (dua) kali berturut-turut dari hasil evaluasi tahap I s.d IV dianggap gagal studi pada program studi tersebut. e. Mahasiswa yang melakukan tindakan yang tercela terlibat NAPZA (Narkotika, Alkohol, Psikotropika dan Zat Adiktif), melakukan pelecehan seksual (Pertor Unud nomor 12 tahun 2021), mencemarkan nama baik almamater dan terbukti secara sah melakukan tindakan kejahatan dikenakan sanksi sesuai Peraturan Rektor Nomor 16 Tahun 2021 tentang Kode Etik Mahasiswa. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 43
+a. Mahasiswa yang dinyatakan gagal studi tergolong kelompok mahasiswa putus studi (drop out). b. Mahasiswa yang 2 (dua) semester berturut-turut tidak mendaftarkan diri tanpa cuti akademik, dianggap mengundurkan diri. Kecuali dalam keadaan force majeure harus ada surat keterangan dari yang berwenang. c. Mahasiswa yang tidak mempunyai nilai selama dua semester tanpa sepengetahuan Dekan, dianggap mengundurkan diri atau putus studi kecuali sedang menyelesaikan tugas akhir/Skripsi. d. Mahasiswa yang mendapatkan peringatan 2 (dua) kali berturut-turut dari hasil evaluasi tahap I s.d IV dianggap gagal studi pada program studi tersebut. e. Mahasiswa yang melakukan tindakan yang tercela terlibat NAPZA (Narkotika, Alkohol, Psikotropika dan Zat Adiktif), melakukan pelecehan seksual (Pertor Unud nomor 12 tahun 2021), mencemarkan nama baik almamater dan terbukti secara sah melakukan tindakan kejahatan dikenakan sanksi sesuai Peraturan Rektor Nomor 16 Tahun 2021 tentang Kode Etik Mahasiswa.
 
 # Halaman 68
 
@@ -1436,7 +1440,7 @@ a. Mahasiswa yang dinyatakan gagal studi tergolong kelompok mahasiswa putus stud
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 69 | type: text -->
 
-ADMINISTRASI AKADEMIK Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 45
+ADMINISTRASI AKADEMIK
 
 # Halaman 70
 
@@ -1457,7 +1461,7 @@ persyaratan program studi yang dipilih di Universitas Udayana.
 2. Warga Negara Asing wajib memperoleh ijin belajar dari Menteri Pendidikan,
 Kebudayaan, Riset, dan Teknologi Republik Indonesia serta mampu berbahasa Indonesia yang baik dan benar Penerimaan mahasiswa baru Program Sarjana dilakukan melalui Seleksi Nasional Berdasarkan Prestasi (SNBP) , Seleksi Nasional Berdasarkan Tes (SNBT), dan Jalur Mandiri. Syarat dan prosedur seleksi mengikuti aturan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi dan atau Universitas Udayana. Pendaftaran kembali bagi calon mahasiswa yang dinyatakan lulus seleksi dilakukan secara terpusat di Universitas Udayana. Selanjutnya mahasiswa baru diserahkan oleh Rektor ke Dekan Fakultas Teknik untuk selanjutnya diserahkan ke masing-masing Program Studi di lingkungan Fakultas Teknik.
 B. Program Internasional (Sarjana)
-Penerimaan Mahasiswa Baru untuk warga negara asing dapat dilakukan melalui kerjasama antara Universitas Udayana dengan universitas diluar negeri (home university) berdasarkan nota kesepahaman (MoU) yang telah disepakati oleh kedua belah pihak. Hal ini diatur dalam Keputusan Rektor Universitas Udayana Nomor 38/UN14/HK/2022 Tentang Prosedur Operasional Baku Penerimaan Mahasiswa Baru Warga Negara Asing Universitas Udayana. Tahapan pelaksanaan seleksi penerimaan mahasiswa baru WNA untuk jalur sarjana diawali dengan proses pendaftaran, ujian seleksi dan penentuan kelulusan. Pelaksanaan seleksi mahasiswa baru bagi WNA dilaksanakan oleh Panitia Pelaksana Seleksi Mahasiswa Baru yang ditetapkan oleh Rektor Universitas Udayana. Registrasi Pendaftaran online dilakukan dengan mengisi Formulir Registrasi Pendaftaran secara online melalui laman https://e-registrasi.unud.ac.id. Registrasi Pendaftaran online dilakukan untuk mendapatkan Nomor Peserta yang digunakan untuk mengikuti seleksi Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 47
+Penerimaan Mahasiswa Baru untuk warga negara asing dapat dilakukan melalui kerjasama antara Universitas Udayana dengan universitas diluar negeri (home university) berdasarkan nota kesepahaman (MoU) yang telah disepakati oleh kedua belah pihak. Hal ini diatur dalam Keputusan Rektor Universitas Udayana Nomor 38/UN14/HK/2022 Tentang Prosedur Operasional Baku Penerimaan Mahasiswa Baru Warga Negara Asing Universitas Udayana. Tahapan pelaksanaan seleksi penerimaan mahasiswa baru WNA untuk jalur sarjana diawali dengan proses pendaftaran, ujian seleksi dan penentuan kelulusan. Pelaksanaan seleksi mahasiswa baru bagi WNA dilaksanakan oleh Panitia Pelaksana Seleksi Mahasiswa Baru yang ditetapkan oleh Rektor Universitas Udayana. Registrasi Pendaftaran online dilakukan dengan mengisi Formulir Registrasi Pendaftaran secara online melalui laman https://e-registrasi.unud.ac.id. Registrasi Pendaftaran online dilakukan untuk mendapatkan Nomor Peserta yang digunakan untuk mengikuti seleksi
 
 # Halaman 72
 
@@ -1532,6 +1536,7 @@ laman https://simak-ng.unud.ac.id
 6. Mahasiswa mendatangi Fakultas untuk membawa form pengajuan cuti asli yang
 kemudian akan diproses oleh operator akademik fakultas untuk diajukan ke Rektor.
 7. Rektor menetapkan menerima/menolak permohonan cuti mahasiswa berdasarkan usulan
+dari Dekan.
 
 # Halaman 74
 
@@ -1603,7 +1608,7 @@ studinya.
 3. Calon wisudawan dapat mengikuti Pelepasan Sarjana dan Wisuda, apabila telah
 memenuhi semua persyaratan akademik dan administrasi yang telah ditetapkan oleh program studi, fakultas, dan universitas.
 4. Syarat-syarat dan batas waktu pendaftaran Pelepasan Sarjana dan Wisuda diumumkan
-melalui program studi, fakultas, dan universitas, sesuai dengan kalender akademik tahun berjalan. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 51
+melalui program studi, fakultas, dan universitas, sesuai dengan kalender akademik tahun berjalan.
 
 # Halaman 76
 
@@ -1670,6 +1675,7 @@ sesuai dengan ketentuan yang berlaku di Universitas Udayana
 11. Daya tampung Program Studi masih memungkinkan dan pertimbangan yang
 dinyatakan secara tertulis oleh Dekan Fakultas yang dituju.
 12. Persyaratan prosedur dan ketentuan lain dari butir (a-d) ditetapkan dengan
+Keputusan Rektor.
 
 # Halaman 78
 
@@ -1785,7 +1791,7 @@ a. Menginputkan absensi mahasiswa di https://simak-ng.unud.ac.id sesuai dengan f
 4.6.8 Tata Tertib Perkuliahan Daring
 Selain perkuliahan secara luring, dosen juga bisa melaksanakan proses belajar dan mengajar secara daring, sesuai dengan peraturan yang berlaku, atas seijin Dekan melalui pengajuan dari Program Studi.
 1. Dosen:
-a. Melaksanakan proses belajar mengajar termasuk melaksanakan assessment melalui OASE atau Learning Management System (LMS) lainnya, video conference system, aplikasi chat, email, cloud storage, atau media teknologi informasi dan komunikasi lainnya yang sudah disepakati terlebih dahulu dengan mahasiswa. b. Melaksanakan absensi untuk kegiatan tatap muka sinkron maya menggunakan teknologi informasi dan komunikasi yang memungkinkan, tidak terbatas melalui pencatatan di google form, Microsoft excel, maupun aktivitas di Learning Management System (LMS). Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 57
+a. Melaksanakan proses belajar mengajar termasuk melaksanakan assessment melalui OASE atau Learning Management System (LMS) lainnya, video conference system, aplikasi chat, email, cloud storage, atau media teknologi informasi dan komunikasi lainnya yang sudah disepakati terlebih dahulu dengan mahasiswa. b. Melaksanakan absensi untuk kegiatan tatap muka sinkron maya menggunakan teknologi informasi dan komunikasi yang memungkinkan, tidak terbatas melalui pencatatan di google form, Microsoft excel, maupun aktivitas di Learning Management System (LMS).
 
 # Halaman 82
 
@@ -1858,7 +1864,7 @@ dan menanda tangani berita acara disertai nama terang
 12. Selama Ujian berlangsung Pengawas dilarang:
 a. Meninggalkan Ruangan kecuali jika ada sesuatu hal yang penting dengan seijin Koordinator Program Studi dan tidak meninggalkan tanggung jawab. b. Merokok dan bercakap-cakap yang dapat mengganggu ketenangan para Peserta Ujian. c. Dilarang membantu dan atau memberitahu tentang Jawaban Soal Ujian kepada Peserta Ujian.
 13. Pengawas menginformasikan sisa waktu menjelang berakhirnya Waktu Ujian dan
-selanjutnya mengumpulkan lembar Hasil Ujian sesuai dengan Daftar Peserta Ujian kemudian diserahkan kepada bagian akademik. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 59
+selanjutnya mengumpulkan lembar Hasil Ujian sesuai dengan Daftar Peserta Ujian kemudian diserahkan kepada bagian akademik.
 
 # Halaman 84
 
@@ -1937,7 +1943,7 @@ diberhentikan dengan tidak hormat, sesuai dengan tindakan/tingkat kejahatan yang
 1. Tenaga Pendidik dan Kependidikan yang melakukan pelanggaran terhadap tata tertib
 seperti tercantum pada bagian 4.7.3 butir (1), bagian 4.7.7 butir (1) dan/atau bagian
 4.7.10 butir (12) diberikan sanksi sesuai dengan peraturan yang mengatur etika sebagai
-Pegawai Negeri Sipil Republik Indonesia dan atau ketentuan lain yang berlaku. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 61
+Pegawai Negeri Sipil Republik Indonesia dan atau ketentuan lain yang berlaku.
 
 # Halaman 86
 
@@ -1953,6 +1959,8 @@ Hal lainnya yang belum diatur dalam pedoman akademik ini dapat diatur kemudian o
 # Halaman 87
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 87 | type: text -->
+
+KEMAHASISWAAN
 
 # Halaman 88
 
@@ -1970,7 +1978,7 @@ Bentuk dan badan kelengkapan organisasi kemahasiswaan intra perguruan tinggi dit
 1. Bentuk dan Struktur Organisasi Kemahasiswaan di Fakultas Teknik, yaitu :
 a. Organisasi kemahasiswaan di Fakultas Teknik Universitas Udayana meliputi : 1) Dewan Pertimbangan Mahasiswa Fakultas Teknik (DPMFT) 2) Badan Eksekutif Mahasiswa Fakultas Teknik (BEMFT) 3) Himpunan Mahasiswa Program Studi (HMPS), dan 4) Badan Semi Otonom (BSO) atau Kelompok Studi. b. Di tingkat program studi terdapat beberapa Himpunan Mahasiswa Program Studi (HMPS) yang meliputi: 1) Himpunan Mahasiswa Arsitektur (HMA) 2) Himpunan Mahasiswa Sipil (HMS) 3) Himpunan Mahasiswa Elektro (HME) 4) Himpunan Mahasiswa Mesin (HMM) 5) Himpunan Mahasiswa Teknologi Informasi (HMTI) 6) Himpunan Mahasiswa Teknik Industri (HMTekIn) 7) Himpunan Mahasiswa Teknik Lingkungan (HMTL) c. Pengurus organisasi kemahasiswaan di Fakultas Teknik seperti disebut diatas dipimpin oleh seorang Ketua yang bertanggung jawab kepada pimpinan satuan penyelenggara pendidikan yang membawahinya.
 2. Kedudukan organisasi kemahasiswaan seperti DPMFT, BEMFT, HMPS, dan Kelompok
-Studi seluruhnya merupakan kelengkapan non struktural. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 65
+Studi seluruhnya merupakan kelengkapan non struktural.
 
 # Halaman 90
 
@@ -2026,7 +2034,7 @@ Tujuan dilaksanakannya kegiatan PKKMB adalah sebagai suatu upaya dalam memperken
 2. Pengenalan nilai budaya, tata krama dan etika keilmuan
 3. Pengenalan layanan mahasiswa
 4. Persiapan penyesuaian diri di perguruan tinggi
-Gambar 5.2 Kegiatan PKKMB Salah satu rangkaian kegiatan PKKMB adalah kegiatan pada tingkat fakultas. Kegiatan ini merupakan kegiatan non-akademik yang bertujuan untuk mengembangkan soft- skill, pola pikir ilmiah mahasiswa yang dilandasi etika dan moral sehingga menghasilkan insan yang unggul, mandiri dan berbudaya dalam penalaran, kreatif dan mempunyai ide yang inovatif sehingga menghasilkan lulusan yang prestatif yang unggul dalam persaingan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 67
+Gambar 5.2 Kegiatan PKKMB Salah satu rangkaian kegiatan PKKMB adalah kegiatan pada tingkat fakultas. Kegiatan ini merupakan kegiatan non-akademik yang bertujuan untuk mengembangkan soft- skill, pola pikir ilmiah mahasiswa yang dilandasi etika dan moral sehingga menghasilkan insan yang unggul, mandiri dan berbudaya dalam penalaran, kreatif dan mempunyai ide yang inovatif sehingga menghasilkan lulusan yang prestatif yang unggul dalam persaingan
 
 # Halaman 92
 
@@ -2094,7 +2102,7 @@ Jegeg Bagus Teknik merupakan suatu ajang untuk menemukan talenta-talenta yang ad
 5.2.8 Teknik Back to Nature (TBTN)
 Teknik Back to Nature merupakan kegiatan untuk menumbuh kembangkan kecintaan dan kepedulian mahasiswa terhadap alam lingkungan sekaligus untuk memupuk rasa kekeluargaan antar civitas akademika Fakultas Teknik. Aktifitas yang dilaksanakan dalam TBTN ini berupa kegiatan pengabdian kepada masyarakat. Gambar 5.10 Kegiatan TBTN merupakan salah satu kegiatan Pengabdian pada Masyarakat
 5.2.9 Tekno Futsal Tournament (TFT)
-Tekno Futsal Tournament atau biasa disebut TFT merupakan turnamen futsal bergengsi yang digelar oleh Fakultas Teknik Universitas Udayana. TFT merupakan turnamen yang merupakan ajang pertandingan futsal yang pesertanya merupakan pemain non professional se-Bali untuk tiga kategori, yaitu Kategori Tingkat SMA/SMK sederajat, Kategori Tingkat Mahasiswa, dan Kategori Umum. Babak penyisihan umumnya Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 71
+Tekno Futsal Tournament atau biasa disebut TFT merupakan turnamen futsal bergengsi yang digelar oleh Fakultas Teknik Universitas Udayana. TFT merupakan turnamen yang merupakan ajang pertandingan futsal yang pesertanya merupakan pemain non professional se-Bali untuk tiga kategori, yaitu Kategori Tingkat SMA/SMK sederajat, Kategori Tingkat Mahasiswa, dan Kategori Umum. Babak penyisihan umumnya
 
 # Halaman 96
 
@@ -2120,7 +2128,7 @@ Kelompok Studi Roket adalah program perancangan roket bagi mahasiswa yang dihara
 5.2.14 Kelompok Studi Udayana Rekayasa Sipil (UREKA Sipil)
 Kelompok Studi Udayana Rekayasa Sipil (Ureka Sipil) merupakan organisasi yang bertujuan sebagai ajang pembinaan Mahasiswa Program Studi Teknik Sipil dalam meningkatkan kualitas sebagai mahasiswa. Gambar 5.16 Kegiatan Kelompok UREKA
 5.2.15 Technology Artisan (TecArt)
-Technology Artisan merupakan kelompok studi yang dibentuk di lingkungan Program studi Teknologi Informasi, Fakultas Teknik, Universitas Udayana. Technology Artisan dibentuk sebagai wadah bagi civitas akademika Teknologi Informasi, Fakultas Teknik, Universitas Udayana untuk menumbuhkan minat dan mengembangkan bakat di bidang teknologi informasi, bisnis, dan pemasaran. Selain itu mahasiswa dapat lebih meng-explorasi diri dan berkarya untuk menciptakan ide-ide dan inovasi baru terkait dengan perkembangan teknologi informasi yang begitu pesat. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 73
+Technology Artisan merupakan kelompok studi yang dibentuk di lingkungan Program studi Teknologi Informasi, Fakultas Teknik, Universitas Udayana. Technology Artisan dibentuk sebagai wadah bagi civitas akademika Teknologi Informasi, Fakultas Teknik, Universitas Udayana untuk menumbuhkan minat dan mengembangkan bakat di bidang teknologi informasi, bisnis, dan pemasaran. Selain itu mahasiswa dapat lebih meng-explorasi diri dan berkarya untuk menciptakan ide-ide dan inovasi baru terkait dengan perkembangan teknologi informasi yang begitu pesat.
 
 # Halaman 98
 
@@ -2154,7 +2162,7 @@ dapat mengajukan beasiswa adalah minimal 25 poin SKP
 bakat 5-50%, kepanitiaan 15-60%, organisasi 5-50%, pengabdian pada masyarakat 5- 50%, dan partisipan 5-50%. Pencatatan poin SKP yang diperoleh mahasiswa diunggah oleh mahasiswa setiap semester pada sistem SiSakti di Imissu mahasiswa. Pelaporan SKP dilakukan oleh mahasiswa kepada Wakil Dekan Bidang Kamahasiswaan dan Informasi di lingkungan Universitas Udayana, bila yang bersangkutan akan mengikuti wisuda atau mengajukan lamaran untuk memperoleh beasiswa. Mekanisme penerapan sistem Satuan Kredit Partisipasi (SKP) dirancang sebagai berikut:
 1. Mengacu pada buku pedoman SKP
 2. Seluruh SKP yang terkumpul, direkap dalam buku SKP dan dianggap sah apabila
-ditandatangani oleh ketua BEMFT dan Pembina Kemahasiswaan Fakultas Teknik Universitas Udayana. SKP diselesaikan dan ditanda-tangani paling lambat awal semester VII (tujuh) Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 75
+ditandatangani oleh ketua BEMFT dan Pembina Kemahasiswaan Fakultas Teknik Universitas Udayana. SKP diselesaikan dan ditanda-tangani paling lambat awal semester VII (tujuh)
 
 # Halaman 100
 
@@ -2197,7 +2205,7 @@ memiliki Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART), serta membuat Rencan
 4. Fakultas dapat memberikan dana untuk kegiatan mahasiswa yang telah tercantum
 dalam RKAT sesuai sifat dan sasaran kegiatan, dengan mempertimbangkan kemampuan keuangan yang ada.
 5. Kegiatan yang tidak tercantum dalam Pedoman Operasional Kegiatan (POK) tahun
-anggaran berjalan dan/atau tidak tercantum dalam RKAT tidak akan mendapat ijin kegiatan dan pendanaan, kecuali terdapat hal-hal yang mendesak dan dianggap penting oleh Dekan. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 77
+anggaran berjalan dan/atau tidak tercantum dalam RKAT tidak akan mendapat ijin kegiatan dan pendanaan, kecuali terdapat hal-hal yang mendesak dan dianggap penting oleh Dekan.
 
 # Halaman 102
 
@@ -2242,7 +2250,7 @@ keterwakilan mahasiswa; 2) terjadi konflik kepengurusan dan tidak melakukan keor
 4. Bagi mahasiswa yang terbukti melanggar tata tertib dan disiplin kampus, termasuk
 melakukan tindak pidana akan dikenakan sanksi akademis sesuai peraturan dan perundangan yang berlaku.
 5.8 Rekognisi Karya Prestasi Mahasiswa
-Berdasarkan keputusan Rektor Universitas Udayana Nomor 1331/UN14/HK/2021 tentang rekognisi karya prestasi mahasiswa ke dalam nilai akademik maka karya prestasi mahasiswa dapat dibagi menjadi beberapa kegiatan yaitu kegiatan kreativitas dan penalaran, kegiatan kewirausahaan, kegiatan karya inovatif, kegiatan perlombaan, karya prestasi mahasiswa dalam bentuk artikel ilmiah, dan karya cipta berupa paten (granted) dan paten sederhana (granted). Implementasi rekognisi karya prestasi mahasiswa di fakultas teknik dijabarkan dalam Buku Panduan Rekognisi Karya Prestasi Mahasiswa (RKPM) 2024 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 79
+Berdasarkan keputusan Rektor Universitas Udayana Nomor 1331/UN14/HK/2021 tentang rekognisi karya prestasi mahasiswa ke dalam nilai akademik maka karya prestasi mahasiswa dapat dibagi menjadi beberapa kegiatan yaitu kegiatan kreativitas dan penalaran, kegiatan kewirausahaan, kegiatan karya inovatif, kegiatan perlombaan, karya prestasi mahasiswa dalam bentuk artikel ilmiah, dan karya cipta berupa paten (granted) dan paten sederhana (granted). Implementasi rekognisi karya prestasi mahasiswa di fakultas teknik dijabarkan dalam Buku Panduan Rekognisi Karya Prestasi Mahasiswa (RKPM)
 
 # Halaman 104
 
@@ -2252,7 +2260,7 @@ Berdasarkan keputusan Rektor Universitas Udayana Nomor 1331/UN14/HK/2021 tentang
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 105 | type: text -->
 
-PROGRAM STUDI ARSITEKTUR Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 81
+PROGRAM STUDI ARSITEKTUR
 
 # Halaman 106
 
@@ -2277,7 +2285,7 @@ roadmap penelitian program studi, dan mengembangkan penelitian pada permasalahan
 4. Menjadikan Program Studi Arsitektur sebagai sumber informasi dan pengetahuan
 arsitektur etnik dengan mengembangkan penelitian arsitektur vernakular yang tersebar di seluruh nusantara dan melakukan diseminasi hasil penelitian melalui berbagai seminar, publikasi dan diskusi ilmiah yang bertemakan arsitektur dan lingkungan terbangun nusantara.
 5. Meningkatkan kegiatan pengabdian kepada masyarakat dengan ikut serta dalam
-berbagai kegiatan memberi bantuan usulan design tempat pemujaan, rencana Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 83
+berbagai kegiatan memberi bantuan usulan design tempat pemujaan, rencana
 
 # Halaman 108
 
@@ -2313,7 +2321,7 @@ kemampuan kerja lulusan sarjana ada pada Level 6: “Mengaplikasikan, mengkaji, 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 109 | type: text -->
 
 BAGIAN 6. PROGRAM STUDI ARSITEKTUR
-sebagai asosiasi profesi, dan beberapa stakeholders yang lain. Pengguna potensial memberikan sinyal pada jawaban bahwa lulusan PSA Unud sebagian besar ketika berprofesi mengambil peran sebagai praktisi arsitektur, selain juga peran-peran lain yang masih terkait dengan bidang ilmu arsitektur, seperti developer, kontraktor bangunan/builder, pengelola proyek, akademisi dan peneliti arsitektur. Beberapa peran lain di luar praktisi terkait arsitektur diasumsikan tidak cukup signifikan sebagai market signal PSA Unud. Merujuk pada visi dan misi PSA Unud dan hasil tracer study tersebut dapatlah ditentukan profil lulusan PSA Unud. Sarjana arsitektur yang dihasilkan oleh PSA Unud adalah sarjana yang mampu merancang dan menguasai ilmu arsitektur secara umum. Dengan kata lain, secara profesional, profil lulusan PSA Unud dapat melakukan peran dalam masyarakat sebagai sarjana arsitektur yang mampu menyajikan gagasan arsitektural dan menguasai ilmu arsitektur secara umum dan mantap, sehingga nantinya dapat berkembang menjadi arsitek profesional setelah melalui Program Profesi Arsitektur, maupun berperan sebagai tenaga ahli (konsultan atau fasilitator). Sesuai dengan KKNI, profil lulusan ini berada pada Level 6. Maka, peran yang diharapkan dapat dilakukan oleh lulusan PSA Unud di masyarakat/dunia kerja menjadi profil lulusan/tujuan pendidikan yang akan dituju. PSA Unud dapat memberikan jaminan pada calon mahasiswanya bahwa mereka dapat berperan menjadi sarjana arsitektur setelah menjalani semua proses pembelajaran pada PSA Unud. Peran ini siap berkembang menjadi arsitek profesional setelah melalui Program Profesi Arsitektur, maupun peran lain dalam masyarakat karena lulusan PSA Unud telah memiliki kemampuan dasar merancang yang komprehensif dan mantap serta mampu merespons perkembangan ilmu pengetahuan, teknologi, kesenian, dan isu-isu terkait melalui pendekatan perancangan secara visioner; memiliki kemampuan berpikir secara sistematis dan struktural; serta memiliki kemampuan unggulan tambahan dalam kemampuan melestarikan dan mengembangkan nilai-nilai arsitektur etnik sebagai warna pendidikan di PSA Unud. Dengan demikian, penyelenggaraan pendidikan arsitektur jenjang sarjana di PSA Unud bertujuan untuk menghasilkan lulusan yang menguasai enam pilar body of knowledge (BOK) program sarjana PSA Unud. Lulusan program sarjana PSA Unud adalah sarjana arsitektur yang berperan dalam masyarakat/dunia kerja karena telah memiliki pengetahuan dan keterampilan dasar merancang (basic skills of design) yang komprehensif (atau menguasai 6 pilar BOK Program Sarjana PSA Unud) dengan pendekatan perancangan yang visioner dan pengetahuan praktek profesi yang memadai. Kemampuan ini didukung oleh kepekaan terhadap aspek lokalitas dalam mengembangkan nilai-nilai dan prinsip-prinsip arsitektur etnik dimana pun lulusan nantinya mengambil peran dalam masyarakat. Peran ini dapat berkembang menjadi arsitek profesional dan siap menempuh Program Profesi Arsitektur. Dengan diwarnai oleh arsitektur etnik, Program Sarjana Arsitektur PSA Unud menawarkan dua kelompok peminatan: 1) Perancang Arsitektur; dan 2) Perancang Kawasan dan Lingkungan Binaan yang nampak pada sebaran mata kuliah pilihan yang ditawarkan kepada mahasiswa. Kelompok peminatan tersebut semakin menguatkan karakter lulusan PSA Unud. Sehingga pada akhirnya, Lulusan PSA Unud mampu berperan dalam masyarakat/dunia kerja sebagai calon arsitek karena telah memiliki pengetahuan dan keterampilan dasar merancang (basic skills of design) yang komprehensif (atau menguasai 6 pilar BOK) dengan pendekatan perancangan secara visioner dan developmental dan pengetahuan praktek profesi. Peran ini nantinya dapat dipoles menjadi arsitek profesional dan siap menempuh program profesi arsitektur. Lulusan PSA Unud siap menempuh pendidikan lanjutan magister, baik program magister arsitektur maupun magister lainnya untuk dapat berperan sebagai Peneliti, Akademisi maupun Pegawai Negri Sipil karena telah memiliki kemampuan berpikir secara sistematis, struktural, dan visioner. Lulusan PSA Unud dapat berperan dalam masyarakat sebagai Wirausaha terkait bidang arsitektur dengan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 85
+sebagai asosiasi profesi, dan beberapa stakeholders yang lain. Pengguna potensial memberikan sinyal pada jawaban bahwa lulusan PSA Unud sebagian besar ketika berprofesi mengambil peran sebagai praktisi arsitektur, selain juga peran-peran lain yang masih terkait dengan bidang ilmu arsitektur, seperti developer, kontraktor bangunan/builder, pengelola proyek, akademisi dan peneliti arsitektur. Beberapa peran lain di luar praktisi terkait arsitektur diasumsikan tidak cukup signifikan sebagai market signal PSA Unud. Merujuk pada visi dan misi PSA Unud dan hasil tracer study tersebut dapatlah ditentukan profil lulusan PSA Unud. Sarjana arsitektur yang dihasilkan oleh PSA Unud adalah sarjana yang mampu merancang dan menguasai ilmu arsitektur secara umum. Dengan kata lain, secara profesional, profil lulusan PSA Unud dapat melakukan peran dalam masyarakat sebagai sarjana arsitektur yang mampu menyajikan gagasan arsitektural dan menguasai ilmu arsitektur secara umum dan mantap, sehingga nantinya dapat berkembang menjadi arsitek profesional setelah melalui Program Profesi Arsitektur, maupun berperan sebagai tenaga ahli (konsultan atau fasilitator). Sesuai dengan KKNI, profil lulusan ini berada pada Level 6. Maka, peran yang diharapkan dapat dilakukan oleh lulusan PSA Unud di masyarakat/dunia kerja menjadi profil lulusan/tujuan pendidikan yang akan dituju. PSA Unud dapat memberikan jaminan pada calon mahasiswanya bahwa mereka dapat berperan menjadi sarjana arsitektur setelah menjalani semua proses pembelajaran pada PSA Unud. Peran ini siap berkembang menjadi arsitek profesional setelah melalui Program Profesi Arsitektur, maupun peran lain dalam masyarakat karena lulusan PSA Unud telah memiliki kemampuan dasar merancang yang komprehensif dan mantap serta mampu merespons perkembangan ilmu pengetahuan, teknologi, kesenian, dan isu-isu terkait melalui pendekatan perancangan secara visioner; memiliki kemampuan berpikir secara sistematis dan struktural; serta memiliki kemampuan unggulan tambahan dalam kemampuan melestarikan dan mengembangkan nilai-nilai arsitektur etnik sebagai warna pendidikan di PSA Unud. Dengan demikian, penyelenggaraan pendidikan arsitektur jenjang sarjana di PSA Unud bertujuan untuk menghasilkan lulusan yang menguasai enam pilar body of knowledge (BOK) program sarjana PSA Unud. Lulusan program sarjana PSA Unud adalah sarjana arsitektur yang berperan dalam masyarakat/dunia kerja karena telah memiliki pengetahuan dan keterampilan dasar merancang (basic skills of design) yang komprehensif (atau menguasai 6 pilar BOK Program Sarjana PSA Unud) dengan pendekatan perancangan yang visioner dan pengetahuan praktek profesi yang memadai. Kemampuan ini didukung oleh kepekaan terhadap aspek lokalitas dalam mengembangkan nilai-nilai dan prinsip-prinsip arsitektur etnik dimana pun lulusan nantinya mengambil peran dalam masyarakat. Peran ini dapat berkembang menjadi arsitek profesional dan siap menempuh Program Profesi Arsitektur. Dengan diwarnai oleh arsitektur etnik, Program Sarjana Arsitektur PSA Unud menawarkan dua kelompok peminatan: 1) Perancang Arsitektur; dan 2) Perancang Kawasan dan Lingkungan Binaan yang nampak pada sebaran mata kuliah pilihan yang ditawarkan kepada mahasiswa. Kelompok peminatan tersebut semakin menguatkan karakter lulusan PSA Unud. Sehingga pada akhirnya, Lulusan PSA Unud mampu berperan dalam masyarakat/dunia kerja sebagai calon arsitek karena telah memiliki pengetahuan dan keterampilan dasar merancang (basic skills of design) yang komprehensif (atau menguasai 6 pilar BOK) dengan pendekatan perancangan secara visioner dan developmental dan pengetahuan praktek profesi. Peran ini nantinya dapat dipoles menjadi arsitek profesional dan siap menempuh program profesi arsitektur. Lulusan PSA Unud siap menempuh pendidikan lanjutan magister, baik program magister arsitektur maupun magister lainnya untuk dapat berperan sebagai Peneliti, Akademisi maupun Pegawai Negri Sipil karena telah memiliki kemampuan berpikir secara sistematis, struktural, dan visioner. Lulusan PSA Unud dapat berperan dalam masyarakat sebagai Wirausaha terkait bidang arsitektur dengan
 
 # Halaman 110
 
@@ -2360,7 +2368,7 @@ MT. NIP : 19610415 198702 2 001 Pangkat/gol. : Pembina Utama Madya/IVd Jabatan :
 5 Nama : Prof. Ir. Ngakan Putu Sueca, MT., PhD.
 NIP : 19601204 198803 1 003 Pangkat/gol. : Pembina Utama Madya/IVd Jabatan : Guru Besar S1 (Unud, 1986), S2 (UGM, 1997), S3 (University Jenjang pendidikan : of Newcastle upon Tyne, UK, 2003) Bidang keahlian : Arsitektur Perilaku, Perumahan Permukiman Email : ngakansueca@unud.ac.id
 6 Nama : Dr. Ir. Anak Agung Gde Djaja Bharuna S, MT.
-NIP : 19620527 199103 1 002 Pangkat/gol. : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1 (Unud, 1987), S2 (ITB, 1997), S3 (Unud, 2020) Bidang keahlian : Perancangan Kota, Ilmu Teknik (Arsitektur) djajabharuna@unud.ac.id Email : Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 87
+NIP : 19620527 199103 1 002 Pangkat/gol. : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1 (Unud, 1987), S2 (ITB, 1997), S3 (Unud, 2020) Bidang keahlian : Perancangan Kota, Ilmu Teknik (Arsitektur) djajabharuna@unud.ac.id Email :
 
 # Halaman 112
 
@@ -2397,7 +2405,7 @@ NIP : 19661030 199802 1 001 Pangkat/gol. : Penata Tk. I/IIId Jabatan : Lektor S1
 17. Nama : Antonius Karel Muktiwibowo, ST., MT., Ph.D.
 NIP : 19740627 200003 1 001 Pangkat/gol. : Penata Muda/IIIa Jabatan : Asisten Ahli S1 (UGM, 1998), S2 (UGM, 2001), S3 (University Jenjang pendidikan : of Newcastle upon Tyne, UK, 2016) Bidang keahlian : Arsitektur Email : antonius@unud.ac.id
 18. Nama : Ni Made Swanendri, ST., MT.
-NIP : 19730421 200003 2 001 Pangkat/gol. : Penata/IIIc Jabatan : Lektor S1 (UGM, 1996), S2 (ITS, 2000), S3 (Unud, Ijin Jenjang pendidikan : Belajar) Bidang keahlian : Permukiman dan Lingkungan Email : nimadeswanendri@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 89
+NIP : 19730421 200003 2 001 Pangkat/gol. : Penata/IIIc Jabatan : Lektor S1 (UGM, 1996), S2 (ITS, 2000), S3 (Unud, Ijin Jenjang pendidikan : Belajar) Bidang keahlian : Permukiman dan Lingkungan Email : nimadeswanendri@unud.ac.
 
 # Halaman 114
 
@@ -2436,7 +2444,7 @@ NIP : 1995011620211222001 Pangkat/gol. : - Jabatan : - Jenjang pendidikan : S1 (
 30. Nama : Made Wina Satria, ST., MT.
 NIP : 199004032022032009 Pangkat/gol. : III/b Jabatan : Asisten Ahli Jenjang pendidikan : S1 (Unud, 2012), S2 (ITS, 2015) Bidang keahlian : Teori, Sejarah, dan Kritik Arsitektur Email : wina.satria@unud.ac.id
 31. Nama : Kadek Wisnawa, S.T., M.T.
-NIK : 19890310 202203 1003 Pangkat/gol. : Penata Muda Tk. I/IIIB Jabatan : Tenaga Pengajar Jenjang pendidikan : S1 (Unud, 2011), S2 (Unud, 2014) Perencanaan dan Manajemen Pembangunan Bidang keahlian : Desa-Kota Email : kadekwisnawa@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 91
+NIK : 19890310 202203 1003 Pangkat/gol. : Penata Muda Tk. I/IIIB Jabatan : Tenaga Pengajar Jenjang pendidikan : S1 (Unud, 2011), S2 (Unud, 2014) Perencanaan dan Manajemen Pembangunan Bidang keahlian : Desa-Kota Email : kadekwisnawa@unud.ac.
 
 # Halaman 116
 
@@ -2489,7 +2497,7 @@ Penyempurnaan pada Kurikulum PSA 2022 mengacu pada kompetensi dari APTARI (Asosi
 12. Kurikulum 2024 PSA FT Unud yang telah diperbaharui (fine tuning) dari kurikulum
 sebelumnya tahun 2020 ditujukan dalam rangka persiapan menuju akreditasi AUN tahun
 2024 dan telah disesuaikan dalam mengakomodasi hak mahasiswa untuk dapat
-mengikuti pembelajaran di luar prodi dalam program MBKM yang dilaksanakan dalam tiga semester. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 93
+mengikuti pembelajaran di luar prodi dalam program MBKM yang dilaksanakan dalam tiga semester.
 
 # Halaman 118
 
@@ -2530,7 +2538,7 @@ kemampuan merespons isu-isu terkait dengan perancangan, serta kemampuan berpikir
 1. Mengingat adanya berbagai lokalitas yang berbeda di Indonesia dan kearifan-kearifan
 yang terdapat di dalamnya, yang perlu menjadi perhatian dan dapat menjadi pembelajaran. Aspek-aspek warna pendidikan arsitektur ini menjadi unsur dan jiwa substansi kurikulum.
 2. Sebagaimana negara berkembang, arsitek atau sarjana arsitektur di Indonesia tidak
-cukup hanya mengetahui pengetahuan-pengetahuan dan kemampuan merancang arsitektur yang bersifat umum dan standar. Namun juga diperlukan kontribusi mereka bagi perkembangan bangsa dan negara, melalui hasil desain arsitektur yang memiliki unsur kontributif. Pendekatan perancangan yang visioner adalah pendekatan yang memasukkan dan memiliki visi bahwa hasil rancangan (dan aktivitas yang terdapat di dalamnya) dapat menjadi unsur atau agen perkembangan lingkungannya, baik lingkungan sosial maupun lingkungan fisik. Puncak Kemampuan dasar Kemampuan dasar merancang yang merancang yang komprehensif komprehensif k K em ea P a h e m l n i A p a g r e n u s t a i D a t n h e e , k u s d a t a a u i n n n r , s itir k r ik ip r e n ia s e D k in tE r u tk e tis ig o lo n k e T e m s ila n o is e fo B r A r P Pengetahuan Dasar Desain Teknik gambar dasar dan komunikasi, teori dasar arsitektur, metode desain dan riset arsitektur, desain dan metode riset Pengetahuan Dasar Umum Bahasa, Agama, Kewarganegaraan, Pancasila Gambar 6.2 Susunan Bidang Ilmu Arsitektur Program Sarjana PSA Unud Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 95
+cukup hanya mengetahui pengetahuan-pengetahuan dan kemampuan merancang arsitektur yang bersifat umum dan standar. Namun juga diperlukan kontribusi mereka bagi perkembangan bangsa dan negara, melalui hasil desain arsitektur yang memiliki unsur kontributif. Pendekatan perancangan yang visioner adalah pendekatan yang memasukkan dan memiliki visi bahwa hasil rancangan (dan aktivitas yang terdapat di dalamnya) dapat menjadi unsur atau agen perkembangan lingkungannya, baik lingkungan sosial maupun lingkungan fisik. Puncak Kemampuan dasar Kemampuan dasar merancang yang merancang yang komprehensif komprehensif k K em ea P a h e m l n i A p a g r e n u s t a i D a t n h e e , k u s d a t a a u i n n n r , s itir k r ik ip r e n ia s e D k in tE r u tk e tis ig o lo n k e T e m s ila n o is e fo B r A r P Pengetahuan Dasar Desain Teknik gambar dasar dan komunikasi, teori dasar arsitektur, metode desain dan riset arsitektur, desain dan metode riset Pengetahuan Dasar Umum Bahasa, Agama, Kewarganegaraan, Pancasila Gambar 6.2 Susunan Bidang Ilmu Arsitektur Program Sarjana PSA Unud
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 119 | type: table | table_index: 1 -->
 
@@ -2712,7 +2720,7 @@ dan teknolo2g4iS,R SpE0e1rXa07n6caAnrsgiteaktnur Hkijoauta, sejarah dan budaya, 
 BAGIAN 6. PROGRAM STUDI ARSITEKTUR
 desain arsitektur untuk mahasiswa yang merupakan muara dari kemampuan yang diperoleh dan dikembangkan pada mata kuliah teori/non studio, baik pada semester yang bersangkutan dan atau pada semester-semester sebelumnya. Praktek desain ini dilakukan secara komprehensif gradual/bertahap, artinya kemampuan yang dibekalkan kepada mahasiswa adalah komprehensif pada setiap tahapnya, dan ditingkatkan secara gradual per semester. Pada setiap tahap studio dilakukan penekanan substansi tertentu. Model 8-0 adalah model yang dilaksanakan bila mahasiswa tidak mengikuti program MBKM, sehingga keseluruhan perkuliahan dilaksanakan secara regular. Dalam Kurikulum PSA 2024 model 8-0 ini, Studio Perancangan Arsitektur masih menjadi inti kurikulum yang mendasari materi dan bentuk tugas dari mata kuliah pendukungnya. Semester I Studio I akan merupakan core perkuliahan. Dimulai dengan Studio Esben dan didukung oleh mata kuliah pendukung Metoda dan Pendekatan Perancangan1, Kriteria desain, konsep perancangan tapak dan bangunan 1, Struktur dan konstruksi 1, Sain bangunan dan Utilitas
 1. Mata kuliah tersebut baik materi maupun saat perkuliahan ditentukan oleh kebutuhan
-matakuliah Studio Perancangan 1. Studio 1 ini akan diselenggarakan dengan metoda Programatik untuk mengenalkan mahasiswa perancangan dengan pendekatan fungsi. Pada semester ini juga dilaksanan perkuliahan untuk mencapai CPL Pengetahuan dasar yaitu Pengantar Arsitektur, Menggambar Arsitektur 1, Menggambar Teknik, dan Dasar-dasar Statika. Pelaksanaan mata kuliah ini tidak terikat dengan mata kuliah Studio Perancangan Arsitektur 1. Demikian seterusnya pada semester-semester berikutnya. Diagram berikut menjelaskan kegiatan setiap semester. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 97
+matakuliah Studio Perancangan 1. Studio 1 ini akan diselenggarakan dengan metoda Programatik untuk mengenalkan mahasiswa perancangan dengan pendekatan fungsi. Pada semester ini juga dilaksanan perkuliahan untuk mencapai CPL Pengetahuan dasar yaitu Pengantar Arsitektur, Menggambar Arsitektur 1, Menggambar Teknik, dan Dasar-dasar Statika. Pelaksanaan mata kuliah ini tidak terikat dengan mata kuliah Studio Perancangan Arsitektur 1. Demikian seterusnya pada semester-semester berikutnya. Diagram berikut menjelaskan kegiatan setiap semester.
 
 # Halaman 122
 
@@ -2763,7 +2771,7 @@ Kurikulum PSA 2022 (sebagai kurikulum sebelumnya, menyesuaikan dengan beberapa m
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 123 | type: text -->
 
 BAGIAN 6. PROGRAM STUDI ARSITEKTUR
-IN 17154 Metode dan Pendekatan 2 IN 22042 Azas, Metode, dan Pendekatan 3 Perancangan Perancangan IV IN 17214 Struktur Bangunan 3 IN 22043 Sistem Bangunan IV 3 PT 17414 Arsitektur Bali 3 2 PT 17414 Arsitektur Bali 3 2 PN 17355 Ekologi Arsitektur 2 IN 17274 Manajemen Desain dan Proyek 2 IN 17234 Sains Bangunan dan Utilitas 2 2 IN 17264 Rencana Anggaran Biaya 2 IN 17243 Arsitektur Indonesia 2 J u m l a h 17 J u m l a h 20 Semester 5 (BLOK KULIAH DI PRODI/UNIV LAIN) Semester 5 IN 17055 Studio Perancangan 6 IN 22051 Studio Perancangan Arsitektur 5 6 Arsitektur 4 PN 17345 Pengantar Permukiman 2 IN 22053 Sistem Bangunan V 3 PN 17336 Dasar-dasar Perancangan Kota 2 IN 17285 Profesi dan Kewirausahaan 2 Arsitek IN 17295 Visualisasi Arsitektur 2 IN 17305 Kerja Praktek 3 IN 17264 Rencana Anggaran Biaya 2 IN 17256 Arsitektur Dunia 2 IN 17274 Manajemen Desain dan Proyek 3 PN 17386 Metodologi Penelitian 2 PN 17386 Metodologi Penelitian 2 J u m l a h 20 Jumlah 18 Semester 6 (BLOK MAGANG) Semester 6 (BLOK MBKM) IN 17066 Studio Perancangan Arsitektur 5 6 IN 22061 Studio Perancangan Arsitektur 6 7 IN 17305 Kerja Praktek 3 PN 22061 Dasar-dasar Perancangan Kota 2 IN 17285 Profesi dan Kewirausahaan 2 PN 17366 Arsitektur dan Budaya 2 MK Pilihan (1) 3 MK Pilihan (1) 3 MK Pilihan (2) 2 PN 17345 Pengantar Permukiman 2 MK Pilihan (3) 2 UM 17461 Kewarganegaraan 2 PN 17366 Arsitektur dan Budaya 2 UM 17431 Pancasila 2 J u m l a h 20 J u m l a h 20 Semester 7 (BLOK KKNT) Semester 7 (BLOK MBKM) IN 17077 Studio Perancangan Arsitektur 6 6 IN 22071 Studio Pra TA 3 IN 17087 Seminar Tugas Akhir 3 UM 17421 Agama 2 UM 17477 Kuliah Kerja Nyata 3 UM 17441 Bahasa Indonesia 2 MK Pilihan (4) 3 UM 17452 Bahasa Inggris 2 IN 17256 Arsitektur Dunia 3 UM 17477 Kuliah Kerja Nyata 3 PN 17376 Arsitektur dan Perilaku 2 MK Pilihan (2) 2 MK Pilihan (3) 2 MK Pilihan (4) 2 UM 17477 BIM (Building Information 2 Modeling) J u m l a h 20 J u m l a h 20 Semester 8 Semester 8 IN 17098 Tugas Akhir 8 IN 17098 Tugas Akhir 8 J u m l a h 8 J u m l a h 8 JUMLAH SKS 144 JUMLAH SKS 144 Pada Kurikulum 2020 MBKM, Studio Perancangan Arsitektur menjadi mata kuliah inti yang didukung dengan mata kuliah pendukung dan penciri. Kesetaraan bobot kegiatan yang terstruktur merupakan dasar dalam penyusunan kurikulum MBKM 2022, sehingga mahasiswa tidak hanya memperoleh pengalaman belajar di prodi, melainkan dapat melalui pembelajaran di prodi lain ataupun melalui program magang. Berdasarkan Permendikti Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 99
+IN 17154 Metode dan Pendekatan 2 IN 22042 Azas, Metode, dan Pendekatan 3 Perancangan Perancangan IV IN 17214 Struktur Bangunan 3 IN 22043 Sistem Bangunan IV 3 PT 17414 Arsitektur Bali 3 2 PT 17414 Arsitektur Bali 3 2 PN 17355 Ekologi Arsitektur 2 IN 17274 Manajemen Desain dan Proyek 2 IN 17234 Sains Bangunan dan Utilitas 2 2 IN 17264 Rencana Anggaran Biaya 2 IN 17243 Arsitektur Indonesia 2 J u m l a h 17 J u m l a h 20 Semester 5 (BLOK KULIAH DI PRODI/UNIV LAIN) Semester 5 IN 17055 Studio Perancangan 6 IN 22051 Studio Perancangan Arsitektur 5 6 Arsitektur 4 PN 17345 Pengantar Permukiman 2 IN 22053 Sistem Bangunan V 3 PN 17336 Dasar-dasar Perancangan Kota 2 IN 17285 Profesi dan Kewirausahaan 2 Arsitek IN 17295 Visualisasi Arsitektur 2 IN 17305 Kerja Praktek 3 IN 17264 Rencana Anggaran Biaya 2 IN 17256 Arsitektur Dunia 2 IN 17274 Manajemen Desain dan Proyek 3 PN 17386 Metodologi Penelitian 2 PN 17386 Metodologi Penelitian 2 J u m l a h 20 Jumlah 18 Semester 6 (BLOK MAGANG) Semester 6 (BLOK MBKM) IN 17066 Studio Perancangan Arsitektur 5 6 IN 22061 Studio Perancangan Arsitektur 6 7 IN 17305 Kerja Praktek 3 PN 22061 Dasar-dasar Perancangan Kota 2 IN 17285 Profesi dan Kewirausahaan 2 PN 17366 Arsitektur dan Budaya 2 MK Pilihan (1) 3 MK Pilihan (1) 3 MK Pilihan (2) 2 PN 17345 Pengantar Permukiman 2 MK Pilihan (3) 2 UM 17461 Kewarganegaraan 2 PN 17366 Arsitektur dan Budaya 2 UM 17431 Pancasila 2 J u m l a h 20 J u m l a h 20 Semester 7 (BLOK KKNT) Semester 7 (BLOK MBKM) IN 17077 Studio Perancangan Arsitektur 6 6 IN 22071 Studio Pra TA 3 IN 17087 Seminar Tugas Akhir 3 UM 17421 Agama 2 UM 17477 Kuliah Kerja Nyata 3 UM 17441 Bahasa Indonesia 2 MK Pilihan (4) 3 UM 17452 Bahasa Inggris 2 IN 17256 Arsitektur Dunia 3 UM 17477 Kuliah Kerja Nyata 3 PN 17376 Arsitektur dan Perilaku 2 MK Pilihan (2) 2 MK Pilihan (3) 2 MK Pilihan (4) 2 UM 17477 BIM (Building Information 2 Modeling) J u m l a h 20 J u m l a h 20 Semester 8 Semester 8 IN 17098 Tugas Akhir 8 IN 17098 Tugas Akhir 8 J u m l a h 8 J u m l a h 8 JUMLAH SKS 144 JUMLAH SKS 144 Pada Kurikulum 2020 MBKM, Studio Perancangan Arsitektur menjadi mata kuliah inti yang didukung dengan mata kuliah pendukung dan penciri. Kesetaraan bobot kegiatan yang terstruktur merupakan dasar dalam penyusunan kurikulum MBKM 2022, sehingga mahasiswa tidak hanya memperoleh pengalaman belajar di prodi, melainkan dapat melalui pembelajaran di prodi lain ataupun melalui program magang. Berdasarkan Permendikti
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 123 | type: table | table_index: 1 -->
 
@@ -2878,7 +2886,7 @@ BAGIAN 6. PROGRAM STUDI ARSITEKTUR
  Lulus semua mata kuliah  Nilai Studio Perancangan Arsitektur 1-6 minimal B
 6.6 Sarana dan Prasarana Penunjang
 6.6.1 Fasilitas Penunjang Perkuliahan
-PSA Unud Program Reguler mengelola dua buah gedung (DB, DF) dan lantai tiga gedung ARL (Advanced Research Laboratory) di Kampus Bukit Jimbaran; ruang Studio Tugas Akhir yang berada di Kampus Sudirman Denpasar; serta gedung Undagi Graha yang digunakan bersama dengan program studi lain di Fakultas Teknik. Gedung yang dikelola tersebut terdiri atas empat ruang kuliah dengan kapasitas 30–100 mahasiswa, enam studio gambar dengan kapasitas 80-120 mahasiswa, ruang dosen dan administrasi, serta ruang komputer. Sistem informasi manajemen program studi yang berbasiskan platform IMISSU (Integrated Management Information System Of Unud) yang merupakan jaringan dalam sistem informasi akademik di Universitas Udayana. Pada program studi arsitektur pengelolaan administrasi dilakukan oleh tiga orang tenaga operator yang terdiri atas operator akademik, administrasi dan keuangan, serta arsip dan komunikasi yang ditempatkan pada ruang administrasi. Pelayanan kegiatan akademik dan administrasi dilakukan setiap hari kerja yakni hari Senin – Jumat, dimulai dari pukul 08.30 wita – 16.00 wita di ruang administrasi gedung DB Program Studi Arsitektur. Gambar 6.3 Fasilitas Penunjang Perkuliahan PSA Unud Sarana informasi dalam bidang penelitian dan penulisan ilmiah mahasiswa dan dosen diterbitkan dalam bentuk jurnal ilmiah JA (Jurnal Arsitektur) dengan periode terbit enam bulan sekali. Selain berupa jurnal ilmiah, sarana publikasi hasil penelitian dan pengabdian masyarakat PSA dilakukan melalui Seminar dan Pertemuan ilmiah yang rutin diadakan setiap tahun. Beberapa seminar yang rutin diselenggarakan oleh PSA antara lain SAMARTA (Seminar Arsitektur dan Tata Ruang), SEMADI (Seminar Arsitektur Daring Indonesia), dan ICATUS (International Conference of Architecture, Technology, Urban, and Sustainable). Publikasi karya dan tugas baik mahasiswa dan dosen dilakukan melalui pameran karya yang dilakukan setiap akhir penyelenggaraan mata kuliah Studio Perancangan Arsitektur. Sarana informasi lainnya berupa informasi mata kuliah, nilai, dan jadwal perkuliahan serta peluang beasiswa, peluang kerja, kursus-kursus dan informasi dari dunia usaha luar dapat dilihat pada website https://ar-dev.unud.ac.id/ serta https://ar.unud.ac.id/. Sarana informasi lainnya berupa papan-papan informasi yang telah disediakan pada beberapa lokasi di lingkungan program studi. Sarana informasi penelitian, pengabdian kepada masyarakat, Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 103
+PSA Unud Program Reguler mengelola dua buah gedung (DB, DF) dan lantai tiga gedung ARL (Advanced Research Laboratory) di Kampus Bukit Jimbaran; ruang Studio Tugas Akhir yang berada di Kampus Sudirman Denpasar; serta gedung Undagi Graha yang digunakan bersama dengan program studi lain di Fakultas Teknik. Gedung yang dikelola tersebut terdiri atas empat ruang kuliah dengan kapasitas 30–100 mahasiswa, enam studio gambar dengan kapasitas 80-120 mahasiswa, ruang dosen dan administrasi, serta ruang komputer. Sistem informasi manajemen program studi yang berbasiskan platform IMISSU (Integrated Management Information System Of Unud) yang merupakan jaringan dalam sistem informasi akademik di Universitas Udayana. Pada program studi arsitektur pengelolaan administrasi dilakukan oleh tiga orang tenaga operator yang terdiri atas operator akademik, administrasi dan keuangan, serta arsip dan komunikasi yang ditempatkan pada ruang administrasi. Pelayanan kegiatan akademik dan administrasi dilakukan setiap hari kerja yakni hari Senin – Jumat, dimulai dari pukul 08.30 wita – 16.00 wita di ruang administrasi gedung DB Program Studi Arsitektur. Gambar 6.3 Fasilitas Penunjang Perkuliahan PSA Unud Sarana informasi dalam bidang penelitian dan penulisan ilmiah mahasiswa dan dosen diterbitkan dalam bentuk jurnal ilmiah JA (Jurnal Arsitektur) dengan periode terbit enam bulan sekali. Selain berupa jurnal ilmiah, sarana publikasi hasil penelitian dan pengabdian masyarakat PSA dilakukan melalui Seminar dan Pertemuan ilmiah yang rutin diadakan setiap tahun. Beberapa seminar yang rutin diselenggarakan oleh PSA antara lain SAMARTA (Seminar Arsitektur dan Tata Ruang), SEMADI (Seminar Arsitektur Daring Indonesia), dan ICATUS (International Conference of Architecture, Technology, Urban, and Sustainable). Publikasi karya dan tugas baik mahasiswa dan dosen dilakukan melalui pameran karya yang dilakukan setiap akhir penyelenggaraan mata kuliah Studio Perancangan Arsitektur. Sarana informasi lainnya berupa informasi mata kuliah, nilai, dan jadwal perkuliahan serta peluang beasiswa, peluang kerja, kursus-kursus dan informasi dari dunia usaha luar dapat dilihat pada website https://ar-dev.unud.ac.id/ serta https://ar.unud.ac.id/. Sarana informasi lainnya berupa papan-papan informasi yang telah disediakan pada beberapa lokasi di lingkungan program studi. Sarana informasi penelitian, pengabdian kepada masyarakat,
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 127 | type: table | table_index: 1 -->
 
@@ -2910,7 +2918,7 @@ Studio Perancangan Arsitektur merupakan inti (core) proses pembelajaran di PSA U
 2022 terdapat delapan studio perancangan arsitektur yang diwadahi dalam sistem blok pada
 tiap semester. Gambar 6.5 Kegiatan Studio Perancangan Arsitektur sebagai mata kuliah inti PSA Unud Dalam proses pembelajaran studio perancangan, mahasiswa dilatih untuk memiliki keterampilan merancang bentuk, bidang, ruang, bangunan, dan kawasan berdasarkan kajian fungsi, tapak, dan lingkungannya. Keterampilan perancangan didukung oleh kemampuan analisis konstruktif terhadap asas perancangan, konsep, dan kriteria dan konsep. Sementara itu agar memiliki kesadaran dan pemahaman terhadap dampak rancangan mahasiswa diajak untuk berpikir kritis melalui penyelesaian beragam isu perancangan mulai dari isu tapak, iklim, manusia, sosial, dan budaya. Dalam penyajian hasil rancangan mahasiswa diajarkan berbagai macam metode komunikasi dan visualisasi desain baik secara manual maupun metode komputerisasi.
 3. Studio Tugas Akhir
-Studio ini merupakan wadah untuk penelaahan studio tugas akhir mahasiswa guna memperoleh gelar akademik sarjana dibidang arsitektur (S.Ars.). Studio ini merupakan tahap akhir dari mahasiswa arsitektur dalam proses penyelesaian pendidikannya di PSA Unud. Pada tahap ini, mahasiswa mengambil salah satu judul perancangan salah satu fasilitas, Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 105
+Studio ini merupakan wadah untuk penelaahan studio tugas akhir mahasiswa guna memperoleh gelar akademik sarjana dibidang arsitektur (S.Ars.). Studio ini merupakan tahap akhir dari mahasiswa arsitektur dalam proses penyelesaian pendidikannya di PSA Unud. Pada tahap ini, mahasiswa mengambil salah satu judul perancangan salah satu fasilitas,
 
 # Halaman 130
 
@@ -2930,7 +2938,7 @@ Laboratorium Keprofesian Arsitek merupakan wadah pengembangan profesi arsitek ya
 BAGIAN 6. PROGRAM STUDI ARSITEKTUR
 Gambar 6.8 Perlengkapan Laboratorium Keprofesian Arsitek Pengembangan keilmuan pada laboratorium keprofesian Arsitek difokuskan pada pengembangan Arsitektur berbasis budaya dan arsitektur lokal nusantara khususnya arsitektur tradisional Bali. Laboratorium keprofesian Arsitek membawa amanat pengembangan profesi dan kewirausahaan arsitektur, sehingga dalam kegiatannya laboratorium ini melaksanakan berbagai macam kegiatan yang berhubungan dengan kaidah rancangan, prosedur baku, dan kode etik profesi Ikatan Arsitek Indonesia.
 D. Laboratorium Urban dan Pariwisata
-Sebagai daerah dengan potensi alam dan budaya yang telah dikenal luas, menjadikan Bali sebagai daerah tujuan wisata terbaik di Asia bahkan dunia. Pesatnya perkembangan kegiatan pariwisata di Bali yang telah dimulai sejak masa kolonial Belanda menjadikan Bali sebagai laboratorium hidup pengembangan pariwisata kelas dunia. Perkembangan kegiatan pariwisata tersebut diiringi oleh fasilitas pendukung pariwisata lainnya. Sehingga diperlukan kajian yang mendalam dan menyeluruh terhadap perkembangan arsitektur dan kepariwisataan di masa yang akan datang. Gambar 6.9 Hasil Kajian Laboratorium Urban dan Pariwisata Kondisi tersebut dilihat sebagai potensi pengembangan arsitektur, urban, dan pariwisata oleh PSA Unud, oleh karena itu dilakukan suatu upaya melalui pembentukan Laboratorium Urban dan Pariwisata. Laboratorium Urban dan Pariwisata merupakan wadah penelitian arsitektur dalam konteks kawasan terbangun/kompleks bangunan pada kawasan perencanaan dan pengembangan pariwisata. Berbagai kajian dan penelitian mengenai pariwisata dalam konteks urban diantaranya adalah konsep hubungan tata ruang pariwisata dan pelaku, pendekatan ekologi dalam perencanaan pariwisata, pariwisata hijau, pariwisata berkelanjutan, serta pendekatan fungsional-ekonomi dan sosio politik dalam perencanaan pariwisata. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 107
+Sebagai daerah dengan potensi alam dan budaya yang telah dikenal luas, menjadikan Bali sebagai daerah tujuan wisata terbaik di Asia bahkan dunia. Pesatnya perkembangan kegiatan pariwisata di Bali yang telah dimulai sejak masa kolonial Belanda menjadikan Bali sebagai laboratorium hidup pengembangan pariwisata kelas dunia. Perkembangan kegiatan pariwisata tersebut diiringi oleh fasilitas pendukung pariwisata lainnya. Sehingga diperlukan kajian yang mendalam dan menyeluruh terhadap perkembangan arsitektur dan kepariwisataan di masa yang akan datang. Gambar 6.9 Hasil Kajian Laboratorium Urban dan Pariwisata Kondisi tersebut dilihat sebagai potensi pengembangan arsitektur, urban, dan pariwisata oleh PSA Unud, oleh karena itu dilakukan suatu upaya melalui pembentukan Laboratorium Urban dan Pariwisata. Laboratorium Urban dan Pariwisata merupakan wadah penelitian arsitektur dalam konteks kawasan terbangun/kompleks bangunan pada kawasan perencanaan dan pengembangan pariwisata. Berbagai kajian dan penelitian mengenai pariwisata dalam konteks urban diantaranya adalah konsep hubungan tata ruang pariwisata dan pelaku, pendekatan ekologi dalam perencanaan pariwisata, pariwisata hijau, pariwisata berkelanjutan, serta pendekatan fungsional-ekonomi dan sosio politik dalam perencanaan pariwisata.
 
 # Halaman 132
 
@@ -2947,7 +2955,7 @@ Laboratorium Arsitektur Etnik dan Bersejarah memiliki sejumlah kegiatan dalam pe
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 133 | type: text -->
 
 BAGIAN 6. PROGRAM STUDI ARSITEKTUR
-Gambar 6.11 Laboratorium Arsitektur Etnik dan Bersejarah Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 109
+Gambar 6.11 Laboratorium Arsitektur Etnik dan Bersejarah
 
 # Halaman 134
 
@@ -2957,7 +2965,7 @@ Gambar 6.11 Laboratorium Arsitektur Etnik dan Bersejarah Pedoman Akademik Progra
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 135 | type: text -->
 
-PROGRAM STUDI TEKNIK SIPIL Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 111
+PROGRAM STUDI TEKNIK SIPIL
 
 # Halaman 136
 
@@ -2988,7 +2996,7 @@ profesi Teknik Sipil, meliputi bidang struktur, geoteknik, sumber daya air, tran
 3. Menghasilkan lulusan yang kreatif, disiplin dan bertanggung jawab, yang mendukung
 pengetahuan dan ketrampilannya dalam berkarir di bidang Teknik sipil.
 4. Menjalin kerjasama dengan masyarakat, swasta, pemerintah dan berbagai lembaga
-dalam pengembangan pendidikan dan penelitian serta penerapan ilmu pengetahuan dan teknologi di bidang teknik sipil. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 113
+dalam pengembangan pendidikan dan penelitian serta penerapan ilmu pengetahuan dan teknologi di bidang teknik sipil.
 
 # Halaman 138
 
@@ -3019,7 +3027,7 @@ NIP : 19600528 198601 1 001 Pangkat/Gol : Pembina Tk. I/IVb Jabatan : Lektor Kep
 7. Nama : Prof. Ir. I Nyoman Arya Thanaya, ME., PhD.
 NIP : 19601108 198803 1 002 Pangkat/Gol : Pembina Utama Madya/IVd Jabatan : Guru Besar Jenjang pendidikan : S1 (UNUD, 1986), S2 (Univ. of Auckland, New Zealand, 1993), S3 (University of Leeds, UK, 2003) Bidang keahlian : Road Material Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : aryathanaya@unud.ac.id, aryathanaya@ymail.com
 8. Nama : Dr. Ir. I G. A. Adnyana Putera, DEA
-NIP : 19611207 198903 1 003 Pangkat/Gol : Penata/IIIc Jabatan : Lektor Jenjang pendidikan : S1 (ITS, 1986), S2 (Universite de Savoie, France, 1998), S3 (Universite de Savoie, France, 2002) Bidang keahlian : Manajemen Konstruksi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : apute@yahoo.com; adnyanaputera@gmail.com Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 115
+NIP : 19611207 198903 1 003 Pangkat/Gol : Penata/IIIc Jabatan : Lektor Jenjang pendidikan : S1 (ITS, 1986), S2 (Universite de Savoie, France, 1998), S3 (Universite de Savoie, France, 2002) Bidang keahlian : Manajemen Konstruksi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : apute@yahoo.com; adnyanaputera@gmail.com
 
 # Halaman 140
 
@@ -3051,7 +3059,7 @@ NIP : 19650404 199702 1 001 Pangkat/Gol : Penata Tk I/IIId Jabatan : Lektor Jenj
 17. Nama : Putu Kwintaryana Winaya, ST., MT.
 NIP : 19651118 199403 1 001 Pangkat/Gol : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1 (Unud, 1993), S2 (ITB, 2000) Bidang keahlian : Rekayasa Transportasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : putu.kwintaryana@unud.ac.id, putukwin@yahoo.co.id
 18. Nama : Ir. Ariany Frederika, MT.
-NIP : 19660217 199802 2 001 Pangkat/Gol : Penata Muda/IIIa Jabatan : Asisten Ahli Jenjang pendidikan : S1 (Unud, 1991), S2 (ITS, 2001) Bidang keahlian : Manajemen Konstruksi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : arianyfrederika@unud.ac.id, arianyfrederika1@yahoo.com Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 117
+NIP : 19660217 199802 2 001 Pangkat/Gol : Penata Muda/IIIa Jabatan : Asisten Ahli Jenjang pendidikan : S1 (Unud, 1991), S2 (ITS, 2001) Bidang keahlian : Manajemen Konstruksi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : arianyfrederika@unud.ac.id, arianyfrederika1@yahoo.com
 
 # Halaman 142
 
@@ -3083,7 +3091,7 @@ PhD. NIP : 19700303 199702 1 005 Pangkat/Gol : Penata Tk.I / IIId Jabatan : Guru
 27. Nama : Dr. Ir. Ida Bagus Putu Adnyana, ST., MT.
 NIP : 19710125 199703 1 002 Pangkat/Gol : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1 (Unud, 1996), S2 (ITS, 1998), S3(ITS, 2016) Bidang keahlian : Manajemen Konstruksi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : bagusadnyana@unud.ac.id, bagusadnyana@yahoo.co.id
 28. Nama : Ir. Made Dodiek Wirya Ardana, ST., MT.
-NIP : 19710201 199703 1 002 Pangkat/Gol : Penata / IIIc Jabatan : Lektor Jenjang pendidikan : S1 (Unud, 1994), S2 (ITS, 1999) Bidang keahlian : Geoteknik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : dodiek@unud.ac.id, madedodiek@yahoo.com Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 119
+NIP : 19710201 199703 1 002 Pangkat/Gol : Penata / IIIc Jabatan : Lektor Jenjang pendidikan : S1 (Unud, 1994), S2 (ITS, 1999) Bidang keahlian : Geoteknik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : dodiek@unud.ac.id, madedodiek@yahoo.com
 
 # Halaman 144
 
@@ -3115,7 +3123,7 @@ NIP : 1980 0327 2005011004 Pangkat/Gol : Penata / IIIc Jabatan : Lektor Jenjang 
 37. Nama : Ni Putu Delima Yogeswari Saraswati, ST., MT
 NIP : 1995051020211122001 Pangkat/Gol : Penata Muda Tk. I / IIIb Jabatan : - Jenjang pendidikan : S1 (UNUD,2017), S2 (UNUD,2021) Bidang keahlian : Rekayasa Transportasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703385 Email : delimayogeswari@unud.ac.id
 38. Nama : I Made Aryatirta Predana, S.T., M.E.
-NIP : 1996092720220412001 Pangkat/Gol : - Jabatan : - Jenjang pendidikan : S1 (UNUD, 2018), S2 (The University of Queensland, Australia, 2021) Bidang keahlian : Geoteknik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361)703385 Email : aryatirta@unud.ac.id aryatirtapredana@gmail.com Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 121
+NIP : 1996092720220412001 Pangkat/Gol : - Jabatan : - Jenjang pendidikan : S1 (UNUD, 2018), S2 (The University of Queensland, Australia, 2021) Bidang keahlian : Geoteknik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361)703385 Email : aryatirta@unud.ac.id aryatirtapredana@gmail.com
 
 # Halaman 146
 
@@ -3150,7 +3158,7 @@ Kurikulum yang diterapkan pada Program Studi Teknik Sipil (PSTS) saat ini disusu
 4. Ketrampilan Khusus (KK).
 Standar Kompetensi Lulusan (SKL) tersebut dicapai dengan 10 Capaian Pembelajaan (CPL) yang sudah ditetapkan oleh program Studi Teknik Sipil. Berdasarkan visi, misi dan tujuan dari PSTS, maka dirumuskan tiga (3) poin Profil Lulusan yang dicapai melalui kriteria CPL/SKL serta bahan kajian terkait, seperti yang disajikan pada Tabel 7.1. Tabel 7.1 Keterkaitan Profil Lulusan, CPL/SKL, dan Bahan Kajian Profil Lulusan CPL/SKL/Kompetensi Utama Bahan Kajian
 1. Engineer yang mampu Mampu merencanakan dan Analisis Struktur, Mekanika dan Ilmu
-melakukan merancang bangunan Teknik sipil Bahan, Mekanika Tanah dan Teknik perencanaan, secara terinci yang meliputi Pondasi, Mekanika Fluida dan perancangan, pelaksanaan studi awal (Studi Hidraulika, Struktur Beton Bertulang dan pengawasan, Pendahuluan) dan pembuatan Struktur Baja, Geometrik dan pelaksanaan, dan rancangan detail (DED) Perkerasan Jalan, Hidrologi dan operator lingkungan menggunakan alat bantu dan Drainase, Teknik Pantai dan Pelabuhan, binaan di bidang teknik teknologi terkini Sistem Transportasi, Menggambar sipil Mampu melaksanakan dan Teknik, RAB, dst. mengoperasikan Bangunan Teknik Manajemen Konstruksi, Metoda sipil Pelaksanaan dan Pemeliharaan, dst. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 123
+melakukan merancang bangunan Teknik sipil Bahan, Mekanika Tanah dan Teknik perencanaan, secara terinci yang meliputi Pondasi, Mekanika Fluida dan perancangan, pelaksanaan studi awal (Studi Hidraulika, Struktur Beton Bertulang dan pengawasan, Pendahuluan) dan pembuatan Struktur Baja, Geometrik dan pelaksanaan, dan rancangan detail (DED) Perkerasan Jalan, Hidrologi dan operator lingkungan menggunakan alat bantu dan Drainase, Teknik Pantai dan Pelabuhan, binaan di bidang teknik teknologi terkini Sistem Transportasi, Menggambar sipil Mampu melaksanakan dan Teknik, RAB, dst. mengoperasikan Bangunan Teknik Manajemen Konstruksi, Metoda sipil Pelaksanaan dan Pemeliharaan, dst.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 147 | type: table | table_index: 1 -->
 
@@ -3219,7 +3227,7 @@ Jumlah 19 Jumlah 20 SEMESTER VII SEMESTER VIII
 53 24UNDE02X003 KKN 3
 54 24STSE02X812 Kewirausahaan 2
 55 - Pilihan 4 2
-Jumlah 7 Jumlah 18 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 125
+Jumlah 7 Jumlah
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 149 | type: table | table_index: 1 -->
 
@@ -3414,7 +3422,7 @@ Jumlah 20 20 SEMESTER V SEMESTER VI
 37 24STSE02X307 Praktikum Bahan Perkerasan Jalan 1
 38 24UNDE02X903Pendidikan Kewarganegaraan 2
 39 24UNDE02X904Pendidikan Pancasila 2
-20 20 SEMESTER VII SEMESTER VIII PMBKM 10-20 sks PMBKM 10-20 sks dan MK PILIHAN Termasuk TA dan KP dan MK PILIHAN TA, KP, KKN Tematik dapat termasuk dalam PMBKM 14-20 Jumlah10-20 Jumlah 14-20 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 127
+20 20 SEMESTER VII SEMESTER VIII PMBKM 10-20 sks PMBKM 10-20 sks dan MK PILIHAN Termasuk TA dan KP dan MK PILIHAN TA, KP, KKN Tematik dapat termasuk dalam PMBKM 14-20 Jumlah10-20 Jumlah 14-
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 151 | type: table | table_index: 1 -->
 
@@ -4042,7 +4050,7 @@ merencanakan model kurikulum yang akan dipilih
 mendukung jenis MBKM yang direncanakanan
 7.6 Sarana dan Prasarana Penunjang
 7.6.1 Fasilitas Penunjang Perkuliahan
-Program Studi Teknik Sipil, saat ini mengelola lima buah gedung utama (DL, DM, DN, DO dan DP) dengan total luas lantai 3795,5 m2 yang terdiri atas 10 ruang kuliah dengan kapasitas 30-100 mahasiswa, 10 laboratorium, ruang dosen dan ruang komputer. Sarana Manajemen Informasi Sistem (SIM) yang dimiliki Program Studi dengan program informasi sistem hanya terbatas pada Sistem Informasi Akademik (SIMAK) yang ditempatkan pada ruang komputer pada Program Studi, dengan 2 orang tenaga administrasi sebagai operator. Sarana informasi yang menyangkut publikasi Program Studi dalam bidang penelitian mahasiswa dan dosen diterbitkan dalam bentuk jurnal ilmiah dengan periode terbit 6 (enam) bulan sekali, publikasi lainnya berupa publikasi nilai mata kuliah atau peluang beasiswa, kerja, kursus-kursus dan lain- lainnya dari dunia usaha luar kepada mahasiswa di tempatkan pada papan-papan informasi yang telah disediakan pada beberapa lokasi di lingkungan Program Studi. Gambar 7.1 Salah satu ruang kuliah Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 131
+Program Studi Teknik Sipil, saat ini mengelola lima buah gedung utama (DL, DM, DN, DO dan DP) dengan total luas lantai 3795,5 m2 yang terdiri atas 10 ruang kuliah dengan kapasitas 30-100 mahasiswa, 10 laboratorium, ruang dosen dan ruang komputer. Sarana Manajemen Informasi Sistem (SIM) yang dimiliki Program Studi dengan program informasi sistem hanya terbatas pada Sistem Informasi Akademik (SIMAK) yang ditempatkan pada ruang komputer pada Program Studi, dengan 2 orang tenaga administrasi sebagai operator. Sarana informasi yang menyangkut publikasi Program Studi dalam bidang penelitian mahasiswa dan dosen diterbitkan dalam bentuk jurnal ilmiah dengan periode terbit 6 (enam) bulan sekali, publikasi lainnya berupa publikasi nilai mata kuliah atau peluang beasiswa, kerja, kursus-kursus dan lain- lainnya dari dunia usaha luar kepada mahasiswa di tempatkan pada papan-papan informasi yang telah disediakan pada beberapa lokasi di lingkungan Program Studi. Gambar 7.1 Salah satu ruang kuliah
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 155 | type: table | table_index: 1 -->
 
@@ -4081,7 +4089,7 @@ b. Kekuatan elemen struktur c. Kekuatan material; beton, baja, kayu, dan bahan k
 B. Laboratorium Mekanika Tanah
 Laboratorium Mekanika Tanah melaksanakan kegiatan praktikum untuk mempelajari sifat-sifat serta daya dukung tanah. Adapun praktikum yang dilakukan antara lain pemeriksaan nilai batas cair, batas susut, batas plastis, kadar air tanah, berat jenis tanah, berat volume, analisa ayakan, uji pemadatan, tes UCT, dan tes CBR. Di samping melaksanakan kegiatan praktikum secara rutin, laboratorium ini juga dimanfaatkan untuk penelitian-penelitian bagi mahasiswa yang sedang mengambil tugas akhir. Jasa yang ditawarkan meliputi survei tes tanah dan material, rekayasa pondasi, rekayasa stabilitas lereng, dan dampak lingkungan. Gambar 7.9 Kegiatan di Laboratorium Mekanika Tanah
 C. Laboratorium Jalan Raya
-Laboratorium Jalan Raya melaksanakan kegiatan praktikum untuk mempelajari bahan- bahan penyusun perkerasan jalan. Adapun praktikum yang dilakukan antara lain pemeriksaan gradasi pasir, gradasi filler, kadar lumpur, soundness, sand eqivalent, pemeriksaan aspal, berat jenis dan penyerapan pasir dan filler. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 133
+Laboratorium Jalan Raya melaksanakan kegiatan praktikum untuk mempelajari bahan- bahan penyusun perkerasan jalan. Adapun praktikum yang dilakukan antara lain pemeriksaan gradasi pasir, gradasi filler, kadar lumpur, soundness, sand eqivalent, pemeriksaan aspal, berat jenis dan penyerapan pasir dan filler.
 
 # Halaman 158
 
@@ -4113,7 +4121,7 @@ a. Menghitung serta menggambar hydroulic gradient dan energi gradient. Menghitun
 2. Percobaan Saluran Terbuka:
 a. Maksud dari percobaan ini adalah menentukan dan menggambar bentuk loncat air (Hydroulic Jump). b. Percobaan-percobaan yang dilakukan antara lain : aliran lewat sluice gate (pintu) dan aliran pada broad crested weir (peluap ambang lebar) c. Penelitian-penelitian bagi mahasiswa yang sedang mengambil tugas akhir. Jasa yang ditawarkan meliputi rekayasa irigasi, rekayasa bendung, dan teknik pantai. Gambar 7.14 Praktikum Hidrolika Gambar 7.15 Alat Pengukur Arus Gambar 7.16 Alat Survey dan Hidrologi SEBA Baltimetri
 G. Laboratorium Komputer
-Laboratorium Komputer melakukan kegiatan praktikum pengenalan komputer, pemakaian sofware yang umum digunakan, sofware yang berhubungan dengan keteknikan, khususnya teknik sipil, dan juga memberikan praktikum pembuatan program. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 135
+Laboratorium Komputer melakukan kegiatan praktikum pengenalan komputer, pemakaian sofware yang umum digunakan, sofware yang berhubungan dengan keteknikan, khususnya teknik sipil, dan juga memberikan praktikum pembuatan program.
 
 # Halaman 160
 
@@ -4130,7 +4138,7 @@ Laboratorium Fisika melaksanakan kegiatan praktikum untuk mempelajari karakteris
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 161 | type: text -->
 
-PROGRAM STUDI TEKNIK ELEKTRO Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 137
+PROGRAM STUDI TEKNIK ELEKTRO
 
 # Halaman 162
 
@@ -4162,7 +4170,7 @@ IPTEKS untuk kepentingan masyarakat, bangsa, dan dunia.
 3. Meningkatkan jalinan kerjasama di berbagai bidang untuk meningkatkan mutu Tridharma
 Program Studi Teknik Elektro.
 4. Menjadikan Program Studi Teknik Elektro Universitas Udayana sebagai lembaga yang
-senantiasa mengikuti perkembangan IPTEKS. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 139
+senantiasa mengikuti perkembangan IPTEKS.
 
 # Halaman 164
 
@@ -4260,6 +4268,7 @@ M.Erg., IPM I Made Suartika,
 22 0026036505 19650326 1994121 001 UNUD, 1994 UNUD, 2017
 ST.,MT. Wayan Gede
 23 0013046903 19690413 1994121 001 UNUD, 1990 UNSW, 1999 UNSW, 2006
+Ariastina, ST.,
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 165 | type: table | table_index: 1 -->
 
@@ -4391,7 +4400,7 @@ NIP : 19621023 198803 1 004 Pangkat/Gol : Pembina Tk. I / IVb Jabatan : Lektor K
 4. Nama : Ir. I Nengah Suweden, MT.
 NIP : 19630815 199003 1 003 Pangkat/Gol : Penata Tk. I / IIId Jabatan : Lektor Jenjang pendidikan : S1 (UNIBRAW, 1987), S2 (ITS, 2007) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : suweden@unud.ac.id
 5. Nama : Prof. Ir. Ida Ayu Dwi Giriantari, MEngSc., PhD.,
-IPM. NIP : 19651213 199103 2 001 Pangkat/Gol : Pembina / IVa Jabatan : Guru Besar Jenjang pendidikan : S1 (UNUD, 1990), S2 (UNSW, 1999), S3 (UNSW, 2003) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : dayu.giriantari@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 143
+IPM. NIP : 19651213 199103 2 001 Pangkat/Gol : Pembina / IVa Jabatan : Guru Besar Jenjang pendidikan : S1 (UNUD, 1990), S2 (UNSW, 1999), S3 (UNSW, 2003) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : dayu.giriantari@unud.ac.
 
 # Halaman 168
 
@@ -4423,7 +4432,7 @@ IPU., ASEAN Eng. NIP : 19650525 199203 1 004 Pangkat/Gol : Pembina Tk. I / IVa J
 14. Nama : Ir. I Gusti Ngurah Janardana, M.Erg.
 NIP : 19620815 199203 1 002 Pangkat/Gol : Pembina Tk. I / IVb Jabatan : Lektor Kepala Jenjang pendidikan : S1 (UNUD, 1991), S2 (UNUD,1998) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Telepon Kantor/Fax : (+62)(361) 703315 Email : janardana@unud.ac.id
 15. Nama : Ir. I Wayan Arta Wijaya, M.Erg., MT.
-NIP : 19660313 199303 1 001 Pangkat/Gol : Pembina / IVa Jabatan : Lektor Kepala Jenjang pendidikan : S1 (UNUD, 1992), S2 (ITS, 2007) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : artawijaya@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 145
+NIP : 19660313 199303 1 001 Pangkat/Gol : Pembina / IVa Jabatan : Lektor Kepala Jenjang pendidikan : S1 (UNUD, 1992), S2 (ITS, 2007) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : artawijaya@unud.ac.
 
 # Halaman 170
 
@@ -4455,7 +4464,7 @@ NIP : 19690413 199412 1 001 Pangkat/Gol : Penata Tk. I / IIId Jabatan : Lektor K
 24 Nama : Anak Agung Ngurah Amrita, ST., MT.
 NIP : 19680717 199503 1 001 Pangkat/Gol : Penata / IIIc Jabatan : Lektor Kepala Jenjang pendidikan : S1 (UNUD, 1994), S2 (ITS, 2006) Bidang keahlian : Teknik Sistem Tenaga Listrik Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : ngr_amrita@unud.ac.id
 25 Nama : Dr. Gede Sukadarmika, ST., MSc.
-NIP : 19670505 199512 1 003 Pangkat/Gol : Penata Tk. I / IIId Jabatan : Lektor Jenjang pendidikan : S1 (ITS,1993), S2 (Univ. of Sheffield Hallam, 2000) Bidang keahlian : Telekomunikasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : sukadarmika@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 147
+NIP : 19670505 199512 1 003 Pangkat/Gol : Penata Tk. I / IIId Jabatan : Lektor Jenjang pendidikan : S1 (ITS,1993), S2 (Univ. of Sheffield Hallam, 2000) Bidang keahlian : Telekomunikasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : sukadarmika@unud.ac.
 
 # Halaman 172
 
@@ -4487,7 +4496,7 @@ ASEAN. Eng. NIP : 19731211 199903 1 001 Pangkat/Gol : Pembina/Iva Jabatan : Lekt
 34 Nama : Widyadi Setiawan, ST., MT.
 NIP : 19740815 200003 1 002 Pangkat/Gol : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1(UGM, 1998), S2 (UGM, 2001) Bidang keahlian : Telekomunikasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : widyadi@unud.ac.id
 35 Nama : Pratolo Rahardjo, ST., MT.
-NIP : 19720714 200003 1 003 Pangkat/Gol : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1(UNDIP, 1998), S2 (UGM, 2002) Bidang keahlian : Elektronika Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : pratolo@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 149
+NIP : 19720714 200003 1 003 Pangkat/Gol : Penata Tk. I/IIId Jabatan : Lektor Jenjang pendidikan : S1(UNDIP, 1998), S2 (UGM, 2002) Bidang keahlian : Elektronika Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : pratolo@unud.ac.
 
 # Halaman 174
 
@@ -4519,7 +4528,7 @@ NIP : 19851215 201212 1 001 Pangkat/Gol : Penata Muda Tk. I/IIIb Jabatan : Tenag
 44 Nama : Duman Care Krhisne, ST., MT.
 NIP : 19861225 201404 1 001 Pangkat/Gol : Penata Muda Tk. I/IIIb Jabatan : Asisten Ahli Jenjang pendidikan : S1 (UNUD,2008), S2 (UNUD,2012) Bidang keahlian : Komputer Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : duman@unud.ac.id
 45 Nama : I Putu Elba Duta Nugraha, S.T., M.T.
-NIP : 198105282006041002 Pangkat/Gol : Penata Muda Tk. I/IIIb Jabatan : Asisten Ahli Jenjang pendidikan : S1 (UGM,2005), S2 (TRISAKTI,2017) Bidang keahlian : Elektronika Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : elba@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 151
+NIP : 198105282006041002 Pangkat/Gol : Penata Muda Tk. I/IIIb Jabatan : Asisten Ahli Jenjang pendidikan : S1 (UGM,2005), S2 (TRISAKTI,2017) Bidang keahlian : Elektronika Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung- Bali Telepon Kantor/Fax : (+62)(361) 703315 Email : elba@unud.ac.
 
 # Halaman 176
 
@@ -4557,7 +4566,7 @@ nasionalisme serta rasa tanggungjawab pada negara dan bangsa;
 4. marnpu berkontribusi dalam peningkatan mutu kehidupan bermasyarakat, berbangsa,
 dan bernegara berdasarkan Pancasila;
 5. mampu bekerja sarna dan rnenunjukkan kepekaan sosial serta kepedulian terhadap
-rnasyarakat dan lingkungan; Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 153
+rnasyarakat dan lingkungan;
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 177 | type: table | table_index: 1 -->
 
@@ -4646,7 +4655,7 @@ mencakup sejumlah topik kerekayasaan yang sesuai dengan bidang Teknk Elektro
 6. Kemampuan menerapkan setidaknya satu bidang pengetahuan kedalaman (depth
 knowledge) yang sesuai dengan bidang Teknk Elektro
 7. Kemampuan menerapkan dan keterampilan yang diperoleh dari perkuliahan
-sebelumnya dalam kegiatan desain rekayasa. Dari CP KKNI tersebut didapatkan hubungan Matriks antara hubungan capaian pembelajaran dengan profil lulusan dapat dilihat pada Tabel 8.3. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 155
+sebelumnya dalam kegiatan desain rekayasa. Dari CP KKNI tersebut didapatkan hubungan Matriks antara hubungan capaian pembelajaran dengan profil lulusan dapat dilihat pada Tabel 8.3.
 
 # Halaman 180
 
@@ -4845,7 +4854,7 @@ Telekomunikasi 24BSME03Y051 Statistika 2 20STEE03X208 Sistem Komunikasi 3 Berger
 21 21
 KODE MATA KULIAH SKS KODE MATA KULIAH SKS SEMESTER 6 SEMESTER 7 24STEE03Y027 Kerja Praktek 2 24STEE03X135 Capstone Project 1 2 20STEE03Y213 Pengolahan Sinyal 3 24UNDE03X029 Kuliah Kerja Nyata 3 Multimedia + Lab 20STEE03Y214 Teknologi Telekomunikasi 2 24STEE03X030 Teknopreneurship 3 Terapan 20STEE03Y215 Antena dan Propagasi 3 20STEE03X218 Teknik Keamanan 2 Gelombang Radio Jaringan (Cyber Security Analyst) 20STEE03Y216 Teknologi Nirkabel + Lab 3 Matakuliah Pilihan (Pilih 6 3) Matakuliah Pilihan (Pilih 3) 6
 19 16
-KODE MATA KULIAH SKS SEMESTER 8 24UNDE03Y031 Pancasila dan 3 Kewarganegaraan 24STEE03Y136 Capstone Project 2 4 7 Tabel 8.9 Mata Kuliah Pilihan Bidang Studi Teknik Telekomunikasi Multimedia MATA KULIAH KODE MATA KULIAH PILIHAN SKS KODE SKS PILIHAN SEMESTER 6 SEMESTER 7 24STEE03Y501 Wireless Sensor Network 2 24STEE03X507 Citra dan Video Analitik 2 24STEE03Y502 Network Management Models 2 24STEE03X508 Regulasi dan Bisnis 2 and Technologies Telekomunikasi 24STEE03Y703 Manajemen Proyek dan 2 24STEE03X509 Penginderaaan Jarak 2 Strategi Kepemimpinan Jauh 24STEE03Y504 Teknologi Telekomunikasi 2 24STEE03X510 Audit Telekomunikasi 2 Ramah Lingkungan 24STEE03Y505 Sistem Radar dan Navigasi 2 24STEE03X511 Teknologi Sosial Media 2 24STEE03Y506 Teknologi Optik 2 24STEE03X512 Jaringan Antar 2 Kendaraan (Vehicular Networks) 24STEE03Y522 Big Data 2 24STEE03X601 Teknik Utilitas Elektrikal 2 24STEE03Y511 Piranti Lunak Telekomunikasi 2 24STEE03Y516 Audio Processing 2 24STEE03X517 Sistem Telekomunikasi 2 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 161
+KODE MATA KULIAH SKS SEMESTER 8 24UNDE03Y031 Pancasila dan 3 Kewarganegaraan 24STEE03Y136 Capstone Project 2 4 7 Tabel 8.9 Mata Kuliah Pilihan Bidang Studi Teknik Telekomunikasi Multimedia MATA KULIAH KODE MATA KULIAH PILIHAN SKS KODE SKS PILIHAN SEMESTER 6 SEMESTER 7 24STEE03Y501 Wireless Sensor Network 2 24STEE03X507 Citra dan Video Analitik 2 24STEE03Y502 Network Management Models 2 24STEE03X508 Regulasi dan Bisnis 2 and Technologies Telekomunikasi 24STEE03Y703 Manajemen Proyek dan 2 24STEE03X509 Penginderaaan Jarak 2 Strategi Kepemimpinan Jauh 24STEE03Y504 Teknologi Telekomunikasi 2 24STEE03X510 Audit Telekomunikasi 2 Ramah Lingkungan 24STEE03Y505 Sistem Radar dan Navigasi 2 24STEE03X511 Teknologi Sosial Media 2 24STEE03Y506 Teknologi Optik 2 24STEE03X512 Jaringan Antar 2 Kendaraan (Vehicular Networks) 24STEE03Y522 Big Data 2 24STEE03X601 Teknik Utilitas Elektrikal 2 24STEE03Y511 Piranti Lunak Telekomunikasi 2 24STEE03Y516 Audio Processing 2 24STEE03X517 Sistem Telekomunikasi
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 185 | type: table | table_index: 1 -->
 
@@ -4922,7 +4931,7 @@ Network 24STEE03Y606 Dasar Elektronika Cerdas 2 24STEE03X612 Kendali Otomotif 2 
 21 21
 KODE MATA KULIAH SKS KODE MATA KULIAH SKS SEMESTER 6 SEMESTER 7 24STEE03Y027 Kerja Praktek 2 24STEE03X135 Capstone Project 1 2 24STEE03Y413 Keamanan Komputer 3 24UNDE03X029 Kuliah Kerja Nyata 3 24STEE03Y415 Pemrograman Aplikasi 3 24STEE03X030 Teknopreneurship 3 Mobile + Lab 24STEE03Y416 Integrasi Data dan Sistem 2 24STEE03X414 Sistem Informasi 2 Geografis 24STEE03X408 Pemrograman Internet + 3 Matakuliah Pilihan 6 Lab (Pilih 3) Matakuliah Pilihan (Pilih 3) 6
 19 16
-KODE MATA KULIAH SKS SEMESTER 8 24UNDE03Y031 Pancasila dan 3 Kewarganegaraan 24STEE03Y136 Capstone Project 2 4 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 163
+KODE MATA KULIAH SKS SEMESTER 8 24UNDE03Y031 Pancasila dan 3 Kewarganegaraan 24STEE03Y136 Capstone Project 2
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 187 | type: table | table_index: 1 -->
 
@@ -5035,7 +5044,7 @@ Bidang Studi Energi dan Sistem Tenaga Listrik Tabel 8.15 CP pada setiap Mata Kul
 2 1,2 0,5 0,3
 0,4 0,4 0,4 0,1 0,1 0,3 0,3
 2 1,2 0,5 0,3
-0,4 0,4 0,4 0,1 0,1 0,3 0,3 JUMLAH 16 0,2 0,2 0,3 0,3 2,4 2,3 2,7 0,1 0,1 1,1 1,1 1,8 1,15 0,25 0,25 0,25 0,75 0,75 SEMESTER 8 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 IK1a IK1bIK1cIK2a IK2B IK2c IK2d IK3a IK3bIK3cIK4a IK4b IK4c IK5aIK5bIK6a IK6b IK6c IK7 IK8a IK8bIKBc IK9a IK9b IK10 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 1 1 1 0,3 0,3 0,4 0,5 0,5 0,2 0,8 24STEE03Y136 Capstone Project 2 4 0,75 0,75 0,75 0,25 0,75 0,25 0,25 0,25 0,2 0,2 0,2 0,15 0,25 0,25 0,25 0,3 0,45 0,1 0,1 0,05 0,75 0,05 0,1 0,1 0,15 0,1 0,25 JUMLAH 7 0,2 0,2 0,2 0,15 0,25 0,25 0,25 0,3 0,45 0,4 0,4 0,45 0,75 0,05 0,6 0,6 0,35 0,9 0,25 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 165
+0,4 0,4 0,4 0,1 0,1 0,3 0,3 JUMLAH 16 0,2 0,2 0,3 0,3 2,4 2,3 2,7 0,1 0,1 1,1 1,1 1,8 1,15 0,25 0,25 0,25 0,75 0,75 SEMESTER 8 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 IK1a IK1bIK1cIK2a IK2B IK2c IK2d IK3a IK3bIK3cIK4a IK4b IK4c IK5aIK5bIK6a IK6b IK6c IK7 IK8a IK8bIKBc IK9a IK9b IK10 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 1 1 1 0,3 0,3 0,4 0,5 0,5 0,2 0,8 24STEE03Y136 Capstone Project 2 4 0,75 0,75 0,75 0,25 0,75 0,25 0,25 0,25 0,2 0,2 0,2 0,15 0,25 0,25 0,25 0,3 0,45 0,1 0,1 0,05 0,75 0,05 0,1 0,1 0,15 0,1 0,25 JUMLAH 7 0,2 0,2 0,2 0,15 0,25 0,25 0,25 0,3 0,45 0,4 0,4 0,45 0,75 0,05 0,6 0,6 0,35 0,9 0,
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 189 | type: table | table_index: 1 -->
 
@@ -5247,7 +5256,7 @@ Bidang Studi Teknik Elektronika, Kendali dan Robotika Tabel 8.17 CP pada setiap 
 2 1,2 0,5 0,3
 0,4 0,4 0,4 0,1 0,1 0,3 0,3
 2 1,2 0,5 0,3
-0,4 0,4 0,4 0,1 0,1 0,3 0,3 JUMLAH 16 0 0 0 0,2 0,15 0,2 0,2 0,00 0,00 0 2,5 2,4 2,45 0 0 1,1 1,1 1,8 1,65 0,25 0,25 0,25 0,75 0,75 SEMESTER 8 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 IK1a IK1b IK1c IK2a IK2B IK2c IK2d IK3a IK3b IK3c IK4a IK4b IK4c IK5a IK5b IK6a IK6b IK6c IK7 IK8a IK8b IKBc IK9a IK9b IK10 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 0,3 0, 1 3 0,4 0 1 ,5 0,5 0,2 1 0,8 24STEE03Y136 Capstone Project 2 4 0,2 0,2 0 0 , , 7 2 5 0,15 0,25 0 0 , , 2 7 5 5 0,25 0,3 0,75 0,45 0,1 0 0 , , 1 25 0,05 0 0 , , 7 7 5 5 0,05 0 0 , , 2 1 5 0,1 0,15 0,25 0,1 0 0 , , 2 2 5 5 JUMLAH 7 0,2 0,2 0,2 0,15 0,25 0,25 0,25 0,3 0,45 0,4 0,4 0,45 0,75 0,05 0,6 0,60 0,35 0,9 0,25 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 167
+0,4 0,4 0,4 0,1 0,1 0,3 0,3 JUMLAH 16 0 0 0 0,2 0,15 0,2 0,2 0,00 0,00 0 2,5 2,4 2,45 0 0 1,1 1,1 1,8 1,65 0,25 0,25 0,25 0,75 0,75 SEMESTER 8 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 IK1a IK1b IK1c IK2a IK2B IK2c IK2d IK3a IK3b IK3c IK4a IK4b IK4c IK5a IK5b IK6a IK6b IK6c IK7 IK8a IK8b IKBc IK9a IK9b IK10 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 0,3 0, 1 3 0,4 0 1 ,5 0,5 0,2 1 0,8 24STEE03Y136 Capstone Project 2 4 0,2 0,2 0 0 , , 7 2 5 0,15 0,25 0 0 , , 2 7 5 5 0,25 0,3 0,75 0,45 0,1 0 0 , , 1 25 0,05 0 0 , , 7 7 5 5 0,05 0 0 , , 2 1 5 0,1 0,15 0,25 0,1 0 0 , , 2 2 5 5 JUMLAH 7 0,2 0,2 0,2 0,15 0,25 0,25 0,25 0,3 0,45 0,4 0,4 0,45 0,75 0,05 0,6 0,60 0,35 0,9 0,
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 191 | type: table | table_index: 1 -->
 
@@ -5478,7 +5487,7 @@ Sistem Mikroprosesor + Lab (3)
 19 System Engineering (Seminar, 82 6 10 C4 Kerja Praktek (2)
 KP,Skrips Skripsi (4) Pengantar Skripsi (2)
 20 Social and Professional Issue 0 4 C2 Etika Profesi (2)
-8.5.7. Merdeka Belajar Dengan dikeluarkannya Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi (SNPT) dan Buku Panduan Merdeka Belajar Kampus Merdeka (---, 2020) maka semua program studi pada Perguruan Tinggi di seluruh Indonesia perlu menyesuaikan kurikulumnya. Pada prinsipnya, kebijakan Kampus Merdeka ini memberi kebebasan dan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 169
+8.5.7. Merdeka Belajar Dengan dikeluarkannya Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi (SNPT) dan Buku Panduan Merdeka Belajar Kampus Merdeka (---, 2020) maka semua program studi pada Perguruan Tinggi di seluruh Indonesia perlu menyesuaikan kurikulumnya. Pada prinsipnya, kebijakan Kampus Merdeka ini memberi kebebasan dan
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 193 | type: table | table_index: 1 -->
 
@@ -5522,7 +5531,7 @@ proses pembelajaran di luar prodi PLP sekurang-kurangnya 20 sks berupa Magang In
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 195 | type: text -->
 
 BAGIAN 8. PROGRAM STUDI TEKNIK ELEKTRO
-dan mengganti mata kuliah yang diambil di luar prodi, yaitu mata kuliah-mata kuliah di Semester 5 dan 6 selain yang sudah dikonversi untuk bentuk 7:1 dan 6:2. Berikut adalah susunan mata kuliah pada Kurikulum 2020-2025 Model 8:0, Model 7:1, Model 6:2, dan Model 5:3. Dari tabel-tabel berikut ini mata kuliah yang diberikan warna Hijau adalah mata kuliah yang wajib diambil. Sedangkan, mata kuliah-mata kuliah yang ditandai dengan warna Oranye adalah mata kuliah yang bisa dikonversi untuk kegiatan Merdeka Belajar Kampus Merdeka sesuai dengan skema yang akan diambil oleh mahasiswa. Mata Kuliah Bersama Kurikulu Kurikulu Kurikulu Kurikulu KODE MATA KULIAH SKS m 8:0 m 7:1 m 6:2 m 5:3 SEMESTER 1 24STEE03X002 Literasi Teknologi Informasi dan Komunikasi 2 24STEE03X033 Dasar SistemTelekomunikasi + Lab 3 24STEE03X034 Pemrograman Komputer + Lab 3 24BSKE03X035 Kimia 2 24BSFE03X036 Fisika I 3 24BSME03X037 Kalkulus Variabel Tunggal 3 24UNDE03X011 Bahasa Indonesia dan Tata Tulis Karya Ilmiah 2 24UNDE03X004 Bahasa Inggris 2 Jumlah 20 SEMESTER 2 24STEE03Y041 Pengukuran dan Instrumentasi + Lab 3 24BSFE03Y038 Fisika II +Lab 4 24BSME03Y039 Kalkulus Variabel Jamak 3 24STEE03Y001 Teknik Digital + Lab 3 24STEE03Y040 Rangkaian Listrik I 2 24STEE03Y013 Teknik Tenaga Listrik + Lab 3 24BSME03Y043 Probablitas dan Variabel Acak 2 Jumlah 20 SEMESTER 3 24BSFE03X045 Fisika III 3 24STEE03X046 Sistem Mikroprosesor 2 24STEE03X129 Rangkaian Listrik II + Lab 3 24STEE03X049 Dasar Elektronika + Lab 3 24BSME03X048 Persamaan diferensial 3 24BSME03X047 Metode Numerik 2 24STEE03X015 Sinyal dan Sistem 2 24BSME03X042 Aljabar Liner 2 Jumlah 20 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 171
+dan mengganti mata kuliah yang diambil di luar prodi, yaitu mata kuliah-mata kuliah di Semester 5 dan 6 selain yang sudah dikonversi untuk bentuk 7:1 dan 6:2. Berikut adalah susunan mata kuliah pada Kurikulum 2020-2025 Model 8:0, Model 7:1, Model 6:2, dan Model 5:3. Dari tabel-tabel berikut ini mata kuliah yang diberikan warna Hijau adalah mata kuliah yang wajib diambil. Sedangkan, mata kuliah-mata kuliah yang ditandai dengan warna Oranye adalah mata kuliah yang bisa dikonversi untuk kegiatan Merdeka Belajar Kampus Merdeka sesuai dengan skema yang akan diambil oleh mahasiswa. Mata Kuliah Bersama Kurikulu Kurikulu Kurikulu Kurikulu KODE MATA KULIAH SKS m 8:0 m 7:1 m 6:2 m 5:3 SEMESTER 1 24STEE03X002 Literasi Teknologi Informasi dan Komunikasi 2 24STEE03X033 Dasar SistemTelekomunikasi + Lab 3 24STEE03X034 Pemrograman Komputer + Lab 3 24BSKE03X035 Kimia 2 24BSFE03X036 Fisika I 3 24BSME03X037 Kalkulus Variabel Tunggal 3 24UNDE03X011 Bahasa Indonesia dan Tata Tulis Karya Ilmiah 2 24UNDE03X004 Bahasa Inggris 2 Jumlah 20 SEMESTER 2 24STEE03Y041 Pengukuran dan Instrumentasi + Lab 3 24BSFE03Y038 Fisika II +Lab 4 24BSME03Y039 Kalkulus Variabel Jamak 3 24STEE03Y001 Teknik Digital + Lab 3 24STEE03Y040 Rangkaian Listrik I 2 24STEE03Y013 Teknik Tenaga Listrik + Lab 3 24BSME03Y043 Probablitas dan Variabel Acak 2 Jumlah 20 SEMESTER 3 24BSFE03X045 Fisika III 3 24STEE03X046 Sistem Mikroprosesor 2 24STEE03X129 Rangkaian Listrik II + Lab 3 24STEE03X049 Dasar Elektronika + Lab 3 24BSME03X048 Persamaan diferensial 3 24BSME03X047 Metode Numerik 2 24STEE03X015 Sinyal dan Sistem 2 24BSME03X042 Aljabar Liner 2 Jumlah
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 195 | type: table | table_index: 1 -->
 
@@ -5617,7 +5626,7 @@ Bidang Studi Energi dan Sistem Tenaga Listrik Kurikulu Kurikulu Kurikulu Kurikul
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 197 | type: text -->
 
 BAGIAN 8. PROGRAM STUDI TEKNIK ELEKTRO
-Bidang Studi Teknik Telekomunikasi Multimedia Kurikulu Kurikulu Kurikulu Kurikulu KODE MATA KULIAH SKS m 8:0 m 7:1 m 6:2 m 5:3 SEMESTER 4 24STEE03Y023 Pengolahan Sinyal Digital + Lab 3 24STEE03Y050 Internet of Things 2 24STEE03Y019 Sistem Kendali + Lab 3 24BSME03Y051 Statistika 2 24BSME03Y044 Matematika Diskrit 3 24STEE03Y201 Sistem Komunikasi Analog dan Digital + Lab 3 24STEE03Y203 Teknik Jaringan Telekomunikasi + Lab 3 24STEE03Y205 Proses Stokastik 2 Jumlah 21 SEMESTER 5 24UNDE03X026 Agama 2 24STEE03X204 Transmisi Gelombang Elektromagnetik 2 24STEE03X207 Elektronika Telekomunikasi 3 24STEE03X208 Sistem Komunikasi Bergerak 3 24STEE03X209 Teknik Pengkodean Kanal 2 24STEE03X210 Sistem Telekomunikasi Satelit dan Teresterial 3 24STEE03X212 Sistem Telekomunikasi Digital + Lab 3 24STEE03Y202 Rekayasa Trafik Telekomunikasi 3 Jumlah 21 SEMESTER 6 24STEE03Y027 Kerja Praktek 2 24STEE03Y213 Pengolahan Sinyal Multimedia + Lab 3 24STEE03Y214 Teknologi Telekomunikasi Terapan 2 24STEE03Y215 Antena dan Propagasi Gelombang Radio 3 24STEE03Y216 Teknologi Nirkabel + Lab 3 Matakuliah Pilihan Bidang Studi atau Bidang Studi lain (Pilih6 3) Jumlah 19 SEMESTER 7 24STEE03X135 Capstone Project I 2 24UNDE03X029 Kuliah Kerja Nyata 3 24STEE03X030 Teknopreneurship 3 24STEE03X218 Teknik Keamanan Jaringan (Cyber Security Analyst) 2 Matakuliah Pilihan Bidang Studi atau Bidang Studi lain (Pilih6 3) Jumlah 16 SEMESTER 8 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 24STEE03Y136 Capstone Project 2 4 Jumlah 7 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 173
+Bidang Studi Teknik Telekomunikasi Multimedia Kurikulu Kurikulu Kurikulu Kurikulu KODE MATA KULIAH SKS m 8:0 m 7:1 m 6:2 m 5:3 SEMESTER 4 24STEE03Y023 Pengolahan Sinyal Digital + Lab 3 24STEE03Y050 Internet of Things 2 24STEE03Y019 Sistem Kendali + Lab 3 24BSME03Y051 Statistika 2 24BSME03Y044 Matematika Diskrit 3 24STEE03Y201 Sistem Komunikasi Analog dan Digital + Lab 3 24STEE03Y203 Teknik Jaringan Telekomunikasi + Lab 3 24STEE03Y205 Proses Stokastik 2 Jumlah 21 SEMESTER 5 24UNDE03X026 Agama 2 24STEE03X204 Transmisi Gelombang Elektromagnetik 2 24STEE03X207 Elektronika Telekomunikasi 3 24STEE03X208 Sistem Komunikasi Bergerak 3 24STEE03X209 Teknik Pengkodean Kanal 2 24STEE03X210 Sistem Telekomunikasi Satelit dan Teresterial 3 24STEE03X212 Sistem Telekomunikasi Digital + Lab 3 24STEE03Y202 Rekayasa Trafik Telekomunikasi 3 Jumlah 21 SEMESTER 6 24STEE03Y027 Kerja Praktek 2 24STEE03Y213 Pengolahan Sinyal Multimedia + Lab 3 24STEE03Y214 Teknologi Telekomunikasi Terapan 2 24STEE03Y215 Antena dan Propagasi Gelombang Radio 3 24STEE03Y216 Teknologi Nirkabel + Lab 3 Matakuliah Pilihan Bidang Studi atau Bidang Studi lain (Pilih6 3) Jumlah 19 SEMESTER 7 24STEE03X135 Capstone Project I 2 24UNDE03X029 Kuliah Kerja Nyata 3 24STEE03X030 Teknopreneurship 3 24STEE03X218 Teknik Keamanan Jaringan (Cyber Security Analyst) 2 Matakuliah Pilihan Bidang Studi atau Bidang Studi lain (Pilih6 3) Jumlah 16 SEMESTER 8 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 24STEE03Y136 Capstone Project 2 4 Jumlah
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 197 | type: table | table_index: 1 -->
 
@@ -5723,7 +5732,7 @@ BAGIAN 8. PROGRAM STUDI TEKNIK ELEKTRO
 Bidang Studi Teknik Komputer KODE MATA KULIAH SKS SEMESTER 4 24STEE03Y023 Pengolahan Sinyal Digital + Lab 3 24STEE03Y050 Internet of Things 2 24STEE03Y019 Sistem Kendali + Lab 3 24BSME03Y051 Statistika 2 24BSME03Y044 Matematika Diskrit 3 24STEE03Y402 Rekayasa Perangkat Lunak 2 24STEE03Y403 Arsitektur Komputer dan Sistem Operasi 2 24STEE03Y404 Basis Data + Lab 3 Jumlah 21 SEMESTER 5 24UNDE03X026 Agama 2 24STEE03X406 Interaksi Manusia dan Komputer 2 24STEE03X407 Pengolahan Citra Digital 3 24STEE03X401 Pemrograman Visual + Lab 3 24STEE03X409 Jaringan Komputer + Lab 3 24STEE03X410 Struktur Data 3 24STEE03X411 Pemrograman Berorientasi Objek + Lab 3 24STEE03X412 Kecerdasan Buatan 2 Jumlah 21 SEMESTER 6 24STEE03Y027 Kerja Praktek 2 24STEE03Y413 Keamanan Komputer 3 24STEE03Y415 Pemrograman Aplikasi Mobile + Lab 3 24STEE03Y416 Integrasi Data dan Sistem 2 24STEE03X408 Pemrograman Internet + Lab 3 24STEE03Y413 Matakuliah Pilihan Bidang Studi atau Bidang Studi lain (Pilih6 3) Jumlah 19 SEMESTER 7 24STEE03X135 Capstone Project 1 2 24UNDE03X029 Kuliah Kerja Nyata 3 24STEE03X030 Teknopreneurship 3 24STEE03X414 Sistem Informasi Geografis 2 Matakuliah Pilihan Bidang Studi atau Bidang Studi lain (Pilih6 3) 16 SEMESTER 8 24UNDE03Y031 Pancasila dan Kewarganegaraan 3 24STEE03Y136 Capstone Project 2 4 Jumlah 7
 8.6 Sarana dan Prasarana Penunjang
 8.6.1 Ruang Kuliah
-Ruang kuliah yang dipergunakan untuk proses pembelajaran bagi Program S1 Reguler Program Studi Teknik Elektro terletak di kompleks Fakultas Teknik, Kampus Bukit Jimbaran. Terdapat 3 gedung utama yang digunakan untuk seluruh kegiatan perkuliahan dan administrasi, yaitu gedung DH untuk perkuliahan yang terdiri atas 7 ruangan, gedung DI untuk kegiatan pratikum dan penelitian dan gedung DJ untuk ruang program studi, ruang administrasi, ruang baca, ruang dosen, ruang sidang dan ruang server. Semua ruangan yang ada sudah dilengkapi dengan penyejuk udara dan dilengkapi dengan sarana perkuliahan dan administrasi yang memadai. Seluruh proses akademik baik administrasi maupun proses perkuliahan telah tercatat dan terintegrasi dalam Sistem Informasi Akademik (SIMAK) Universitas Udayana serta dapat diakses secara online melalui sistem Single Sign On (SSO) Universitas Udayana yang dikenal dengan IMISSU UNUD. Sedangkan ruang kuliah yang dipergunakan untuk proses perkuliahan bagi Program S1 Non Reguler Program Studi Teknik Elektro terletak di kompleks Fakultas Teknik di Kampus Sudirman. Terdapat 5 gedung utama yang digunakan oleh Fakultas Teknik, yaitu Gedung A, B, C, D dan E. Ruangan-ruangan kuliah tersebut telah dilengkapi dengan sarana perkuliahan yang memadai. Program Non Reguler Fakultas Teknik juga sudah Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 175
+Ruang kuliah yang dipergunakan untuk proses pembelajaran bagi Program S1 Reguler Program Studi Teknik Elektro terletak di kompleks Fakultas Teknik, Kampus Bukit Jimbaran. Terdapat 3 gedung utama yang digunakan untuk seluruh kegiatan perkuliahan dan administrasi, yaitu gedung DH untuk perkuliahan yang terdiri atas 7 ruangan, gedung DI untuk kegiatan pratikum dan penelitian dan gedung DJ untuk ruang program studi, ruang administrasi, ruang baca, ruang dosen, ruang sidang dan ruang server. Semua ruangan yang ada sudah dilengkapi dengan penyejuk udara dan dilengkapi dengan sarana perkuliahan dan administrasi yang memadai. Seluruh proses akademik baik administrasi maupun proses perkuliahan telah tercatat dan terintegrasi dalam Sistem Informasi Akademik (SIMAK) Universitas Udayana serta dapat diakses secara online melalui sistem Single Sign On (SSO) Universitas Udayana yang dikenal dengan IMISSU UNUD. Sedangkan ruang kuliah yang dipergunakan untuk proses perkuliahan bagi Program S1 Non Reguler Program Studi Teknik Elektro terletak di kompleks Fakultas Teknik di Kampus Sudirman. Terdapat 5 gedung utama yang digunakan oleh Fakultas Teknik, yaitu Gedung A, B, C, D dan E. Ruangan-ruangan kuliah tersebut telah dilengkapi dengan sarana perkuliahan yang memadai. Program Non Reguler Fakultas Teknik juga sudah
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 199 | type: table | table_index: 1 -->
 
@@ -5789,7 +5798,7 @@ Digunakan untuk pengenalan komponen– komponen, untai- untai, isyarat-isyarat d
 BAGIAN 8. PROGRAM STUDI TEKNIK ELEKTRO
 Merupakan fasilitas untuk pengenalan komponen- kompoenen, alat ukur dan menganalisis rangkaian sederhana dan teknik- teknik instalasinya. Disamping itu untuk mendukung kegiatan penelitian dan pengembangan untai-untai elektronis untuk sistem komunikasi dan instrumentasi. Gambar 8.2b Kegiatan di Laboratorium Dasar Teknik Elektro Menyelenggarakan kegiatan studi untuk pemakaian alat-alat ukur untuk pengukuran besaran-besaran listrik (arus, tegangan dan daya), besaran non listrik, dan kalibrasi alat - alat ukur dan karakteristik peralatan. Gambar 8.2c Kegiatan di Laboratorium Dasar Teknik Elektro
 2. Laboratorium Sistem Telekomunikasi
-Menyelenggarakan kegiatan yang mencakup praktikum teknik sistem komunikasi dengan pengenalan peralatan- peralatan telekomunikasi dasar, konvensional dan digital dan sebagai sarana untuk mendukung kegiatan penelitian dan pengembangan bidang komunikasi. Juga merupakan laboratorium virtual, yakni sebagian besar bahan-bahan dan alat-alat praktikum menggunakan piranti lunak. Laboratorium ini melayani pelaksanaan praktikum telekomunikasi dan jaringan multimedia, praktikum teknik jaringan telekomunikasi, praktikum pengolahan sinyal digital, praktikum telekomunikasi digital, praktikum sistem komunikasi nirkabel, praktikum sistem telekomunikasi multimedia, praktikum pengolahan sinyal multimedia serta penelitian dan pengembangan sistem dan jaringan telekomunik Gambar 8.3 Kegiatan di Laboratorium Sistem Telekomunikasi Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 177
+Menyelenggarakan kegiatan yang mencakup praktikum teknik sistem komunikasi dengan pengenalan peralatan- peralatan telekomunikasi dasar, konvensional dan digital dan sebagai sarana untuk mendukung kegiatan penelitian dan pengembangan bidang komunikasi. Juga merupakan laboratorium virtual, yakni sebagian besar bahan-bahan dan alat-alat praktikum menggunakan piranti lunak. Laboratorium ini melayani pelaksanaan praktikum telekomunikasi dan jaringan multimedia, praktikum teknik jaringan telekomunikasi, praktikum pengolahan sinyal digital, praktikum telekomunikasi digital, praktikum sistem komunikasi nirkabel, praktikum sistem telekomunikasi multimedia, praktikum pengolahan sinyal multimedia serta penelitian dan pengembangan sistem dan jaringan telekomunik Gambar 8.3 Kegiatan di Laboratorium Sistem Telekomunikasi
 
 # Halaman 202
 
@@ -5815,7 +5824,7 @@ Laboratorium ini digunakan untuk pratikum jaringan instalasi listrik. Mahasiswa 
 8. Laboratorium Teknik Digital dan Mikroprosesor
 Laboratorium ini digunakan untuk pratikum rangkaian logika meliputi pratikum rangkaian gerbang- gerbang dasar, rangkaian kombinasional dan sequensial. juga digunakan untuk pratikum sistem berbasis mikroprosesor meliputi pratikum interfacing untuk pengendalian applicatian board dan simulasi system mikroprosesor dengan perangkat lunak. Laboratorium ini juga melaksanakan pelatihan interfacing dan mikrokontroler. Gambar 8.9 Kegiatan di Laboratorium Rangkaian Logika dan Mikroprosesor
 8.6.4 Workshop
-Menyelenggarakan kegiatan berupa pengenalan bahan-bahan, komponen- komponen, alat-alat ukur dan teknik-teknik pengukuran besaran kelistrikan. Workshop juga melaksanakan kegiatan perbaikan peralatan-peralatan laboratorium dan peralatan listrik dan elektronika lainnya Gambar 8.10 Kegiatan di Workshop Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 179
+Menyelenggarakan kegiatan berupa pengenalan bahan-bahan, komponen- komponen, alat-alat ukur dan teknik-teknik pengukuran besaran kelistrikan. Workshop juga melaksanakan kegiatan perbaikan peralatan-peralatan laboratorium dan peralatan listrik dan elektronika lainnya Gambar 8.10 Kegiatan di Workshop
 
 # Halaman 204
 
@@ -5833,7 +5842,7 @@ Gambar 8.13 PLTS Hybrid (Pilot Project Smart Grid in Microgrid ) Pilot Project S
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 205 | type: text -->
 
-PROGRAM STUDI TEKNIK MESIN Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 181
+PROGRAM STUDI TEKNIK MESIN
 
 # Halaman 206
 
@@ -5863,7 +5872,7 @@ pengetahuan dan teknologi.
 3. Meningkatkan kuantitas dan kualitas penelitian serta membina dan mengembangkan
 jaringan kerjasama dengan lembaga, Dunia Usaha dan Dunia Industri (DUDI) baik di dalam maupun di luar negeri.
 4. Menyebarluaskan dan mengaplikasikan ilmu pengetahuan dan teknologi serta hasil-hasil
-penelitian kepada masyarakat. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 183
+penelitian kepada masyarakat.
 
 # Halaman 208
 
@@ -5894,7 +5903,7 @@ Eng. NIP : 19660222 199103 1 002 Pangkat/Gol. : Pembina Utama Muda /IV.c Jabatan
 6. Nama : Ir. Anak Agung Adhi Suryawan, MT.
 NIP : 19651203 199103 1 003 Pangkat/Gol. : Pembina Tk. I /IV.b Jabatan : Lektor Kepala Jenjang Pendidikan : S1 (ITS, 1990), S2 (ITS, 2000) Bidang Keahlian : Mekanika Fluida Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : aaadhisuryawan@unud.ac.id
 7. Nama : Dr. Ir. Hendra Wijaksana, MSc.
-NIP : 19641230 199103 1 003 Pangkat/Gol. : Penata /III.c Jabatan : Lektor Jenjang Pendidikan : S1 (ITS, 1990), S2 (Salford University, UK, 2003), S3 (Unud, 2021) Bidang Keahlian : Refrigerasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : hendra.wijaksana@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 185
+NIP : 19641230 199103 1 003 Pangkat/Gol. : Penata /III.c Jabatan : Lektor Jenjang Pendidikan : S1 (ITS, 1990), S2 (Salford University, UK, 2003), S3 (Unud, 2021) Bidang Keahlian : Refrigerasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : hendra.wijaksana@unud.ac.
 
 # Halaman 210
 
@@ -5926,7 +5935,7 @@ NIP : 19691231 199412 1 001 Pangkat/Gol. : Pembina Utama /IV.e Jabatan : Guru Be
 16. Nama : Prof. I Wayan Widiada, ST., MSc., Ph.D.
 NIP : 19681119 199412 1 002 Pangkat/Gol. : Pembina Tk. I /IV.b Jabatan : Guru Besar Jenjang Pendidikan : S1 (Unud, 1994), S2 (Liverpool John Moores University, UK, 2002), S3 (Liverpool John Moores University, UK, 2012) Bidang Keahlian : Robotika dan Kontrol Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : wynwidhiada@unud.ac.id
 17. Nama : Prof. I Dewa Gede Ary Subagia, ST., MT,. Ph.D.
-NIP : 19680601 199412 1 001 Pangkat/Gol. : Pembina Utama Madya /IV.d Jabatan : Guru Besar Jenjang Pendidikan : S1 (Unud, 1994), S2 (ITS, 2004), S3 (Chonbuk National University, Korea Selatan, 2013) Bidang Keahlian : Rekayasa Material Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : arsubmt@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 187
+NIP : 19680601 199412 1 001 Pangkat/Gol. : Pembina Utama Madya /IV.d Jabatan : Guru Besar Jenjang Pendidikan : S1 (Unud, 1994), S2 (ITS, 2004), S3 (Chonbuk National University, Korea Selatan, 2013) Bidang Keahlian : Rekayasa Material Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : arsubmt@unud.ac.
 
 # Halaman 212
 
@@ -5958,7 +5967,7 @@ NIP : 19660607 199703 1 001 Pangkat/Gol. : Penata Tk. I /III.d Jabatan : Lektor 
 26. Nama : Ir. Ainul Ghurri, ST., MT., Ph.D.
 NIP : 19711225 199703 1 003 Pangkat/Gol. : Pembina Tk. I /IV.b Jabatan : Lektor Kepala Jenjang Pendidikan : S1 (Unibraw, 1995), S2 (UI, 1998), S3 (Chonbuk National University, Korea Selatan, 2012) Bidang Keahlian : Pembakaran dan Motor Bakar Dalam Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : a_ghurri@unud.ac.id
 27. Nama : Ir. I Made Widiyarta, ST., MSc., Ph.D.
-NIP : 19710722 199803 1 003 Pangkat/Gol. : Penata Tk. I /III.d Jabatan : Lektor Kepala Jenjang Pendidikan : S1 (ITS, 1995), S2 (The University of Sheffield, UK, 2000), S3 (The University of Newcastle upon Tyne, UK, 2010) Bidang Keahlian : Stabilitas Kendaraan, Tribologi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : m.widiyarta@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 189
+NIP : 19710722 199803 1 003 Pangkat/Gol. : Penata Tk. I /III.d Jabatan : Lektor Kepala Jenjang Pendidikan : S1 (ITS, 1995), S2 (The University of Sheffield, UK, 2000), S3 (The University of Newcastle upon Tyne, UK, 2010) Bidang Keahlian : Stabilitas Kendaraan, Tribologi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : m.widiyarta@unud.ac.
 
 # Halaman 214
 
@@ -6000,7 +6009,7 @@ NIP : 19870107 202012 1 002 Pangkat/Gol. : Penata Muda Tk.I /III.b Jabatan : Ass
 36. Nama : I Putu Angga Yuda Pratama, ST., MT.
 NIP : 19970912 202321 1 007 Pangkat/Gol : X Jabatan : Assisten Ahli Jenjang Pendidikan : S1 (Unud, 2019), S2 (Unud, 2021) Bidang Keahlian : Konversi Energi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : ipa.yudapratama@unud.ac.id
 37. Nama : I Putu Widiarta, ST., MT.
-NIP : 19960907 202421 1 001 Pangkat/Gol : X Jabatan : Assisten Ahli Jenjang Pendidikan : S1 (Unud, 2020), S2 (Unud, 2022) Bidang Keahlian : Konversi Energi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : iputuwidiarta@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 191
+NIP : 19960907 202421 1 001 Pangkat/Gol : X Jabatan : Assisten Ahli Jenjang Pendidikan : S1 (Unud, 2020), S2 (Unud, 2022) Bidang Keahlian : Konversi Energi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : iputuwidiarta@unud.ac.
 
 # Halaman 216
 
@@ -6542,7 +6551,7 @@ Program Studi Teknik Mesin Universitas Udayana memiliki 8 laboratorium. Semuanya
 1. Laboratorium Fisika Dasar
 Ketua Laboratorium : Dr. I Made Astika, ST., M.Erg., MT. Laboratorium Fisika Dasar diperuntukkan bagi mahasiswa untuk lebih memahami secara aplikatif tentang ilmu Fisika Terapan. Peralatan yang ada di laboratorium ini antara lain: Uji Gaya Gesek, Hook Law, Wheat Stone Bridge, Newton Ring dan Laws of Lenses and Optical Instruments. Gambar 9.3 Laboratorium Fisika Dasar
 2. Laboratorium Material
-Ketua Laboratorium : Dr. I Ketut Adi Atmika, ST., MT. Laboratorium Material merupakan laboratorium yang terkait dengan pengujian dan penelitian bidang material (pengujian sifat mekanik, statik, dinamik dan struktur mikro dari logam). Selain dipakai untuk kegiatan praktikum, juga dipakai untuk melakukan penelitian oleh dosen maupun oleh mahasiswa yang mengerjakan Skripsi. Adapun peralatan pada laboratorium meterial adalah: Alat Uji SEM, EDS, Kamera Iner + Monitor, Humadity Control, Vacuum Pump, Chiller, Fine Coater. Ultrasonic Cleaner, Microscop Biological, Microscop Metallurgy, Microscop Image Analyzer, Digital Sight, UTM, Kamera, Load Cell Tarik, Mesin Uji Tarik, Load Cell Tekan, Mesin Uji Tekan, Mesin Uji Impact, Mesin Uji Kekerasan, Mesin Uji Komposisi gas C H O Nx, Dapur Pemanas, Mesin Sandblasting, Ultrasonic, Mesin Hotpress, Mesin Pengecoran, Mesin Vacum Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 199
+Ketua Laboratorium : Dr. I Ketut Adi Atmika, ST., MT. Laboratorium Material merupakan laboratorium yang terkait dengan pengujian dan penelitian bidang material (pengujian sifat mekanik, statik, dinamik dan struktur mikro dari logam). Selain dipakai untuk kegiatan praktikum, juga dipakai untuk melakukan penelitian oleh dosen maupun oleh mahasiswa yang mengerjakan Skripsi. Adapun peralatan pada laboratorium meterial adalah: Alat Uji SEM, EDS, Kamera Iner + Monitor, Humadity Control, Vacuum Pump, Chiller, Fine Coater. Ultrasonic Cleaner, Microscop Biological, Microscop Metallurgy, Microscop Image Analyzer, Digital Sight, UTM, Kamera, Load Cell Tarik, Mesin Uji Tarik, Load Cell Tekan, Mesin Uji Tekan, Mesin Uji Impact, Mesin Uji Kekerasan, Mesin Uji Komposisi gas C H O Nx, Dapur Pemanas, Mesin Sandblasting, Ultrasonic, Mesin Hotpress, Mesin Pengecoran, Mesin Vacum
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 223 | type: table | table_index: 1 -->
 
@@ -6575,7 +6584,7 @@ Ketua Laboratorium : I Gusti Komang Dwijana, ST., MT. Laboratorium Proses Produk
 BAGIAN 9. PROGRAM STUDI TEKNIK MESIN
 Ketua Laboratorium : Prof. Dr.Eng. Ir. Made Sucipta, ST., MT., IPM. Laboratorium Fenomena Dasar untuk mengetahui lebih lanjut aspek mekanik, fisik dan proses pembentukan dalam bidang manufaktur, serta memberikan pemahaman terhadap cara kerja alat dan pengoperasian yang benar dari alat uji konversi energi. Praktikum yang dilaksanakan adalah praktikum flashpoin, fire point, impact jet, rolling dan forging. Adapun peralatan yang ada pada laboratorium Fenomena Dasar adalah Heat Transfer Experiment, Linear Heat Conduction Experiment, Radial Heat Conduction Experiment, Extended Surface Heat Transfer Experiment, Conductivity Of Liquid And Gasses Experiment, Rotating Fatique Machine, Flash & Fire Point, Impact Jet, Alat Uji Defleksi Batang, Hardness Tester KW06-253 dan CNC Gambar 9.7 Laboratorium Fenomena Dasar
 6. Laboratorium Prestasi Mesin
-Ketua Laboratorium : Dr. Ir. Made Suarda, M.Eng. Laboratorium Prestasi Mesin meliputi empat laboratorium yaitu laboratorium Perpindahan Panas, Pembakaran atau Motor Bakar, Mesin Fluida dan Refrigerasi. Laboratorium Perpindahan Panas merupakan laboratorium bidang ilmu perpindahan panas atau perpindahan kalor. Laboratorium perpindahan panas merupakan laboratorium analisa, penelitian dan pengujian dalam bidang perpindahan panas baik konduksi, konveksi. Adapun peralatan yang terdapat pada laboratorium perpindahan panas meliputi : Flash and Fire Poin Tester, Steam Generator With Engine Dynamometer, Fuel Cell Energi Trainer, Oxygen Bomb Calorimeter, Heat Exchanger Apparatus, Temperatur Measurement dan Konduktivitas Thermal Solid and Liquid. Gambar 9.8 Laboratorium Perpindahan Panas Laboratorium Pembakaran atau Motor Bakar melaksanakan kegiatan praktikum untuk mempelajari karakteristik motor bakar. Selain dipakai untuk kegiatan praktikum, juga dipakai untuk melakukan penelitian tentang cara penghematan bahan bakar, pencemaran gas buang dan lain-lain oleh dosen maupun oleh mahasiswa untuk skripsi. Laboratorium ini dilengkapi dengan Motor Diesel, Motor Bensin, Gasoline Engine A/T Simulator, Alat Uji Emisi Gas Buang, Permodelan mesin 4-tak dan 2-tak, Permodelan Gardan, Internal Combustion Engine Basic Modul (Test stand with 4-strokes diesel engine), Module Combustion Engine, Bomb Calorimeter, Flow Calorimeter dan Two Cylinder Steam Engine Module (Modul mesin Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 201
+Ketua Laboratorium : Dr. Ir. Made Suarda, M.Eng. Laboratorium Prestasi Mesin meliputi empat laboratorium yaitu laboratorium Perpindahan Panas, Pembakaran atau Motor Bakar, Mesin Fluida dan Refrigerasi. Laboratorium Perpindahan Panas merupakan laboratorium bidang ilmu perpindahan panas atau perpindahan kalor. Laboratorium perpindahan panas merupakan laboratorium analisa, penelitian dan pengujian dalam bidang perpindahan panas baik konduksi, konveksi. Adapun peralatan yang terdapat pada laboratorium perpindahan panas meliputi : Flash and Fire Poin Tester, Steam Generator With Engine Dynamometer, Fuel Cell Energi Trainer, Oxygen Bomb Calorimeter, Heat Exchanger Apparatus, Temperatur Measurement dan Konduktivitas Thermal Solid and Liquid. Gambar 9.8 Laboratorium Perpindahan Panas Laboratorium Pembakaran atau Motor Bakar melaksanakan kegiatan praktikum untuk mempelajari karakteristik motor bakar. Selain dipakai untuk kegiatan praktikum, juga dipakai untuk melakukan penelitian tentang cara penghematan bahan bakar, pencemaran gas buang dan lain-lain oleh dosen maupun oleh mahasiswa untuk skripsi. Laboratorium ini dilengkapi dengan Motor Diesel, Motor Bensin, Gasoline Engine A/T Simulator, Alat Uji Emisi Gas Buang, Permodelan mesin 4-tak dan 2-tak, Permodelan Gardan, Internal Combustion Engine Basic Modul (Test stand with 4-strokes diesel engine), Module Combustion Engine, Bomb Calorimeter, Flow Calorimeter dan Two Cylinder Steam Engine Module (Modul mesin
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 225 | type: table | table_index: 1 -->
 
@@ -6608,7 +6617,7 @@ Gambar 9.12 Laboratorium Analisa Bahan
 8. Laboratorium Komputer
 Ketua Laboratorium : Dr. I Made Parwata, ST., MT. Laboratorium Komputasi memfasilitasi mahasiswa untuk menguasai dasar-dasar dan aplikasi gambar analis dengan bantuan analisa. Pada laboratorium komputasi untuk desain analis tersedia analisaa dengan spesifikasi khusus sehingga sangat mampu untuk menjalankan software aplikasi design analisa baik 2D maupun 3D. Mahasiswa dapat belajar menggambar dari mulai bentuk dasar sederhana sampai dengan membuat gambar komponen yang rumit, bahkan membuat gambar analis untuk suatu mesin/peralatan yang merupakan gabungan dari beberapa komponen yang terdiri dari gambar model 3D dan gambar kerja 2D. Mahasiswa dapat meningkatkan skill menggambar analis menggunakan software semisal Autodesk Inventor, Solidwork atau software gambar analis (CAD) lainnya. Selain itu Laboratorium Komputasi juga memfasilitasi mahasiswa yang sedang melakukan penelitian untuk skripsi dengan topik tentang simulasi analisa desain (CAE) dengan bantuan software ANSYS, MSC Marc., dan topik optimasi desain dengan software Minitab. Di dalam Laboratorium Komputasi ini terdapat sarana dan prasarana yang memungkinkan para anggotanya dapat melaksanakan kegiatannya dengan mudah. Diantaranya yaitu sebagai berikut: Ruangan ber-AC berukuran 6.6 x 9.8 m2, 50 (lima putuh) unit computer, 1 (satu) unit LCD Proyektor, 50 (lima puluh) unit UPS dan 1 (satu) buah papan tulis. Gambar 9.13 Laboratorium Komputer
 9.7.3 Ruang Administrasi
-Ruang administrasi merupakan ruang bagi pegawai dan mahasiswa untuk melengkapi semua administrasi yang berhubungan dengan aktivitas perkuliahan. Seluruh proses akademik baik administrasi maupun proses perkuliahan telah tercatat dan terintegrasi dalam sistem informasi akademik (SIMAK) Universitas Udayana serta dapat diakses secara online melalui sistem Single Sign On (SSO) Universitas Udayana yang dikenal dengan IMISSU UNUD. Kegiatan administrasi akademik di Program Studi Teknik Mesin dilaksanakan di Gedung DC lantai I. Posisi ruangan ini bersebelahan dengan ruangan Ketua Program Studi. Ruangan ini dilengkapi dengan berbagai sarana penunjang kegiatan administrasi seperti 4 unit komputer yang terhubung dengan internet, 3 unit printer, scaner, telepon, Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 203
+Ruang administrasi merupakan ruang bagi pegawai dan mahasiswa untuk melengkapi semua administrasi yang berhubungan dengan aktivitas perkuliahan. Seluruh proses akademik baik administrasi maupun proses perkuliahan telah tercatat dan terintegrasi dalam sistem informasi akademik (SIMAK) Universitas Udayana serta dapat diakses secara online melalui sistem Single Sign On (SSO) Universitas Udayana yang dikenal dengan IMISSU UNUD. Kegiatan administrasi akademik di Program Studi Teknik Mesin dilaksanakan di Gedung DC lantai I. Posisi ruangan ini bersebelahan dengan ruangan Ketua Program Studi. Ruangan ini dilengkapi dengan berbagai sarana penunjang kegiatan administrasi seperti 4 unit komputer yang terhubung dengan internet, 3 unit printer, scaner, telepon,
 
 # Halaman 228
 
@@ -6629,7 +6638,7 @@ Ruangan ini terletak di Gedung DC lantai 1. Ruangan ini digunakan untuk rapat Pr
 9.7.6 Ruang Belajar
 Ruangan ini terletak di Gedung DC lantai 1 yang bersebelahan dengan ruang sidang. Ruangan ini digunakan oleh mahasiswa untuk melakukan semua kegiatan yang berhubungan dengan aktivitas perkuliahan seperti belajar, mengerjakan tugas, diskusi kelompok. Ruangan ini dilengkapi dengan meja rapat/meeting, kursi, LCD, fasilitas hotspot dan AC. Gambar 9.18 Ruang Belajar (Study Room)
 9.7.7 Taman Internet
-Taman internet Program Studi Teknik Mesin dibangun dari sumbangan alumni Program Studi Teknik Mesin dan sumbangan dosen I Dewa Made Krishna Muku, ST., MT. Taman internet merupakan tempat bagi mahasiswa untuk melakukan semua kegiatan yang berhubungan dengan aktivitas perkuliahan seperti belajar, mengerjakan tugas, diskusi kelompok. Taman internet Program Studi Teknik Mesin terletak sebelah timur gedung DC. Tempat ini dilengkapi dengan berbagai sarana penunjang kegiatan seperti meja, kursi, wifi, listrik. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 205
+Taman internet Program Studi Teknik Mesin dibangun dari sumbangan alumni Program Studi Teknik Mesin dan sumbangan dosen I Dewa Made Krishna Muku, ST., MT. Taman internet merupakan tempat bagi mahasiswa untuk melakukan semua kegiatan yang berhubungan dengan aktivitas perkuliahan seperti belajar, mengerjakan tugas, diskusi kelompok. Taman internet Program Studi Teknik Mesin terletak sebelah timur gedung DC. Tempat ini dilengkapi dengan berbagai sarana penunjang kegiatan seperti meja, kursi, wifi, listrik.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 229 | type: table | table_index: 1 -->
 
@@ -6656,7 +6665,7 @@ Gambar 9.19 Taman Internet Program Studi Teknik Mesin
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 231 | type: text -->
 
-PROGRAM STUDI TEKNOLOGI INFORMASI Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 207
+PROGRAM STUDI TEKNOLOGI INFORMASI
 
 # Halaman 232
 
@@ -6684,7 +6693,7 @@ Berdasarkan misi diatas, tujuan Program Studi Teknologi Informasi Universitas Ud
 1. Menghasilkan Sarjana Teknologi Informasi yang berkualitas tinggi dan memenuhi
 kebutuhan masyarakat pengguna lulusan.
 2. Menghasilkan Sarjana Teknologi Informasi yang mampu beradaptasi terhadap
-perkembangan teknologi terkini dengan penekanan pada aspek-aspek berpikir secara kritis dan inovatif. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 209
+perkembangan teknologi terkini dengan penekanan pada aspek-aspek berpikir secara kritis dan inovatif.
 
 # Halaman 234
 
@@ -6793,7 +6802,7 @@ H Sistem Informasi Manajemen Program Studi Total Aktivitas ber Total Aktivitas T
 1 Dukungan SIM dalam Aktivitas Program Studi parsial
 SIM ber SIM ber SIM I Kerjasama nasional, nasional, nasional, nasional,
 1 Kerjasama
-internasional internasional internasional internasional J Pengembangan Jurnal Ilmiah Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 211
+internasional internasional internasional internasional J Pengembangan Jurnal Ilmiah
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 235 | type: table | table_index: 1 -->
 
@@ -6894,7 +6903,7 @@ NIP : 197303262000031002 NIDN : 0026037305 Pangkat/Gol. : Penata Tk.I /IIId Jaba
 4. Nama : Ir. I Nyoman Piarsa, S.T., M.T., IPM.
 NIP : 197502272000031001 NIDN : 0027027509 Pangkat/Gol. : Penata/IIIc Jabatan : Lektor Jenjang Pendidikan : S1 (ITS, 1998), S2 (UGM, 2001) Bidang Keahlian : Network & Server Administration, Image Proccessing, Mobile & Internet Application Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : manpits@unud.ac.id , manpits@gmail.com
 5. Nama : Gusti Agung Ayu Putri, S.T., M.T.
-NIP : 197304212001122001 NIDN : 0021047310 Pangkat/Gol. : Penata Tk.I/IIId Jabatan : Lektor Jenjang Pendidikan : S1 (UNUD, 2000; University of Surrey-UK, 2001), S2 (UGM, 2005) Bidang Keahlian : Informatika, Sistem Informasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : agung.ayuputri@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 213
+NIP : 197304212001122001 NIDN : 0021047310 Pangkat/Gol. : Penata Tk.I/IIId Jabatan : Lektor Jenjang Pendidikan : S1 (UNUD, 2000; University of Surrey-UK, 2001), S2 (UGM, 2005) Bidang Keahlian : Informatika, Sistem Informasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : agung.ayuputri@unud.ac.
 
 # Halaman 238
 
@@ -6926,7 +6935,7 @@ NIP : 198103272014042001 NIDN : 0827038102 Pangkat/Gol. : Penata Tk I/IIId Jabat
 14 Nama : Dwi Putra Githa, S.T.,M.T.
 . NIP : 198606062015041001 NIDN : 0806068602 Pangkat/Gol. : Penata /IIIc Jabatan : Lektor Jenjang Pendidikan : S1 (UNUD, 2009), S2 (ITB, 2011) Bidang Keahlian : Basis Data, Sistem Informasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : dwiputragitha@unud.ac.id, dwiputragitha@gmail.com
 15 Nama : Ni Kadek Dwi Rusjayanthi, S.T., M.T.
-. NIK : 1985050920181123001 NIDN : 0809058502 Pangkat/Gol. : Penata Muda Tk I /IIIb Jabatan : Asisten Ahli Jenjang Pendidikan : S1 (UNUD, 2008), S2 (UNUD, 2013), (Sedang S3 UNUD) Bidang Keahlian : Soft Computing, Data mining, Sistem Pakar Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : dwi.rusjayanthi@unud.ac.id, dwi.rusjayanthi@gmail.com Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 215
+. NIK : 1985050920181123001 NIDN : 0809058502 Pangkat/Gol. : Penata Muda Tk I /IIIb Jabatan : Asisten Ahli Jenjang Pendidikan : S1 (UNUD, 2008), S2 (UNUD, 2013), (Sedang S3 UNUD) Bidang Keahlian : Soft Computing, Data mining, Sistem Pakar Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : dwi.rusjayanthi@unud.ac.id, dwi.rusjayanthi@gmail.com
 
 # Halaman 240
 
@@ -6964,7 +6973,7 @@ BAGIAN 10. PROGRAM STUDI TEKNOLOGI INFORMASI
 24 Nama : Dewa Made Sri Arsa, S.Kom., M.Kom.
 . NIK : 1992032020181113001 NIDN : 0020039204 Pangkat/Gol. : Penata Muda Tk. I / IIIb Jabatan : Asisten Ahli Jenjang : S1(UNUD, 2014), S2(UI, 2016), (Sedang S3 di Jeonbuk Pendidikan National University) Bidang Keahlian : Machine Learning, Computational Intelligence, Optimization, Image Processing, Semantic Segmentation Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : dewamsa@unud.ac.id
 25 Nama : Ir. Putu Veda Andreyana, S.TI., MT.
-. NIP : 1990081320230813001 NIDK : 8985550022 Pangkat/Gol. : - / IIIb Jabatan : Tenaga Pengajar Jenjang : S1(UNUD, 2015), S2(UNUD, 2020) Pendidikan Bidang Keahlian : Sistem Pakar, Sistem Informasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : putuveda@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 217
+. NIP : 1990081320230813001 NIDK : 8985550022 Pangkat/Gol. : - / IIIb Jabatan : Tenaga Pengajar Jenjang : S1(UNUD, 2015), S2(UNUD, 2020) Pendidikan Bidang Keahlian : Sistem Pakar, Sistem Informasi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (0361) 701806 Email : putuveda@unud.ac.
 
 # Halaman 242
 
@@ -6998,7 +7007,7 @@ NIK : 5171011708900003 NIDN : 0817089002 Pangkat/Gol. : PPPK / Gol. X Jabatan : 
 10.6 Kurikulum Program Studi Teknologi Informasi
 10.6.1 Profil Capaian Pembelajaran Bahan Kajian TI
 A. Profil Lulusan Program Studi
-Profil lulusan Program Studi Teknologi Informasi merupakan keluaran dari pendidikan prodi, menyatakan peran yang diharapkan dapat dilakukan oleh lulusan program studi TI di masyarakat atau dunia kerja. Profil ini merupakan jaminan yang diberikan oleh Program Studi Teknologi Informasi kepada calon mahasiswa akan peran yang bisa dilakukan setelah mengalami proses pendidikan di program studi. Berikut adalah profil lulusan: Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 219
+Profil lulusan Program Studi Teknologi Informasi merupakan keluaran dari pendidikan prodi, menyatakan peran yang diharapkan dapat dilakukan oleh lulusan program studi TI di masyarakat atau dunia kerja. Profil ini merupakan jaminan yang diberikan oleh Program Studi Teknologi Informasi kepada calon mahasiswa akan peran yang bisa dilakukan setelah mengalami proses pendidikan di program studi. Berikut adalah profil lulusan:
 
 # Halaman 244
 
@@ -7058,7 +7067,7 @@ Mampu melakukan fungsi anggota atau pemimpin tim secara efektif dalam kegiatan y
 C. Matriks hubungan Capaian Pembelajaran Lulusan
 Tabel 10.4 Matriks hubungan Antara Profil dan Capaian Pembelajaran Lulusan PPM1 PPM2 PPM3 ✓ ✓ ✓ CPL1 ✓ ✓ ✓ CPL2 ✓ ✓ ✓ CPL3 ✓ ✓ ✓ CPL4 ✓ ✓ ✓ CPL5 ✓ ✓ ✓ CPL6 Tabel 10.5 Hubungan CPL dengan 4 unsur CPL Kerangka Kualifikasi Nasional Indonesia (KKNI) CPL1 CPL2 CPL3 CPL4 CPL5 CPL6 ✓ ✓ ✓ Sikap ✓ Pengetahuan Keterampilan ✓ Umum Keterampilan ✓ Khusus
 10.6.2 Struktur Kurikulum
-Program Studi Teknologi Informasi mulai Semester Gasal 2022/2023 melaksanakan model kurikulum terintegrasi yaitu menyatukan model pembelajaran kurikulum 2022 (8:0) dan model kurikulum merdeka belajar 2020 (7:1, 6:2, 5:3) sesuai dengan aturan Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi (SNPT) dan Buku Panduan Merdeka Belajar Kampus Merdeka Tahun 2020. Program Studi Teknologi Informasi telah hampir sepenuhnya transisi ke kurikulum berbasis outcome based education (OBE) atau dalam bahasa Indonesianya berbasis capaian pembelajaran (CP). Pada sub-bagian tertera hanya inti-inti dari kurikulum Program Studi Teknologi Informasi. Selebihnya Asesmen Capaian Pembelajaran, Keselarasan CPL Prodi dengan CPL DIKTI, Pengelompokan Mata Kuliah, dan Peta Jalan Mata Kuliah dapat dilihat pada Buku Kurikulum Program Studi Teknologi Informasi 2022. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 221
+Program Studi Teknologi Informasi mulai Semester Gasal 2022/2023 melaksanakan model kurikulum terintegrasi yaitu menyatukan model pembelajaran kurikulum 2022 (8:0) dan model kurikulum merdeka belajar 2020 (7:1, 6:2, 5:3) sesuai dengan aturan Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi (SNPT) dan Buku Panduan Merdeka Belajar Kampus Merdeka Tahun 2020. Program Studi Teknologi Informasi telah hampir sepenuhnya transisi ke kurikulum berbasis outcome based education (OBE) atau dalam bahasa Indonesianya berbasis capaian pembelajaran (CP). Pada sub-bagian tertera hanya inti-inti dari kurikulum Program Studi Teknologi Informasi. Selebihnya Asesmen Capaian Pembelajaran, Keselarasan CPL Prodi dengan CPL DIKTI, Pengelompokan Mata Kuliah, dan Peta Jalan Mata Kuliah dapat dilihat pada Buku Kurikulum Program Studi Teknologi Informasi 2022.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 245 | type: table | table_index: 1 -->
 
@@ -7188,7 +7197,7 @@ BAGIAN 10. PROGRAM STUDI TEKNOLOGI INFORMASI
 31 Statistik 2 ✓ ✓
 24BSME05Y031 No Kode Mata Kuliah SKS CPL1 CPL2 CPL3 CPL4 CPL5 CPL6 Semester 5
 32 3 ✓ ✓
-24STIE05X032 Forensik TI Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 223
+24STIE05X032 Forensik TI
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 247 | type: table | table_index: 1 -->
 
@@ -7321,7 +7330,7 @@ nomi Digit 3 ✓ ✓ al 24STIE05Y053 Pengantar Ekonomi Digital Teknologi dan Pem
 3 ✓ ✓
 al 24STIE05Y055 Restorasi Digital Warisan Budaya Bali Tour 3 ✓ ✓ 24STIE05Y056 Teknologi Imersif Kebudayaan Bali ism and
 3 ✓ ✓
-Cult 24STIE05Y057 Tourism & Culture Application Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 225
+Cult 24STIE05Y057 Tourism & Culture Application
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 249 | type: table | table_index: 1 -->
 
@@ -7462,7 +7471,7 @@ Data 24STIE05X096 Deep Learning Scie nce 24STIE05X097 Regression and Prediction
 3 ✓ ✓
 24STIE05X106 Topik Khusus IOT Net
 3 ✓ ✓
-work 24STIE05X103 Data Center & Cloud Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 227
+work 24STIE05X103 Data Center & Cloud
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 251 | type: table | table_index: 1 -->
 
@@ -7597,7 +7606,7 @@ dengan penyelesaikan permasalahan secara komputasi. Laboratorium ini digunakan u
 3. Laboratorium Internet dan Mobile
 Laboratorium ini digunakan untuk praktikum yang meliputi web dinamis, Aplikasi Web Client-Side (HTML, CSS, JavaScript), Pemrograman PHP, Pemrograman Web Database, pemrograman java, Cookie & Session. Pemrograman tidak hanya terbatas pada pendekatan prosedural saja, tetapi juga menggunakan pendekatan Object Oriented Programming dan konsep MVC (Model View Controller) sebagai pola perancangan yang memudahkan programmer dalam pengembangan ataupun perawatan sistem aplikasi internet dan mobile dalam skala besar. Lab ini digunakan untuk praktikum mata kuliah pemrograman internet dan mobile. Gambar 10.2 Kegiatan Laboratorium Internet dan Mobile
 4. Laboratorium Teknologi Terintegrasi
-Laboratorium ini digunakan untuk praktikum yang berkaitan dengan jaringan komputer. Laboratorium ini juga terhubung dengan jaringan komputer berkecepatan tinggi. Dilengkapi dengan literatur, perangkat jaringan komputer yang lengkap sehingga dapat memaksimalkan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 231
+Laboratorium ini digunakan untuk praktikum yang berkaitan dengan jaringan komputer. Laboratorium ini juga terhubung dengan jaringan komputer berkecepatan tinggi. Dilengkapi dengan literatur, perangkat jaringan komputer yang lengkap sehingga dapat memaksimalkan
 
 # Halaman 256
 
@@ -7626,7 +7635,7 @@ Gambar 10.5 Kegiatan Laboratorium Augmented Reality
 7. Laboratorium Image Processing
 Merupakan laboratorium yang digunakan untuk praktikum Pengolahan Citra Digital serta riset untuk menunjang penelitian dan kajian mengenai pemrosesan citra. Pemrosesan citra merupakan proses dasar yang digunakan untuk pemrosesan yang terkait pada bidang biometrika, computer vision, penginderaan jauh. Gambar 10.6 Kegiatan di Laboratorium Image Processing
 10.9.4 Aula SwasTIka
-Merupakan tempat yang digunakan untuk melaksanakan berbagai kegiatan kemahasiswaan serta program studi. Aula SwasTIka sangat bermanfaat untuk melakukan kegiatan yang melibatkan peserta cukup banyak, yang bisa menampung sekitar 250 peserta. Berikut foto kegiatan di Aula SwasTIka: Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 233
+Merupakan tempat yang digunakan untuk melaksanakan berbagai kegiatan kemahasiswaan serta program studi. Aula SwasTIka sangat bermanfaat untuk melakukan kegiatan yang melibatkan peserta cukup banyak, yang bisa menampung sekitar 250 peserta. Berikut foto kegiatan di Aula SwasTIka:
 
 # Halaman 258
 
@@ -7642,7 +7651,7 @@ Gambar 10.7 Kegiatan Seminar di ruang Aula SwasTIka Gambar 10.8 Kegiatan Pertemu
 BAGIAN 10. PROGRAM STUDI TEKNOLOGI INFORMASI
 Gambar 10.9 Kegiatan openSUSE Asia Summit 2019, 5-6 Oktober 2019
 10.10 Daftar Dokumen Akademik Lain
-Isi dari Buku Pedoman Akademik Fakultas Teknik 2023 Bagian 10 Program Studi Teknologi Informasi hanyalah ringkasan dari bagian akademik di Program Studi Teknologi Informasi Fakultas Teknik Universitas Udayana. Sehingga civitas akademik yang berada di lingkungan ini perlu membaca dokumen lain seperti Buku Kurikulum dan SOP dimana disini hanya disebutkan daftar isinya. Jika tautan tidak berfungsi dan ada dokumen atau informasi dokumen yang kurang, maka dapat menghubungi staf Program Studi Teknologi Informasi Fakultas Teknik Universitas Udayana dan/atau memeriksa website Program Studi yaitu https://it.unud.ac.id/ dan https://it-dev.unud.ac.id/. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 235
+Isi dari Buku Pedoman Akademik Fakultas Teknik 2023 Bagian 10 Program Studi Teknologi Informasi hanyalah ringkasan dari bagian akademik di Program Studi Teknologi Informasi Fakultas Teknik Universitas Udayana. Sehingga civitas akademik yang berada di lingkungan ini perlu membaca dokumen lain seperti Buku Kurikulum dan SOP dimana disini hanya disebutkan daftar isinya. Jika tautan tidak berfungsi dan ada dokumen atau informasi dokumen yang kurang, maka dapat menghubungi staf Program Studi Teknologi Informasi Fakultas Teknik Universitas Udayana dan/atau memeriksa website Program Studi yaitu https://it.unud.ac.id/ dan https://it-dev.unud.ac.id/.
 
 # Halaman 260
 
@@ -7653,7 +7662,7 @@ Isi dari Buku Pedoman Akademik Fakultas Teknik 2023 Bagian 10 Program Studi Tekn
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 261 | type: text -->
 
 BAGIAN 11. PROGRAM STUDI TEKNIK INDUSTRI
-PROGRAM STUDI TEKNIK INDUSTRI Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 237
+PROGRAM STUDI TEKNIK INDUSTRI
 
 # Halaman 262
 
@@ -7680,7 +7689,7 @@ tingkat internasional.
 5. Mendorong solusi teknik industri yang mendukung keberlanjutan dan pelestarian
 lingkungan.
 11.2 Pimpinan Program Studi Teknik Industri
-Data Koordinator Program Studi Sarjana Teknik Industri adalah sebagai berikut. Nama : Dr. A. Agung Istri Agung Sri Komaladewi, S.T., M.T. NIP : 196910141997032001 Pangkat/Gol. Jabatan : Penata Tk. I/IIId Fungsional : Lektor Jenjang Pendidikan : S1 (Unud, 1995), S2 (ITS, 2002), S3 (Unud, 2019) Bidang Keahlian : Rekayasa Manufaktur Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : sri.komaladewi@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 239
+Data Koordinator Program Studi Sarjana Teknik Industri adalah sebagai berikut. Nama : Dr. A. Agung Istri Agung Sri Komaladewi, S.T., M.T. NIP : 196910141997032001 Pangkat/Gol. Jabatan : Penata Tk. I/IIId Fungsional : Lektor Jenjang Pendidikan : S1 (Unud, 1995), S2 (ITS, 2002), S3 (Unud, 2019) Bidang Keahlian : Rekayasa Manufaktur Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : sri.komaladewi@unud.ac.
 
 # Halaman 264
 
@@ -7713,7 +7722,7 @@ NIP : 1994110720211112001 Pangkat/Gol. : Penata Muda Tk. I/IIIb Jabatan Fungsion
 9. Nama : Mia Juliana, S.TP., M.T.
 NIP : 198807302022032005 Golongan/Ruang : Penata/IIIc Jabatan : Lektor Jenjang Pendidikan : S1 (IPB, 2011), S2 (U.Trisakti, 2014) Bidang Keahlian : Manajemen Kinerja, Pengendalian Produksi Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : mia.juliana@unud.ac.id
 10. Nama : Made Nindya Kirana, S.T., M.T.
-NIP : 199503052024062001 Golongan/Ruang : Penata Muda Tk. I/IIIb Jabatan : Tenaga Pengajar Jenjang Pendidikan : S1 (UAJY, 2017), S2 (UI, 2023) Bidang Keahlian : Manajemen Industri Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : madenindyak@gmail.com Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 241
+NIP : 199503052024062001 Golongan/Ruang : Penata Muda Tk. I/IIIb Jabatan : Tenaga Pengajar Jenjang Pendidikan : S1 (UAJY, 2017), S2 (UI, 2023) Bidang Keahlian : Manajemen Industri Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telepon Kantor : (+62)(361) 703321 Email : madenindyak@gmail.com
 
 # Halaman 266
 
@@ -7771,7 +7780,7 @@ Tabel 11.2 Capaian Pembelajaran Lulusan PSSTI FT Unud KKNI Keterangan Indikator 
 BAGIAN 11. PROGRAM STUDI TEKNIK INDUSTRI
 KKNI Keterangan Indikator pengetahuan alam, teknologi matematika, ilmu pengetahuan alam, informasi, dan ilmu teknik yang teknologi informasi, dan ilmu teknik diperlukan untuk memahami untuk menyelesaikan masalah prinsip-prinsip keteknikindustrian. keteknikindustrian. (Ilmu 2.2 Kemampuan mengaplikasikan Pengetahuan Dasar) pengetahuan matematika, ilmu pengetahuan alam, teknologi informasi, dan ilmu teknik untuk menyelesaikan masalah keteknikindustrian. CPL-3. Mampu menggunakan 3.1 Kemampuan menggunakan peralatan, menerapkan metode, peralatan dan metode modern yang dan menguasai keterampilan diperlukan dalam praktik modern yang diperlukan dalam keteknikindustrian. praktik keteknikindustrian. 3.2 Kemampuan menguasai (Keterampilan Dasar) keterampilan modern yang diperlukan dalam praktik keteknikindustrian. Keterampilan CPL-4. Mampu berkomunikasi 4.1 Kemampuan berkomunikasi efektif Umum efektif secara lisan maupun secara lisan. tulisan. (Komunikasi) 4.2 Kemampuan berkomunikasi efektif secara tertulis. CPL-5. Mampu bekerjasama 5.1 Kemampuan berkolaborasi dengan dalam sebuah kelompok kerja. rekan kerja untuk menyelesaikan (Kerjasama) penugasan.
 5.2 Kemampuan bertanggungjawab
-terhadap tim. CPL-6. Mampu mengelola 6.1 Kemampuan mengelola pembelajaran sepanjang hayat pembelajaran sepanjang hayat untuk dan memperbaharui memperbarui ilmu pengetahuan. pengetahuan terkait isu-isu 6.2 Kemampuan mengimplementasikan terkini yang relevan dengan teori pada isu terkini dalam optimasi sistem terintegrasi di pemecahan masalah. bidang industri manufaktur dan jasa. (Pembelajaran Sepanjang Hayat & Isu Terkini) CPL-7. Mampu merencanakan, 7.1 Kemampuan menyelesaikan menyelesaikan, dan penugasan secara tepat waktu dan mengevaluasi tugas yang bertanggungjawab. dibebankan sesuai dengan 7.2 Kemampuan memberikan evaluasi batasan waktu yang diberikan. terhadap kualitas pekerjaan yang (Manajemen Waktu) dibuat. Keterampilan CPL-8. Mampu merancang dan 8.1 Kemampuan melakukan Khusus melakukan eksperimen perancangan eksperimen sesuai laboratorium dan/atau lapangan, dengan tujuan penelitian. serta menganalisis hasil 8.2 Kemampuan memisualisasikan, eksperimen untuk mendukung mengintepretasikan, dan proses pengambilan keputusan menganalisis data untuk mendukung sesuai prinsi-prinsip proses pengambian keputusan. keteknikindustrian. (Eksperimen & Pengambilan Keputusan) CPL-9. Mampu untuk 9.1 Kemampuan menggunakan tools mengidentifikasi, merumuskan, untuk mengidentifikasi dan menganalisis, dan merumuskan masalah. menyelesaikan permasalahan 9.2 Kemampuan merekomendasikan kompleks di bidang Teknik penyelesaian masalah berdasarkan Industri. (Pemecahan Masalah) akar masalah. CPL-10. Mampu merancang 10.1 Kemampuan menerapkan standar Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 243
+terhadap tim. CPL-6. Mampu mengelola 6.1 Kemampuan mengelola pembelajaran sepanjang hayat pembelajaran sepanjang hayat untuk dan memperbaharui memperbarui ilmu pengetahuan. pengetahuan terkait isu-isu 6.2 Kemampuan mengimplementasikan terkini yang relevan dengan teori pada isu terkini dalam optimasi sistem terintegrasi di pemecahan masalah. bidang industri manufaktur dan jasa. (Pembelajaran Sepanjang Hayat & Isu Terkini) CPL-7. Mampu merencanakan, 7.1 Kemampuan menyelesaikan menyelesaikan, dan penugasan secara tepat waktu dan mengevaluasi tugas yang bertanggungjawab. dibebankan sesuai dengan 7.2 Kemampuan memberikan evaluasi batasan waktu yang diberikan. terhadap kualitas pekerjaan yang (Manajemen Waktu) dibuat. Keterampilan CPL-8. Mampu merancang dan 8.1 Kemampuan melakukan Khusus melakukan eksperimen perancangan eksperimen sesuai laboratorium dan/atau lapangan, dengan tujuan penelitian. serta menganalisis hasil 8.2 Kemampuan memisualisasikan, eksperimen untuk mendukung mengintepretasikan, dan proses pengambilan keputusan menganalisis data untuk mendukung sesuai prinsi-prinsip proses pengambian keputusan. keteknikindustrian. (Eksperimen & Pengambilan Keputusan) CPL-9. Mampu untuk 9.1 Kemampuan menggunakan tools mengidentifikasi, merumuskan, untuk mengidentifikasi dan menganalisis, dan merumuskan masalah. menyelesaikan permasalahan 9.2 Kemampuan merekomendasikan kompleks di bidang Teknik penyelesaian masalah berdasarkan Industri. (Pemecahan Masalah) akar masalah. CPL-10. Mampu merancang 10.1 Kemampuan menerapkan standar
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 267 | type: table | table_index: 1 -->
 
@@ -8234,7 +8243,7 @@ BAGIAN 11. PROGRAM STUDI TEKNIK INDUSTRI
 D. Peta Jalan Mata Kuliah Program Studi Teknik Industri
 Urutan pengambilan mata kuliah pada Kurikulum 2024 PSSTI FT Unud disajikan melalui peta jalan seperti pada Gambar 11.1. Prasyarat adalah mata kuliah yang harus sudah pernah diambil sebelum mengambil mata kuliah berikutnya yang berkaitan. Selain mata kuliah prasyarat, terdapat juga mata kuliah kosyarat yaitu mata kuliah yang harus diambil secara bersamaan dengan mata kuliah lainnya. Mata kuliah kosyarat ditunjukkan dengan dua mata kuliah yang dihubungkan dengan garis vertikal pada Gambar 11.1. Gambar 11.1 Peta jalan mata kuliah PSSTI FT Unud
 11.7 Merdeka Belajar Kampus Merdeka Program
-Mahasiswa yang mengikuti program MBKM diberikan hak untuk diakui kegiatannya dalam bentuk SKS sesuai kegiatan yang diikuti. Dalam hal ini ekivalensi kegiatan MBKM di PSSTI FT Unud dilakukan melalui bentuk terstruktur (structured form) yaitu melakukan penyetaraan secara langsung atas kegiatan MBKM ke dalam mata kuliah yang dirancang pada kurikulum. Tabel 11.7 menunjukkan daftar mata kuliah yang secara umum dapat dikonversi ke dalam program MBKM sesuai dengan jenisnya. Penyetaraan atau konversi lebih lanjut akan disesuaikan dengan jenis program MBKM yang diambil dan dilihat relevansinya dengan mata kuliah yang akan dikonversi sehingga penentuan mata kuliah yang dapat disetarakan bersifat fleksibel. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 249
+Mahasiswa yang mengikuti program MBKM diberikan hak untuk diakui kegiatannya dalam bentuk SKS sesuai kegiatan yang diikuti. Dalam hal ini ekivalensi kegiatan MBKM di PSSTI FT Unud dilakukan melalui bentuk terstruktur (structured form) yaitu melakukan penyetaraan secara langsung atas kegiatan MBKM ke dalam mata kuliah yang dirancang pada kurikulum. Tabel 11.7 menunjukkan daftar mata kuliah yang secara umum dapat dikonversi ke dalam program MBKM sesuai dengan jenisnya. Penyetaraan atau konversi lebih lanjut akan disesuaikan dengan jenis program MBKM yang diambil dan dilihat relevansinya dengan mata kuliah yang akan dikonversi sehingga penentuan mata kuliah yang dapat disetarakan bersifat fleksibel.
 
 # Halaman 274
 
@@ -8296,7 +8305,7 @@ Ketua Laboratorium: Ni Made Cyntia Utami, S.T., M.T. Laboratorium yang digunakan
 4. Laboratorium Manajemen Industri
 Ketua Laboratorium: Prof. Dr. Ir. Ni Wayan Sri Ariyani, M.M., IPM., ASEAN Eng. Laboratorium ini ditujukan untuk memfasilitasi proses pembelajaran terkait sistem makro yang menyangkut satu perusahaan yang terdiri dari satu organisasi perusahaan atau bukan perusahaan sebagai sebuah kesatuan sistem integral. Kompetensi yang diharapkan dapat dibentuk dalam proses pembelajaran adalah kemampuan untuk menterjemahkan kebutuhan konsumen menjadi gagasan dan rancangan produk, kemampuan untuk menyusun sebuah studi kelayakan bisnis dan menganalisis business plan untuk sebuah investasi, dan kemampuan untuk merancang sebuah perusahaan yang meliputi organisasi dan manajemen perusahaan.
 5. Laboratorium Fisika Dasar
-Ketua Laboratorium: I Made Dwi Budiana Penindra, M.MT. Laboratorium Fisika Dasar diperuntukkan bagi mahasiswa untuk lebih memahami secara aplikatif tentang ilmu fisika terapan. Peralatan yang ada di laboratorium ini antara lain: Uji Gaya Gesek, Hook Law, Wheat Stone Bridge, Newton Ring dan Laws of Lenses and Optical Instruments. Gambar 11.3 Laboratorium Fisika Dasar Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 251
+Ketua Laboratorium: I Made Dwi Budiana Penindra, M.MT. Laboratorium Fisika Dasar diperuntukkan bagi mahasiswa untuk lebih memahami secara aplikatif tentang ilmu fisika terapan. Peralatan yang ada di laboratorium ini antara lain: Uji Gaya Gesek, Hook Law, Wheat Stone Bridge, Newton Ring dan Laws of Lenses and Optical Instruments. Gambar 11.3 Laboratorium Fisika Dasar
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 275 | type: table | table_index: 1 -->
 
@@ -8331,7 +8340,7 @@ Ketua Laboratorium: I Made Dwi Budiana Penindra, M.MT. Laboratorium Fisika Dasar
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 277 | type: text -->
 
 BAGIAN 12. PROGRAM STUDI TEKNIK LINGKUNGAN
-PROGRAM STUDI TEKNIK LINGKUNGAN Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 253
+PROGRAM STUDI TEKNIK LINGKUNGAN
 
 # Halaman 278
 
@@ -8375,7 +8384,7 @@ IPM. ASEAN.Eng. NIP : 19711204 199803 2 001 Pangkat/Gol. : Pembina Tingkat I/IVb
 2. Nama : Dr. Ida Ayu Rai Widhiawati, ST., MT.
 NIP : 19700312 199703 2 001 Pangkat/Gol. : Penata Tingkat I/IIId Jabatan : Lektor Jenjang Pendidikan : S1 (Unud, 1995), S2 (ITS, 2000), S3 (Unud, 2024) Bidang Keahlian : Manajemen Lingkungan Sertifikat Pendidik : 101101304408 Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telpon Kantor/Fax : 08123978874 Email : dayurai@unud.ac.id
 3. Nama : Dr. Cok Istri Putri Kusuma Kencanawati, ST.,
-Msi. NIP : 19730422 199802 2 008 Pangkat/Gol. : Penata Tingkat I/IIId Jabatan : Lektor Jenjang Pendidikan : S1 (ITS, 1996), S2 (UGM, 2003), S3 (Unud, 2020) Bidang Keahlian : Rekayasa Material Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telpon Kantor/Fax : 08124627633 Email : cok_putrikusuma@unud.ac.id Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 255
+Msi. NIP : 19730422 199802 2 008 Pangkat/Gol. : Penata Tingkat I/IIId Jabatan : Lektor Jenjang Pendidikan : S1 (ITS, 1996), S2 (UGM, 2003), S3 (Unud, 2020) Bidang Keahlian : Rekayasa Material Alamat Kantor : Jl. Kampus Bukit Jimbaran, Kuta Selatan, Badung-Bali Telpon Kantor/Fax : 08124627633 Email : cok_putrikusuma@unud.ac.
 
 # Halaman 280
 
@@ -8406,7 +8415,7 @@ Nama : Anak Agung Putu Sriani No Pegawai : 1976061420040122001 Kualifikasi : SMA
 2. Tenaga Pengadministasi Keuangan (Penata Dokumen Keuangan)
 Nama : Putu Sugawa Arismunandar, S.Kom No Pegawai : 1993040520181012001 Kualifikasi : S1 (Sarjana Komputer)
 3. Teknisi Laboratorium Kualitas Air Teknik Lingkungan
-Nama : Arrum Elvandari, S.TP No Pegawai : 1993111920210122001 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 257
+Nama : Arrum Elvandari, S.TP No Pegawai :
 
 # Halaman 282
 
@@ -8454,7 +8463,7 @@ dalam Industri Pariwisata Total sks Semester 2 20 SEMESTER 3
 6 24STLE07X004 Perencanaan Struktur 3 Fisika Dasar II
 7 24STLE07X005 Perpetaan Lingkungan 3 -
 8 24STLE07X006 Kebijakan dan Hukum Lingkungan 2 -
-Total sks Semester 3 20 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 259
+Total sks Semester 3
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 283 | type: table | table_index: 1 -->
 
@@ -8639,7 +8648,7 @@ Industri Pencemaran Udara,
 17 24STLE07X025 Pemantauan Pencemaran Udara 2
 Laboratorium Lingkungan Pencemaran Udara,
 18 24STLE07X026 Pengendalian Pencemaran Udara 2
-Laboratorium Lingkungan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 261
+Laboratorium Lingkungan
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 285 | type: table | table_index: 1 -->
 
@@ -8840,7 +8849,7 @@ Limbah Industri Pemantauan
 17 24STLE07X025 2 PP TL PP LL KW PM MP PR
 Pencemaran Udara Pengendalian
 18 24STLE07X026 2 PP TL PP LL KW PM MP PR
-Pencemaran Udara Keterangan: PP TL : Pertukaran Pelajar Program Studi Teknik Lingkungan di Luar Perguran Tinggi PP LL : Pertukaran Pelajar Program Studi Lain di Dalam maupun di Luar Perguran Tinggi KW : Program Kewirausahaan PM : Program Pengabdian Masyarakat MP : Program Magang Profesi PR : Program Penelitian/Riset Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 263
+Pencemaran Udara Keterangan: PP TL : Pertukaran Pelajar Program Studi Teknik Lingkungan di Luar Perguran Tinggi PP LL : Pertukaran Pelajar Program Studi Lain di Dalam maupun di Luar Perguran Tinggi KW : Program Kewirausahaan PM : Program Pengabdian Masyarakat MP : Program Magang Profesi PR : Program Penelitian/Riset
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 287 | type: table | table_index: 1 -->
 
@@ -8921,7 +8930,7 @@ Program Studi Sarjana Teknik Lingkungan saat ini memiliki 7 (tujuh) ruang kuliah
 B. Laboratorium
 Kegiatan praktikum untuk menunjang perkuliahan pada Program Studi Sarjana Teknik Lingkungan saat ini didukung dengan 4 (empat) laboratorium, yaitu Laboratorium Kualitas Lingkungan, Laboratorium Instrumentasi dan Pemodelan Lingkungan, Laboratorium K3 dan Manajemen Lingkungan serta Laboratorium Limbah Padat dan B3. Laboratorium- laboratorium tersebut berada di Gedung Advance Research Laboratory (ARL), Fakultas Teknik, Universitas Udayana, Kampus Bukit Jimbaran. Laboratorium dimanfaatkan untuk kegiatan praktikum mahasiswa serta penelitian mahasiswa maupun dosen di lingkungan Universitas Udayana, khususnya pada Program Studi Sarjana Teknik Lingkungan.
 1. Laboratorium Kualitas Air
-Kepala Laboratorium : Ida Bagus Made Baskara Andika, S.Hut., M.Si. Laboratorium Kualitas Air digunakan untuk kegiatan praktikum pada perkuliahan Mikrobiologi Lingkungan, Kimia Lingkungan, dan Laboratorium Lingkungan. Laboratorium ini dirancang untuk dapat memfasilitasi kegiatan penelitian terkait analisa kualitas air, mikrobiologi, serta pengukuran parameter pencemaran udara. Peralatan yang tersedia untuk mendukung kegiatan di Laboratorium Kualitas Lingkungan, meliputi peralatan gelas, inkubator, oven, Atomic Absorption Spectrometry (AAS), autoclave, dan lainnya. Gambar 12.2. Praktikum Lapangan Sampling Air Permukaan dan Pengujian Parameter Fisika, Kimia, dan Biologi Kualitas Air di Laboratorium Kualitas Air Untuk saat ini, kegiatan yang dapat dipelajari dan dilakukan pada Laboratorium Kualitas Air adalah analisa parameter fisik-kimia kualitas air dan proses pengolahan air, baik air bersih maupun air limbah. Analisa tersebut meliputi asiditas-alkalinitas, CO 2 agresif, logam besi dan mangan, kesadahan, senyawa klorida, senyawa sulfat, Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 265
+Kepala Laboratorium : Ida Bagus Made Baskara Andika, S.Hut., M.Si. Laboratorium Kualitas Air digunakan untuk kegiatan praktikum pada perkuliahan Mikrobiologi Lingkungan, Kimia Lingkungan, dan Laboratorium Lingkungan. Laboratorium ini dirancang untuk dapat memfasilitasi kegiatan penelitian terkait analisa kualitas air, mikrobiologi, serta pengukuran parameter pencemaran udara. Peralatan yang tersedia untuk mendukung kegiatan di Laboratorium Kualitas Lingkungan, meliputi peralatan gelas, inkubator, oven, Atomic Absorption Spectrometry (AAS), autoclave, dan lainnya. Gambar 12.2. Praktikum Lapangan Sampling Air Permukaan dan Pengujian Parameter Fisika, Kimia, dan Biologi Kualitas Air di Laboratorium Kualitas Air Untuk saat ini, kegiatan yang dapat dipelajari dan dilakukan pada Laboratorium Kualitas Air adalah analisa parameter fisik-kimia kualitas air dan proses pengolahan air, baik air bersih maupun air limbah. Analisa tersebut meliputi asiditas-alkalinitas, CO 2 agresif, logam besi dan mangan, kesadahan, senyawa klorida, senyawa sulfat,
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 289 | type: table | table_index: 1 -->
 
@@ -8946,7 +8955,7 @@ Kepala Laboratoirum : Ngakan Gede Agung Khrisna Wiryananda, ST., M.Si. Laborator
 BAGIAN 12. PROGRAM STUDI TEKNIK LINGKUNGAN
 simulasi maupun induksi K3L. Kegiatan yang dilakukan pada Laboratorium K3 dan Manajemen Lingkungan berkaitan dengan perkuliahan Kesehatan Lingkungan, Sistem Manajemen Lingkungan, Manajemen Proyek, K3 dan Analisa Mengenai Dampak Lingkungan (AMDAL). Laboratorium K3 dan Manajemen Lingkungan juga melakukan kegiatan melalui skema kerjasama dengan pihak terkait, seperti Ikatan Ahli Teknik Penyehatan dan Teknik Lingkungan Indonesia (IATPI). Laboratorium ini juga memfasilitasi kegiatan pelatihan dan sertifikasi di bidang AMDAL. Untuk mendukung pelaksanaan kegiatan di Laboratorium K3 dan Manajemen Lingkungan, laboratorium dilengkapi dengan alat-alat peraga, Alat Pelindung Diri (APD) serta perangkat komputer.
 4. Laboratorium Limbah Padat dan B3
-Kepala Laboratoirum : I Gede Andy Andika Parahita, S.Si., M.T. Laboratorium Limbah Padat dan B3 diperuntukkan khusus untuk kegiatan terkait dengan pengujian maupun analisa limbah padat dan B3. Beberapa mata kuliah yang terkait dengan kegiatan pengujian maupun analisa limbah padat dan B3, yaitu Pengelolaan Sampah, Perencanaan Tempat Pemrosesan Akhir Sampah, Teknik Pengolahan Lindi, Pengelolaan Limbah Bahan Berbahaya dan Beracun. Laboratorium Limbah Padat dan B3 dirancang untuk pelaksanaan kegiatan pengujian limbah padat dan B3, antara lain pengukuran timbulan sampah, pengukuran densitas sampah, uji toksikologi dan uji lainnya. Peralatan yang diperlukan untuk mendukung kegiatan di Laboratorium Limbah Padat dan B3, yaitu kotak pengukuran sampah, timbangan dan maket pembelajaran tempat pengolahan sampah dan B3. Selain itu, pelaksanaan kegiatan dapat didukung dengan maket/prototype pembelajaran Tempat Pemrosesan Akhir Sampah (TPA) untuk pembelajaran materi terkait. Gambar 12.4. Praktikum Lapangan Analisa Volume dan Densitas Limbah Padat yang Dilakukan Dengan Peralatan Laboratorium Limbah Padat dan B3 Program Studi Sarjana Teknik Lingkungan Selain itu, Program Studi Sarjana Teknik Lingkungan berkerjasama dengan Laboratorium Hidro dan Lingkungan, Program Studi Teknik Sipil, Fakultas Teknik, Universitas Udayana dalam melakukan kegiatan praktikum pada mata kuliah Hidrolika. Kegiatan praktikum yang dilakukan pada Laboratorium Hidro dan Lingkungan, antara lain aliran permanen beraturan, aliran permanen tidak beraturan (pembendungan), pintu sorong dan air loncat. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 267
+Kepala Laboratoirum : I Gede Andy Andika Parahita, S.Si., M.T. Laboratorium Limbah Padat dan B3 diperuntukkan khusus untuk kegiatan terkait dengan pengujian maupun analisa limbah padat dan B3. Beberapa mata kuliah yang terkait dengan kegiatan pengujian maupun analisa limbah padat dan B3, yaitu Pengelolaan Sampah, Perencanaan Tempat Pemrosesan Akhir Sampah, Teknik Pengolahan Lindi, Pengelolaan Limbah Bahan Berbahaya dan Beracun. Laboratorium Limbah Padat dan B3 dirancang untuk pelaksanaan kegiatan pengujian limbah padat dan B3, antara lain pengukuran timbulan sampah, pengukuran densitas sampah, uji toksikologi dan uji lainnya. Peralatan yang diperlukan untuk mendukung kegiatan di Laboratorium Limbah Padat dan B3, yaitu kotak pengukuran sampah, timbangan dan maket pembelajaran tempat pengolahan sampah dan B3. Selain itu, pelaksanaan kegiatan dapat didukung dengan maket/prototype pembelajaran Tempat Pemrosesan Akhir Sampah (TPA) untuk pembelajaran materi terkait. Gambar 12.4. Praktikum Lapangan Analisa Volume dan Densitas Limbah Padat yang Dilakukan Dengan Peralatan Laboratorium Limbah Padat dan B3 Program Studi Sarjana Teknik Lingkungan Selain itu, Program Studi Sarjana Teknik Lingkungan berkerjasama dengan Laboratorium Hidro dan Lingkungan, Program Studi Teknik Sipil, Fakultas Teknik, Universitas Udayana dalam melakukan kegiatan praktikum pada mata kuliah Hidrolika. Kegiatan praktikum yang dilakukan pada Laboratorium Hidro dan Lingkungan, antara lain aliran permanen beraturan, aliran permanen tidak beraturan (pembendungan), pintu sorong dan air loncat.
 
 # Halaman 292
 
@@ -8955,6 +8964,8 @@ Kepala Laboratoirum : I Gede Andy Andika Parahita, S.Si., M.T. Laboratorium Limb
 # Halaman 293
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 293 | type: text -->
+
+DAFTAR PEGAWAI
 
 # Halaman 294
 
@@ -8980,7 +8991,7 @@ NIP : 197407031999031003 Pangkat/Gol. : Penata Tk. I /IIId Jabatan : Sub Koordin
 6. Nama : Putu Ayu Sasmita Devi, S.E
 NIP : 1988102520080722001 Pangkat/Gol. : - Jabatan : Pengadministrasi Akademik Alamat rumah : Jl.Tukad Yeh Aya No. 245 Renon
 7. Nama : Ni Putu Yuliarthi, AMd.
-NIK : 1979072920040722001 Pangkat/Gol. : - Jabatan : Pengelola Keuangan Alamat rumah : Jln.Warmadewa No.3 Banjar Binoh, Ubung Ka Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 271
+NIK : 1979072920040722001 Pangkat/Gol. : - Jabatan : Pengelola Keuangan Alamat rumah : Jln.Warmadewa No.3 Banjar Binoh, Ubung Ka
 
 # Halaman 296
 
@@ -9028,7 +9039,7 @@ NIK : 1994092020180512001 Pangkat/Gol. : - Jabatan : Teknisi Peralatan Kantor Al
 24. Nama : I Made Dwi Prabhawa Paripurna, ST., MT
 NIK : 1999101520221012001 Pangkat/Gol. : - Jabatan : Teknisi Peralatan Kantor Alamat Rumah : Br. Delod Pangkung, Ds. Budeng, Jembrana
 25. Nama : Putu Agus Hendra Wirawan, SH
-NIK : 1993061120180512001 Pangkat/Gol. : - Jabatan : Pengadministrasi Keuangan Alamat Rumah : Jln. Tukad Yeh Aya No. 245 Renon, Denpasar Selatan Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 273
+NIK : 1993061120180512001 Pangkat/Gol. : - Jabatan : Pengadministrasi Keuangan Alamat Rumah : Jln. Tukad Yeh Aya No. 245 Renon, Denpasar Selatan
 
 # Halaman 298
 
@@ -9074,7 +9085,7 @@ NIK : 1993040920160922001 Pangkat/Gol. : - Jabatan : Pengelola Informasi Akademi
 2. Nama : I Wayan Sutanaya, S.M
 NIK : 199603182011212001 Pangkat/Gol. : - Jabatan : Pengadministrasi Akademik Alamat Rumah : Jalan Turi Gg. Batur No.4 Denpasar
 3 Nama : I Putu Sutrisna
-NIK : 1987072920080112001 Pangkat/Gol. : - Jabatan : Pengadministrasi Keuangan Alamat Rumah : Jalan Merthayasa 4 No. 17 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 275
+NIK : 1987072920080112001 Pangkat/Gol. : - Jabatan : Pengadministrasi Keuangan Alamat Rumah : Jalan Merthayasa 4 No.
 
 # Halaman 300
 
@@ -9114,7 +9125,7 @@ NIK : 1985060220060912001 Pangkat/Gol. : - Jabatan : Petugas Keamanan Alamat Rum
 1. Nama : Ni Nyoman Suriani, SSos.
 NIP : 19691231 199303 2 001 Pangkat/Gol. : Penata Tk.I, III/d Jabatan : Pengelola Informasi Akademik Alamat Rumah : Jln. Gelogor Indah I Gg. Mawar No. 19, Denpasar
 2. Nama : Putu Suindra Wiranata, SH
-NIK : 1996050720211210001 Pangkat/Gol. : - Jabatan : Pengadministrasi Akademik Alamat Rumah : Jl. Siulan Gg Tunjung No. 5, Br/Link Bekul, Penatih Dangin Puri, Denpasar Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 277
+NIK : 1996050720211210001 Pangkat/Gol. : - Jabatan : Pengadministrasi Akademik Alamat Rumah : Jl. Siulan Gg Tunjung No. 5, Br/Link Bekul, Penatih Dangin Puri, Denpasar
 
 # Halaman 302
 
@@ -9157,7 +9168,7 @@ NIP : 196712311991031019 Pangkat/Gol. : Penata /IIIc Jabatan : PLP Pelaksana Lan
 5. Nama : I Nyoman Karta
 NIP : 197005171995121001 Pangkat/Gol. : Penata,III/c Jabatan : PLP Penyelia Alamat Rumah : Jl. Siulan Perum. Siulan Permai Blok D No. 21
 6. Nama : I Nengah Wirawan
-NIP : 197210211997031001 Pangkat/Gol. : Pengatur Muda/IIIa Jabatan : PLP Pelaksana Lanjutan Alamat Rumah : Jln. Kenyeri Gg. Jempiring No. 8, Denpasar Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 279
+NIP : 197210211997031001 Pangkat/Gol. : Pengatur Muda/IIIa Jabatan : PLP Pelaksana Lanjutan Alamat Rumah : Jln. Kenyeri Gg. Jempiring No. 8, Denpasar
 
 # Halaman 304
 
@@ -9198,7 +9209,7 @@ NIK : 1999112720221022001 Pangkat/Gol. : - Jabatan : Teknisi Laboran Alamat Ruma
 1. Nama : I Gusti Agung Made Daryanti, S.Sos.
 NIP : 196612291987022001 Pangkat/ Gol. : Penata Tk. I/ IIId Jabatan : Pengadministrasi Keuangan Alamat Rumah : Jl. Tukad Petanu Gg. Nuri 17 Denpasar Selatan
 2. Nama : Putu Indah Anggayati, SE
-NIK : 1988082320130122001 Pangkat/ Gol. : - Jabatan : Pengelola Informasi Akademik Alamat Rumah : Lingk. Buana Permai Blok IV No 19 Padangsambian Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 281
+NIK : 1988082320130122001 Pangkat/ Gol. : - Jabatan : Pengelola Informasi Akademik Alamat Rumah : Lingk. Buana Permai Blok IV No 19 Padangsambian
 
 # Halaman 306
 
@@ -9227,7 +9238,7 @@ NIK : 1978052920120122001 Pangkat/Gol. : - Jabatan : Pengadministras Akademik Al
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 307 | type: text -->
 
 LAMPIRAN A. DAFTAR PEGAWAI
-PIMPINAN FAKULTAS TEKNIK Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 283
+PIMPINAN FAKULTAS TEKNIK
 
 # Halaman 308
 
@@ -9239,7 +9250,7 @@ PIMPINAN FAKULTAS TEKNIK Pedoman Akademik Program Sarjana Fakultas Teknik Univer
 
 LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
-B.1 Pimpinan Fakultas Teknik Program Reguler Pada Tiap Periode Periode 1965-1967 Periode 1971-1973 Dekan : Prof. Dr. Ida Bagus Mantra Dekan : Ir. Made Selat Sekretaris : Drs. Sudarminto Pembantu Dekan I : Ir. A.A. Rai Kalam Pembantu Kejur Arsitektur : Ir. Tjokorde Raka Sukawati Dekan II : Ir. Tjok.Gde Majun Kejur Seni Rupa : dr. R. Moerdowo Pembantu Dekan III : Soeharjono Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Sekjur Arsitektur : Ir. Abdulah Periode 1967-1968 Kejur Teknik Sipil : Ir. Suryadi Sekjur Teknik Sipil : Ir. Nastowo Dekan : Ir. Tjokorde Raka Sukawati Kejur Seni Rupa : dr. R. Moerdowo Sekretaris : Drs. I Gst. Gde Ardana Kejur Sekjur Seni Rupa : Soeharjono Arsitektur : Ir. Tjokorde Raka Sukawati Kejur Seni Rupa : dr. R. Moerdowo Periode 1973-1975 Pada tahun 1968 dengan persetujuan Senat Universitas Dekan : Ir. Made Selat Udayana berdirilah secara sah Program studi Teknik Sipil Pembantu Dekan I : Drs. A.A. Rai Kalam pada Fakultas Teknik Universitas Udayana. Pembantu Dekan II : Ir.Tjok.Gde Majun Pembantu Dekan III : Soeharjono Periode 1968-1969 Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Dekan : Ir. Tjokorde Raka Sukawati Sekjur Arsitektur : Ir. Choiron Yusuf Pembantu Dekan I : Ir. Made Kerthiyasa Kejur Teknik Sipil : Ir. Suryadi Pembantu Dekan II : Drs. I Gst. Gde Ardana Sekjur Teknik Sipil : Ir. Nastowo Pembantu Dekan III : Soeharjono Kejur Seni Rupa : dr. R. Moerdowo Kejur Arsitektur : Ir. Made Kerthiyasa Sekjur Seni Rupa : Soeharjono Sekjur Arsitektur : Drs. A.A. Rai Kalam Kejur Teknik Sipil : Ir. Suryadi Periode 1975-1977 Sekjur Teknik Sipil : Ir. Nastowo Kejur Seni Rupa : dr. R. Moerdowo Dekan : Ir.Tjok.Gde Majun Sekjur Seni Rupa : Soeharjono Pembantu Dekan I : Drs. A.A. Rai Kalam Pembantu Dekan II : Ir. R. Soewoto Pembantu Dekan III : Soeharjono Periode 1969-1971 Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Sekjur Arsitektur : Ir. Wiedarini Dekan : Ir. Tjokorde Raka Sukawati Kejur Teknik Sipil : Ir. Suryadi Pembantu Dekan I : Drs. I Gst. Gde Ardana Sekjur Teknik Sipil : Ir. Nastowo Pembantu Dekan II : Drs. A.A.Rai Kalam Kejur Seni Rupa : dr. R. Moerdowo Pembantu Dekan III : Soeharjono Sekjur Seni Rupa : Soeharjono Kejur Arsitektur : Ir. Soeroto Martomidjoyo Sekjur Arsitektur : Drs. A.A.Rai Kalam Kejur Teknik Sipil : Ir. Suryadi Sekjur Teknik Sipil : Ir. Nastowo Kejur Seni Rupa : dr. R. Moerdowo Sekjur Seni Rupa : Soeharjono Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 285
+B.1 Pimpinan Fakultas Teknik Program Reguler Pada Tiap Periode Periode 1965-1967 Periode 1971-1973 Dekan : Prof. Dr. Ida Bagus Mantra Dekan : Ir. Made Selat Sekretaris : Drs. Sudarminto Pembantu Dekan I : Ir. A.A. Rai Kalam Pembantu Kejur Arsitektur : Ir. Tjokorde Raka Sukawati Dekan II : Ir. Tjok.Gde Majun Kejur Seni Rupa : dr. R. Moerdowo Pembantu Dekan III : Soeharjono Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Sekjur Arsitektur : Ir. Abdulah Periode 1967-1968 Kejur Teknik Sipil : Ir. Suryadi Sekjur Teknik Sipil : Ir. Nastowo Dekan : Ir. Tjokorde Raka Sukawati Kejur Seni Rupa : dr. R. Moerdowo Sekretaris : Drs. I Gst. Gde Ardana Kejur Sekjur Seni Rupa : Soeharjono Arsitektur : Ir. Tjokorde Raka Sukawati Kejur Seni Rupa : dr. R. Moerdowo Periode 1973-1975 Pada tahun 1968 dengan persetujuan Senat Universitas Dekan : Ir. Made Selat Udayana berdirilah secara sah Program studi Teknik Sipil Pembantu Dekan I : Drs. A.A. Rai Kalam pada Fakultas Teknik Universitas Udayana. Pembantu Dekan II : Ir.Tjok.Gde Majun Pembantu Dekan III : Soeharjono Periode 1968-1969 Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Dekan : Ir. Tjokorde Raka Sukawati Sekjur Arsitektur : Ir. Choiron Yusuf Pembantu Dekan I : Ir. Made Kerthiyasa Kejur Teknik Sipil : Ir. Suryadi Pembantu Dekan II : Drs. I Gst. Gde Ardana Sekjur Teknik Sipil : Ir. Nastowo Pembantu Dekan III : Soeharjono Kejur Seni Rupa : dr. R. Moerdowo Kejur Arsitektur : Ir. Made Kerthiyasa Sekjur Seni Rupa : Soeharjono Sekjur Arsitektur : Drs. A.A. Rai Kalam Kejur Teknik Sipil : Ir. Suryadi Periode 1975-1977 Sekjur Teknik Sipil : Ir. Nastowo Kejur Seni Rupa : dr. R. Moerdowo Dekan : Ir.Tjok.Gde Majun Sekjur Seni Rupa : Soeharjono Pembantu Dekan I : Drs. A.A. Rai Kalam Pembantu Dekan II : Ir. R. Soewoto Pembantu Dekan III : Soeharjono Periode 1969-1971 Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Sekjur Arsitektur : Ir. Wiedarini Dekan : Ir. Tjokorde Raka Sukawati Kejur Teknik Sipil : Ir. Suryadi Pembantu Dekan I : Drs. I Gst. Gde Ardana Sekjur Teknik Sipil : Ir. Nastowo Pembantu Dekan II : Drs. A.A.Rai Kalam Kejur Seni Rupa : dr. R. Moerdowo Pembantu Dekan III : Soeharjono Sekjur Seni Rupa : Soeharjono Kejur Arsitektur : Ir. Soeroto Martomidjoyo Sekjur Arsitektur : Drs. A.A.Rai Kalam Kejur Teknik Sipil : Ir. Suryadi Sekjur Teknik Sipil : Ir. Nastowo Kejur Seni Rupa : dr. R. Moerdowo Sekjur Seni Rupa : Soeharjono
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 309 | type: table | table_index: 1 -->
 
@@ -9282,7 +9293,6 @@ B.1 Pimpinan Fakultas Teknik Program Reguler Pada Tiap Periode Periode 1965-1967
 
 LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 Periode 1977-1980 Sejak tanggal 31 Desember 1985 berdasarkan Keputusan Presiden RI No. 220/M Tahun 1985, Prof. Dr. I. G. N. P. Dekan : Ir.Tjok.Gde Majun Adnyana menjadi Rektor Universitas Udayana, maka Pembantu Dekan I : Drs.A.A. Rai Kalam pejabat Koordinator Fakultas Teknik adalah Prof. Dr. I. G. Pembantu Dekan II : Ir. R. Soewoto N. P. Adnyana. Pembantu Dekan III : Soeharjono Kejur Arsitektur : Ir. Robi Sularto Sastrowardoyo Periode 1986-1989 Sekjur Arsitektur : Ir. Nyoman Gelebet Dekan : Ir. I Gst. Made Putera Kejur Teknik Sipil : Ir. Suryadi Pembantu Dekan I : Sekjur Teknik Sipil : Ir. Nastowo Ir. R. Soewoto (1986-1987) Kejur Seni Rupa : dr. R. Moerdowo Ir. A.A. Ketut Oka (1987- 1989) Sekjur Seni Rupa : Soeharjono Pembantu Dekan II : Ir. I Wy. Sedana Pembantu Dekan III : Ir. AA. Ketut Oka (1986-1987) Pada akhir tahun 1979 terjadi penggantian pimpinan pada Ir. Ngk.Made Anom Wiryasa (1987-1989) Jurusan Arsitektur dan Seni Rupa: Kejur Arsitektur : Ir. I Kt. Sudjana (Pejabat) Kejur Arsitektur : Ir. Nyoman Gelebet Sekjur Arsitektur : Ir. IG.L.B. Utawa (Pejabat) Sekjur Arsitektur : Ir. I Gst Made Putera Kejur Teknik Sipil : Kejur Seni Rupa : Drs. A.A. Rai Kalam Ir. I Nyoman Sugita (1986-1988) Sekjur Seni Rupa : Soeharjono Ir. I Gusti Putu Suparsa (1988 - 1989) Sekjur Teknik Sipil : Periode 1980-1983 Ir. Wayan Sudarsana(1986-1987) Ir. Ngk. Made Anom Wiryasa (1987-1988) Dekan : Drs.A.A. Rai Kalam Ir. Ida Bagus Putu Widiartha (1988-1989) Pembantu Dekan I : Ir.IGM.Oka Sujadnya Ka. PS Teknik Elektro : Ir. Rukmi Sari Hartati Pembantu Dekan II : Sek. PS Teknik Elektro : Ir. I Made Windia Ka. PS Teknik Mesin : Ir. Wayan Dana Ir.Wy.Sudarsana (2/5 1980 s/d 15/9 1980), Sek. PS Teknik Mesin : Ir. Gst Putu Suparsa Ir. Nyoman Sugita (16/9 1980 s/d 1983) Pembantu Dekan II : Ir. A.A. Kt. Oka Kejur Arsitektur : Ir. Nyoman Gelebet Periode 1989-1992 Sekjur Arsitektur : Ir. I Gst Made Putera Kejur Teknik Sipil : Ir. Suryadi Dekan : Ir. I Gst.Made Putera Sekjur Teknik Sipil : Ir. Nastowo Pembantu Dekan I : Ir. A.A. Ketut Oka Kejur Seni Rupa : Soeharjono Pembantu Dekan II : Ir. I Wy. Sedana Sekjur Seni Rupa : Drs. N. Nirma Pembantu Dekan III : Ir. Ngk.Made Anom Wiryasa Kejur Arsitektur : Ir. I Kt. Sudjana (Pejabat) Kemudian berdasarkan PP.No. 5/1983 Fakultas Teknik Sekjur Arsitektur : Ir. I G.L.B. Utawa (Pejabat) Universitas Udayana menjadi 2 (dua) jurusan yaitu: Kejur Teknik Sipil : Ir. I Gusti Pt. Suparsa Jurusan Arsitektur dan Jurusan Teknik Sipil. Jurusan Seni Sekjur Teknik Sipil : Ir. I.B. Pt. Widiartha Rupa kemudian berdiri sendiri menjadi Program Studi Ka. PS TeknikElektro : Ir. Rukmi Sari Hartati Seni Rupa dan Desain. Sek. PS Teknik Elektro : Ir. Yanu Prapto S Ka. PS Teknik Mesin : Ir. I Gede Sumerta Sek. PS Teknik Mesin : Ir. I Ketut Gede Wirawan Periode 1983-1986 Koordinator : dr. Ida Bagus Oka Periode 1992-1995 Pembantu Dekan I : Ir. R. Soewoto Pembantu Dekan II : Ir. I Wy. Sedana Dekan : Ir. I Gst.Made Putera Pembantu Dekan III : Ir. A.A. Ketut Oka Pembantu Dekan I : Ir. A.A. Ketut Oka Kejur Arsitektur : Ir. Nyoman Gelebet Pembantu Dekan II : Ir. I Wy. Sedana Sekjur Arsitektur : Ir. I Gst Made Putera Pembantu Dekan III : Ir. Ngk.Made Anom Wiryasa Kejur Teknik Sipil : Ir. Suryadi Kejur Arsitektur : Sekjur Teknik Sipil : Ir. R. Soewoto Ir. I Kt. Sudjana (1992–1993) Pada tanggal 27 April 1985 terjadi pergantian pimpinan Ir. N. Gelebet (1993–1995) pada Jurusan Arsitektur dan Jurusan Teknik Sipil sesuai Sekjur Arsitektur : Ir. I .GL.B. Utawa dengan SK. Menteri Pendidikan dan Kebudayaan RI No Kejur Teknik Sipil : 2600/C/KI.2/1985 yaitu: Ir. I Gst. Pt. Suparsa (1992–1993) Ir. I Nym. Norken, SU (1993–1995) Kejur Arsitektur : Ir. I Gst Made Putera Sekjur Teknik Sipil : Sekjur Arsitektur : Ir. I Ketut Sudjana Kejur Ir. I.B. Widiartha (1992–1993) Teknik Sipil : Ir. Nyoman Sugita Sekjur Ir. I Nym. Sutarja, MS (1993–1995) Teknik Sipil : Ir. Wy. Sudarsana Ka. PS Teknik Elektro : Ir. Rukmi Sari Hartati(1992–1993) Berdasarkan SP Rektor No.2950/PT.17/ 1.01.02/1984 Ir. I Ketut Wijaya (1993–1995) Fakultas Teknik Universitas Udayana juga mengelola Sek. PS Teknik Elektro : Program Studi: Ir. Yanu Prapto Sudarmojo(1992–1993) Kepala PS Teknik Elektro : Ir. Rukmi Sari Hartati Ir. Gd. Dyana Arjana (1993–1995) Sekretaris PS Teknik Elektro: Ir. I Made Windia Ka. PS Teknik Mesin : Ir. Gede Sumerta Kepala PS Teknik Mesin : Ir. Wayan Dana Sek. PS Teknik Mesin : Sekretaris PS Teknik Mesin : Ir.I Gst. Putu Suparsa Ir. I Kt. Gde Wirawan(1992–1993) Ir. A. A Adhi Suryawan (1993–1995)
-286 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 310 | type: table | table_index: 1 -->
 
@@ -9321,7 +9331,7 @@ Periode 1977-1980 Sejak tanggal 31 Desember 1985 berdasarkan Keputusan Presiden 
 LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 Periode 1995–1999 Dekan : Ir. I Wyn. Dana Pembantu Dekan I : Ir. A.A. Ketut Oka Pembantu Dekan II : Ir. I Wy. Sedana Pembantu Dekan III : Ir. Ngk.Made Anom Wiryasa Pada Tahun 1996 terjadi pergantian ketiga Pembantu Dekan yaitu: Pembantu Dekan I : Ir. Nym. Budiartha, R.M., Msc. Pembantu Dekan II : Ir. I G. A. Alit Adnyana Pembantu Dekan III : Ir. I Wayan Yansen Kejur. Arsitektur : Ir. I Nyoman Gelebet (1995–1996) Ir. I G.L.B. Utawa (1996–1999) Sekjur Arsitektur : Ir. I G.L.B. Utawa (1995–1996) Ir. I Made Adhika, MSP. (1996–1999) Kejur Teknik Sipil : Ir. N. Sutarja, MS Sekjur Teknik Sipil : Ir. Anissa Maria Hidayati,MT Ka. PS Teknik Elektro : Ir. Pt. Arya Mertasana Sek. PS Teknik Elektro : Ir. Kt. Suka Astawa Ka. PS Teknik Mesin : Ir. I Wyn. Surata Sek. PS Teknik Mesin : Ir. I D. G. P. Swastika. Berdasarkan Surat Keputusan Nomor: 231/DIKTI/KEP/1996, tanggal 11 Juli 1996, tentang program studi pada program sarjana di lingkungan Universitas Udayana, maka dengan demikian Fakultas Teknik memiliki 4 program studi. Periode 1999 – 2003 Dekan : Ir. I Wyn. Dana Pembantu Dekan I : Ir. Nym. Budiartha R.M.,Msc. Pembantu Dekan II : Ir. I G. A. Alit Adnyana Pembantu Dekan III : Ir. I Wayan Yansen Ka. PS. Arsitektur : Ir. Wayan Meganada Ms.Ars Sek.PS. Arsitektur : Ir. Made Oka Arthaya, MT. (1999–2000) Ir. Ketut Latra (2000–2003) Ka. PS Teknik Sipil : Ir. N. Sutarja, MS. Sek.PS Teknik Sipil : Ir. I Wayan Dana, MT. Ka. PS Teknik Elektro : Ir. Pt. Arya Mertasana Sek.PS Teknik Elektro : Ir. Lie Jasa, MT. Ka.PS Teknik Mesin : Ir. I D. G. P. Swastika. Sek PS Teknik Mesin : Ir. I G.N. Priambadi. Periode 2003 - 2007 Dekan : Ir. I Gusti Putu Suparsa, MT. Pembantu Dekan I : Ir. I Nyoman Norken, SU., PhD. Pembantu Dekan II : Ir. Putu Arya Mertasana, MSi. Pembantu Dekan III : Ir.I.B.Gede Wirawibawa Mantra, MT. Kajur Arsitektur : Ir. Ngakan Putu Sueca, MT., PhD. Sekjur Arsitektur : Ir. I Made Widja, MT. Ir. A.A.G. Djaya Baruna, MT.
 N. M. Swanendri, ST, MT.
-Kajur Teknik Sipil : Ir. Made Sukrawa, MSCE., PhD. Sekjur Teknik Sipil : Ir. I.G.L.B. Sila Darma, MT., PhD. Ida A Rai Widhiawati, ST, MT Kajur T.Elektro : Ir. Ida Ayu Dwi Giriantari, MEngSc., PhD. Sekjur T.Elektro : Gede Sukadarmika, ST., MSc. Wayan Gede Ariastina, ST, M.Eng.Sc. Kajur Teknik Mesin : Ir. I Ketut Gede Wirawan, MT. Sekjur Teknik Mesin : Dr. Tjok Gde Tirta Nindia, ST., MT I Ketut Adi Atmika, ST, MT. I Gusti Ketut Sukadana, ST, MT. Periode 2007 - 2009 Dekan : Prof. Ir. I Wayan Redana, MASc., PhD. Pembantu Dekan I : Ngakan Ketut Acwin Dwijendra,ST, MA. Pembantu Dekan II : Ir. Anak Agung Adhi Suryawan, MT. Pembantu Dekan III : Ir. I Gusti Ngurah Janardana, MErg. Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 287
+Kajur Teknik Sipil : Ir. Made Sukrawa, MSCE., PhD. Sekjur Teknik Sipil : Ir. I.G.L.B. Sila Darma, MT., PhD. Ida A Rai Widhiawati, ST, MT Kajur T.Elektro : Ir. Ida Ayu Dwi Giriantari, MEngSc., PhD. Sekjur T.Elektro : Gede Sukadarmika, ST., MSc. Wayan Gede Ariastina, ST, M.Eng.Sc. Kajur Teknik Mesin : Ir. I Ketut Gede Wirawan, MT. Sekjur Teknik Mesin : Dr. Tjok Gde Tirta Nindia, ST., MT I Ketut Adi Atmika, ST, MT. I Gusti Ketut Sukadana, ST, MT. Periode 2007 - 2009 Dekan : Prof. Ir. I Wayan Redana, MASc., PhD. Pembantu Dekan I : Ngakan Ketut Acwin Dwijendra,ST, MA. Pembantu Dekan II : Ir. Anak Agung Adhi Suryawan, MT. Pembantu Dekan III : Ir. I Gusti Ngurah Janardana, MErg.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 311 | type: table | table_index: 1 -->
 
@@ -9353,7 +9363,6 @@ A. A. Gd. A. Yana, ST., MT
 Kajur T.Elektro : Ir. Lie Jasa, MT. Sekjur T.Elektro : Ir. I Nyoman Setiawan, MT. I Gst. A. Komang Diafari Djuni Hartawan, ST., MT. Kajur T.Mesin : Ir. Made Suarda, M.Eng. Sekjur T.Mesin : I Gede Putu Agus Suryawan,ST., MT. I Dewa Gede Ary Subagia, ST., MT. Periode 2009 - 2011 Dekan : Prof. Ir. I Wayan Redana, MASc., PhD. Pembantu Dekan I : Ir. I Gusti Ngurah Anom Rajendra, MSc. Pembantu Dekan II : Ir. Anak Agung Adhi Suryawan, MT. Pembantu Dekan III : Ir. I Gusti Ngurah Janardana, MErg. Kajur Arsitektur : Ir. Ni Ketut Ayu Siwalatri, MT. Sekjur Arsitektur : Ni Made Swanendri, ST., MT. I Wayan Wiryawan, ST., MT. Kajur Teknik Sipil : Dr. Ir. I Made Alit Karyawan Salain, DEA. Sekjur Teknik Sipil : Putu Kwintaryana Winaya, ST., MT.
 A. A. Gd. A. Yana, ST., MT
 Kajur Teknik Elektro : Ir. Lie Jasa, MT. Sekjur Teknik Elektro : Ir. I Nyoman Setiawan, MT. I Gst. A. Komang Diafari Djuni Hartawan, ST., MT. Kajur Teknik Mesin : Ir. Made Suarda, M.Eng. Sekjur Teknik Mesin : I Gede Putu Agus Suryawan, ST., MT. I Nyoman Suprapta Winaya, ST., MASc, PhD Periode 2011 - 2015 Dekan : Prof. Ir. I Wayan Redana, MASc.,PhD. Pembantu Dekan I : Dr. Eng. Made Sucipta, ST,MT Pembantu Dekan II : Ir. Nengah Keddy Setiada, MT Pembantu Dekan III : Ir. I Gst. Ngr Janardana, M.Erg Kajur Arsitektur : Ir. I Made Suarya, MT. Sekjur Arsitektur : Ir. Anak Agung Gde Djaja Bharuna, MT. I Ketut Mudra, ST, MT Kajur Teknik Sipil : Ir. I Nyoman Arya Thanaya, ME., Ph.D Sekjur Teknik Sipil : D.M Priyantha Wedagama, ST., MT., MSc.,Ph. Ir. Ida Ayu Made Budiwati, MSc, Ph.D. Kajur Teknik Elektro : Ir. I Nyoman Setiawan, MT. Sekjur Teknik Elektro : Ir. I Nyoman Budiastra, MErg., MT. Made A. E. Dewi Wirastuti, ST., MSc., PhD. Kajur Teknik Mesin : I Nyoman Suprapta Winaya, ST, MASc,PhD Sekjur Teknik Mesin : I Putu Lokantara, ST., MT. Ketut Astawa, ST., MT. Kajur Teknologi Informasi : Dr. I Ketut Darma Putra, SKom, MT Sekjur Teknologi Informasi : A.A. Kompiang Oka Sudana, SKom, MT Periode 2015 - 2019 Dekan : Prof. Ir. Ngakan Putu Gede Suardana, MT.,Ph.D. Wakil Dekan I : Prof. Ir. Ngakan Putu Sueca, MT.,Ph.D. Wakil Dekan II : Dr. Eng. Made Sucipta, ST,MT Wakil Dekan III : Ir. I Nyoman Budiastra, M.Kes., MT. Kajur Arsitektur : Dr. Ir. Anak Agung Ayu Oka Saraswati, MT. Sekjur Arsitektur : I Nyoman Widya Paramadhyaksa, ST., MT., Ph.D. Kajur Teknik Sipil : I Ketut Sudarsana, ST., Ph.D. Sekjur Teknik Sipil : Ir. Ida Ayu Made Budiwati, MSc, Ph.D. Kajur Teknik Elektro : Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Sekjur Teknik Elektro : Ir. I Wayan Sukerayasa,MT. Kajur Teknik Mesin : Dr. Ir. I Ketut Gede Sugita,MT. Sekjur Teknik Mesin : Dr. I Made Parwata,ST.MT. Kajur Teknologi Informasi : Dr.Eng. I Putu Agung Bayupati,ST,MT. Sekjur Teknologi Informasi : Putu Wira Buana .S Kom.MT
-288 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 312 | type: table | table_index: 1 -->
 
@@ -9375,7 +9384,7 @@ Kajur Teknik Elektro : Ir. Lie Jasa, MT. Sekjur Teknik Elektro : Ir. I Nyoman Se
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 313 | type: text -->
 
 LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
-Periode 2019 - 2021 Dekan : Prof. Ir. Ngakan Putu Gede Suardana, MT.,Ph.D. Wakil Dekan I : I Ketut Sudarsana, ST., Ph.D. Wakil Dekan II : Dr. Ir. I Ketut Gede Sugita,MT. Wakil Dekan III : Ir. I Nyoman Budiastra, M.Kes., MT. Koprodi Sarjana Arsitektur : Dr. Ir. Anak Agung Ayu Oka Saraswati, MT. Koprodi Sarjana Teknik Sipil : Dr. Anak Agung Gde Agung Yana, ST, MT Koprodi Sarjana Teknik Elektro : Ida Bagus Gd. Manuaba,ST.MT. Koprodi Sarjana Teknik Mesin : Dr. Ir. I Wayan Bandem Adnyana, M.Erg Koprodi Sarjana Teknologi Informasi : Dr. I Made Oka Widyantara,ST.MT. Koprodi Sarjana Teknik Industri : Dr. Ir. I Ketut Gede Wirawan, MT Koprodi Sarjana Teknik Lingkungan : Ir. Kadek Diana Harmayani, ST, MT, Ph.D. Koprodi Tropical Engeenering : I G.A.M. Suartika ST.M.Eng.Sc, Ph.D. Koprodi Magister Arsitektur : Dr. Ir. Ni Ketut Ayu Siwalatri, MT Koprodi Magister Teknik Elektro : Ir. Linawati, M.Eng.Sc., PhD. Koprodi Magister Teknik Sipil : Prof. Putu Alit Suthanaya, ST., M.EngSc., PhD. Koprodi Magister Teknik Mesin : Dr. Ir. I Gusti Ngurah Priambadi, MT Koprodi Doktor Ilmu Teknik : Prof.Ir.I Nyoman Arya Thanaya,ME,Ph.D. Periode 2021 - 2023 Dekan : I Ketut Sudarsana, ST., Ph.D. Wakil Dekan I : I Nyoman Suprapta Winaya, ST, MASc,PhD Wakil Dekan II : Dr. Ir. I Ketut Gede Sugita,MT. Wakil Dekan III : Ir. I Nyoman Budiastra, M.Kes., MT. Koprodi Sarjana Arsitektur : Tri Anggraini Prajnawrdhi, ST, MT,MURP, PhD Koprodi Sarjana Teknik Sipil : Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D Koprodi Sarjana Teknik Elektro : Dr. Gede Sukadarmika, ST, M.Sc. Koprodi Sarjana Teknik Mesin : Dr. I Putu Lokantara, ST, MT Koprodi Sarjana Teknologi Informasi : Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. Koprodi Sarjana Teknik Industri : Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT Koprodi Sarjana Teknik Lingkungan : Ir. Kadek Diana Harmayani, ST, MT, Ph.D. Koprodi Tropical Engeenering : Prof. I G.A.M. Suartika ST.M.Eng.Sc, Ph.D. Koprodi Magister Arsitektur : Ni Ketut Agusintadewi, ST, MT, Ph.D Koprodi Magister Teknik Elektro : Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Koprodi Magister Teknik Sipil : Prof. Dr. Ir. Dewa Ketut Sudarsana, MT. Koprodi Magister Teknik Mesin : I Made Widiyarta, ST, M.Sc, Ph.D Koprodi Doktor Ilmu Teknik : Prof. Dewa Made Priyantha Wedagama, ST., MT.. M.Sc., Ph.D Periode 2023 - 2027 Dekan : Prof. Ir. Linawati, M.Eng.Sc, Ph.D Wakil Dekan I : Prof. Ir. I Nyoman Budiarsa, M.T., Ph.D., IPU Wakil Dekan II : Ir. Kadek Diana Harmayani, ST, MT, Ph.D., IPM., ASEAN.Eng Wakil Dekan III : I Gusti Ketut Sukadana, ST., MT Koprodi Sarjana Arsitektur : Tri Anggraini Prajnawrdhi, ST, MT,MURP, PhD Koprodi Sarjana Teknik Sipil : Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D Koprodi Sarjana Teknik Elektro : Dr. Gede Sukadarmika, ST, M.Sc. Koprodi Sarjana Teknik Mesin : Dr. I Putu Lokantara, ST, MT Koprodi Sarjana Teknologi Informasi : Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. Koprodi Sarjana Teknik Industri : Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT Koprodi Sarjana Teknik Lingkungan : Ir. Kadek Diana Harmayani, ST, MT, Ph.D., IPM., ASEAN.Eng Koprodi Tropical Engeenering : Prof. I G.A.M. Suartika ST.M.Eng.Sc, Ph.D. Koprodi Magister Arsitektur : Ni Ketut Agusintadewi, ST, MT, Ph.D Koprodi Magister Teknik Elektro : Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Koprodi Magister Teknik Sipil : Prof. Dr. Ir. Dewa Ketut Sudarsana, MT. Koprodi Magister Teknik Mesin : I Made Widiyarta, ST, M.Sc, Ph.D Koprodi Doktor Ilmu Teknik : Prof. Dewa Made Priyantha Wedagama, ST., MT.. M.Sc., Ph.D Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 289
+Periode 2019 - 2021 Dekan : Prof. Ir. Ngakan Putu Gede Suardana, MT.,Ph.D. Wakil Dekan I : I Ketut Sudarsana, ST., Ph.D. Wakil Dekan II : Dr. Ir. I Ketut Gede Sugita,MT. Wakil Dekan III : Ir. I Nyoman Budiastra, M.Kes., MT. Koprodi Sarjana Arsitektur : Dr. Ir. Anak Agung Ayu Oka Saraswati, MT. Koprodi Sarjana Teknik Sipil : Dr. Anak Agung Gde Agung Yana, ST, MT Koprodi Sarjana Teknik Elektro : Ida Bagus Gd. Manuaba,ST.MT. Koprodi Sarjana Teknik Mesin : Dr. Ir. I Wayan Bandem Adnyana, M.Erg Koprodi Sarjana Teknologi Informasi : Dr. I Made Oka Widyantara,ST.MT. Koprodi Sarjana Teknik Industri : Dr. Ir. I Ketut Gede Wirawan, MT Koprodi Sarjana Teknik Lingkungan : Ir. Kadek Diana Harmayani, ST, MT, Ph.D. Koprodi Tropical Engeenering : I G.A.M. Suartika ST.M.Eng.Sc, Ph.D. Koprodi Magister Arsitektur : Dr. Ir. Ni Ketut Ayu Siwalatri, MT Koprodi Magister Teknik Elektro : Ir. Linawati, M.Eng.Sc., PhD. Koprodi Magister Teknik Sipil : Prof. Putu Alit Suthanaya, ST., M.EngSc., PhD. Koprodi Magister Teknik Mesin : Dr. Ir. I Gusti Ngurah Priambadi, MT Koprodi Doktor Ilmu Teknik : Prof.Ir.I Nyoman Arya Thanaya,ME,Ph.D. Periode 2021 - 2023 Dekan : I Ketut Sudarsana, ST., Ph.D. Wakil Dekan I : I Nyoman Suprapta Winaya, ST, MASc,PhD Wakil Dekan II : Dr. Ir. I Ketut Gede Sugita,MT. Wakil Dekan III : Ir. I Nyoman Budiastra, M.Kes., MT. Koprodi Sarjana Arsitektur : Tri Anggraini Prajnawrdhi, ST, MT,MURP, PhD Koprodi Sarjana Teknik Sipil : Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D Koprodi Sarjana Teknik Elektro : Dr. Gede Sukadarmika, ST, M.Sc. Koprodi Sarjana Teknik Mesin : Dr. I Putu Lokantara, ST, MT Koprodi Sarjana Teknologi Informasi : Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. Koprodi Sarjana Teknik Industri : Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT Koprodi Sarjana Teknik Lingkungan : Ir. Kadek Diana Harmayani, ST, MT, Ph.D. Koprodi Tropical Engeenering : Prof. I G.A.M. Suartika ST.M.Eng.Sc, Ph.D. Koprodi Magister Arsitektur : Ni Ketut Agusintadewi, ST, MT, Ph.D Koprodi Magister Teknik Elektro : Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Koprodi Magister Teknik Sipil : Prof. Dr. Ir. Dewa Ketut Sudarsana, MT. Koprodi Magister Teknik Mesin : I Made Widiyarta, ST, M.Sc, Ph.D Koprodi Doktor Ilmu Teknik : Prof. Dewa Made Priyantha Wedagama, ST., MT.. M.Sc., Ph.D Periode 2023 - 2027 Dekan : Prof. Ir. Linawati, M.Eng.Sc, Ph.D Wakil Dekan I : Prof. Ir. I Nyoman Budiarsa, M.T., Ph.D., IPU Wakil Dekan II : Ir. Kadek Diana Harmayani, ST, MT, Ph.D., IPM., ASEAN.Eng Wakil Dekan III : I Gusti Ketut Sukadana, ST., MT Koprodi Sarjana Arsitektur : Tri Anggraini Prajnawrdhi, ST, MT,MURP, PhD Koprodi Sarjana Teknik Sipil : Ir. Ida Ayu Made Budiwati, M.Sc., Ph.D Koprodi Sarjana Teknik Elektro : Dr. Gede Sukadarmika, ST, M.Sc. Koprodi Sarjana Teknik Mesin : Dr. I Putu Lokantara, ST, MT Koprodi Sarjana Teknologi Informasi : Dr. Eng. I Putu Agung Bayupati, S.T.,M.T. Koprodi Sarjana Teknik Industri : Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT Koprodi Sarjana Teknik Lingkungan : Ir. Kadek Diana Harmayani, ST, MT, Ph.D., IPM., ASEAN.Eng Koprodi Tropical Engeenering : Prof. I G.A.M. Suartika ST.M.Eng.Sc, Ph.D. Koprodi Magister Arsitektur : Ni Ketut Agusintadewi, ST, MT, Ph.D Koprodi Magister Teknik Elektro : Wayan Gede Ariastina, S.T., M.Eng.Sc., Ph.D. Koprodi Magister Teknik Sipil : Prof. Dr. Ir. Dewa Ketut Sudarsana, MT. Koprodi Magister Teknik Mesin : I Made Widiyarta, ST, M.Sc, Ph.D Koprodi Doktor Ilmu Teknik : Prof. Dewa Made Priyantha Wedagama, ST., MT.. M.Sc., Ph.
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 313 | type: table | table_index: 1 -->
 
@@ -9400,7 +9409,6 @@ LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 B.2 Pimpinan Fakultas Teknik Program Nonreguler Pada Tiap Periode Periode 1997–2001 Ketua Program : Ir. I Gusti Putu Suparsa, MT. Sekretaris : Ir. I Ketut Alit, MT. Program Studi Arsitektur Ketua : Ir. Ni Ketut Ayu Siwalatri, MT. Sekretaris : Ir. Ngakan Putu Sueca, MT. Program Studi Teknik Sipil Ketua : Ir. I Ketut Swijana, MT. Sekretaris : Ir. I Gusti Ngurah Wardana, MT. Program Studi Teknik Mesin Ketua : Ir. Ngk. Pt. Gede Suardana, MT. Sekretaris : I Gusti Ngurah Putu Tenaya, ST. Program Studi Teknik Sipil Ketua : Ir. I Gst. Ngr. Janardana, MErg. Sekretaris : Ir. I Made Mataram, MErg. Periode 2001- 2005 Ketua Program : Ir. I Gusti Putu Suparsa, MT. (2001–2003) Ir. I Ketut Alit, MT. (2003–2005) Pembantu Ketua I : Ir. I Ketut Alit, MT. (2001–2003) Ir. Made Sukrawa, MSCE., PhD. (2003) Ir. I Nyoman Sutarja, MS. (2003–2005) Pembantu Ketua II : Ir. Ngk. Pt. Gede Suardana, MT. Pembantu Ketua III : Ir. I Nyoman Setiawan, MT. Program Studi Arsitektur Ketua : Ir. Ni Ketut Ayu Siwalatri, MT. Sekretaris : Ir. Nengah Sadri. Program Studi Teknik Sipil Ketua : Ir. I Ketut Swijana, MT. Sekretaris : Ir. I Gusti Ngurah Wardana, MT. Program Studi Teknik Mesin Ketua : Ir. I Ketut Gede Sugita, MT. Sekretaris : I Gusti Ngurah Putu Tenaya, ST. Program Studi Teknik Sipil Ketua : Ir. I Made Mataram, M.Erg. Sekretaris : Ir. I Wayan Sukrayasa, MT. Periode 2005–2007 Berdasarkan Keputusan Rektor Universitas Udayana No. 83/J.14/KP.02.02/2005 tentang Pengelolaan Program Ekstensi Fakultas Teknik Universitas Udayana, dimana susunan pengelolaannya sebagai berikut: Penanggung Jawab : Ir. I Gusti Putu Suparsa, MT. (Dekan) Pengarah : Ir. Nyoman. Norken, SU., PhD. (Pembantu Dekan I) Ir. Putu Arya Mertasana, MSi (Pembantu Dekan II) Ir. Ida Bagus Gede Wirawibawa M, MT. (Pembantu Dekan III) Pelaksana Bidang Akademik: : Ir. Ngakan Putu Sueca, MT., PhD. (Kajur Arsitektur) Ir. A.A. Gde Djaya Baruna, MT. (Sekjur Arsitektur) Ni Made Swanendri, ST., MT. (Sekjur Arsitektur) Ir. Made Sukrawa, MSCE., PhD. (Kajur Teknik Sipil) Ir. I.G.L.B. Sila Darma, MT., PhD. (Sekjur Teknik Sipil) Ida A Rai Widhiawati, ST., MT. Sekjur Teknik Sipil) Ir. Ida Ayu Dwi Giriantari, MEngSc., PhD. (Kajur Teknik Elektro) Gede Sukadarmika, ST., MSc. (Sekjur Teknik Elektro)
 W. G. Ariastina, ST., M.Eng.Sc., PhD. (Sekjur Teknik Elektro)
 Ir. I Ketut Gede Wirawan, MT. (Kajur Teknik Mesin.) I Ketut Adi Atmika, ST., MT. (Sekjur Teknik Mesin) I Gusti Ketut Sukadana, ST, MT. (Sekjur Teknik Mesin)
-290 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 314 | type: table | table_index: 1 -->
 
@@ -9426,7 +9434,7 @@ Pelaksana Bidang Administrasi: Drs. Nengah Sudersen, MM. (Kepala Tata Usaha) Gus
 A. A. Gd. A. Yana, ST., MT. (Sekjur Teknik Sipil)
 Ir. Lie Jasa, MT. (Kajur Teknik Elektro) Ir. I Nyoman Setiawan, MT. (Sekjur Teknik Elektro) I G. A. Km. Diafari Djuni Hartawan, ST., MT. (Sekjur Teknik Elektro) Ir. Made Suarda, MEng. (Kajur Teknik Mesin.) I Gede Putu Agus Suryawan, ST., MT. (Sekjur Teknik Mesin) I D.G. Ary Subagia, ST., MT. (Sekjur Teknik Mesin) Pelaksana Bidang Administrasi: Drs. Nengah Sudersen, MM. (Kepala Tata Usaha) Gusmaniarti, SH. (Ka. Sub. Bag. Akademik) Drs. Komang Teken (Ka. Sub. Bag. Umum & Perlengkapan) Desak Putu Irianti, SE. (Ka. Sub. Bag. Kepeg. & Keuangan) Dra. A.A.A. Ngurah (Ka. Sub. Bag. Kemahasiswaan) Periode 2009– 2011 Penanggung Jawab : Prof. Ir. I Wayan Redana, MASc., PhD. Pengarah : Ir. I Gusti Ngurah Anom Rajendra, MSc. (Pembantu Dekan I) Ir. Anak Agung Adhi Suryawan, ST., MT. (Pembantu Dekan II) Ir. I Gusti Ngurah Janardana, MErg. (Pembantu Dekan III) Pelaksana Bidang Akademik: Ir. Ni Ketut Ayu Siwalatri, MT. (Kajur Arsitektur) Ni Made Swanendri, ST., MT. (Sekjur Arsitektur) I Wayan Wiryawan, ST., MT. (Sekjur Arsitektur) Dr. Ir. I Made Alit Karyawan Salain, DEA. (Kajur Teknik Sipil) Putu Kwintaryana Winaya, ST., MT. (Sekjur Teknik Sipil)
 A. A. Gd. A. Yana, ST., MT. (Sekjur Teknik Sipil)
-Ir. Lie Jasa, MT. (Kajur Teknik Elektro) Ir. I Nyoman Setiawan, MT. (Sekjur Teknik Elektro) I G. A. Km. Diafari Djuni Hartawan, ST., MT. (Sekjur Teknik Elektro) Ir. Made Suarda, MEng. (Kajur Teknik Mesin.) I Gede Putu Agus Suryawan, ST., MT. (Sekjur Teknik Mesin) I D.G. Ary Subagia, ST., MT. (Sekjur Teknik Mesin) Pelaksana Bidang Administrasi: Drs. Nengah Sudersen, MM. (Kepala Tata Usaha) Gusmaniarti, SH. (Ka. Sub. Bag. Akademik) Drs. Komang Teken (Ka. Sub. Bag. Umum & Perlengkapan) Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 291
+Ir. Lie Jasa, MT. (Kajur Teknik Elektro) Ir. I Nyoman Setiawan, MT. (Sekjur Teknik Elektro) I G. A. Km. Diafari Djuni Hartawan, ST., MT. (Sekjur Teknik Elektro) Ir. Made Suarda, MEng. (Kajur Teknik Mesin.) I Gede Putu Agus Suryawan, ST., MT. (Sekjur Teknik Mesin) I D.G. Ary Subagia, ST., MT. (Sekjur Teknik Mesin) Pelaksana Bidang Administrasi: Drs. Nengah Sudersen, MM. (Kepala Tata Usaha) Gusmaniarti, SH. (Ka. Sub. Bag. Akademik) Drs. Komang Teken (Ka. Sub. Bag. Umum & Perlengkapan)
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 315 | type: table | table_index: 1 -->
 
@@ -9447,7 +9455,6 @@ Desak Putu Irianti, SE. (Ka. Sub. Bag. Kepeg. & Keuangan) Drs. I Made Darmaja (K
 1. Prof. Ir. Ngakan Putu Gede Suardana, MT.,Ph.D.
 (Dekan)
 2. I Ketut Sudarsana, ST., PhD.
-292 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 316 | type: table | table_index: 1 -->
 
@@ -9531,7 +9538,7 @@ LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 10. Ir. Kadek Diana Harmayani, ST., MT., PhD., IPM., ASEAN.Eng
 (Koprodi S1 Teknik Lingkungan)
 11. Dr. Anak Agung Istri Agung Sri Komaladewi, ST, MT.
-(Koprodi S1 Teknik Industri) Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 293
+(Koprodi S1 Teknik Industri)
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 317 | type: table | table_index: 1 -->
 
@@ -9602,7 +9609,6 @@ LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 1. I Ketut Wijana, SE., MM
 (Koordinator Tata Usaha)
 2. Ni Ketut Tjitra Juni, SE
-294 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 318 | type: table | table_index: 1 -->
 
@@ -9620,14 +9626,13 @@ LAMPIRAN B. PIMPINAN FAKULTAS TEKNIK DARI MASA KE MASA
 4. A.A. Ngurah Manik Wirayudha, SH
 (Sub Koordinator Umum dan Keuangan)
 5. Ni Made Narti, SH
-(Sub Koordinator Perencanaan dan Sistem Informasi) Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 295
+(Sub Koordinator Perencanaan dan Sistem Informasi)
 
 # Halaman 320
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 320 | type: text -->
 
 PENUTUP Kampus Fakultas Teknik Universitas Udayana di Bukit Jimbaran
-296 Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2022
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 320 | type: table | table_index: 1 -->
 
@@ -9638,7 +9643,7 @@ PENUTUP Kampus Fakultas Teknik Universitas Udayana di Bukit Jimbaran
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 321 | type: text -->
 
-PENUTUP Kampus Fakultas Teknik Universitas Udayana di Denpasar Pedoman Akademik Program Sarjana Fakultas Teknik Universitas Udayana 2024 297
+PENUTUP Kampus Fakultas Teknik Universitas Udayana di Denpasar
 
 <!-- source: Buku Pedoman Akademik Sarjana FT 2024.pdf | page: 321 | type: table | table_index: 1 -->
 

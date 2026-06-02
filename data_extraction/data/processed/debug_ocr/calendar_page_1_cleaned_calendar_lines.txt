@@ -1,0 +1,44 @@
+001: KALENDER AKADEMIK UNIVERSITAS UDAYANA
+002: TAHUN AKADEMIK 2025/2026
+004: SEMESTER GASAL (2025-1)
+005: KEGIATAN AKADEMIK
+007: , SELEKSI PENERIMAAN MAHASISWA BARU
+008: SELEKSI PENERIMAAN MAHASISWA BARU PROGRAM VOKASI DAN SARJANA
+010: Registrasi Akun SNPMB untuk SNBP 6 - 31 Januari 2025
+011: Penetapan Kuota Sekolah 28 Desember 2024
+012: Pengisian PDSS SNBP 6 - 31 Januari 2025
+013: Pendaftaran SNBP 4-18 Februari 2025
+014: Pengumuman hasil seleksi SNBP 18 Maret 2025
+015: Proses Registrasi menjadi Mahasiswa Baru 4-16 April 2025
+017: Registrasi Akun SNPMB untuk UTBK-SNBT 6 - 31 Januari 2025
+018: Pendaftaran UTBK-SNBT 11-27 Maret 2025
+019: Pelaksanaan UTBK 23 - 30 April dan 2-3 Mei 2025
+020: Pengumuman hasil seleksi SNBT 28 Mei 2025
+021: Proses Registrasi menjadi Mahasiswa Baru 13 - 20 Juni 2025
+023: SELEKSI PENERIMAAN KHUSUS MAHASISWA ASING PROGRAM REGULER
+024: Pendaftaran Calon Mahasiswa 13 - 30 Mei 2025
+025: Ujian Tulis Mahasiswa Asing 4 Juni 2025
+026: Pengumuman Hasil Seleksi Mahasiswa Asing 10 Juni 2025
+027: Proses Registrasi menjadi Mahasiswa Baru 10 - 20 Juni 2025
+029: PENERIMAAN MAHASISWA BARU JALUR MANDIRI PROGRAM DIPLOMA DAN SARJANA
+030: A. Pendaftaran Calon Mahasiswa Baru Jalur Mandiri
+031: Beasiswa Prestasi
+033: 19 - 28 Mei 2025
+035: Verifikasi berkas 26 - 30 Mei 2025
+036: Pengumuman Rekomendasi Mandiri Beasiswa Prestasi 10 Juni 2025
+037: B. Pendaftaran Calon Mahasiswa Baru Jalur Mandiri 2-9 Juni 2025
+038: Perangkingan Nilai SNBT
+039: Pengumuman Kelulusan 13 Juni 2025
+040: Proses Registrasi menjadi Mahasiswa Baru 26 Juni - 4 Juli 2025
+041: C. Pendaftaran Calon Mahasiswa Baru Jalur Mandiri UTBK 16 Juni - 4 Juli 2025
+042: Pelaksanaan Ujian UTBK 11 - 15 Juli 2025
+043: Pengumuman Hasil Seleksi UTBK 18 Juli 2025
+044: Proses Registrasi menjadi Mahasiswa Baru 25 Juli - 1 Agustus 2025
+045: D. Pendaftaran Calon Mahasiswa Baru Jalur Mandiri 18 - 22 Juli 2025
+046: Pemenuhan Daya Tampung
+047: Pengumuman Kelulusan 25 Juli 2025
+048: Proses Registrasi menjadi Mahasiswa Baru 4-6 Agustus 2025
+049: SELEKSI PENERIMAAN MAHASISWA BARU PROGRAM KELAS INTERNASIONAL
+050: a) Pendaftaran Gelombang 19 Mei - 5 Juni 2025
+051: Pelaksanaan Desk Evaluation 5-10 Juni 2025
+053: Pelaksanaan Wawancara 12 - 13 Juni 2025

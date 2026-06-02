@@ -17,6 +17,11 @@ RAW_DIR = BASE_DIR / "data" / "raw"
 OUTPUT_DIR = BASE_DIR / "data" / "processed" / "markdown"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+DEBUG_OCR_DIR = BASE_DIR / "data" / "processed" / "debug_ocr"
+DEBUG_OCR_DIR.mkdir(parents=True, exist_ok=True)
+
+SAVE_OCR_DEBUG = True
+
 PEDOMAN_PDF = RAW_DIR / "Buku Pedoman Akademik Sarjana FT 2024.pdf"
 KALENDER_PDF = RAW_DIR / "Kalender Akademik 2025-2026.pdf"
 
@@ -266,15 +271,13 @@ def extract_calendar_with_pymupdf(pdf_path: Path) -> list[dict]:
     return results
 
 
-def ocr_page_with_pymupdf(page, zoom: int = 3) -> str:
+def ocr_page_with_pymupdf(page, zoom: int = 3, return_raw: bool = False) -> str:
     """
     OCR halaman PDF dengan cara:
     1. Render halaman PDF menjadi gambar menggunakan PyMuPDF.
     2. Baca gambar menggunakan pytesseract.
 
-    Catatan:
-    - Membutuhkan instalasi pytesseract Python package.
-    - Membutuhkan aplikasi Tesseract OCR terinstal di komputer.
+    return_raw=True dipakai untuk menyimpan hasil OCR mentah sebelum cleaning.
     """
     try:
         import pytesseract
@@ -291,14 +294,246 @@ def ocr_page_with_pymupdf(page, zoom: int = 3) -> str:
 
     image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
-    # Bahasa Indonesia + English jika tersedia di Tesseract.
-    # Jika 'ind' belum tersedia, ganti lang='eng'.
     try:
         text = pytesseract.image_to_string(image, lang="ind+eng")
     except Exception:
         text = pytesseract.image_to_string(image, lang="eng")
 
+    if return_raw:
+        return text
+
     return clean_text(text)
+
+def save_ocr_debug_files(page_number: int, raw_ocr_text: str) -> None:
+    """
+    Menyimpan beberapa versi hasil OCR untuk kebutuhan pengecekan:
+    1. raw OCR asli dari Tesseract,
+    2. raw OCR dengan nomor baris,
+    3. cleaned OCR setelah clean_text(),
+    4. cleaned calendar lines setelah clean_calendar_line().
+    """
+    if not SAVE_OCR_DEBUG:
+        return
+
+    # 1. Raw OCR asli
+    raw_path = DEBUG_OCR_DIR / f"calendar_page_{page_number}_raw_ocr.txt"
+    raw_path.write_text(raw_ocr_text, encoding="utf-8")
+
+    # 2. Raw OCR dengan nomor baris
+    raw_lines = raw_ocr_text.splitlines()
+    numbered_lines = []
+
+    for index, line in enumerate(raw_lines, start=1):
+        numbered_lines.append(f"{index:03d}: {line}")
+
+    numbered_path = DEBUG_OCR_DIR / f"calendar_page_{page_number}_raw_ocr_numbered.txt"
+    numbered_path.write_text("\n".join(numbered_lines), encoding="utf-8")
+
+    # 3. OCR setelah clean_text()
+    cleaned_text = clean_text(raw_ocr_text)
+    cleaned_path = DEBUG_OCR_DIR / f"calendar_page_{page_number}_cleaned_text.txt"
+    cleaned_path.write_text(cleaned_text, encoding="utf-8")
+
+    # 4. OCR setelah clean_calendar_line() per baris
+    calendar_cleaned_lines = []
+
+    for index, line in enumerate(raw_ocr_text.splitlines(), start=1):
+        cleaned_line = clean_calendar_line(line)
+
+        if cleaned_line:
+            calendar_cleaned_lines.append(f"{index:03d}: {cleaned_line}")
+
+    calendar_cleaned_path = DEBUG_OCR_DIR / f"calendar_page_{page_number}_cleaned_calendar_lines.txt"
+    calendar_cleaned_path.write_text("\n".join(calendar_cleaned_lines), encoding="utf-8")
+
+def ocr_calendar_page_by_layout(page, page_number: int, zoom: int = 4) -> list[dict]:
+    """
+    OCR Kalender Akademik berdasarkan posisi kata.
+    Cocok untuk PDF kalender yang berbentuk tabel.
+
+    Prinsip:
+    - OCR mengambil kata beserta koordinat x dan y.
+    - Kata dengan x di kanan dianggap kolom waktu.
+    - Kata dengan x di kiri/tengah dianggap kolom kegiatan.
+    - Kata dikelompokkan menjadi baris berdasarkan koordinat y.
+    """
+    try:
+        import pytesseract
+        from pytesseract import Output
+        from PIL import Image
+    except ImportError as e:
+        raise ImportError(
+            "Library OCR belum tersedia. Install dulu dengan:\n"
+            "pip install pytesseract pillow\n\n"
+            "Selain itu, install aplikasi Tesseract OCR di Windows."
+        ) from e
+
+    matrix = fitz.Matrix(zoom, zoom)
+    pix = page.get_pixmap(matrix=matrix, alpha=False)
+
+    image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+    try:
+        data = pytesseract.image_to_data(
+            image,
+            lang="ind+eng",
+            output_type=Output.DICT,
+            config="--psm 6",
+        )
+    except Exception:
+        data = pytesseract.image_to_data(
+            image,
+            lang="eng",
+            output_type=Output.DICT,
+            config="--psm 6",
+        )
+
+    words = []
+
+    for i, raw_text in enumerate(data["text"]):
+        word = clean_calendar_line(raw_text)
+
+        if not word:
+            continue
+
+        if is_calendar_noise_line(word):
+            continue
+
+        try:
+            conf = float(data["conf"][i])
+        except Exception:
+            conf = -1
+
+        if conf < 25:
+            continue
+
+        x = int(data["left"][i])
+        y = int(data["top"][i])
+        w = int(data["width"][i])
+        h = int(data["height"][i])
+
+        center_y = y + h / 2
+
+        # Abaikan nomor urut di kolom paling kiri.
+        if x < pix.width * 0.08 and re.fullmatch(r"\d+", word):
+            continue
+
+        # Sesuaikan jika hasil kolom tanggal masih kurang tepat.
+        # Untuk tabel kalender ini, kolom waktu berada di area kanan.
+        column = "date" if x > pix.width * 0.63 else "activity"
+
+        words.append(
+            {
+                "text": word,
+                "x": x,
+                "y": y,
+                "center_y": center_y,
+                "column": column,
+            }
+        )
+
+    words.sort(key=lambda item: (item["center_y"], item["x"]))
+
+    rows = []
+    current_row = []
+    current_y = None
+    y_tolerance = 18 * zoom
+
+    for word in words:
+        if current_y is None:
+            current_row = [word]
+            current_y = word["center_y"]
+            continue
+
+        if abs(word["center_y"] - current_y) <= y_tolerance:
+            current_row.append(word)
+            current_y = (current_y + word["center_y"]) / 2
+        else:
+            rows.append(current_row)
+            current_row = [word]
+            current_y = word["center_y"]
+
+    if current_row:
+        rows.append(current_row)
+
+    structured_rows = []
+
+    for row in rows:
+        row = sorted(row, key=lambda item: item["x"])
+
+        activity_words = [item["text"] for item in row if item["column"] == "activity"]
+        date_words = [item["text"] for item in row if item["column"] == "date"]
+
+        activity = clean_calendar_line(" ".join(activity_words))
+        date_text = clean_calendar_line(" ".join(date_words))
+
+        if not activity and not date_text:
+            continue
+
+        structured_rows.append(
+            {
+                "page": page_number,
+                "activity": activity,
+                "date": date_text,
+            }
+        )
+
+    return structured_rows
+
+def calendar_layout_rows_to_markdown(rows: list[dict]) -> str:
+    """
+    Mengubah hasil OCR berbasis layout menjadi Markdown Table.
+    """
+    md = []
+    md.append("| Halaman | Bagian | Kegiatan | Waktu |")
+    md.append("|---|---|---|---|")
+
+    current_section = ""
+    current_semester = ""
+
+    for row in rows:
+        page = row["page"]
+        activity = clean_calendar_line(row["activity"])
+        date_text = clean_calendar_line(row["date"])
+
+        if not activity and not date_text:
+            continue
+
+        upper_activity = activity.upper()
+
+        # Semester
+        if upper_activity in [
+            "SEMESTER GASAL (2025-1)",
+            "SEMESTER GENAP (2025-2)",
+        ]:
+            current_semester = activity
+            current_section = activity
+            continue
+
+        # Section besar
+        if SECTION_RE.match(activity) or upper_activity in [
+            "KEGIATAN AKADEMIK LAINNYA DAN PENJAMINAN MUTU",
+            "PENDAFTARAN DAN PENETAPAN KELULUSAN",
+            "PENDAFTARAN WISUDA",
+        ]:
+            if current_semester and activity != current_semester:
+                current_section = activity
+            else:
+                current_section = activity
+            continue
+
+        # Jika tidak punya tanggal, kemungkinan heading/subheading.
+        if activity and not date_text:
+            # Jangan langsung jadikan event.
+            continue
+
+        # Jika punya tanggal tapi kegiatan kosong, skip agar tidak jadi baris "-"
+        if not activity and date_text:
+            continue
+
+        md.append(f"| {page} | {current_section} | {activity} | {date_text} |")
+
+    return "\n".join(md)
 
 # ============================================================
 # REKONSTRUKSI KALENDER AKADEMIK MENJADI MARKDOWN TABLE
@@ -342,44 +577,227 @@ NEW_EVENT_START_RE = re.compile(
     re.IGNORECASE,
 )
 
+SUBHEADING_RE = re.compile(
+    r"^(PENDAFTARAN DAN PENETAPAN KELULUSAN|PENDAFTARAN WISUDA)$",
+    re.IGNORECASE,
+)
+
+
+def remove_event_prefix(line: str) -> str:
+    """
+    Menghapus prefix nomor atau huruf agar pendeteksi kegiatan lebih akurat.
+
+    Contoh:
+    'B. Pendaftaran Kelulusan April 2026' -> 'Pendaftaran Kelulusan April 2026'
+    'C, Pendaftaran Kelulusan Mei 2026' -> 'Pendaftaran Kelulusan Mei 2026'
+    '18 | Pelaksanaan Kuliah Kerja Nyata' -> 'Pelaksanaan Kuliah Kerja Nyata'
+    """
+    line = clean_calendar_line(line)
+
+    # Hapus nomor tabel, misalnya: "18 | ..."
+    line = re.sub(r"^\d+\s*[|.)]\s*", "", line).strip()
+
+    # Hapus prefix huruf, misalnya: "A. ...", "B. ...", "C, ..."
+    line = re.sub(r"^[A-Z][\.,]\s*", "", line).strip()
+
+    # Hapus prefix huruf kecil, misalnya: "a) ..."
+    line = re.sub(r"^[a-z]\)\s*", "", line).strip()
+
+    return line
+
+
+def is_calendar_subheading(line: str) -> bool:
+    """
+    Mendeteksi subjudul di dalam bagian kalender.
+    Contoh:
+    PENDAFTARAN DAN PENETAPAN KELULUSAN
+    PENDAFTARAN WISUDA
+    """
+    line = remove_event_prefix(line)
+    return SUBHEADING_RE.match(line) is not None
+
+
+def is_new_calendar_event_line(line: str) -> bool:
+    """
+    Mendeteksi apakah sebuah baris adalah awal kegiatan baru.
+    Versi ini bisa mengenali:
+    - Penetapan Kelulusan Maret 2026
+    - B. Pendaftaran Kelulusan April 2026
+    - C, Pendaftaran Kelulusan Mei 2026
+    - Wisuda ke - 175
+    """
+    cleaned = clean_calendar_line(line)
+    normalized = remove_event_prefix(cleaned)
+
+    if NEW_EVENT_START_RE.match(normalized):
+        return True
+
+    extra_starts = (
+        "Pendaftaran Kelulusan",
+        "Penetapan Kelulusan",
+        "Pendaftaran Wisuda",
+        "Wisuda ke",
+        "Pelaksanaan Kuliah Kerja Nyata",
+    )
+
+    return normalized.startswith(extra_starts)
+
+def normalize_ocr_noise(text: str) -> str:
+    """
+    Memperbaiki noise OCR yang sering muncul pada kalender.
+    """
+    replacements = {
+        "SELEKS!": "SELEKSI",
+        "SELEKS|": "SELEKSI",
+        "ll.": "II.",
+        "lll.": "III.",
+        "Il.": "II.",
+        "Nopember": "November",
+    }
+
+    for wrong, correct in replacements.items():
+        text = text.replace(wrong, correct)
+
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
 def clean_calendar_line(line: str) -> str:
     """
-    Membersihkan noise OCR ringan pada setiap baris kalender.
+    Membersihkan noise OCR ringan pada setiap baris kalender,
+    tetapi tidak menghapus angka tanggal di awal baris.
     """
-    line = line.replace("|", " ")
+    if not line:
+        return ""
+
     line = line.replace("—", "-")
+    line = line.replace("–", "-")
     line = line.replace("~", "-")
-    line = re.sub(r"^\d+\s*[|.)]?\s*", "", line)
-    line = re.sub(r"^[|,]\s*", "", line)
+
+    # Hapus nomor baris hanya kalau ada pemisah jelas.
+    # Contoh yang dihapus:
+    # "8 | Pembayaran UKT"
+    # "9 | Pengumuman Mahasiswa Aktif"
+    # "10. Pengisian KRS"
+    # "11) Perubahan KRS"
+    #
+    # Contoh yang TIDAK dihapus:
+    # "17 Juli - 15 Agustus 2025"
+    # "2 Maret - 13 Juli 2026"
+    line = re.sub(r"^\s*\d+\s*[|.)]\s*", "", line)
+
+    line = line.replace("|", " ")
+    line = re.sub(r"^[,]\s*", "", line)
     line = re.sub(r"\s+", " ", line)
-    return line.strip()
+
+    return normalize_ocr_noise(line)
+
+def is_calendar_noise_line(line: str) -> bool:
+    """
+    Mendeteksi baris OCR yang kemungkinan besar hanya noise.
+    """
+    if not line:
+        return True
+
+    lowered = line.lower().strip()
+
+    known_noise_patterns = [
+        "nio wa",
+        "elniau",
+        "w)r",
+        "wa) w",
+    ]
+
+    if any(pattern in lowered for pattern in known_noise_patterns):
+        return True
+
+    # Jika terlalu pendek dan tidak punya angka/tanggal/kata penting, abaikan.
+    meaningful_keywords = [
+        "pendaftaran", "pengumuman", "pembayaran", "pengisian",
+        "perubahan", "perkuliahan", "ujian", "wisuda", "kkn",
+        "cuti", "registrasi", "validasi", "pelaporan"
+    ]
+
+    has_keyword = any(keyword in lowered for keyword in meaningful_keywords)
+    has_digit = any(char.isdigit() for char in lowered)
+
+    if len(lowered) <= 12 and not has_keyword and not has_digit:
+        return True
+
+    return False
+
+def has_day_number(date_text: str) -> bool:
+    """
+    Mengecek apakah tanggal memiliki angka hari.
+    
+    Contoh True:
+    - 20 Februari 2026
+    - 1-29 April 2026
+    - 2 - 26 Maret 2026
+    - 17 November 2025 - 5 Januari 2026
+
+    Contoh False:
+    - April 2026
+    - Maret 2026
+    - Juli - Agustus 2026
+    """
+    return re.search(r"\b\d{1,2}\b", date_text) is not None
 
 
 def split_activity_and_date(line: str):
     """
     Memisahkan teks kegiatan dan tanggal dari satu baris OCR.
+
+    Prinsip:
+    - Kalau ada tanggal kuat yang punya angka hari, ambil sebagai Waktu.
+    - Kalau hanya ada 'April 2026' di dalam nama kegiatan, jangan langsung dianggap Waktu.
+    - Kalau baris hanya berisi 'Juli - Agustus 2026', tetap boleh dianggap Waktu.
     """
-    match = DATE_RE.search(line)
+    line = clean_calendar_line(line)
+    matches = list(DATE_RE.finditer(line))
 
-    if not match:
-        return clean_calendar_line(line), None
+    if not matches:
+        return line, None
 
-    date_text = match.group(0).strip()
-    activity_text = (line[:match.start()] + " " + line[match.end():]).strip()
-    activity_text = clean_calendar_line(activity_text)
+    # Coba ambil tanggal kuat dari belakang.
+    for match in reversed(matches):
+        date_text = match.group(0).strip()
+        activity_text = (line[:match.start()] + " " + line[match.end():]).strip()
+        activity_text = clean_calendar_line(activity_text)
 
-    return activity_text, date_text
+        if has_day_number(date_text):
+            return activity_text, date_text
+
+    # Kalau tidak ada tanggal kuat, cek apakah satu baris memang hanya tanggal lemah.
+    # Contoh: "Juli - Agustus 2026" atau "Oktober 2025"
+    if len(matches) == 1:
+        match = matches[0]
+        date_text = match.group(0).strip()
+        activity_text = (line[:match.start()] + " " + line[match.end():]).strip()
+        activity_text = clean_calendar_line(activity_text)
+
+        if not activity_text:
+            return "", date_text
+
+    # Kalau masih ada teks kegiatan, jangan pecah tanggalnya.
+    # Contoh: "B. Pendaftaran Kelulusan April 2026"
+    return line, None
 
 
 def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
     """
     Mengubah hasil ekstraksi/OCR Kalender Akademik menjadi Markdown Table.
-    Input berupa list dict:
-    [
-        {"page": 1, "text": "..."},
-        {"page": 2, "text": "..."}
-    ]
+
+    Perbaikan penting:
+    1. Tidak menjadikan 'April 2026' sebagai tanggal final jika itu bagian nama kegiatan.
+    2. Menangani kasus layout:
+       Proses Registrasi menjadi Mahasiswa Baru
+       II. PERKULIAHAN DAN PEMBELAJARAN
+       Batas Terakhir Pengajuan Cuti Akademik
+       4-11 Februari 2026
+       20 Februari 2026
+
+       Tanggal pertama dipasangkan ke kegiatan sebelum section,
+       tanggal kedua dipasangkan ke kegiatan setelah section.
     """
     rows = []
     current_section = ""
@@ -387,20 +805,37 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
     current_date = None
     current_page = None
 
+    pending_activity_before_section = []
+    pending_section_before_section = ""
+    pending_page_before_section = None
+
+    def activity_to_text(activity_lines: list[str]) -> str:
+        activity = " ".join(activity_lines)
+        activity = clean_calendar_line(activity)
+        return activity
+
+    def append_row(page, section, activity_lines, date_text):
+        activity = activity_to_text(activity_lines)
+
+        if activity and date_text:
+            rows.append(
+                {
+                    "page": page,
+                    "section": section,
+                    "activity": activity,
+                    "date": date_text,
+                }
+            )
+
     def flush_row():
         nonlocal current_activity, current_date, current_page
 
-        activity = " ".join(current_activity)
-        activity = clean_calendar_line(activity)
-
-        if activity and current_date:
-            rows.append(
-                {
-                    "page": current_page,
-                    "section": current_section,
-                    "activity": activity,
-                    "date": current_date,
-                }
+        if current_activity and current_date:
+            append_row(
+                page=current_page,
+                section=current_section,
+                activity_lines=current_activity,
+                date_text=current_date,
             )
 
         current_activity = []
@@ -418,9 +853,12 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
             if not line:
                 continue
 
+            if is_calendar_noise_line(line):
+                continue
+
             upper_line = line.upper()
 
-            # Lewati judul besar
+            # Lewati judul besar.
             if (
                 "KALENDER AKADEMIK UNIVERSITAS UDAYANA" in upper_line
                 or upper_line.startswith("TAHUN AKADEMIK")
@@ -428,22 +866,69 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
             ):
                 continue
 
-            # Deteksi section, misalnya:
-            # I. SELEKSI PENERIMAAN MAHASISWA BARU
-            # II. PERKULIAHAN DAN PEMBELAJARAN
-            if SECTION_RE.match(line) or upper_line in [
-                "SEMESTER GASAL (2025-1)",
-                "SEMESTER GENAP (2025-2)",
-                "KEGIATAN AKADEMIK LAINNYA DAN PENJAMINAN MUTU",
-            ]:
-                flush_row()
+            is_section = (
+                SECTION_RE.match(line)
+                or upper_line in [
+                    "SEMESTER GASAL (2025-1)",
+                    "SEMESTER GENAP (2025-2)",
+                    "KEGIATAN AKADEMIK LAINNYA DAN PENJAMINAN MUTU",
+                ]
+            )
+
+            if is_section:
+                # Kalau ada kegiatan sebelum section tapi belum punya tanggal,
+                # jangan dibuang. Simpan sebagai pending.
+                if current_activity and not current_date:
+                    pending_activity_before_section = current_activity.copy()
+                    pending_section_before_section = current_section
+                    pending_page_before_section = current_page or page_number
+                    current_activity = []
+                    current_date = None
+                else:
+                    flush_row()
+
                 current_section = line
+                continue
+
+            # Subheading seperti "PENDAFTARAN DAN PENETAPAN KELULUSAN"
+            # tidak dimasukkan ke nama kegiatan.
+            if is_calendar_subheading(line):
+                flush_row()
                 continue
 
             activity_part, date_part = split_activity_and_date(line)
 
-            # Kasus baris berisi kegiatan + tanggal
+            # ============================================================
+            # Kasus baris berisi tanggal
+            # ============================================================
             if date_part:
+                # Kasus khusus:
+                # Ada kegiatan pending sebelum section,
+                # lalu setelah section ada kegiatan baru,
+                # lalu tanggal pertama muncul.
+                #
+                # Maka tanggal pertama ini milik kegiatan pending,
+                # bukan milik kegiatan baru.
+                if (
+                    pending_activity_before_section
+                    and current_activity
+                    and not current_date
+                ):
+                    append_row(
+                        page=pending_page_before_section or page_number,
+                        section=pending_section_before_section,
+                        activity_lines=pending_activity_before_section,
+                        date_text=date_part,
+                    )
+
+                    pending_activity_before_section = []
+                    pending_section_before_section = ""
+                    pending_page_before_section = None
+
+                    # current_activity tetap dipertahankan,
+                    # karena akan menerima tanggal berikutnya.
+                    continue
+
                 if current_date:
                     flush_row()
 
@@ -454,17 +939,16 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
                 current_page = page_number
                 continue
 
+            # ============================================================
             # Kasus baris tanpa tanggal
+            # ============================================================
             if current_date:
-                # Jika baris baru terlihat seperti kegiatan baru, simpan kegiatan sebelumnya dulu
-                if NEW_EVENT_START_RE.match(line):
+                if is_new_calendar_event_line(line):
                     flush_row()
                     current_activity.append(line)
                     current_page = page_number
                 else:
-                    # Jika bukan kegiatan baru, anggap sebagai lanjutan nama kegiatan sebelumnya
                     current_activity.append(line)
-                    current_page = page_number
                     flush_row()
             else:
                 current_activity.append(line)
@@ -542,11 +1026,23 @@ def extract_calendar_to_markdown(
     doc = fitz.open(pdf_path)
 
     try:
+        # Kembali memakai OCR full-page yang lebih stabil untuk dokumen ini.
+        # Percobaan layout OCR berbasis koordinat kata membuat hasil tabel menjadi rusak,
+        # karena Tesseract tidak konsisten memisahkan kolom kegiatan dan kolom waktu.
         ocr_pages = []
 
         for page_index, page in enumerate(doc, start=1):
             print(f"[INFO] OCR halaman {page_index}...")
-            ocr_text = ocr_page_with_pymupdf(page)
+
+            raw_ocr_text = ocr_page_with_pymupdf(
+                page,
+                zoom=3,
+                return_raw=True,
+            )
+
+            save_ocr_debug_files(page_index, raw_ocr_text)
+
+            ocr_text = clean_text(raw_ocr_text)
 
             ocr_pages.append(
                 {
