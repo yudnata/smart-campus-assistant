@@ -1,0 +1,79 @@
+001: B. Pendaftaran Kelulusan Juli 2025 1-30 Juli 2025
+002: Penetapan Kelulusan Juli 2025 31 Juli 2025
+003: C, Pendaftaran Kelulusan Agustus 2025 1 - 28 Agustus 2025
+004: Penetapan Kelulusan Agustus 2025 29 Agustus 2025
+005: D. Pendaftaran Kelulusan September 2025 1-29 September 2025
+006: Penetapan Kelulusan September 2025 30 September 2025
+008: E. Pendaftaran Kelulusan Oktober 2025
+010: 1 - 30 Oktober 2025
+012: Penetapan Kelulusan Oktober 2025
+014: 31 Oktober 2025
+016: F, Pendaftaran Kelulusan November 2025
+018: 3 - 27 November 2025
+020: Penetapan Kelulusan November 2025
+022: 28 November 2025
+024: G. Pendaftaran Kelulusan Desember 2025
+026: 1-30 Desember 2025
+028: Penetapan Kelulusan Desember 2025
+030: 31 Desember 2025
+032: H. Pendaftaran Kelulusan Januari 2026
+034: 1 - 26 Januari 2026
+036: Penetapan Kelulusan Januari 2026
+038: 27 Januari 2026
+040: , Pendaftaran Kelulusan Februari 2026
+042: 2 - 26 Februari 2026
+044: Penetapan Kelulusan Februari 2026
+046: 27 Februari 2026
+048: PENDAFTARAN WISUDA
+050: A. Pendaftaran Wisuda ke 169
+052: 14 Juli - 8 Agustus 2025
+054: Wisuda ke - 169 23 Agustus 2025
+055: B. Pendaftaran Wisuda ke 170 14 Juli - 20 Agustus 2025
+056: Wisuda ke - 170 30 Agustus 2025
+057: C, Pendaftaran Wisuda ke 171 15 September - 3 Oktober 2025
+058: Wisuda ke - 171 18 Oktober 2025
+059: D. Pendaftaran Wisuda ke 172 15 September - 15 Oktober 2025
+060: Wisuda ke - 172 25 Oktober 2025
+061: E. Pendaftaran Wisuda ke 173 10 November - 8 Desember 2025
+062: Wisuda ke - 173 20 Desember 2025
+064: F. Pendaftaran Wisuda ke 174
+066: 12 Januari - 13 Februari 2026
+068: Wisuda ke - 174
+070: 28 Februari 2026
+072: SEMESTER GENAP (2025-2)
+073: KEGIATAN AKADEMIK
+075: . SELEKS PENERIMAAN MAHASISWA BARU PROGRAM PROFESI, PPDS, MAGISTER DAN DOKTOR
+077: Pendaftaran Mahasiswa Baru Program Profesi, PPDS,
+078: Magister, dan Doktor
+080: 17 November 2025 - 5 Januari 2026
+082: Pengumuman Hasil Seleksi Administrasi
+084: 7 Januari 2026
+086: Tes Kesehatan PPDS
+088: 9 - 19 Januari 2026
+090: Pengumuman Hasil Tes Kesehatan PPDS
+092: 20 Januari 2026
+094: Ujian UTBK
+096: 24 - 25 Januari 2026
+098: Ujian Tulis TKD dan Wawancara
+100: 26 Januari - 2 Februari 2026
+102: Pengumuman Hasil Seleksi
+104: 4 Februari 2026
+106: Proses Registrasi menjadi Mahasiswa Baru
+107: II. PERKULIAHAN DAN PEMBELAJARAN
+108: Batas Terakhir Pengajuan Cuti Akademik
+110: 4-11 Februari 2026
+112: 20 Februari 2026
+114: Pembayaran Biaya Pendidikan Mahasiswa Lama
+116: 2 - 20 Februari 2026
+118: Pengumuman Mahasiswa Aktif
+120: 23 Februari 2026
+122: Pengisian Kartu Rencana Studi (KRS)
+124: 2-20 Februari 2026
+126: Perubahan Kartu Rencana Studi (KRS)
+128: 23 - 27 Februari 2026
+130: NiO wa) w)r
+132: Kuliah Perdana Mahasiswa Program Profesi, PPDS,
+133: Magister, dan Doktor
+135: 2 Maret 2026
+137: Perkuliahan dan Ujian Semester
+139: 2 Maret - 13 Juli 2026

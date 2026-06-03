@@ -1,0 +1,59 @@
+001: Pelaporan Data Tipe 1 - Checkpoint
+003: Batas Akhir Input Nilai Semester 21 Juli 2026
+004: Proses Evaluasi Keberhasilan Studi Mahasiswa 24 Juli 2026
+005: Batas Akhir Keputusan Keberhasilan Studi Mahasiswa 28 Juli 2026
+007: II. PELAPORAN DAN REKONSILIASI DATA PDDIKTI
+009: 3 - 31 Maret 2026
+011: Validasi Pelaporan - Checkpoint
+013: 1-15 April 2026
+015: IV. KKN DAN WISUDA
+016: Pelaksanaan Kuliah Kerja Nyata (KKN-PPM)
+018: Pelaporan Data Tipe 2 - Checkpoint II 1-31 Juli 2026
+019: Validasi Pelaporan - Checkpoint II 1-14 Agustus 2026
+020: Rekonsiliasi Data Status Keaktifan Mahasiswa Maret 2026
+022: Januari - Februari 2026
+024: Pelaksanaan Kuliah Kerja Nyata (KKN-PPM)
+026: Juli - Agustus 2026
+028: PENDAFTARAN DAN PENETAPAN KELULUSAN
+030: A. Pendaftaran Kelulusan Maret 2026
+032: 2 - 26 Maret 2026
+034: Penetapan Kelulusan Maret 2026
+036: 27 Maret 2026
+038: B. Pendaftaran Kelulusan April 2026
+040: 1-29 April 2026
+042: Penetapan Kelulusan April 2026 30 April 2026
+043: C. Pendaftaran Kelulusan Mei 2026 1-25 Mei 2026
+044: Penetapan Kelulusan Mei 2026 26 Mei 2026
+045: D. Pendaftaran Kelulusan Juni 2026 1-29 Juni 2026
+046: Penetapan Kelulusan Juni 2026 30 Juni 2026
+047: E. Pendaftaran Kelulusan Juli 2026 1-27 Juli 2026
+048: Penetapan Kelulusan Juli 2026 28 Juli 2026
+050: PENDAFTARAN WISUDA
+052: A. Pendaftaran Wisuda ke - 175
+054: 9 Maret - 10 April 2026
+056: Wisuda ke - 175 25 April 2026
+057: B. Pendaftaran Wisuda ke - 176 11 Mei - 12 Juni 2026
+058: Wisuda ke - 176 27 Juni 2026
+059: C. Pendaftaran Wisuda ke 177 13 Juli - 7 Agustus 2026
+060: Wisuda ke - 177 22 Agustus 2026
+061: D. Pendaftaran Wisuda ke 178 13 Juli - 14 Agustus 2026
+062: Wisuda ke - 178 29 Agustus 2026
+064: Pengambilan Kontribusi Mahasiswa Baru SO dan S1
+066: KEGIATAN AKADEMIK LAINNYA DAN PENJAMINAN MUTU
+068: 5-8 Agustus 2025
+070: PKKMB Tingkat Universitas
+072: 12 - 13 Agustus 2025
+074: PKKMB Tingkat Fakultas dan Pengisian KRS Mahasiswa
+075: Baru
+077: 14 - 22 Agustus 2025
+079: Puncak Dies Natalis ke - 62
+081: 29 September 2025
+083: Pengukuhan Guru Besar
+085: Januari - Desember 2025
+087: Audit Mutu Internal
+089: Agustus - September 2025
+091: Rapat Tinjauan Manajemen
+093: November - Desember 2025
+095: elNiau) s
+097: Monitor dan Evaluasi (Monev) Pembelajaran
+099: April - Mei 2025
