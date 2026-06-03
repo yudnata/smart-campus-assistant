@@ -1,0 +1,202 @@
+[
+  {
+    "kategori": "Akademik - Batas Studi",
+    "pesan_user": "Min, batas maksimal kuliah di Fakultas Teknik tuh berapa tahun sih?",
+    "jawaban_ideal": "Batas maksimal masa studi untuk program sarjana di Fakultas Teknik adalah 7 tahun[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Kelulusan",
+    "pesan_user": "Kak, kalau mau lulus dengan predikat Cumlaude (Dengan Pujian), syaratnya apa aja ya?",
+    "jawaban_ideal": "Untuk lulus dengan predikat 'Dengan Pujian' (Cumlaude), kamu harus mencapai IPK di atas 3,50, masa studi maksimal 4 tahun, tidak boleh mengulang mata kuliah, dan nilai minimal yang didapatkan adalah B[cite: 35]."
+  },
+  {
+    "kategori": "Perkuliahan - Absensi",
+    "pesan_user": "Bli, absenku bolong-bolong nih, syarat minimal kehadiran buat ikut UAS berapa persen ya?",
+    "jawaban_ideal": "Syarat minimal kehadiran untuk bisa ikut UAS adalah 75% dari jumlah pertemuan. Kalau kehadiranmu kurang dari itu, kamu tidak diizinkan ikut ujian dan langsung dinyatakan tidak lulus mata kuliah tersebut[cite: 35]."
+  },
+  {
+    "kategori": "Administrasi - Cuti Akademik",
+    "pesan_user": "Min, mau nanya. Kalau mau ngajuin cuti kuliah tuh bolehnya berapa semester maksimal?",
+    "jawaban_ideal": "Cuti akademik bisa diambil maksimal 2 semester, tapi tidak boleh berturut-turut. Syaratnya, kamu harus sudah kuliah minimal 2 semester dan tidak boleh mengambil cuti pada semester terakhir masa studimu[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Evaluasi DO",
+    "pesan_user": "Kak, evaluasi Drop Out (DO) tahap 1 itu di semester berapa sih? Syarat lolosnya gimana?",
+    "jawaban_ideal": "Evaluasi DO tahap pertama dilakukan di akhir semester 2. Syarat lolosnya, kamu wajib sudah mengumpulkan minimal 20 SKS dengan IPK ≥ 2,75. Jika tidak memenuhi syarat ini, kamu akan diberikan peringatan tertulis[cite: 35]."
+  },
+  {
+    "kategori": "Perkuliahan - Banding Nilai",
+    "pesan_user": "Min, aku merasa nilai UAS ku ada yang salah input. Bisa komplain nggak ya? Batas waktunya kapan?",
+    "jawaban_ideal": "Kamu sangat bisa mengajukan banding nilai. Batas waktunya maksimal 3 hari setelah nilai diumumkan di SIMAK. Kamu harus menghubungi dosen pengampu untuk mengajukan komplain. Jika memang ada perbaikan, nanti akan disetujui oleh Koprodi[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Beban SKS",
+    "pesan_user": "Kak, IPK aku semester ini 3.6 nih. Semester depan bisa ambil berapa SKS maksimal?",
+    "jawaban_ideal": "Hebat! Karena IPK kamu di atas 3,50 (berprestasi akademik tinggi), kamu bisa mengambil beban maksimal hingga 24 SKS per semester[cite: 35]."
+  },
+  {
+    "kategori": "Program - Fast Track",
+    "pesan_user": "Bli, aku tertarik ikut program Fast Track S1-S2. Itu syarat daftarnya gimana ya?",
+    "jawaban_ideal": "Syarat mendaftar Fast Track antara lain: IPK minimal 3,50, sudah lulus minimal 120 SKS pada semester 6, nilai mata kuliah paling rendah adalah B, skor TOEFL minimal 450, serta mendapat rekomendasi dari dosen bergelar doktor (minimal Lektor)[cite: 35]."
+  },
+  {
+    "kategori": "Kemahasiswaan - SKP",
+    "pesan_user": "Min, syarat poin SKP buat bisa daftar wisuda jenjang S1 tuh minimal berapa?",
+    "jawaban_ideal": "Untuk jenjang S1/D4, kamu wajib mengumpulkan minimal 100 poin SKP (Satuan Kredit Partisipasi) sebagai syarat pendaftaran wisuda[cite: 35]."
+  },
+  {
+    "kategori": "Perkuliahan - Pengambilan Mata Kuliah",
+    "pesan_user": "Kak, di sini sistem SKS-nya gimana ya kalau udah lewat semester 1? Bisa ambil matkul beda semester nggak?",
+    "jawaban_ideal": "Sistem di Fakultas Teknik menganut sistem kredit penuh (full credit) setelah semester I. Artinya, kamu bebas mengambil mata kuliah yang ditawarkan pada semester ganjil maupun genap, asalkan tidak melanggar aturan prasyarat[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Beban SKS",
+    "pesan_user": "Bli, kalau IPK aku kemarin cuma 2.65, batas SKS yang bisa diambil di KRS berapa ya?",
+    "jawaban_ideal": "Berdasarkan pedoman, jika IPK kamu berada di rentang 2,50 hingga kurang dari 2,75, maka batas SKS maksimal yang boleh kamu ambil di semester berikutnya adalah 18 SKS[cite: 35]."
+  },
+  {
+    "kategori": "Perkuliahan - Dispensasi Kehadiran",
+    "pesan_user": "Min, aku kemarin sakit dan absen beberapa kali. Bisa dapet keringanan absen nggak buat ikut UAS?",
+    "jawaban_ideal": "Bisa! Mahasiswa yang sakit bisa mendapatkan keringanan kehadiran hingga batas minimal 50%. Syaratnya, kamu wajib menyerahkan surat keterangan resmi dari dokter paling lambat 1 minggu setelah kegiatan perkuliahan tersebut berlangsung[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Mengulang Mata Kuliah",
+    "pesan_user": "Kak, kalau aku ngulang matkul, nilai yang masuk transkrip itu nilai yang baru atau digabung?",
+    "jawaban_ideal": "Jika kamu mengulang mata kuliah, nilai yang akan dipakai dan dicantumkan di transkrip akademikmu adalah nilai yang terbaik dari semua nilai yang pernah kamu dapatkan di mata kuliah tersebut[cite: 35]."
+  },
+  {
+    "kategori": "Perkuliahan - Ujian Susulan",
+    "pesan_user": "Min, kalau aku bentrok ujian karena ada tugas lomba dari kampus, bisa minta ujian susulan nggak?",
+    "jawaban_ideal": "Bisa! Ujian susulan diberikan bagi mahasiswa yang sedang tugas kurikuler/ekstrakurikuler dengan izin Dekan/Koprodi. Kamu wajib menyampaikan surat izin tersebut paling lambat pada saat jadwal ujian aslinya berlangsung[cite: 35]."
+  },
+  {
+    "kategori": "Administrasi - Pindah Prodi",
+    "pesan_user": "Bli, aku mau pindah prodi di lingkungan Unud. Syaratnya apa aja ya yang harus dipenuhi?",
+    "jawaban_ideal": "Syarat pindah prodi internal Unud: akreditasi prodi asal setara dengan tujuan, sudah kuliah minimal 2 semester (telah kumpul min. 24 SKS), IPK minimal 3,5 tanpa ada mata kuliah gagal, dan wajib lulus tes kompetensi dari prodi tujuan[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Evaluasi DO",
+    "pesan_user": "Kak, kalau evaluasi DO tahap 2 itu syaratnya apa? Takut kena DO nih...",
+    "jawaban_ideal": "Evaluasi DO tahap II dilakukan pada akhir semester 4. Kamu wajib sudah mengumpulkan minimal 50 SKS dengan IPK ≥ 2,75. Jika di tahap 1 kamu sudah dapat peringatan dan di tahap 2 gagal penuhi syarat ini, kamu tidak diizinkan lanjut studi[cite: 35]."
+  },
+  {
+    "kategori": "Administrasi - Sanksi Registrasi",
+    "pesan_user": "Min, apa jadinya kalau aku lupa daftar ulang sampai 2 semester berturut-turut tanpa ngajuin cuti?",
+    "jawaban_ideal": "Jika kamu tidak melakukan pendaftaran ulang selama 2 semester berturut-turut tanpa status cuti akademik, kamu akan dianggap mengundurkan diri (Drop Out), kecuali kamu punya bukti force majeure dari pihak berwenang[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Pembimbing Akademik",
+    "pesan_user": "Kak, dosen PA (Pembimbing Akademik) tuh tugasnya apa aja sih?",
+    "jawaban_ideal": "Tugas Dosen PA meliputi: membimbing penyusunan rencana studimu, memberi pertimbangan jumlah SKS yang bisa diambil, memecahkan masalah akademik, menyetujui KRS via IMISSU, serta memantau capaian SKP-mu[cite: 35]."
+  },
+  {
+    "kategori": "Kemahasiswaan - Konseling",
+    "pesan_user": "Bli, aku lagi stres banget sama kuliah. Ada tempat curhat atau konseling resmi kampus nggak ya?",
+    "jawaban_ideal": "Ada! Kamu bisa konsultasi dulu ke Dosen PA. Jika butuh bantuan lebih lanjut, Dosen PA bisa mengarahkanmu ke Tim Bimbingan Konseling (TBK) Unud. Selain itu, layanan konseling juga tersedia secara online lewat sistem E-Konseling di IMISSU[cite: 35]."
+  },
+  {
+    "kategori": "Program - MBKM",
+    "pesan_user": "Min, kalau aku mau ikut MBKM kaya magang atau pertukaran pelajar, maksimal bisa berapa semester?",
+    "jawaban_ideal": "Untuk program Merdeka Belajar Kampus Merdeka (MBKM), kamu difasilitasi untuk bisa belajar di luar program studi dengan batas maksimum sebanyak 3 semester[cite: 35]."
+  },
+  {
+    "kategori": "Akademik - Rekognisi Pembelajaran Lampau (RPL)",
+    "pesan_user": "Min, kalau temenku DO dari kampus lamanya, bisa daftar ke Fakultas Teknik lewat jalur RPL nggak?",
+    "jawaban_ideal": "Bisa! Mahasiswa yang mengalami Drop Out (DO) dari pendidikan sebelumnya diperbolehkan melanjutkan studi melalui mekanisme RPL di perguruan tinggi lain. Syarat utamanya, dia tidak diperkenankan melanjutkan studi di perguruan tinggi asalnya."
+  },
+  {
+    "kategori": "Akademik - Rekognisi Pembelajaran Lampau (RPL)",
+    "pesan_user": "Kak, kalau pake jalur RPL, maksimal berapa SKS dari kampus lama atau kerjaan yang bisa diakuin di sini?",
+    "jawaban_ideal": "Jumlah maksimal pengakuan Capaian Pembelajaran yang dapat diakui melalui jalur RPL adalah 70% dari total SKS beban belajar program studi yang kamu tuju."
+  },
+  {
+    "kategori": "Program - Fast Track S1-S2",
+    "pesan_user": "Bli, kalau ambil program Fast Track, batas maksimal masa studi S1 dan S2 jadinya digabung berapa lama?",
+    "jawaban_ideal": "Program Percepatan (Fast Track) jenjang sarjana ke magister diselenggarakan dengan batas waktu paling lama 10 semester untuk menyelesaikan kedua jenjang tersebut secara berkesinambungan."
+  },
+  {
+    "kategori": "Program - Fast Track S1-S2",
+    "pesan_user": "Min, skripsi buat S1 sama tesis buat S2 nanti ngerjainnya pisah-pisah atau gimana kalau ikut Fast Track?",
+    "jawaban_ideal": "Untuk mahasiswa Fast Track, penelitian tesis pada jenjang Magister akan menjadi lanjutan langsung dari penelitian skripsi di program Sarjana, sehingga kualitas penelitian yang dihasilkan bisa lebih tinggi dan berkesinambungan."
+  },
+  {
+    "kategori": "Perkuliahan - Pembatalan Mata Kuliah",
+    "pesan_user": "Kak, matkul yang udah masuk KRS ternyata susah banget. Masih bisa dibatalin nggak sih pas kuliah udah jalan?",
+    "jawaban_ideal": "Bisa. Pembatalan mata kuliah yang sudah diikuti dapat dilakukan paling lambat 8 minggu setelah perkuliahan dimulai, dengan syarat harus mendapatkan persetujuan dari Dosen Pembimbing Akademik (PA) dan dosen pengampu mata kuliah tersebut."
+  },
+  {
+    "kategori": "Administrasi - Aktif Cuti",
+    "pesan_user": "Bli, semester ini kan aku cuti, buat semester depan batas ngurus surat aktif kembali itu kapan ya?",
+    "jawaban_ideal": "Permohonan aktif kembali setelah cuti wajib diajukan paling lambat 2 minggu sebelum masa pembayaran UKT semester berikutnya dimulai. Kamu harus menyerahkannya ke Biro Akademik, Kerja Sama dan Hubungan Masyarakat Unud dengan melampirkan surat cuti sebelumnya."
+  },
+  {
+    "kategori": "Akademik - Pindah Kuliah Eksternal",
+    "pesan_user": "Min, sepupuku dari PTN di Jawa mau pindah ke Teknik Unud. Batas SKS sama IPK minimalnya berapa ya?",
+    "jawaban_ideal": "Syarat pindah dari perguruan tinggi negeri lain ke Fakultas Teknik Unud adalah: memiliki IPK minimal 3,50, seluruh mata kuliah lulus tanpa terkecuali, dan telah menyelesaikan beban studi di kampus asal minimal 40 SKS dan maksimal 60 SKS."
+  },
+  {
+    "kategori": "Perkuliahan - Bobot Penilaian",
+    "pesan_user": "Kak, proporsi nilai tugas harian (proses) sama ujian akhir (hasil) itu biasanya lebih gede mana sih?",
+    "jawaban_ideal": "Di Fakultas Teknik, bobot penilaian proses belajar ditetapkan lebih besar atau sama dengan 60%, sedangkan penilaian hasil belajar (seperti ujian akhir) memiliki bobot maksimal 40%."
+  },
+  {
+    "kategori": "Tata Tertib - Berpakaian",
+    "pesan_user": "Min, boleh ngampus pakai kaos oblong dan sandal nggak kalau cuacanya panas banget?",
+    "jawaban_ideal": "Tidak boleh. Seluruh civitas akademik di lingkungan Fakultas Teknik diwajibkan menggunakan kemeja atau kaos berkerah yang rapi, serta memakai sepatu berserta kaos kaki. Jika melanggar, kamu tidak diizinkan mengikuti perkuliahan."
+  },
+  {
+    "kategori": "Tata Tertib - Ujian (Menyontek)",
+    "pesan_user": "Kak, kalau ketahuan kerja sama atau nyontek pas UTS sanksinya langsung dikeluarin ya?",
+    "jawaban_ideal": "Jika terbukti menyontek atau bekerja sama, kamu akan dikeluarkan dari ruangan ujian. Jika kamu melanggar untuk kedua kalinya, hasil ujian untuk mata kuliah tersebut akan langsung dibatalkan."
+  },
+  {
+    "kategori": "Tata Tertib - Ujian (Joki)",
+    "pesan_user": "Bli, sanksi paling berat kalau pake joki buat gantiin ujian apa sih?",
+    "jawaban_ideal": "Menggantikan orang lain atau menyuruh orang lain menggantikan dirimu (joki) adalah pelanggaran berat. Sanksinya, kamu akan langsung dikeluarkan dari ruang ujian dan seluruh mata kuliah yang kamu ambil pada semester tersebut akan dibatalkan."
+  },
+  {
+    "kategori": "Kemahasiswaan - PKKMB",
+    "pesan_user": "Min, jujur agak takut ikut ospek kampus. Masih ada plonco-peloncoan fisik nggak sih di Teknik?",
+    "jawaban_ideal": "Tidak perlu takut! Kegiatan PKKMB dilaksanakan dengan asas kekeluargaan dan persahabatan. Tidak dibenarkan adanya tindakan perpeloncoan, penggojlokan, maupun segala bentuk tindak kekerasan fisik dan mental."
+  },
+  {
+    "kategori": "Kemahasiswaan - Beasiswa",
+    "pesan_user": "Kak, kalau mau daftar beasiswa, aku harus punya minimal berapa poin SKP?",
+    "jawaban_ideal": "Untuk mengajukan lamaran beasiswa di Universitas Udayana, mahasiswa diwajibkan mengumpulkan minimal 25 poin Satuan Kredit Partisipasi (SKP)."
+  },
+  {
+    "kategori": "Kemahasiswaan - SKP MBKM",
+    "pesan_user": "Bli, aku semester depan mau ikut magang kampus merdeka (MBKM), itu bisa dapet poin SKP juga nggak?",
+    "jawaban_ideal": "Bisa banget! Mahasiswa yang telah menyelesaikan program MBKM akan mendapatkan tambahan 10 poin SKP secara otomatis, dan kegiatan tersebut dapat dicantumkan pada Surat Keterangan Pendamping Ijazah (SKPI)."
+  },
+  {
+    "kategori": "Kemahasiswaan - Izin Demonstrasi",
+    "pesan_user": "Min, kalau organisasi mahasiswa mau gelar unjuk rasa di lingkungan kampus, prosedur izinnya gimana?",
+    "jawaban_ideal": "Setiap rencana penyampaian pendapat atau unjuk rasa harus dilaporkan melalui surat pemberitahuan kepada Wakil Rektor Bidang Kemahasiswaan paling lambat 3 hari sebelum pelaksanaan, dengan tembusan kepada Rektor dan Wakil Rektor Bidang Umum dan Keuangan."
+  },
+  {
+    "kategori": "Kemahasiswaan - Rekognisi Prestasi",
+    "pesan_user": "Kak, artikel ilmiahku barusan tembus jurnal nih, bisa dijadiin nilai kuliah nggak ya?",
+    "jawaban_ideal": "Sangat bisa! Berdasarkan aturan rekognisi Universitas Udayana, karya prestasi mahasiswa seperti artikel ilmiah, kegiatan kreativitas, kewirausahaan, lomba, hingga paten bisa dikonversi dan direkognisi ke dalam nilai akademik."
+  },
+  {
+    "kategori": "Akademik - Peraturan Drop Out (DO)",
+    "pesan_user": "Bli, amit-amit sih, tapi hal apa aja yang bikin mahasiswa otomatis di-DO meskipun nggak melanggar nilai?",
+    "jawaban_ideal": "Mahasiswa bisa dianggap mengundurkan diri atau putus studi (Drop Out) jika: tidak mendaftarkan diri selama 2 semester berturut-turut tanpa izin cuti, atau tidak memiliki nilai mata kuliah sama sekali selama 2 semester berturut-turut tanpa sepengetahuan Dekan."
+  },
+  {
+    "kategori": "Perkuliahan - Batas Input Nilai",
+    "pesan_user": "Min, ini ujian udah kelar 3 minggu tapi nilai dari dosen belum keluar. Ada batas waktunya nggak sih dosen nginput nilai?",
+    "jawaban_ideal": "Ada. Dosen pengampu diwajibkan menyerahkan nilai akhir selambat-lambatnya 2 minggu setelah ujian semester mata kuliah tersebut dilaksanakan. Jika melewati batas waktu, dosen yang bersangkutan dapat diberikan sanksi oleh Dekan."
+  },
+  {
+    "kategori": "Akademik - Sanksi Berat",
+    "pesan_user": "Kak, tindakan apa aja di luar akademik yang sanksinya bisa sampai diberhentikan alias DO?",
+    "jawaban_ideal": "Mahasiswa dapat dikenakan sanksi hingga pemberhentian tidak hormat jika terbukti melakukan tindakan kejahatan, pelecehan seksual, terlibat NAPZA (Narkotika, Alkohol, Psikotropika), atau mencemarkan nama baik almamater."
+  },
+  {
+    "kategori": "Akademik - Beban SKS Semester 1",
+    "pesan_user": "Min, buat mahasiswa baru semester 1, boleh langsung milih mata kuliah sendiri di KRS nggak?",
+    "jawaban_ideal": "Belum boleh. Khusus pada Semester I, mahasiswa baru wajib mengambil beban studi menggunakan sistem paket yang sudah ditentukan dan disusun secara baku di kurikulum masing-masing program studi."
+  }
+]
