@@ -30,10 +30,10 @@ class _SourcePanelState extends State<SourcePanel> {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
             decoration: BoxDecoration(
-              color: AppTheme.accentPrimary.withOpacity(0.1),
+              color: AppTheme.accentPrimary.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: AppTheme.accentPrimary.withOpacity(0.25),
+                color: AppTheme.accentPrimary.withValues(alpha: 0.25),
               ),
             ),
             child: Row(
@@ -107,7 +107,7 @@ class _SourceCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 6),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: AppTheme.backgroundDark,
+        color: AppTheme.backgroundLight,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: AppTheme.surfaceBorder),
       ),
@@ -122,7 +122,7 @@ class _SourceCard extends StatelessWidget {
                 width: 20,
                 height: 20,
                 decoration: BoxDecoration(
-                  color: AppTheme.accentPrimary.withOpacity(0.2),
+                  color: AppTheme.accentPrimary.withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                 ),
                 alignment: Alignment.center,
@@ -153,9 +153,10 @@ class _SourceCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
-                  color: _relevanceColor.withOpacity(0.12),
+                  color: _relevanceColor.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: _relevanceColor.withOpacity(0.3)),
+                  border:
+                      Border.all(color: _relevanceColor.withValues(alpha: 0.3)),
                 ),
                 child: Row(
                   children: [

@@ -52,6 +52,117 @@ class _ChatInputState extends State<ChatInput> {
     _controller.clear();
   }
 
+  void _showSiriOverlay(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
+      ),
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setSheetState) {
+            return Container(
+              padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
+              height: 280,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // Pull bar
+                  Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: AppTheme.surfaceBorder,
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  const Text(
+                    'Mendengarkan...',
+                    style: TextStyle(
+                      fontFamily: 'Quicksand',
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: AppTheme.textPrimary,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Katakan sesuatu tentang pedoman akademik',
+                    style: TextStyle(
+                      fontFamily: 'Quicksand',
+                      fontSize: 13,
+                      color: AppTheme.textSecondary,
+                    ),
+                  ),
+                  const Spacer(),
+                  // Siri voice wave animation mockup
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(5, (index) {
+                      return AnimatedContainer(
+                        duration: Duration(milliseconds: 150 + (index * 50)),
+                        width: 8,
+                        height: 30 + (index % 2 == 0 ? 20.0 : 40.0),
+                        margin: const EdgeInsets.symmetric(horizontal: 4),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              AppTheme.accentPrimary,
+                              AppTheme.accentSecondary,
+                              Color(0xFF38BDF8),
+                            ],
+                          ),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      )
+                          .animate(onPlay: (controller) => controller.repeat(reverse: true))
+                          .scaleY(
+                            begin: 0.3,
+                            end: 1.5,
+                            duration: Duration(milliseconds: 300 + (index * 100)),
+                            curve: Curves.easeInOut,
+                          );
+                    }),
+                  ),
+                  const Spacer(),
+                  // Cancel / Tap to finish
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                      // Fill text with mockup question
+                      setState(() {
+                        _controller.text = 'Berapa syarat minimum kelulusan IPK?';
+                      });
+                    },
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      backgroundColor: AppTheme.accentPrimary.withValues(alpha: 0.1),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                    child: const Text(
+                      'Selesai Bicara',
+                      style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        fontWeight: FontWeight.w600,
+                        color: AppTheme.accentPrimary,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -62,11 +173,11 @@ class _ChatInputState extends State<ChatInput> {
         bottom: MediaQuery.of(context).padding.bottom + 12,
       ),
       decoration: BoxDecoration(
-        color: AppTheme.surfaceDark,
+        color: AppTheme.surfaceLight,
         border: Border(
           top: BorderSide(
             color: _isFocused
-                ? AppTheme.accentPrimary.withOpacity(0.4)
+                ? AppTheme.accentPrimary.withValues(alpha: 0.4)
                 : AppTheme.surfaceBorder,
           ),
         ),
@@ -82,14 +193,14 @@ class _ChatInputState extends State<ChatInput> {
                 borderRadius: BorderRadius.circular(24),
                 border: Border.all(
                   color: _isFocused
-                      ? AppTheme.accentPrimary.withOpacity(0.6)
+                      ? AppTheme.accentPrimary.withValues(alpha: 0.6)
                       : AppTheme.surfaceBorder,
                   width: _isFocused ? 1.5 : 1,
                 ),
                 boxShadow: _isFocused
                     ? [
                         BoxShadow(
-                          color: AppTheme.accentPrimary.withOpacity(0.1),
+                          color: AppTheme.accentPrimary.withValues(alpha: 0.1),
                           blurRadius: 12,
                           spreadRadius: 0,
                         )
@@ -108,12 +219,13 @@ class _ChatInputState extends State<ChatInput> {
                       color: AppTheme.textPrimary,
                     ),
                 decoration: InputDecoration(
+                  filled: false,
                   hintText: widget.isLoading
                       ? 'Mencari jawaban...'
                       : 'Tanyakan tentang pedoman akademik...',
                   hintStyle: TextStyle(
                     color: widget.isLoading
-                        ? AppTheme.accentPrimary.withOpacity(0.5)
+                        ? AppTheme.accentPrimary.withValues(alpha: 0.5)
                         : AppTheme.textMuted,
                     fontSize: 14,
                   ),
@@ -124,6 +236,14 @@ class _ChatInputState extends State<ChatInput> {
                     horizontal: 18,
                     vertical: 12,
                   ),
+                  suffixIcon: _hasText
+                      ? null
+                      : IconButton(
+                          icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
+                          onPressed: () {
+                            _showSiriOverlay(context);
+                          },
+                        ),
                 ),
               ),
             ),
@@ -157,7 +277,8 @@ class _ChatInputState extends State<ChatInput> {
                   boxShadow: _hasText && !widget.isLoading
                       ? [
                           BoxShadow(
-                            color: AppTheme.accentPrimary.withOpacity(0.35),
+                            color:
+                                AppTheme.accentPrimary.withValues(alpha: 0.35),
                             blurRadius: 12,
                             offset: const Offset(0, 4),
                           )

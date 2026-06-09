@@ -52,7 +52,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     });
 
     return Scaffold(
-      backgroundColor: AppTheme.backgroundDark,
+      backgroundColor: AppTheme.backgroundLight,
       appBar: _buildAppBar(context, chatNotifier),
       body: Column(
         children: [
@@ -65,13 +65,13 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                     padding: const EdgeInsets.only(top: 12, bottom: 8),
                     itemCount: chatState.messages.length,
                     itemBuilder: (context, index) {
-                      final msg = chatState.messages[index];
-                      final isLatest = index == chatState.messages.length - 1;
-                      return MessageBubble(
-                        key: ValueKey(msg.id),
-                        message: msg,
-                        isLatest: isLatest,
-                      );
+                       final msg = chatState.messages[index];
+                       final isLatest = index == chatState.messages.length - 1;
+                       return MessageBubble(
+                         key: ValueKey(msg.id),
+                         message: msg,
+                         isLatest: isLatest,
+                       );
                     },
                   ),
           ),
@@ -91,8 +91,9 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   PreferredSizeWidget _buildAppBar(
       BuildContext context, ChatNotifier notifier) {
     return AppBar(
-      backgroundColor: AppTheme.backgroundDark,
+      backgroundColor: AppTheme.surfaceLight,
       elevation: 0,
+      centerTitle: false,
       title: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -199,7 +200,7 @@ class _EmptyState extends StatelessWidget {
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: AppTheme.accentPrimary.withOpacity(0.3),
+                  color: AppTheme.accentPrimary.withValues(alpha: 0.3),
                   blurRadius: 24,
                 ),
               ],

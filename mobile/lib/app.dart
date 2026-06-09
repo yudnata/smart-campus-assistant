@@ -16,9 +16,9 @@ class App extends StatelessWidget {
       child: MaterialApp(
         title: 'RAG Pedoman Akademik',
         debugShowCheckedModeBanner: false,
-        themeMode: ThemeMode.dark,
-        theme: ThemeData.light(), // fallback
-        darkTheme: AppTheme.dark, // pakai dark theme
+        themeMode: ThemeMode.light,
+        theme: AppTheme.light,
+        darkTheme: AppTheme.light,
         home: const ChatScreen(),
       ),
     );
