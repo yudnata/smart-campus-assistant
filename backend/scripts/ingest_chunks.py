@@ -25,7 +25,7 @@ CHUNKS_PATH = (
     / "chunks.json"
 )
 
-MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+MODEL_NAME = "intfloat/multilingual-e5-large"
 BATCH_SIZE = 64
 
 

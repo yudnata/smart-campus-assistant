@@ -1,9 +1,9 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 
 # Initialize the embedding model locally
-# all-MiniLM-L6-v2 is fast, lightweight, and standard for English/Indonesian general retrieval tasks.
-# It outputs vectors of dimension 384.
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+# intfloat/multilingual-e5-large is highly capable for English/Indonesian retrieval tasks.
+# It outputs vectors of dimension 1024.
+embeddings = HuggingFaceEmbeddings(model_name="intfloat/multilingual-e5-large")
 
 def get_embeddings():
     return embeddings

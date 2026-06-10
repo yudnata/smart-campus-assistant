@@ -5,8 +5,9 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 import json
 from langchain_community.document_loaders import PDFPlumberLoader, WebBaseLoader, CSVLoader
 from langchain_core.documents import Document
-from app.models.document import Document as DBDocument
+from app.models.document_chunk import DocumentChunk
 from app.services.embedder import get_embeddings
+import uuid
 
 def process_documents_and_save(docs, db: Session):
     """
@@ -26,9 +27,11 @@ def process_documents_and_save(docs, db: Session):
     vectors = embeddings_model.embed_documents(texts)
     
     for i, chunk in enumerate(chunks):
-        doc_record = DBDocument(
+        doc_record = DocumentChunk(
+            id=uuid.uuid4().hex,
             content=chunk.page_content,
-            metadata_=chunk.metadata,
+            source_file=chunk.metadata.get("source"),
+            metadata_json=chunk.metadata,
             embedding=vectors[i]
         )
         db.add(doc_record)
@@ -36,7 +39,10 @@ def process_documents_and_save(docs, db: Session):
     db.commit()
     return len(chunks)
 
-def ingest_pdf(file_content: bytes, filename: str, db: Session, prodi: str = None, bab: str = None):
+def ingest_pdf(file_content: bytes, filename: str, db: Session, prodi: str = None, bab: str = None, overwrite_old: bool = True):
+    if overwrite_old:
+        db.query(DocumentChunk).filter(DocumentChunk.source_file == filename).delete()
+        
     # Simpan file PDF ke temporary file untuk dibaca oleh PDFPlumberLoader
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
         tmp.write(file_content)
@@ -58,14 +64,20 @@ def ingest_pdf(file_content: bytes, filename: str, db: Session, prodi: str = Non
     chunks_count = process_documents_and_save(docs, db)
     return chunks_count
 
-def ingest_web(url: str, db: Session):
+def ingest_web(url: str, db: Session, overwrite_old: bool = True):
+    if overwrite_old:
+        db.query(DocumentChunk).filter(DocumentChunk.source_file == url).delete()
+        
     loader = WebBaseLoader(url)
     docs = loader.load()
     
     chunks_count = process_documents_and_save(docs, db)
     return chunks_count
 
-def ingest_csv(file_content: bytes, filename: str, db: Session, prodi: str = None, bab: str = None):
+def ingest_csv(file_content: bytes, filename: str, db: Session, prodi: str = None, bab: str = None, overwrite_old: bool = True):
+    if overwrite_old:
+        db.query(DocumentChunk).filter(DocumentChunk.source_file == filename).delete()
+        
     # Simpan file CSV ke temporary file untuk dibaca oleh CSVLoader
     with tempfile.NamedTemporaryFile(delete=False, suffix=".csv") as tmp:
         tmp.write(file_content)
@@ -86,7 +98,10 @@ def ingest_csv(file_content: bytes, filename: str, db: Session, prodi: str = Non
     chunks_count = process_documents_and_save(docs, db)
     return chunks_count
 
-def ingest_json(file_content: bytes, filename: str, db: Session, prodi: str = None, bab: str = None):
+def ingest_json(file_content: bytes, filename: str, db: Session, prodi: str = None, bab: str = None, overwrite_old: bool = True):
+    if overwrite_old:
+        db.query(DocumentChunk).filter(DocumentChunk.source_file == filename).delete()
+        
     # Menggunakan Python json module langsung untuk menghindari masalah dependency 'jq' di Windows
     data = json.loads(file_content.decode('utf-8'))
     docs = []

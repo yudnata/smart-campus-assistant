@@ -50,3 +50,58 @@ Fase ini berlangsung secara otomatis (dan dalam waktu sepersekian detik) setiap 
    Respons JSON ini dikirimkan kembali ke Frontend React (Website) dan Frontend Flutter (Mobile App) untuk dirender sebagai gelembung pesan (*message bubble*).
 
 Dengan mekanisme ini, aplikasi Mobile dan Website tetap sangat ringan karena seluruh beban komputasi STKI, pencarian ruang vektor tingkat lanjut, dan intervensi LLM sepenuhnya diproses oleh arsitektur Backend Python ini.
+
+---
+
+## 3. Panduan Instalasi dan Menjalankan Backend
+
+### Persyaratan Sistem
+- Python 3.10+
+- PostgreSQL dengan ekstensi `pgvector`
+- Virtual Environment (disarankan)
+
+### Instalasi
+1. Masuk ke direktori `backend/`:
+   ```bash
+   cd backend
+   ```
+2. Buat dan aktifkan Virtual Environment:
+   ```bash
+   python -m venv venv
+   # Di Windows:
+   venv\Scripts\activate
+   # Di Linux/Mac:
+   source venv/bin/activate
+   ```
+3. Instal semua dependensi:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Salin file environment:
+   ```bash
+   cp .env.example .env
+   # Buka .env dan atur koneksi PostgreSQL (DATABASE_URL) 
+   # serta API Key LLM Anda (GOOGLE_API_KEY atau OPENAI_API_KEY).
+   ```
+
+### Menyiapkan Database
+Pastikan Anda sudah menginstal ekstensi `pgvector` di PostgreSQL Anda.
+Jika sebelumnya Anda menggunakan dimensi vektor 384 dan sekarang menggunakan versi terbaru 1024, **Anda harus menghapus tabel lama terlebih dahulu**:
+```sql
+DROP TABLE IF EXISTS document_chunks;
+```
+
+### Menjalankan Server
+Untuk menjalankan API server FastAPI secara lokal:
+```bash
+uvicorn main:app --reload --port 3001
+```
+Aplikasi akan tersedia di:
+- Base URL: `http://localhost:3001`
+- Dokumentasi API Otomatis (Swagger): `http://localhost:3001/docs`
+
+### Endpoint Utama
+- `POST /api/chat`: Mengirimkan pertanyaan ke STKI RAG. Menerima `question` dan `topK`.
+- `POST /api/ingest/file`: Mengunggah file PDF, CSV, atau JSON ke database (otomatis menimpa versi lama jika `overwrite_old=True`).
+- `POST /api/ingest/url`: Menarik data halaman web untuk diubah menjadi *vector chunks*.
+- `GET /api/stats`: Mengembalikan jumlah total dokumen (chunks) yang ada di database.

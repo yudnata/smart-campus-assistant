@@ -1,7 +1,7 @@
 import time
 from sqlalchemy.orm import Session
 from sqlalchemy import text
-from app.models.document import Document
+from app.models.document_chunk import DocumentChunk
 from app.services.embedder import get_embeddings
 from app.services.llm_factory import get_llm
 from langchain_core.prompts import ChatPromptTemplate
@@ -42,9 +42,9 @@ def chat_rag(question: str, top_k: int, db: Session):
             SELECT id, 
                    content, 
                    metadata, 
-                   RANK() OVER (ORDER BY embedding <=> :vector) AS rank
-            FROM documents
-            ORDER BY embedding <=> :vector
+                   RANK() OVER (ORDER BY embedding <=> CAST(:vector AS vector)) AS rank
+            FROM document_chunks
+            ORDER BY embedding <=> CAST(:vector AS vector)
             LIMIT :top_k
         ),
         keyword_search AS (
@@ -52,7 +52,8 @@ def chat_rag(question: str, top_k: int, db: Session):
                    content, 
                    metadata, 
                    RANK() OVER (ORDER BY ts_rank_cd(to_tsvector('simple', content), plainto_tsquery('simple', :query_text)) DESC) AS rank
-            FROM documents
+            FROM document_chunks
+
             WHERE to_tsvector('simple', content) @@ plainto_tsquery('simple', :query_text)
             ORDER BY ts_rank_cd(to_tsvector('simple', content), plainto_tsquery('simple', :query_text)) DESC
             LIMIT :top_k
