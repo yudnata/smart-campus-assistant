@@ -6,6 +6,8 @@ from app.core.database import engine, Base
 from app.api.endpoints import router
 from sqlalchemy import text
 
+from app.models.document_chunk import DocumentChunk
+
 # Setup DB Tables (Ini akan membuat tabel documents jika belum ada)
 # Note: Ekstensi pgvector HARUS sudah diaktifkan di PostgreSQL database (`CREATE EXTENSION vector;`)
 try:
