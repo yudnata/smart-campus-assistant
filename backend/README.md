@@ -105,3 +105,54 @@ Aplikasi akan tersedia di:
 - `POST /api/ingest/file`: Mengunggah file PDF, CSV, atau JSON ke database (otomatis menimpa versi lama jika `overwrite_old=True`).
 - `POST /api/ingest/url`: Menarik data halaman web untuk diubah menjadi *vector chunks*.
 - `GET /api/stats`: Mengembalikan jumlah total dokumen (chunks) yang ada di database.
+
+---
+
+## 4. Konfigurasi RAG Groq Saat Ini
+
+Backend sekarang menggunakan Groq SDK resmi untuk tahap generation dengan model `llama-3.3-70b-versatile`.
+
+Variabel `.env` yang wajib:
+```env
+DATABASE_URL=postgresql://...
+GROQ_API_KEY=isi_api_key_groq
+GROQ_MODEL=llama-3.3-70b-versatile
+```
+
+Endpoint chat:
+```http
+POST /api/chat
+Content-Type: application/json
+
+{
+  "question": "Apa syarat pengajuan cuti akademik?",
+  "topK": 5
+}
+```
+
+Response:
+```json
+{
+  "question": "Apa syarat pengajuan cuti akademik?",
+  "answer": "Jawaban dari Groq berdasarkan konteks dokumen.",
+  "sources": [
+    {
+      "id": "chunk-id",
+      "source_file": "pedoman.pdf",
+      "doc_type": "pedoman_akademik",
+      "page_start": 1,
+      "page_end": 2,
+      "pages": "1-2",
+      "chapter": "BAB I",
+      "section": "Cuti Akademik",
+      "subsection": null,
+      "section_path": "BAB I > Cuti Akademik",
+      "preview": "Potongan isi dokumen...",
+      "score": 0.0325,
+      "metadata": {}
+    }
+  ]
+}
+```
+
+Catatan: jika tabel `public.document_chunks` masih kosong, endpoint akan menjawab jujur bahwa informasi tidak ditemukan di dokumen yang tersedia dan `sources` akan kosong.

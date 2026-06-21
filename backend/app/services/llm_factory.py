@@ -1,24 +1,9 @@
-from langchain_openai import ChatOpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI
-from app.core.config import settings
+﻿from app.services.groq_service import get_groq_client
+
 
 def get_llm():
     """
-    Mengembalikan instance LLM berdasarkan API Key yang tersedia di .env.
-    Prioritas: Gemini -> OpenAI -> Local (mock/placeholder).
+    Backward-compatible helper untuk kode lama.
+    LLM utama proyek ini sekarang memakai Groq SDK resmi.
     """
-    if settings.gemini_api_key:
-        return ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
-            google_api_key=settings.gemini_api_key,
-            temperature=0.2
-        )
-    elif settings.openai_api_key:
-        return ChatOpenAI(
-            model="gpt-4o-mini",
-            api_key=settings.openai_api_key,
-            temperature=0.2
-        )
-    else:
-        # Fallback error / mock
-        raise ValueError("Tidak ada API Key LLM yang dikonfigurasi di .env")
+    return get_groq_client()

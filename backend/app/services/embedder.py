@@ -1,9 +1,17 @@
-from langchain_huggingface import HuggingFaceEmbeddings
+﻿import os
+from functools import lru_cache
 
-# Initialize the embedding model locally
-# intfloat/multilingual-e5-large is highly capable for English/Indonesian retrieval tasks.
-# It outputs vectors of dimension 1024.
-embeddings = HuggingFaceEmbeddings(model_name="intfloat/multilingual-e5-large")
+os.environ.setdefault("USE_TF", "0")
+os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
 
+MODEL_NAME = "intfloat/multilingual-e5-large"
+
+
+@lru_cache(maxsize=1)
 def get_embeddings():
-    return embeddings
+    from langchain_huggingface import HuggingFaceEmbeddings
+
+    return HuggingFaceEmbeddings(
+        model_name=MODEL_NAME,
+        encode_kwargs={"normalize_embeddings": True},
+    )

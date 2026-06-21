@@ -119,12 +119,12 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
       ),
       body: _filteredChats.isEmpty
           ? Center(
-              child: Column(
+              child: const Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Icon(Icons.search_off_rounded, size: 48, color: AppTheme.textMuted),
-                  const SizedBox(height: 12),
-                  const Text(
+                  Icon(Icons.search_off_rounded, size: 48, color: AppTheme.textMuted),
+                  SizedBox(height: 12),
+                  Text(
                     'Obrolan tidak ditemukan',
                     style: TextStyle(
                       fontFamily: 'Quicksand',
@@ -133,8 +133,8 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
                       color: AppTheme.textSecondary,
                     ),
                   ),
-                  const SizedBox(height: 4),
-                  const Text(
+                  SizedBox(height: 4),
+                  Text(
                     'Coba gunakan kata kunci lainnya.',
                     style: TextStyle(
                       fontFamily: 'Quicksand',

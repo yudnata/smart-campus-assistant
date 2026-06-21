@@ -35,17 +35,17 @@ class ChatDrawer extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Header / App Branding
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
               child: Row(
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.school_rounded,
                     color: AppTheme.accentPrimary,
                     size: 26,
                   ),
-                  const SizedBox(width: 10),
-                  const Text(
+                  SizedBox(width: 10),
+                  Text(
                     'Smart Campus Assistant',
                     style: TextStyle(
                       fontFamily: 'Quicksand',
