@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -11,11 +11,6 @@ from app.services.chat_service import chat_rag
 router = APIRouter()
 
 from app.models.message import Message
-
-class ChatRequest(BaseModel):
-    question: str
-    topK: int = 10
-    conversation_id: str = None # Optional for guest
 
 class WebIngestRequest(BaseModel):
     url: str
