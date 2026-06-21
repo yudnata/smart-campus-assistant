@@ -35,17 +35,17 @@ class ChatDrawer extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Header / App Branding
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
               child: Row(
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.school_rounded,
                     color: AppTheme.accentPrimary,
                     size: 26,
                   ),
-                  const SizedBox(width: 10),
-                  const Text(
+                  SizedBox(width: 10),
+                  Text(
                     'Smart Campus Assistant',
                     style: TextStyle(
                       fontFamily: 'Quicksand',
@@ -72,7 +72,8 @@ class ChatDrawer extends ConsumerWidget {
                     decoration: BoxDecoration(
                       color: AppTheme.surfaceLight,
                       borderRadius: BorderRadius.circular(24),
-                      border: Border.all(color: AppTheme.surfaceBorder, width: 1.5),
+                      border:
+                          Border.all(color: AppTheme.surfaceBorder, width: 1.5),
                     ),
                     child: Material(
                       color: Colors.transparent,
@@ -85,7 +86,8 @@ class ChatDrawer extends ConsumerWidget {
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.add_rounded, color: AppTheme.textPrimary, size: 20),
+                            Icon(Icons.add_rounded,
+                                color: AppTheme.textPrimary, size: 20),
                             SizedBox(width: 8),
                             Text(
                               'Obrolan Baru',
@@ -111,7 +113,8 @@ class ChatDrawer extends ConsumerWidget {
                       decoration: BoxDecoration(
                         color: AppTheme.surfaceLight,
                         borderRadius: BorderRadius.circular(24),
-                        border: Border.all(color: AppTheme.surfaceBorder, width: 1.5),
+                        border: Border.all(
+                            color: AppTheme.surfaceBorder, width: 1.5),
                       ),
                       child: Material(
                         color: Colors.transparent,
@@ -121,13 +124,16 @@ class ChatDrawer extends ConsumerWidget {
                             Navigator.pop(context);
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => const SearchChatScreen()),
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const SearchChatScreen()),
                             );
                           },
                           child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.search_rounded, color: AppTheme.textPrimary, size: 20),
+                              Icon(Icons.search_rounded,
+                                  color: AppTheme.textPrimary, size: 20),
                               SizedBox(width: 8),
                               Text(
                                 'Cari Obrolan',
@@ -165,7 +171,8 @@ class ChatDrawer extends ConsumerWidget {
             // Recent Chats List
             Expanded(
               child: authState.isAuthenticated
-                  ? (historyState.isLoading && historyState.conversations.isEmpty)
+                  ? (historyState.isLoading &&
+                          historyState.conversations.isEmpty)
                       ? const Center(child: CircularProgressIndicator())
                       : historyState.conversations.isEmpty
                           ? const Center(
@@ -178,15 +185,20 @@ class ChatDrawer extends ConsumerWidget {
                               ),
                             )
                           : ListView.builder(
-                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 12),
                               itemCount: historyState.conversations.length,
                               itemBuilder: (context, index) {
                                 final conv = historyState.conversations[index];
-                                final isActive = conv['id'] == historyState.activeConversationId;
+                                final isActive = conv['id'] ==
+                                    historyState.activeConversationId;
                                 return Container(
                                   margin: const EdgeInsets.only(bottom: 4),
                                   decoration: BoxDecoration(
-                                    color: isActive ? AppTheme.accentPrimary.withValues(alpha: 0.1) : Colors.transparent,
+                                    color: isActive
+                                        ? AppTheme.accentPrimary
+                                            .withValues(alpha: 0.1)
+                                        : Colors.transparent,
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   child: ListTile(
@@ -196,7 +208,9 @@ class ChatDrawer extends ConsumerWidget {
                                     ),
                                     leading: Icon(
                                       Icons.chat_bubble_outline_rounded,
-                                      color: isActive ? AppTheme.accentPrimary : AppTheme.textSecondary,
+                                      color: isActive
+                                          ? AppTheme.accentPrimary
+                                          : AppTheme.textSecondary,
                                       size: 16,
                                     ),
                                     title: Text(
@@ -206,13 +220,19 @@ class ChatDrawer extends ConsumerWidget {
                                       style: TextStyle(
                                         fontFamily: 'Quicksand',
                                         fontSize: 13,
-                                        fontWeight: isActive ? FontWeight.bold : FontWeight.w500,
-                                        color: isActive ? AppTheme.accentPrimary : AppTheme.textSecondary,
+                                        fontWeight: isActive
+                                            ? FontWeight.bold
+                                            : FontWeight.w500,
+                                        color: isActive
+                                            ? AppTheme.accentPrimary
+                                            : AppTheme.textSecondary,
                                       ),
                                     ),
                                     onTap: () {
                                       Navigator.pop(context);
-                                      ref.read(chatProvider.notifier).loadConversation(conv['id']);
+                                      ref
+                                          .read(chatProvider.notifier)
+                                          .loadConversation(conv['id']);
                                     },
                                   ),
                                 );
@@ -251,7 +271,9 @@ class ChatDrawer extends ConsumerWidget {
                     child: Center(
                       child: Text(
                         authState.isAuthenticated && authState.user != null
-                            ? (authState.user!['name'] as String).substring(0, 1).toUpperCase()
+                            ? (authState.user!['name'] as String)
+                                .substring(0, 1)
+                                .toUpperCase()
                             : 'G',
                         style: const TextStyle(
                           fontFamily: 'Quicksand',
@@ -297,7 +319,8 @@ class ChatDrawer extends ConsumerWidget {
                   // Action button: Logout or Login
                   if (authState.isAuthenticated)
                     IconButton(
-                      icon: const Icon(Icons.logout_rounded, color: AppTheme.errorColor, size: 20),
+                      icon: const Icon(Icons.logout_rounded,
+                          color: AppTheme.errorColor, size: 20),
                       onPressed: () {
                         ref.read(authProvider.notifier).logout();
                         Navigator.pop(context);
@@ -306,9 +329,15 @@ class ChatDrawer extends ConsumerWidget {
                   else
                     TextButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginScreen()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => const LoginScreen()));
                       },
-                      child: const Text('Masuk', style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold)),
+                      child: const Text('Masuk',
+                          style: TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontWeight: FontWeight.bold)),
                     ),
                 ],
               ),

@@ -43,31 +43,35 @@ class HistoryNotifier extends StateNotifier<HistoryState> {
 
   Future<void> fetchConversations() async {
     if (!authState.isAuthenticated || authState.token == null) return;
-    
+
     state = state.copyWith(isLoading: true, error: null);
     try {
       final response = await dio.get(
         '/chat/conversations',
-        options: Options(headers: {'Authorization': 'Bearer ${authState.token}'}),
+        options:
+            Options(headers: {'Authorization': 'Bearer ${authState.token}'}),
       );
       state = state.copyWith(
         isLoading: false,
         conversations: List<Map<String, dynamic>>.from(response.data),
       );
     } catch (e) {
-      state = state.copyWith(isLoading: false, error: 'Gagal memuat riwayat obrolan');
+      state = state.copyWith(
+          isLoading: false, error: 'Gagal memuat riwayat obrolan');
     }
   }
 
-  Future<List<ChatMessage>> loadConversationMessages(String conversationId) async {
+  Future<List<ChatMessage>> loadConversationMessages(
+      String conversationId) async {
     if (!authState.isAuthenticated || authState.token == null) return [];
-    
+
     try {
       final response = await dio.get(
         '/chat/conversations/$conversationId/messages',
-        options: Options(headers: {'Authorization': 'Bearer ${authState.token}'}),
+        options:
+            Options(headers: {'Authorization': 'Bearer ${authState.token}'}),
       );
-      
+
       final messagesData = List<Map<String, dynamic>>.from(response.data);
       return messagesData.map((m) {
         if (m['role'] == 'user') {
@@ -95,12 +99,13 @@ class HistoryNotifier extends StateNotifier<HistoryState> {
 
   Future<String?> createConversation(String title) async {
     if (!authState.isAuthenticated || authState.token == null) return null;
-    
+
     try {
       final response = await dio.post(
         '/chat/conversations',
         data: {'title': title},
-        options: Options(headers: {'Authorization': 'Bearer ${authState.token}'}),
+        options:
+            Options(headers: {'Authorization': 'Bearer ${authState.token}'}),
       );
       final newConv = response.data;
       state = state.copyWith(
@@ -118,7 +123,8 @@ class HistoryNotifier extends StateNotifier<HistoryState> {
   }
 }
 
-final historyProvider = StateNotifierProvider<HistoryNotifier, HistoryState>((ref) {
+final historyProvider =
+    StateNotifierProvider<HistoryNotifier, HistoryState>((ref) {
   final dio = ref.watch(authDioProvider);
   final auth = ref.watch(authProvider);
   return HistoryNotifier(dio, auth);
