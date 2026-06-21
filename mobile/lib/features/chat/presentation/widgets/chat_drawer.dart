@@ -39,16 +39,12 @@ class ChatDrawer extends ConsumerWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
               child: Row(
                 children: [
-                  Container(
-                    width: 36,
-                    height: 36,
-                    decoration: const BoxDecoration(
-                      gradient: AppTheme.accentGradient,
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Icon(Icons.school_rounded, color: Colors.white, size: 20),
+                  const Icon(
+                    Icons.school_rounded,
+                    color: AppTheme.accentPrimary,
+                    size: 26,
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 10),
                   const Text(
                     'Smart Campus Assistant',
                     style: TextStyle(

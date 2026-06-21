@@ -60,7 +60,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       children: [
                         const Text(
                           'Selamat Datang',
-                          textAlign: TextAlign.center,
+                          textAlign: TextAlign.left,
                           style: TextStyle(
                             fontFamily: 'Quicksand',
                             fontSize: 28,
@@ -71,14 +71,14 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         const SizedBox(height: 8),
                         const Text(
                           'Masuk untuk menyimpan riwayat obrolan.',
-                          textAlign: TextAlign.center,
+                          textAlign: TextAlign.left,
                           style: TextStyle(
                             fontFamily: 'Quicksand',
                             fontSize: 14,
                             color: AppTheme.textSecondary,
                           ),
                         ),
-                        const SizedBox(height: 48),
+                        const SizedBox(height: 40),
 
                         // Email Field
                         TextField(
@@ -143,19 +143,30 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         const SizedBox(height: 16),
 
                         // Guest Button
-                        TextButton(
-                          onPressed: () {
-                            ref.read(authProvider.notifier).continueAsGuest();
-                            if (Navigator.canPop(context)) {
-                              Navigator.pop(context);
-                            }
-                          },
-                          child: const Text(
-                            'Lanjutkan sebagai Tamu (Guest)',
-                            style: TextStyle(
-                              fontFamily: 'Quicksand',
-                              fontWeight: FontWeight.w600,
-                              color: AppTheme.textSecondary,
+                        SizedBox(
+                          height: 54,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              foregroundColor: AppTheme.textPrimary,
+                              elevation: 0,
+                              side: const BorderSide(color: AppTheme.surfaceBorder, width: 1),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                            ),
+                            onPressed: () {
+                              ref.read(authProvider.notifier).continueAsGuest();
+                              if (Navigator.canPop(context)) {
+                                Navigator.pop(context);
+                              }
+                            },
+                            child: const Text(
+                              'Lanjutkan sebagai Tamu',
+                              style: TextStyle(
+                                fontFamily: 'Quicksand',
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: AppTheme.textPrimary,
+                              ),
                             ),
                           ),
                         ),

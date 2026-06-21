@@ -104,45 +104,17 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
           onPressed: () => Scaffold.of(context).openDrawer(),
         ),
       ),
-      title: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          // Logo/icon
-          Container(
-            width: 32,
-            height: 32,
-            decoration: const BoxDecoration(
-              gradient: AppTheme.accentGradient,
-              shape: BoxShape.circle,
-            ),
-            child:
-                const Icon(Icons.school_rounded, color: Colors.white, size: 18),
+      title: null,
+      actions: const [
+        Padding(
+          padding: EdgeInsets.only(right: 20.0),
+          child: Icon(
+            Icons.school_rounded,
+            color: AppTheme.accentPrimary,
+            size: 24,
           ),
-          const SizedBox(width: 10),
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                'Smart Campus Assistant',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  color: AppTheme.textPrimary,
-                ),
-              ),
-              const Text(
-                'Asisten STKI berbasis RAG',
-                style: TextStyle(
-                  fontSize: 11,
-                  color: AppTheme.textMuted,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
