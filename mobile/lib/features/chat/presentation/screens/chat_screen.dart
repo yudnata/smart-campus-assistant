@@ -9,6 +9,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../providers/chat_provider.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/chat_input.dart';
+import '../widgets/chat_drawer.dart';
 import '../../../../core/theme/app_theme.dart';
 
 class ChatScreen extends ConsumerStatefulWidget {
@@ -54,6 +55,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     return Scaffold(
       backgroundColor: AppTheme.backgroundLight,
       appBar: _buildAppBar(context, chatNotifier),
+      drawer: const ChatDrawer(),
       body: Column(
         children: [
           // Pesan list
@@ -65,13 +67,13 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                     padding: const EdgeInsets.only(top: 12, bottom: 8),
                     itemCount: chatState.messages.length,
                     itemBuilder: (context, index) {
-                       final msg = chatState.messages[index];
-                       final isLatest = index == chatState.messages.length - 1;
-                       return MessageBubble(
-                         key: ValueKey(msg.id),
-                         message: msg,
-                         isLatest: isLatest,
-                       );
+                      final msg = chatState.messages[index];
+                      final isLatest = index == chatState.messages.length - 1;
+                      return MessageBubble(
+                        key: ValueKey(msg.id),
+                        message: msg,
+                        isLatest: isLatest,
+                      );
                     },
                   ),
           ),
@@ -91,9 +93,17 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   PreferredSizeWidget _buildAppBar(
       BuildContext context, ChatNotifier notifier) {
     return AppBar(
-      backgroundColor: AppTheme.surfaceLight,
+      backgroundColor: Colors.transparent,
       elevation: 0,
+      scrolledUnderElevation: 0,
       centerTitle: false,
+      leading: Builder(
+        builder: (context) => IconButton(
+          icon: const Icon(Icons.menu_rounded, color: AppTheme.textSecondary),
+          tooltip: 'Menu Utama',
+          onPressed: () => Scaffold.of(context).openDrawer(),
+        ),
+      ),
       title: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -114,7 +124,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                'Pedoman Akademik',
+                'Smart Campus Assistant',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w600,
@@ -132,19 +142,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
             ],
           ),
         ],
-      ),
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.delete_sweep_rounded,
-              color: AppTheme.textMuted, size: 22),
-          tooltip: 'Hapus percakapan',
-          onPressed: () => _showClearDialog(context, notifier),
-        ),
-        const SizedBox(width: 4),
-      ],
-      bottom: PreferredSize(
-        preferredSize: const Size.fromHeight(1),
-        child: Container(height: 1, color: AppTheme.surfaceBorder),
       ),
     );
   }
