@@ -26,7 +26,7 @@ CHUNKS_PATH = (
 )
 
 MODEL_NAME = "intfloat/multilingual-e5-large"
-BATCH_SIZE = 64
+BATCH_SIZE = 8
 
 
 # ============================================================
@@ -116,8 +116,8 @@ def main() -> None:
     chunks = load_chunks(CHUNKS_PATH)
     print(f"[INFO] Total chunk: {len(chunks)}")
 
-    print(f"[INFO] Memuat embedding model: {MODEL_NAME}")
-    model = SentenceTransformer(MODEL_NAME)
+    print(f"[INFO] Memuat embedding model: {MODEL_NAME} pada GPU")
+    model = SentenceTransformer(MODEL_NAME, device="cuda")
 
     texts_for_embedding = [build_embedding_text(chunk) for chunk in chunks]
 

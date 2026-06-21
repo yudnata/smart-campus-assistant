@@ -12,7 +12,7 @@ from app.models.message import Message
 
 class ChatRequest(BaseModel):
     question: str
-    topK: int = 5
+    topK: int = 10
     conversation_id: str = None # Optional for guest
 
 class WebIngestRequest(BaseModel):

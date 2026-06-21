@@ -204,7 +204,7 @@ if __name__ == "__main__":
 
         results = search_chunks(
             query=query,
-            top_k=5,
+            top_k=10,
             doc_type=doc_type,
         )
 
