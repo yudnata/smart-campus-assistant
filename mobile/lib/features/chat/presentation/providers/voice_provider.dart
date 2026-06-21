@@ -100,9 +100,11 @@ class VoiceNotifier extends StateNotifier<VoiceState> {
           state = state.copyWith(lastSpokenWords: val.recognizedWords);
           onResultText(val.recognizedWords);
         },
-        localeId: 'id_ID', // Paksa menggunakan Bahasa Indonesia
-        listenFor: const Duration(seconds: 30),
-        pauseFor: const Duration(seconds: 5),
+        listenOptions: stt.SpeechListenOptions(
+          localeId: 'id_ID', // Paksa menggunakan Bahasa Indonesia
+          listenFor: const Duration(seconds: 30),
+          pauseFor: const Duration(seconds: 5),
+        ),
       );
     }
   }
