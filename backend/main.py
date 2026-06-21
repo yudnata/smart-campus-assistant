@@ -22,6 +22,18 @@ except Exception as e:
 
 Base.metadata.create_all(bind=engine)
 
+# Buat HNSW index untuk pencarian embedding jika belum ada
+try:
+    with engine.connect() as conn:
+        conn.execute(text("""
+            CREATE INDEX IF NOT EXISTS document_chunks_embedding_hnsw_idx 
+            ON document_chunks 
+            USING hnsw (embedding vector_cosine_ops);
+        """))
+        conn.commit()
+except Exception as e:
+    print(f"Warning: Could not create HNSW index automatically: {e}")
+
 app = FastAPI(title=settings.project_name, version=settings.version)
 
 # Setup CORS agar React/Flutter bisa akses
