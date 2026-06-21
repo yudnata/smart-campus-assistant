@@ -66,5 +66,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Aplikasi memerlukan izin speech recognition untuk fitur pencarian suara.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Aplikasi memerlukan izin mikrofon untuk fitur pencarian suara.</string>
 </dict>
 </plist>

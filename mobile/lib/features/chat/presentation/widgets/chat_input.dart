@@ -4,10 +4,12 @@
 // ============================================================
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../providers/voice_provider.dart';
 
-class ChatInput extends StatefulWidget {
+class ChatInput extends ConsumerStatefulWidget {
   final bool isLoading;
   final ValueChanged<String> onSend;
 
@@ -18,10 +20,10 @@ class ChatInput extends StatefulWidget {
   });
 
   @override
-  State<ChatInput> createState() => _ChatInputState();
+  ConsumerState<ChatInput> createState() => _ChatInputState();
 }
 
-class _ChatInputState extends State<ChatInput> {
+class _ChatInputState extends ConsumerState<ChatInput> {
   final _controller = TextEditingController();
   final _focusNode = FocusNode();
   bool _hasText = false;
@@ -53,6 +55,13 @@ class _ChatInputState extends State<ChatInput> {
   }
 
   void _showSiriOverlay(BuildContext context) {
+    final voiceNotifier = ref.read(voiceProvider.notifier);
+    
+    // Start listening immediately when the sheet opens
+    voiceNotifier.startListening((text) {
+      // Callback for real-time speech results
+    });
+
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.white,
@@ -60,8 +69,10 @@ class _ChatInputState extends State<ChatInput> {
         borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
       ),
       builder: (context) {
-        return StatefulBuilder(
-          builder: (context, setSheetState) {
+        return Consumer(
+          builder: (context, ref, child) {
+            final voiceState = ref.watch(voiceProvider);
+            
             return Container(
               padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
               height: 280,
@@ -78,9 +89,9 @@ class _ChatInputState extends State<ChatInput> {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  const Text(
-                    'Mendengarkan...',
-                    style: TextStyle(
+                  Text(
+                    voiceState.isListening ? 'Mendengarkan...' : 'Selesai Mendengar',
+                    style: const TextStyle(
                       fontFamily: 'Quicksand',
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
@@ -88,60 +99,70 @@ class _ChatInputState extends State<ChatInput> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'Katakan sesuatu tentang pedoman akademik',
+                  Text(
+                    voiceState.lastSpokenWords.isEmpty
+                        ? 'Katakan sesuatu tentang pedoman akademik'
+                        : voiceState.lastSpokenWords,
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Quicksand',
-                      fontSize: 13,
-                      color: AppTheme.textSecondary,
+                      fontSize: 14,
+                      fontWeight: voiceState.lastSpokenWords.isEmpty ? FontWeight.normal : FontWeight.w600,
+                      color: voiceState.lastSpokenWords.isEmpty ? AppTheme.textSecondary : AppTheme.accentPrimary,
                     ),
                   ),
                   const Spacer(),
-                  // Siri voice wave animation mockup
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(5, (index) {
-                      return AnimatedContainer(
-                        duration: Duration(milliseconds: 150 + (index * 50)),
-                        width: 8,
-                        height: 30 + (index % 2 == 0 ? 20.0 : 40.0),
-                        margin: const EdgeInsets.symmetric(horizontal: 4),
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              AppTheme.accentPrimary,
-                              AppTheme.accentSecondary,
-                              Color(0xFF38BDF8),
-                            ],
+                  // Siri voice wave animation
+                  if (voiceState.isListening)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(5, (index) {
+                        return AnimatedContainer(
+                          duration: Duration(milliseconds: 150 + (index * 50)),
+                          width: 8,
+                          height: 30 + (index % 2 == 0 ? 20.0 : 40.0),
+                          margin: const EdgeInsets.symmetric(horizontal: 4),
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                AppTheme.accentPrimary,
+                                AppTheme.accentSecondary,
+                                Color(0xFF38BDF8),
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(4),
                           ),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      )
-                          .animate(onPlay: (controller) => controller.repeat(reverse: true))
-                          .scaleY(
-                            begin: 0.3,
-                            end: 1.5,
-                            duration: Duration(milliseconds: 300 + (index * 100)),
-                            curve: Curves.easeInOut,
-                          );
-                    }),
-                  ),
+                        )
+                            .animate(onPlay: (controller) => controller.repeat(reverse: true))
+                            .scaleY(
+                              begin: 0.3,
+                              end: 1.5,
+                              duration: Duration(milliseconds: 300 + (index * 100)),
+                              curve: Curves.easeInOut,
+                            );
+                      }),
+                    )
+                  else
+                    const Icon(Icons.check_circle_rounded, color: Colors.green, size: 48),
                   const Spacer(),
                   // Cancel / Tap to finish
                   TextButton(
                     onPressed: () {
+                      final text = ref.read(voiceProvider).lastSpokenWords;
+                      voiceNotifier.stopListening();
                       Navigator.pop(context);
-                      // Fill/append text with mockup question
-                      setState(() {
-                        const newText = 'Berapa syarat minimum kelulusan IPK?';
-                        if (_controller.text.isNotEmpty) {
-                          _controller.text = '${_controller.text.trim()} $newText';
-                        } else {
-                          _controller.text = newText;
-                        }
-                      });
+                      
+                      if (text.trim().isNotEmpty) {
+                        setState(() {
+                          if (_controller.text.isNotEmpty) {
+                            _controller.text = '${_controller.text.trim()} ${text.trim()}';
+                          } else {
+                            _controller.text = text.trim();
+                          }
+                        });
+                      }
                     },
                     style: TextButton.styleFrom(
                       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
@@ -165,7 +186,10 @@ class _ChatInputState extends State<ChatInput> {
           },
         );
       },
-    );
+    ).then((_) {
+      // Ensure listening stops if the bottom sheet is dismissed by dragging down
+      voiceNotifier.stopListening();
+    });
   }
 
   @override
@@ -210,7 +234,7 @@ class _ChatInputState extends State<ChatInput> {
               child: TextField(
                 controller: _controller,
                 focusNode: _focusNode,
-                enabled: !widget.isLoading,
+                enabled: true,
                 maxLines: 4,
                 minLines: 1,
                 textInputAction: TextInputAction.send,
@@ -220,13 +244,9 @@ class _ChatInputState extends State<ChatInput> {
                     ),
                 decoration: InputDecoration(
                   filled: false,
-                  hintText: widget.isLoading
-                      ? 'Mencari jawaban...'
-                      : 'Tanyakan tentang pedoman akademik...',
-                  hintStyle: TextStyle(
-                    color: widget.isLoading
-                        ? AppTheme.accentPrimary.withValues(alpha: 0.5)
-                        : AppTheme.textMuted,
+                  hintText: 'Tanyakan tentang pedoman akademik...',
+                  hintStyle: const TextStyle(
+                    color: AppTheme.textMuted,
                     fontSize: 14,
                   ),
                   border: InputBorder.none,
@@ -251,30 +271,19 @@ class _ChatInputState extends State<ChatInput> {
 
             const SizedBox(width: 4),
 
-            // Send button
-            widget.isLoading
-                ? const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 12),
-                    child: SizedBox(
-                      width: 24,
-                      height: 24,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppTheme.accentPrimary,
-                      ),
-                    ),
-                  )
-                : AnimatedScale(
-                    scale: _hasText ? 1.0 : 0.9,
-                    duration: 150.ms,
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.send_rounded,
-                        color: _hasText ? AppTheme.accentPrimary : AppTheme.textMuted,
-                      ),
-                      onPressed: _handleSend,
-                    ),
-                  ),
+            AnimatedScale(
+              scale: (_hasText || widget.isLoading) ? 1.0 : 0.9,
+              duration: 150.ms,
+              child: IconButton(
+                icon: Icon(
+                  Icons.send_rounded,
+                  color: (_hasText && !widget.isLoading)
+                      ? AppTheme.accentPrimary
+                      : AppTheme.textMuted,
+                ),
+                onPressed: (widget.isLoading || !_hasText) ? null : _handleSend,
+              ),
+            ),
           ],
         ),
       ),

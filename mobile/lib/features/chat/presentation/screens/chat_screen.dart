@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../providers/chat_provider.dart';
+import '../providers/voice_provider.dart';
+import '../../domain/models/chat_message.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/chat_input.dart';
 import '../widgets/chat_drawer.dart';
@@ -45,10 +47,21 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     final chatState = ref.watch(chatProvider);
     final chatNotifier = ref.read(chatProvider.notifier);
 
-    // Scroll ke bawah saat pesan baru masuk
+    // Scroll ke bawah saat pesan baru masuk dan bacakan jawaban AI
     ref.listen(chatProvider, (prev, next) {
-      if (prev?.messages.length != next.messages.length) {
-        _scrollToBottom();
+      if (next.messages.isNotEmpty) {
+        final lastMsg = next.messages.last;
+        final prevLastMsg = prev?.messages.isNotEmpty == true ? prev!.messages.last : null;
+        
+        if (prev?.messages.length != next.messages.length) {
+          _scrollToBottom();
+        }
+        
+        if (lastMsg.isAssistant && 
+            lastMsg.status == MessageStatus.success && 
+            (prevLastMsg == null || prevLastMsg.status == MessageStatus.sending || prevLastMsg.id != lastMsg.id)) {
+          ref.read(voiceProvider.notifier).speak(lastMsg.content);
+        }
       }
     });
 
@@ -105,9 +118,24 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
         ),
       ),
       title: null,
-      actions: const [
-        Padding(
-          padding: EdgeInsets.only(right: 20.0),
+      actions: [
+        Consumer(
+          builder: (context, ref, child) {
+            final voiceState = ref.watch(voiceProvider);
+            return IconButton(
+              icon: Icon(
+                voiceState.isTtsEnabled ? Icons.volume_up_rounded : Icons.volume_off_rounded,
+                color: voiceState.isTtsEnabled ? AppTheme.accentPrimary : AppTheme.textMuted,
+              ),
+              tooltip: voiceState.isTtsEnabled ? 'Matikan Suara Asisten' : 'Aktifkan Suara Asisten',
+              onPressed: () {
+                ref.read(voiceProvider.notifier).toggleTts(!voiceState.isTtsEnabled);
+              },
+            );
+          },
+        ),
+        const Padding(
+          padding: EdgeInsets.only(right: 20.0, left: 8.0),
           child: Icon(
             Icons.school_rounded,
             color: AppTheme.accentPrimary,
