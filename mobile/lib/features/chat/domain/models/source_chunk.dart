@@ -17,10 +17,12 @@ class SourceChunk extends Equatable {
   });
 
   factory SourceChunk.fromJson(Map<String, dynamic> json) {
+    final pageVal = json['page'] ?? json['page_start'] ?? json['metadata']?['page_start'] ?? 0;
+    final similarityVal = json['similarity'] ?? json['score'] ?? 0.0;
     return SourceChunk(
-      page: (json['page'] as num).toInt(),
-      similarity: (json['similarity'] as num).toDouble(),
-      preview: json['preview'] as String,
+      page: (pageVal as num).toInt(),
+      similarity: (similarityVal as num).toDouble(),
+      preview: (json['preview'] ?? '') as String,
     );
   }
 
