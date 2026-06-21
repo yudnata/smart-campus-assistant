@@ -261,7 +261,7 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                   ),
                 ],
               ),
-              child: const Icon(Icons.spatial_audio_rounded,
+              child: const Icon(Icons.auto_awesome_rounded,
                   color: Colors.white, size: 26),
             ),
           ),
