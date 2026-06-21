@@ -8,6 +8,8 @@ import '../../data/datasources/chat_remote_datasource.dart';
 import '../../data/repositories/chat_repository_impl.dart';
 import '../../domain/models/chat_message.dart';
 import '../../domain/repositories/chat_repository.dart';
+import '../../../auth/providers/auth_provider.dart';
+import 'history_provider.dart';
 
 // ── Dependency Providers ────────────────────────────────────
 
@@ -75,9 +77,24 @@ class ChatNotifier extends Notifier<ChatState> {
       isLoading: true,
       clearError: true,
     );
+    
+    // Ambil auth & history
+    final auth = ref.read(authProvider);
+    final historyNotif = ref.read(historyProvider.notifier);
+    String? activeConvId = ref.read(historyProvider).activeConversationId;
+    
+    // Buat conversation baru jika belum ada dan user terotentikasi
+    if (auth.isAuthenticated && activeConvId == null) {
+        activeConvId = await historyNotif.createConversation(
+          question.length > 30 ? '${question.substring(0, 30)}...' : question
+        );
+    }
 
     // Panggil repository
-    final result = await _repo.sendMessage(question: question.trim());
+    final result = await _repo.sendMessage(
+      question: question.trim(), 
+      conversationId: activeConvId,
+    );
 
     result.fold(
       // Failure — ganti loading dengan pesan error
@@ -112,8 +129,33 @@ class ChatNotifier extends Notifier<ChatState> {
     );
   }
 
+  Future<void> loadConversation(String id) async {
+    state = state.copyWith(isLoading: true, clearError: true);
+    
+    // Set active conversation in history
+    ref.read(historyProvider.notifier).setActiveConversation(id);
+    
+    // Load messages
+    final messages = await ref.read(historyProvider.notifier).loadConversationMessages(id);
+    
+    // Default welcome if empty
+    if (messages.isEmpty) {
+      clearChat();
+    } else {
+      state = state.copyWith(messages: messages, isLoading: false);
+    }
+  }
+
   void clearChat() {
-    state = build(); // reset ke initial state
+    ref.read(historyProvider.notifier).setActiveConversation(null);
+    final welcomeMsg = ChatMessage(
+      id: 'welcome',
+      role: MessageRole.assistant,
+      content:
+          'Halo! 👋 Saya asisten pedoman akademik kampus.\n\nTanyakan apa saja tentang:\n• Pengambilan SKS dan KRS\n• Prosedur cuti akademik\n• Syarat kelulusan\n• Beasiswa dan persyaratannya\n• Dan topik akademik lainnya',
+      createdAt: DateTime.now(),
+    );
+    state = ChatState(messages: [welcomeMsg]);
   }
 }
 

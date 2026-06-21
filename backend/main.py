@@ -7,6 +7,9 @@ from app.api.endpoints import router
 from sqlalchemy import text
 
 from app.models.document_chunk import DocumentChunk
+from app.models.user import User
+from app.models.conversation import Conversation
+from app.models.message import Message
 
 # Setup DB Tables (Ini akan membuat tabel documents jika belum ada)
 # Note: Ekstensi pgvector HARUS sudah diaktifkan di PostgreSQL database (`CREATE EXTENSION vector;`)
@@ -30,7 +33,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from app.api.auth import router as auth_router
+from app.api.chat_history import router as chat_history_router
+
 app.include_router(router, prefix="/api")
+app.include_router(auth_router, prefix="/api/auth", tags=["auth"])
+app.include_router(chat_history_router, prefix="/api/chat/conversations", tags=["chat_history"])
 
 @app.get("/health")
 def health_check():

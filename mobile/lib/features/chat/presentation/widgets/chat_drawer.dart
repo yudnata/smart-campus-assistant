@@ -4,22 +4,21 @@
 // ============================================================
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../screens/search_chat_screen.dart';
+import '../../../auth/providers/auth_provider.dart';
+import '../providers/history_provider.dart';
+import '../providers/chat_provider.dart';
+import '../../../auth/presentation/screens/login_screen.dart';
 
-class ChatDrawer extends StatelessWidget {
+class ChatDrawer extends ConsumerWidget {
   const ChatDrawer({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    // List mockup recent chats
-    final recentChats = [
-      'Syarat Sidang Skripsi 2026',
-      'Batas KRS Semester Ganjil',
-      'Prosedur Cuti Akademik',
-      'Sanksi Keterlambatan SPP',
-      'Registrasi Ulang Mahasiswa Baru',
-    ];
+  Widget build(BuildContext context, WidgetRef ref) {
+    final authState = ref.watch(authProvider);
+    final historyState = ref.watch(historyProvider);
 
     return Drawer(
       backgroundColor: AppTheme.surfaceLight,
@@ -70,7 +69,7 @@ class ChatDrawer extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  // New Chat Button (Normal / Neutral Outline style)
+                  // New Chat Button
                   Container(
                     width: double.infinity,
                     height: 48,
@@ -84,13 +83,8 @@ class ChatDrawer extends StatelessWidget {
                       child: InkWell(
                         borderRadius: BorderRadius.circular(24),
                         onTap: () {
+                          ref.read(chatProvider.notifier).clearChat();
                           Navigator.pop(context); // Close drawer
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Memulai obrolan baru...'),
-                              behavior: SnackBarBehavior.floating,
-                            ),
-                          );
                         },
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -113,45 +107,46 @@ class ChatDrawer extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
 
-                  // Search Chat Button (Normal / Neutral Outline style)
-                  Container(
-                    width: double.infinity,
-                    height: 48,
-                    decoration: BoxDecoration(
-                      color: AppTheme.surfaceLight,
-                      borderRadius: BorderRadius.circular(24),
-                      border: Border.all(color: AppTheme.surfaceBorder, width: 1.5),
-                    ),
-                    child: Material(
-                      color: Colors.transparent,
-                      child: InkWell(
+                  // Search Chat Button
+                  if (authState.isAuthenticated)
+                    Container(
+                      width: double.infinity,
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: AppTheme.surfaceLight,
                         borderRadius: BorderRadius.circular(24),
-                        onTap: () {
-                          Navigator.pop(context); // Close drawer
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => const SearchChatScreen()),
-                          );
-                        },
-                        child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.search_rounded, color: AppTheme.textPrimary, size: 20),
-                            SizedBox(width: 8),
-                            Text(
-                              'Cari Obrolan',
-                              style: TextStyle(
-                                fontFamily: 'Quicksand',
-                                fontWeight: FontWeight.w600,
-                                color: AppTheme.textPrimary,
-                                fontSize: 14,
+                        border: Border.all(color: AppTheme.surfaceBorder, width: 1.5),
+                      ),
+                      child: Material(
+                        color: Colors.transparent,
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(24),
+                          onTap: () {
+                            Navigator.pop(context);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const SearchChatScreen()),
+                            );
+                          },
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.search_rounded, color: AppTheme.textPrimary, size: 20),
+                              SizedBox(width: 8),
+                              Text(
+                                'Cari Obrolan',
+                                style: TextStyle(
+                                  fontFamily: 'Quicksand',
+                                  fontWeight: FontWeight.w600,
+                                  color: AppTheme.textPrimary,
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ),
                 ],
               ),
             ),
@@ -171,48 +166,71 @@ class ChatDrawer extends StatelessWidget {
               ),
             ),
 
-            // Recent Chats Scroll List
+            // Recent Chats List
             Expanded(
-              child: ListView.builder(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                itemCount: recentChats.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    margin: const EdgeInsets.only(bottom: 4),
-                    child: ListTile(
-                      dense: true,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      leading: const Icon(
-                        Icons.chat_bubble_outline_rounded,
-                        color: AppTheme.textSecondary,
-                        size: 16,
-                      ),
-                      title: Text(
-                        recentChats[index],
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
+              child: authState.isAuthenticated
+                  ? (historyState.isLoading && historyState.conversations.isEmpty)
+                      ? const Center(child: CircularProgressIndicator())
+                      : historyState.conversations.isEmpty
+                          ? const Center(
+                              child: Text(
+                                'Belum ada obrolan.',
+                                style: TextStyle(
+                                  fontFamily: 'Quicksand',
+                                  color: AppTheme.textMuted,
+                                ),
+                              ),
+                            )
+                          : ListView.builder(
+                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                              itemCount: historyState.conversations.length,
+                              itemBuilder: (context, index) {
+                                final conv = historyState.conversations[index];
+                                final isActive = conv['id'] == historyState.activeConversationId;
+                                return Container(
+                                  margin: const EdgeInsets.only(bottom: 4),
+                                  decoration: BoxDecoration(
+                                    color: isActive ? AppTheme.accentPrimary.withValues(alpha: 0.1) : Colors.transparent,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: ListTile(
+                                    dense: true,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    leading: Icon(
+                                      Icons.chat_bubble_outline_rounded,
+                                      color: isActive ? AppTheme.accentPrimary : AppTheme.textSecondary,
+                                      size: 16,
+                                    ),
+                                    title: Text(
+                                      conv['title'] ?? 'Obrolan',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontFamily: 'Quicksand',
+                                        fontSize: 13,
+                                        fontWeight: isActive ? FontWeight.bold : FontWeight.w500,
+                                        color: isActive ? AppTheme.accentPrimary : AppTheme.textSecondary,
+                                      ),
+                                    ),
+                                    onTap: () {
+                                      Navigator.pop(context);
+                                      ref.read(chatProvider.notifier).loadConversation(conv['id']);
+                                    },
+                                  ),
+                                );
+                              },
+                            )
+                  : const Center(
+                      child: Text(
+                        'Masuk untuk melihat riwayat.',
+                        style: TextStyle(
                           fontFamily: 'Quicksand',
-                          fontSize: 13,
-                          fontWeight: FontWeight.w500,
-                          color: AppTheme.textSecondary,
+                          color: AppTheme.textMuted,
                         ),
                       ),
-                      onTap: () {
-                        Navigator.pop(context);
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('Membuka: ${recentChats[index]}'),
-                            behavior: SnackBarBehavior.floating,
-                          ),
-                        );
-                      },
                     ),
-                  );
-                },
-              ),
             ),
 
             // User Profile Section at bottom
@@ -234,10 +252,12 @@ class ChatDrawer extends StatelessWidget {
                         width: 1.5,
                       ),
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Text(
-                        'YN',
-                        style: TextStyle(
+                        authState.isAuthenticated && authState.user != null
+                            ? (authState.user!['name'] as String).substring(0, 1).toUpperCase()
+                            : 'G',
+                        style: const TextStyle(
                           fontFamily: 'Quicksand',
                           fontWeight: FontWeight.bold,
                           color: AppTheme.accentPrimary,
@@ -248,49 +268,52 @@ class ChatDrawer extends StatelessWidget {
                   ),
                   const SizedBox(width: 12),
                   // Name and detail
-                  const Expanded(
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          'Yudha Nata',
-                          style: TextStyle(
+                          authState.isAuthenticated && authState.user != null
+                              ? authState.user!['name']
+                              : 'Tamu (Guest)',
+                          style: const TextStyle(
                             fontFamily: 'Quicksand',
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
                             color: AppTheme.textPrimary,
                           ),
                         ),
-                        Text(
-                          'yudha.nata@univ.ac.id',
-                          style: TextStyle(
-                            fontFamily: 'Quicksand',
-                            fontSize: 11,
-                            color: AppTheme.textMuted,
+                        if (authState.isAuthenticated && authState.user != null)
+                          Text(
+                            authState.user!['email'],
+                            style: const TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontSize: 11,
+                              color: AppTheme.textMuted,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
                       ],
                     ),
                   ),
-                  // Settings / Action
-                  IconButton(
-                    icon: const Icon(
-                      Icons.settings_suggest_rounded,
-                      color: AppTheme.textMuted,
-                      size: 20,
+                  // Action button: Logout or Login
+                  if (authState.isAuthenticated)
+                    IconButton(
+                      icon: const Icon(Icons.logout_rounded, color: AppTheme.errorColor, size: 20),
+                      onPressed: () {
+                        ref.read(authProvider.notifier).logout();
+                        Navigator.pop(context);
+                      },
+                    )
+                  else
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginScreen()));
+                      },
+                      child: const Text('Masuk', style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold)),
                     ),
-                    onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Membuka Pengaturan Profil'),
-                          behavior: SnackBarBehavior.floating,
-                        ),
-                      );
-                    },
-                  ),
                 ],
               ),
             ),

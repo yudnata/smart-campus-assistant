@@ -17,15 +17,16 @@ class ChatRepositoryImpl implements ChatRepository {
 
   const ChatRepositoryImpl(this._dataSource);
 
-  @override
   Future<Either<Failure, ChatQueryResult>> sendMessage({
     required String question,
     int topK = 5,
+    String? conversationId,
   }) async {
     try {
       final json = await _dataSource.sendMessage(
         question: question,
         topK: topK,
+        conversationId: conversationId,
       );
 
       // Parse sources
