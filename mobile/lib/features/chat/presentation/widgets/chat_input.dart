@@ -84,7 +84,7 @@ class _ChatInputState extends ConsumerState<ChatInput> {
 
   void _showSiriOverlay(BuildContext context) {
     final voiceNotifier = ref.read(voiceProvider.notifier);
-    
+
     // Start listening immediately when the sheet opens
     voiceNotifier.startListening((text) {
       // Callback for real-time speech results
@@ -102,7 +102,7 @@ class _ChatInputState extends ConsumerState<ChatInput> {
         return Consumer(
           builder: (context, ref, child) {
             final voiceState = ref.watch(voiceProvider);
-            
+
             return Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
@@ -121,7 +121,9 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                   ),
                   const SizedBox(height: 24),
                   Text(
-                    voiceState.isListening ? 'Mendengarkan...' : 'Selesai Mendengar',
+                    voiceState.isListening
+                        ? 'Mendengarkan...'
+                        : 'Selesai Mendengar',
                     style: const TextStyle(
                       fontFamily: 'Quicksand',
                       fontSize: 18,
@@ -138,8 +140,12 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                     style: TextStyle(
                       fontFamily: 'Quicksand',
                       fontSize: 14,
-                      fontWeight: voiceState.lastSpokenWords.isEmpty ? FontWeight.normal : FontWeight.w600,
-                      color: voiceState.lastSpokenWords.isEmpty ? AppTheme.textSecondary : AppTheme.accentPrimary,
+                      fontWeight: voiceState.lastSpokenWords.isEmpty
+                          ? FontWeight.normal
+                          : FontWeight.w600,
+                      color: voiceState.lastSpokenWords.isEmpty
+                          ? AppTheme.textSecondary
+                          : AppTheme.accentPrimary,
                     ),
                   ),
                   const Spacer(),
@@ -166,17 +172,21 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                         )
-                            .animate(onPlay: (controller) => controller.repeat(reverse: true))
+                            .animate(
+                                onPlay: (controller) =>
+                                    controller.repeat(reverse: true))
                             .scaleY(
                               begin: 0.3,
                               end: 1.5,
-                              duration: Duration(milliseconds: 300 + (index * 100)),
+                              duration:
+                                  Duration(milliseconds: 300 + (index * 100)),
                               curve: Curves.easeInOut,
                             );
                       }),
                     )
                   else
-                    const Icon(Icons.check_circle_rounded, color: Colors.green, size: 48),
+                    const Icon(Icons.check_circle_rounded,
+                        color: Colors.green, size: 48),
                   const Spacer(),
                   // Cancel / Tap to finish
                   TextButton(
@@ -184,14 +194,16 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                       final text = ref.read(voiceProvider).lastSpokenWords;
                       voiceNotifier.stopListening();
                       Navigator.pop(context);
-                      
+
                       if (text.trim().isNotEmpty) {
                         widget.onSend(text.trim());
                       }
                     },
                     style: TextButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                      backgroundColor: AppTheme.accentPrimary.withValues(alpha: 0.1),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 24, vertical: 12),
+                      backgroundColor:
+                          AppTheme.accentPrimary.withValues(alpha: 0.1),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -236,8 +248,8 @@ class _ChatInputState extends ConsumerState<ChatInput> {
           GestureDetector(
             onTap: () => _showFullSpeechOverlay(context),
             child: Container(
-              width: 48,
-              height: 48,
+              width: 52,
+              height: 52,
               decoration: const BoxDecoration(
                 gradient: AppTheme.accentGradient,
                 shape: BoxShape.circle,
@@ -249,7 +261,8 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                   ),
                 ],
               ),
-              child: const Icon(Icons.spatial_audio_rounded, color: Colors.white, size: 22),
+              child: const Icon(Icons.spatial_audio_rounded,
+                  color: Colors.white, size: 26),
             ),
           ),
           const SizedBox(width: 10),
@@ -311,7 +324,8 @@ class _ChatInputState extends ConsumerState<ChatInput> {
 
                   // Mic Button
                   IconButton(
-                    icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
+                    icon: const Icon(Icons.mic_none_rounded,
+                        color: AppTheme.accentPrimary),
                     tooltip: 'Bicara',
                     onPressed: () {
                       _showSiriOverlay(context);
@@ -330,7 +344,8 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                             ? AppTheme.accentPrimary
                             : AppTheme.textMuted,
                       ),
-                      onPressed: (widget.isLoading || !_hasText) ? null : _handleSend,
+                      onPressed:
+                          (widget.isLoading || !_hasText) ? null : _handleSend,
                     ),
                   ),
                 ],

@@ -130,14 +130,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
             );
           },
         ),
-        const Padding(
-          padding: EdgeInsets.only(right: 20.0, left: 8.0),
-          child: Icon(
-            Icons.school_rounded,
-            color: AppTheme.accentPrimary,
-            size: 24,
-          ),
-        ),
+        const SizedBox(width: 12),
       ],
     );
   }

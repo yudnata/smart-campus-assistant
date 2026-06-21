@@ -77,22 +77,21 @@ class ChatNotifier extends Notifier<ChatState> {
       isLoading: true,
       clearError: true,
     );
-    
+
     // Ambil auth & history
     final auth = ref.read(authProvider);
     final historyNotif = ref.read(historyProvider.notifier);
     String? activeConvId = ref.read(historyProvider).activeConversationId;
-    
+
     // Buat conversation baru jika belum ada dan user terotentikasi
     if (auth.isAuthenticated && activeConvId == null) {
-        activeConvId = await historyNotif.createConversation(
-          question.length > 30 ? '${question.substring(0, 30)}...' : question
-        );
+      activeConvId = await historyNotif.createConversation(
+          question.length > 30 ? '${question.substring(0, 30)}...' : question);
     }
 
     // Panggil repository
     final result = await _repo.sendMessage(
-      question: question.trim(), 
+      question: question.trim(),
       conversationId: activeConvId,
     );
 
@@ -131,13 +130,14 @@ class ChatNotifier extends Notifier<ChatState> {
 
   Future<void> loadConversation(String id) async {
     state = state.copyWith(isLoading: true, clearError: true);
-    
+
     // Set active conversation in history
     ref.read(historyProvider.notifier).setActiveConversation(id);
-    
+
     // Load messages
-    final messages = await ref.read(historyProvider.notifier).loadConversationMessages(id);
-    
+    final messages =
+        await ref.read(historyProvider.notifier).loadConversationMessages(id);
+
     // Default welcome if empty
     if (messages.isEmpty) {
       clearChat();

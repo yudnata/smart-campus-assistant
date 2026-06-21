@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:flutter_tts/flutter_tts.dart';
@@ -61,14 +62,24 @@ class VoiceNotifier extends StateNotifier<VoiceState> {
 
   Future<void> _initTts() async {
     try {
-      // Coba set language ke id-ID (standar) atau id_ID (beberapa device Android)
-      var result = await _tts.setLanguage("id-ID");
+      // Paksa menggunakan Google TTS Engine di Android agar mendukung Bahasa Indonesia dengan baik
+      if (Platform.isAndroid) {
+        try {
+          await _tts.setEngine("com.google.android.tts");
+        } catch (_) {}
+      }
+
+      // Coba set language ke id (umum), id-ID (standar), atau id_ID (beberapa device Android)
+      var result = await _tts.setLanguage("id");
       if (result == 0) {
-        await _tts.setLanguage("id_ID");
+        result = await _tts.setLanguage("id-ID");
+        if (result == 0) {
+          await _tts.setLanguage("id_ID");
+        }
       }
       
       await _tts.setPitch(1.0);
-      await _tts.setSpeechRate(0.50); // Dikembalikan ke kecepatan normal ~1.0x
+      await _tts.setSpeechRate(0.60); // Dipercepat menjadi ~1.25x sesuai permintaan user
 
       _tts.setStartHandler(() {
         state = state.copyWith(isSpeaking: true);

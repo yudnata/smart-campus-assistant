@@ -25,7 +25,8 @@ class App extends StatelessWidget {
           builder: (context, ref, child) {
             final authState = ref.watch(authProvider);
             if (authState.isLoading) {
-              return const Scaffold(body: Center(child: CircularProgressIndicator()));
+              return const Scaffold(
+                  body: Center(child: CircularProgressIndicator()));
             }
             if (authState.isAuthenticated || authState.isGuest) {
               return const ChatScreen();

@@ -25,12 +25,6 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
   @override
   void initState() {
     super.initState();
-    // Mulai mendengarkan secara otomatis saat overlay dibuka
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(voiceProvider.notifier).startListening((text) {
-        setState(() => _tempWords = text);
-      });
-    });
   }
 
   @override
@@ -53,10 +47,10 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
     final chatState = ref.watch(chatProvider);
 
     // ── Dialog Loop Listener ─────────────────────────────────
-    
-    // Listen status voice & chat untuk membuat dialog melingkar (auto-loop)
+
+    // Listen status voice untuk mendeteksi kapan tombol dilepas (selesai mendengar)
     ref.listen(voiceProvider, (prev, next) {
-      // 1. Jika selesai berbicara (isListening berubah dari true ke false), kirim otomatis
+      // Jika selesai berbicara (isListening berubah dari true ke false), kirim otomatis hasil rekaman
       if (prev?.isListening == true && next.isListening == false) {
         final finalSpeech = next.lastSpokenWords.trim();
         if (finalSpeech.isNotEmpty && !ref.read(chatProvider).isLoading) {
@@ -64,59 +58,54 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
           setState(() => _tempWords = '');
         }
       }
-
-      // 2. Jika asisten selesai membacakan teks (isSpeaking berubah dari true ke false),
-      // otomatis aktifkan kembali mikrofon agar user bisa langsung berbicara lagi
-      if (prev?.isSpeaking == true && next.isSpeaking == false) {
-        Future.delayed(const Duration(milliseconds: 600), () {
-          if (mounted && 
-              !ref.read(voiceProvider).isListening && 
-              !ref.read(chatProvider).isLoading) {
-            ref.read(voiceProvider.notifier).startListening((text) {
-              setState(() => _tempWords = text);
-            });
-          }
-        });
-      }
     });
 
     // Bacakan balasan RAG otomatis hanya saat sedang berada di dalam overlay Mode Suara
     ref.listen(chatProvider, (prev, next) {
       if (next.messages.isNotEmpty) {
         final lastMsg = next.messages.last;
-        final prevLastMsg = prev?.messages.isNotEmpty == true ? prev!.messages.last : null;
-        
-        if (lastMsg.isAssistant && 
-            lastMsg.status == MessageStatus.success && 
-            (prevLastMsg == null || prevLastMsg.status == MessageStatus.sending || prevLastMsg.id != lastMsg.id)) {
+        final prevLastMsg =
+            prev?.messages.isNotEmpty == true ? prev!.messages.last : null;
+
+        if (lastMsg.isAssistant &&
+            lastMsg.status == MessageStatus.success &&
+            (prevLastMsg == null ||
+                prevLastMsg.status == MessageStatus.sending ||
+                prevLastMsg.id != lastMsg.id)) {
           ref.read(voiceProvider.notifier).speak(lastMsg.content);
         }
       }
     });
 
     // Menentukan Status Utama untuk UI
-    String statusTitle = 'Asisten Siap';
-    String statusSub = 'Katakan sesuatu...';
+    String statusTitle = 'Asisten Suara';
+    String statusSub = 'Tekan & tahan tombol di bawah untuk mulai berbicara';
+    String bottomHint = 'Tahan untuk bicara, lepas untuk mengirim';
     Widget centerWidget = const SizedBox();
 
     if (chatState.isLoading) {
       statusTitle = 'Memikirkan Jawaban';
       statusSub = 'Mencari informasi di pedoman akademik...';
+      bottomHint = 'Mohon tunggu sebentar...';
       centerWidget = _buildProcessingOrb();
     } else if (voiceState.isSpeaking) {
       statusTitle = 'Asisten Berbicara';
       statusSub = 'Mendengarkan jawaban...';
+      bottomHint = 'Tahan tombol di bawah untuk memotong & bertanya baru';
       centerWidget = _buildSpeakingOrb();
     } else if (voiceState.isListening) {
       statusTitle = 'Mendengarkan';
-      statusSub = _tempWords.isEmpty ? 'Katakan pertanyaan Anda...' : _tempWords;
+      statusSub =
+          _tempWords.isEmpty ? 'Lepas tombol untuk mengirim...' : _tempWords;
+      bottomHint = 'Lepas tombol jika sudah selesai berbicara';
       centerWidget = _buildListeningOrb();
     } else {
       centerWidget = _buildIdleOrb();
     }
 
     return Scaffold(
-      backgroundColor: Colors.black.withValues(alpha: 0.95), // Premium dark mode background
+      backgroundColor:
+          Colors.black.withValues(alpha: 0.95), // Premium dark mode background
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
@@ -128,7 +117,8 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
                 children: [
                   const Row(
                     children: [
-                      Icon(Icons.spatial_audio_rounded, color: AppTheme.accentPrimary, size: 24),
+                      Icon(Icons.spatial_audio_rounded,
+                          color: AppTheme.accentPrimary, size: 24),
                       SizedBox(width: 10),
                       Text(
                         'Mode Suara Asisten',
@@ -142,7 +132,8 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
                     ],
                   ),
                   IconButton(
-                    icon: const Icon(Icons.close_rounded, color: Colors.white70, size: 28),
+                    icon: const Icon(Icons.close_rounded,
+                        color: Colors.white70, size: 28),
                     onPressed: () => Navigator.pop(context),
                   ),
                 ],
@@ -151,7 +142,7 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
 
               // Center Visualizer Orb
               Center(child: centerWidget),
-              
+
               const Spacer(),
 
               // Status Teks
@@ -174,62 +165,77 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontFamily: 'Quicksand',
-                    fontSize: 15,
-                    color: Colors.white70,
+                    fontSize: 19,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xE6FFFFFF), // 90% opacity white constant
                     height: 1.5,
                   ),
                 ),
               ),
               const SizedBox(height: 48),
 
-              // Bottom control button (Manual Tap to Speak / Mute)
+              // Bottom control button (Hold to Talk / Release to Send)
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
-                    onTap: () {
-                      if (voiceState.isListening) {
-                        ref.read(voiceProvider.notifier).stopListening();
-                      } else if (voiceState.isSpeaking) {
+                    onTapDown: (_) {
+                      // Hentikan asisten jika sedang berbicara saat user ingin mulai bertanya
+                      if (voiceState.isSpeaking) {
                         ref.read(voiceProvider.notifier).stopSpeaking();
-                      } else if (!chatState.isLoading) {
+                      }
+                      if (!chatState.isLoading) {
                         ref.read(voiceProvider.notifier).startListening((text) {
                           setState(() => _tempWords = text);
                         });
                       }
                     },
+                    onTapUp: (_) {
+                      if (voiceState.isListening) {
+                        ref.read(voiceProvider.notifier).stopListening();
+                      }
+                    },
+                    onTapCancel: () {
+                      if (voiceState.isListening) {
+                        ref.read(voiceProvider.notifier).stopListening();
+                      }
+                    },
                     child: Container(
-                      width: 72,
-                      height: 72,
+                      width: 80,
+                      height: 80,
                       decoration: BoxDecoration(
                         gradient: AppTheme.accentGradient,
                         shape: BoxShape.circle,
                         boxShadow: [
                           BoxShadow(
-                            color: AppTheme.accentPrimary.withValues(alpha: 0.4),
-                            blurRadius: 20,
-                            spreadRadius: 2,
+                            color: AppTheme.accentPrimary.withValues(
+                                alpha: voiceState.isListening ? 0.6 : 0.3),
+                            blurRadius: voiceState.isListening ? 30 : 15,
+                            spreadRadius: voiceState.isListening ? 4 : 1,
                           ),
                         ],
                       ),
                       child: Icon(
                         voiceState.isListening
                             ? Icons.mic_rounded
-                            : (voiceState.isSpeaking ? Icons.volume_up_rounded : Icons.mic_none_rounded),
+                            : (voiceState.isSpeaking
+                                ? Icons.volume_up_rounded
+                                : Icons.mic_none_rounded),
                         color: Colors.white,
-                        size: 32,
+                        size: 36,
                       ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(height: 24),
-              const Text(
-                'Percakapan berjalan dua arah secara otomatis.\nTekan tombol di atas untuk jeda.',
+              Text(
+                bottomHint,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontFamily: 'Quicksand',
-                  fontSize: 12,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w500,
                   color: Colors.white38,
                 ),
               ),
@@ -254,9 +260,12 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
             shape: BoxShape.circle,
             color: AppTheme.accentPrimary.withValues(alpha: 0.05),
           ),
-        ).animate(onPlay: (c) => c.repeat(reverse: true))
-         .scale(begin: const Offset(0.8, 0.8), end: const Offset(1.2, 1.2), duration: 1200.ms, curve: Curves.easeInOut),
-        
+        ).animate(onPlay: (c) => c.repeat(reverse: true)).scale(
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.2, 1.2),
+            duration: 1200.ms,
+            curve: Curves.easeInOut),
+
         // Wave outer layer 1
         Container(
           width: 170,
@@ -265,8 +274,11 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
             shape: BoxShape.circle,
             color: AppTheme.accentSecondary.withValues(alpha: 0.1),
           ),
-        ).animate(onPlay: (c) => c.repeat(reverse: true))
-         .scale(begin: const Offset(0.9, 0.9), end: const Offset(1.15, 1.15), duration: 800.ms, curve: Curves.easeInOut),
+        ).animate(onPlay: (c) => c.repeat(reverse: true)).scale(
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.15, 1.15),
+            duration: 800.ms,
+            curve: Curves.easeInOut),
 
         // Glowing center orb
         Container(
@@ -277,12 +289,11 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
             gradient: AppTheme.accentGradient,
           ),
           child: const Icon(Icons.mic_rounded, color: Colors.white, size: 48),
-        ).animate(onPlay: (c) => c.repeat(reverse: true))
-         .boxShadow(
-           begin: const BoxShadow(color: Color(0x334F46E5), blurRadius: 10),
-           end: const BoxShadow(color: Color(0xAA4F46E5), blurRadius: 40),
-           duration: 1000.ms,
-         ),
+        ).animate(onPlay: (c) => c.repeat(reverse: true)).boxShadow(
+              begin: const BoxShadow(color: Color(0x334F46E5), blurRadius: 10),
+              end: const BoxShadow(color: Color(0xAA4F46E5), blurRadius: 40),
+              duration: 1000.ms,
+            ),
       ],
     );
   }
@@ -311,8 +322,10 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
                 ),
                 borderRadius: BorderRadius.circular(5),
               ),
-            ).animate(onPlay: (c) => c.repeat(reverse: true))
-             .scaleY(begin: 0.4, end: 1.6, duration: Duration(milliseconds: 250 + (index * 80)));
+            ).animate(onPlay: (c) => c.repeat(reverse: true)).scaleY(
+                begin: 0.4,
+                end: 1.6,
+                duration: Duration(milliseconds: 250 + (index * 80)));
           }),
         ),
       ],
@@ -325,7 +338,8 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
       height: 120,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        border: Border.all(color: AppTheme.accentPrimary.withValues(alpha: 0.2), width: 4),
+        border: Border.all(
+            color: AppTheme.accentPrimary.withValues(alpha: 0.2), width: 4),
       ),
       child: const Center(
         child: SizedBox(
@@ -337,8 +351,7 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
           ),
         ),
       ),
-    ).animate(onPlay: (c) => c.repeat())
-     .rotate(duration: 2000.ms);
+    ).animate(onPlay: (c) => c.repeat()).rotate(duration: 2000.ms);
   }
 
   Widget _buildIdleOrb() {
@@ -350,7 +363,8 @@ class _FullSpeechOverlayState extends ConsumerState<FullSpeechOverlay> {
         color: Colors.white10,
         border: Border.all(color: Colors.white24, width: 2),
       ),
-      child: const Icon(Icons.spatial_audio_off_rounded, color: Colors.white54, size: 48),
+      child: const Icon(Icons.spatial_audio_off_rounded,
+          color: Colors.white54, size: 48),
     );
   }
 }
