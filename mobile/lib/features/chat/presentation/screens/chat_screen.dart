@@ -25,6 +25,11 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   final _scrollController = ScrollController();
 
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   void dispose() {
     _scrollController.dispose();
     super.dispose();
@@ -47,20 +52,11 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     final chatState = ref.watch(chatProvider);
     final chatNotifier = ref.read(chatProvider.notifier);
 
-    // Scroll ke bawah saat pesan baru masuk dan bacakan jawaban AI
+    // Scroll ke bawah saat pesan baru masuk
     ref.listen(chatProvider, (prev, next) {
       if (next.messages.isNotEmpty) {
-        final lastMsg = next.messages.last;
-        final prevLastMsg = prev?.messages.isNotEmpty == true ? prev!.messages.last : null;
-        
         if (prev?.messages.length != next.messages.length) {
           _scrollToBottom();
-        }
-        
-        if (lastMsg.isAssistant && 
-            lastMsg.status == MessageStatus.success && 
-            (prevLastMsg == null || prevLastMsg.status == MessageStatus.sending || prevLastMsg.id != lastMsg.id)) {
-          ref.read(voiceProvider.notifier).speak(lastMsg.content);
         }
       }
     });

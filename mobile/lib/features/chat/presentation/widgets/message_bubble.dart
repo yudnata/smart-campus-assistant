@@ -4,9 +4,11 @@
 // ============================================================
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../domain/models/chat_message.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../providers/voice_provider.dart';
 import 'source_panel.dart';
 
 class MessageBubble extends StatelessWidget {
@@ -112,34 +114,61 @@ class _UserBubble extends StatelessWidget {
 }
 
 // ── AI Bubble ───────────────────────────────────────────────
-class _AiBubble extends StatelessWidget {
+class _AiBubble extends ConsumerWidget {
   final String content;
   const _AiBubble({required this.content});
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      constraints: BoxConstraints(
-        maxWidth: MediaQuery.of(context).size.width * 0.88,
-      ),
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      decoration: BoxDecoration(
-        color: AppTheme.surfaceCard,
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(4),
-          topRight: Radius.circular(20),
-          bottomLeft: Radius.circular(20),
-          bottomRight: Radius.circular(20),
-        ),
-        border: Border.all(color: AppTheme.surfaceBorder, width: 1),
-      ),
-      child: Text(
-        content,
-        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: AppTheme.textPrimary,
-              height: 1.65,
+  Widget build(BuildContext context, WidgetRef ref) {
+    final voiceState = ref.watch(voiceProvider);
+    final isSpeaking = voiceState.isSpeaking;
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        Container(
+          constraints: BoxConstraints(
+            maxWidth: MediaQuery.of(context).size.width * 0.76,
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            color: AppTheme.surfaceCard,
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(4),
+              topRight: Radius.circular(20),
+              bottomLeft: Radius.circular(20),
+              bottomRight: Radius.circular(20),
             ),
-      ),
+            border: Border.all(color: AppTheme.surfaceBorder, width: 1),
+          ),
+          child: Text(
+            content,
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                  color: AppTheme.textPrimary,
+                  height: 1.65,
+                ),
+          ),
+        ),
+        const SizedBox(width: 4),
+        IconButton(
+          icon: Icon(
+            isSpeaking ? Icons.volume_off_rounded : Icons.volume_up_rounded,
+            color: isSpeaking ? AppTheme.accentPrimary : AppTheme.textMuted,
+            size: 18,
+          ),
+          padding: EdgeInsets.zero,
+          constraints: const BoxConstraints(),
+          onPressed: () {
+            if (isSpeaking) {
+              ref.read(voiceProvider.notifier).stopSpeaking();
+            } else {
+              ref.read(voiceProvider.notifier).speak(content);
+            }
+          },
+          tooltip: isSpeaking ? 'Hentikan Suara' : 'Dengarkan',
+        ),
+      ],
     );
   }
 }

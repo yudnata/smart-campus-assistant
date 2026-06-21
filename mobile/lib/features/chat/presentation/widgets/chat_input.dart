@@ -8,6 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../providers/voice_provider.dart';
+import 'full_speech_overlay.dart';
 
 class ChatInput extends ConsumerStatefulWidget {
   final bool isLoading;
@@ -54,6 +55,33 @@ class _ChatInputState extends ConsumerState<ChatInput> {
     _controller.clear();
   }
 
+  void _showFullSpeechOverlay(BuildContext context) {
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: false,
+      barrierColor: Colors.black.withValues(alpha: 0.5),
+      transitionDuration: const Duration(milliseconds: 300),
+      pageBuilder: (context, anim1, anim2) {
+        return FullSpeechOverlay(
+          onSend: (text) {
+            widget.onSend(text);
+          },
+        );
+      },
+      transitionBuilder: (context, anim1, anim2, child) {
+        return FadeTransition(
+          opacity: anim1,
+          child: ScaleTransition(
+            scale: Tween<double>(begin: 0.9, end: 1.0).animate(
+              CurvedAnimation(parent: anim1, curve: Curves.easeOutCubic),
+            ),
+            child: child,
+          ),
+        );
+      },
+    );
+  }
+
   void _showSiriOverlay(BuildContext context) {
     final voiceNotifier = ref.read(voiceProvider.notifier);
     
@@ -65,6 +93,8 @@ class _ChatInputState extends ConsumerState<ChatInput> {
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.white,
+      isScrollControlled: true,
+      constraints: const BoxConstraints(maxWidth: double.infinity),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
       ),
@@ -74,6 +104,7 @@ class _ChatInputState extends ConsumerState<ChatInput> {
             final voiceState = ref.watch(voiceProvider);
             
             return Container(
+              width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
               height: 280,
               child: Column(
@@ -155,13 +186,7 @@ class _ChatInputState extends ConsumerState<ChatInput> {
                       Navigator.pop(context);
                       
                       if (text.trim().isNotEmpty) {
-                        setState(() {
-                          if (_controller.text.isNotEmpty) {
-                            _controller.text = '${_controller.text.trim()} ${text.trim()}';
-                          } else {
-                            _controller.text = text.trim();
-                          }
-                        });
+                        widget.onSend(text.trim());
                       }
                     },
                     style: TextButton.styleFrom(
@@ -205,87 +230,114 @@ class _ChatInputState extends ConsumerState<ChatInput> {
       decoration: const BoxDecoration(
         color: Colors.transparent,
       ),
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppTheme.surfaceCard,
-          borderRadius: BorderRadius.circular(32),
-          border: Border.all(
-            color: _isFocused
-                ? AppTheme.accentPrimary.withValues(alpha: 0.6)
-                : AppTheme.surfaceBorder,
-            width: _isFocused ? 1.5 : 1,
+      child: Row(
+        children: [
+          // Voice Assistant Mode Button (Full Speech Mode)
+          GestureDetector(
+            onTap: () => _showFullSpeechOverlay(context),
+            child: Container(
+              width: 48,
+              height: 48,
+              decoration: const BoxDecoration(
+                gradient: AppTheme.accentGradient,
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0x224F46E5),
+                    blurRadius: 8,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: const Icon(Icons.spatial_audio_rounded, color: Colors.white, size: 22),
+            ),
           ),
-          boxShadow: [
-            BoxShadow(
-              color: _isFocused
-                  ? AppTheme.accentPrimary.withValues(alpha: 0.15)
-                  : Colors.black.withValues(alpha: 0.08),
-              blurRadius: 20,
-              spreadRadius: 0,
-              offset: const Offset(0, 6),
-            )
-          ],
-        ),
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-        child: Row(
-          children: [
-            // Text field
-            Expanded(
-              child: TextField(
-                controller: _controller,
-                focusNode: _focusNode,
-                enabled: true,
-                maxLines: 4,
-                minLines: 1,
-                textInputAction: TextInputAction.send,
-                onSubmitted: (_) => _handleSend(),
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: AppTheme.textPrimary,
+          const SizedBox(width: 10),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: AppTheme.surfaceCard,
+                borderRadius: BorderRadius.circular(32),
+                border: Border.all(
+                  color: _isFocused
+                      ? AppTheme.accentPrimary.withValues(alpha: 0.6)
+                      : AppTheme.surfaceBorder,
+                  width: _isFocused ? 1.5 : 1,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: _isFocused
+                        ? AppTheme.accentPrimary.withValues(alpha: 0.15)
+                        : Colors.black.withValues(alpha: 0.08),
+                    blurRadius: 20,
+                    spreadRadius: 0,
+                    offset: const Offset(0, 6),
+                  )
+                ],
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+              child: Row(
+                children: [
+                  // Text field
+                  Expanded(
+                    child: TextField(
+                      controller: _controller,
+                      focusNode: _focusNode,
+                      enabled: true,
+                      maxLines: 4,
+                      minLines: 1,
+                      textInputAction: TextInputAction.send,
+                      onSubmitted: (_) => _handleSend(),
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            color: AppTheme.textPrimary,
+                          ),
+                      decoration: InputDecoration(
+                        filled: false,
+                        hintText: 'Tanya...',
+                        hintStyle: const TextStyle(
+                          color: AppTheme.textMuted,
+                          fontSize: 14,
+                        ),
+                        border: InputBorder.none,
+                        enabledBorder: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 16,
+                        ),
+                      ),
                     ),
-                decoration: InputDecoration(
-                  filled: false,
-                  hintText: 'Tanyakan tentang pedoman akademik...',
-                  hintStyle: const TextStyle(
-                    color: AppTheme.textMuted,
-                    fontSize: 14,
                   ),
-                  border: InputBorder.none,
-                  enabledBorder: InputBorder.none,
-                  focusedBorder: InputBorder.none,
-                  contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 16,
+
+                  // Mic Button
+                  IconButton(
+                    icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
+                    tooltip: 'Bicara',
+                    onPressed: () {
+                      _showSiriOverlay(context);
+                    },
                   ),
-                ),
+
+                  const SizedBox(width: 4),
+
+                  AnimatedScale(
+                    scale: (_hasText || widget.isLoading) ? 1.0 : 0.9,
+                    duration: 150.ms,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.send_rounded,
+                        color: (_hasText && !widget.isLoading)
+                            ? AppTheme.accentPrimary
+                            : AppTheme.textMuted,
+                      ),
+                      onPressed: (widget.isLoading || !_hasText) ? null : _handleSend,
+                    ),
+                  ),
+                ],
               ),
             ),
-
-            // Mic Button
-            IconButton(
-              icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
-              tooltip: 'Bicara',
-              onPressed: () {
-                _showSiriOverlay(context);
-              },
-            ),
-
-            const SizedBox(width: 4),
-
-            AnimatedScale(
-              scale: (_hasText || widget.isLoading) ? 1.0 : 0.9,
-              duration: 150.ms,
-              child: IconButton(
-                icon: Icon(
-                  Icons.send_rounded,
-                  color: (_hasText && !widget.isLoading)
-                      ? AppTheme.accentPrimary
-                      : AppTheme.textMuted,
-                ),
-                onPressed: (widget.isLoading || !_hasText) ? null : _handleSend,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

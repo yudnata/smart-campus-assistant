@@ -57,7 +57,7 @@ class ChatNotifier extends Notifier<ChatState> {
       id: 'welcome',
       role: MessageRole.assistant,
       content:
-          'Halo! 👋 Saya asisten pedoman akademik kampus.\n\nTanyakan apa saja tentang:\n• Pengambilan SKS dan KRS\n• Prosedur cuti akademik\n• Syarat kelulusan\n• Beasiswa dan persyaratannya\n• Dan topik akademik lainnya',
+          'Halo! Saya asisten pedoman akademik kampus.\n\nTanyakan apa saja tentang:\n• Pengambilan SKS dan KRS\n• Prosedur cuti akademik\n• Syarat kelulusan\n• Beasiswa dan persyaratannya\n• Dan topik akademik lainnya',
       createdAt: DateTime(2024),
     );
     return ChatState(messages: [welcomeMsg]);

@@ -61,9 +61,14 @@ class VoiceNotifier extends StateNotifier<VoiceState> {
 
   Future<void> _initTts() async {
     try {
-      await _tts.setLanguage("id-ID");
+      // Coba set language ke id-ID (standar) atau id_ID (beberapa device Android)
+      var result = await _tts.setLanguage("id-ID");
+      if (result == 0) {
+        await _tts.setLanguage("id_ID");
+      }
+      
       await _tts.setPitch(1.0);
-      await _tts.setSpeechRate(0.55); // Sedikit lebih lambat agar terdengar jelas
+      await _tts.setSpeechRate(1.0); // Dipercepat menjadi ~2.0x sesuai permintaan user
 
       _tts.setStartHandler(() {
         state = state.copyWith(isSpeaking: true);
