@@ -28,5 +28,6 @@ abstract class ChatRepository {
   Future<Either<Failure, ChatQueryResult>> sendMessage({
     required String question,
     int topK = 5,
+    String? conversationId,
   });
 }

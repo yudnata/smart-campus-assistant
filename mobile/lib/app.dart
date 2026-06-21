@@ -5,7 +5,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_theme.dart';
-import 'features/chat/presentation/screens/chat_screen.dart';
+import 'package:rag_akademik/features/chat/presentation/screens/chat_screen.dart';
+import 'package:rag_akademik/features/auth/presentation/screens/login_screen.dart';
+import 'package:rag_akademik/features/auth/providers/auth_provider.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -19,7 +21,18 @@ class App extends StatelessWidget {
         themeMode: ThemeMode.light,
         theme: AppTheme.light,
         darkTheme: AppTheme.light,
-        home: const ChatScreen(),
+        home: Consumer(
+          builder: (context, ref, child) {
+            final authState = ref.watch(authProvider);
+            if (authState.isLoading) {
+              return const Scaffold(body: Center(child: CircularProgressIndicator()));
+            }
+            if (authState.isAuthenticated || authState.isGuest) {
+              return const ChatScreen();
+            }
+            return const LoginScreen();
+          },
+        ),
       ),
     );
   }

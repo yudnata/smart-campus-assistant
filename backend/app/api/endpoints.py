@@ -8,9 +8,12 @@ from pydantic import BaseModel
 
 router = APIRouter()
 
+from app.models.message import Message
+
 class ChatRequest(BaseModel):
     question: str
     topK: int = 5
+    conversation_id: str = None # Optional for guest
 
 class WebIngestRequest(BaseModel):
     url: str
@@ -19,7 +22,37 @@ class WebIngestRequest(BaseModel):
 @router.post("/chat")
 def chat_endpoint(req: ChatRequest, db: Session = Depends(get_db)):
     try:
+        # Jika conversation_id ada, simpan pesan user terlebih dahulu
+        if req.conversation_id:
+            user_msg = Message(
+                conversation_id=req.conversation_id,
+                role="user",
+                content=req.question
+            )
+            db.add(user_msg)
+            db.commit()
+
+        # Generate response using RAG
         response = chat_rag(req.question, req.topK, db)
+        
+        # Simpan balasan bot jika conversation_id valid
+        if req.conversation_id:
+            bot_msg = Message(
+                conversation_id=req.conversation_id,
+                role="assistant",
+                content=response.get("answer", "Maaf, terjadi kesalahan.")
+            )
+            db.add(bot_msg)
+            db.commit()
+            
+            # Update the conversation updated_at
+            from app.models.conversation import Conversation
+            from sqlalchemy.sql import func
+            conv = db.query(Conversation).filter(Conversation.id == req.conversation_id).first()
+            if conv:
+                conv.updated_at = func.now()
+                db.commit()
+
         return response
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

@@ -170,48 +170,43 @@ class _ChatInputState extends State<ChatInput> {
 
   @override
   Widget build(BuildContext context) {
+    final bottomPadding = MediaQuery.of(context).padding.bottom;
     return Container(
       padding: EdgeInsets.only(
         left: 16,
         right: 16,
-        top: 12,
-        bottom: MediaQuery.of(context).padding.bottom + 12,
+        top: 8,
+        bottom: bottomPadding > 0 ? bottomPadding + 8 : 16,
       ),
-      decoration: BoxDecoration(
-        color: AppTheme.surfaceLight,
-        border: Border(
-          top: BorderSide(
+      decoration: const BoxDecoration(
+        color: Colors.transparent,
+      ),
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppTheme.surfaceCard,
+          borderRadius: BorderRadius.circular(32),
+          border: Border.all(
             color: _isFocused
-                ? AppTheme.accentPrimary.withValues(alpha: 0.4)
+                ? AppTheme.accentPrimary.withValues(alpha: 0.6)
                 : AppTheme.surfaceBorder,
+            width: _isFocused ? 1.5 : 1,
           ),
+          boxShadow: [
+            BoxShadow(
+              color: _isFocused
+                  ? AppTheme.accentPrimary.withValues(alpha: 0.15)
+                  : Colors.black.withValues(alpha: 0.08),
+              blurRadius: 20,
+              spreadRadius: 0,
+              offset: const Offset(0, 6),
+            )
+          ],
         ),
-      ),
-      child: Row(
-        children: [
-          // Text field
-          Expanded(
-            child: AnimatedContainer(
-              duration: 200.ms,
-              decoration: BoxDecoration(
-                color: AppTheme.surfaceCard,
-                borderRadius: BorderRadius.circular(24),
-                border: Border.all(
-                  color: _isFocused
-                      ? AppTheme.accentPrimary.withValues(alpha: 0.6)
-                      : AppTheme.surfaceBorder,
-                  width: _isFocused ? 1.5 : 1,
-                ),
-                boxShadow: _isFocused
-                    ? [
-                        BoxShadow(
-                          color: AppTheme.accentPrimary.withValues(alpha: 0.1),
-                          blurRadius: 12,
-                          spreadRadius: 0,
-                        )
-                      ]
-                    : null,
-              ),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+        child: Row(
+          children: [
+            // Text field
+            Expanded(
               child: TextField(
                 controller: _controller,
                 focusNode: _focusNode,
@@ -238,73 +233,50 @@ class _ChatInputState extends State<ChatInput> {
                   enabledBorder: InputBorder.none,
                   focusedBorder: InputBorder.none,
                   contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 18,
-                    vertical: 12,
-                  ),
-                  suffixIcon: IconButton(
-                    icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
-                    onPressed: () {
-                      _showSiriOverlay(context);
-                    },
+                    horizontal: 16,
+                    vertical: 16,
                   ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(width: 10),
 
-          // Send button
-          AnimatedScale(
-            scale: _hasText && !widget.isLoading ? 1.0 : 0.85,
-            duration: 200.ms,
-            curve: Curves.easeOutBack,
-            child: GestureDetector(
-              onTap: _handleSend,
-              child: AnimatedContainer(
-                duration: 200.ms,
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  gradient: _hasText && !widget.isLoading
-                      ? AppTheme.accentGradient
-                      : null,
-                  color: _hasText && !widget.isLoading
-                      ? null
-                      : AppTheme.surfaceCard,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: _hasText && !widget.isLoading
-                        ? Colors.transparent
-                        : AppTheme.surfaceBorder,
-                  ),
-                  boxShadow: _hasText && !widget.isLoading
-                      ? [
-                          BoxShadow(
-                            color:
-                                AppTheme.accentPrimary.withValues(alpha: 0.35),
-                            blurRadius: 12,
-                            offset: const Offset(0, 4),
-                          )
-                        ]
-                      : null,
-                ),
-                child: widget.isLoading
-                    ? const Padding(
-                        padding: EdgeInsets.all(14),
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          color: AppTheme.accentPrimary,
-                        ),
-                      )
-                    : Icon(
-                        Icons.send_rounded,
-                        size: 20,
-                        color: _hasText ? Colors.white : AppTheme.textMuted,
-                      ),
-              ),
+            // Mic Button
+            IconButton(
+              icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
+              tooltip: 'Bicara',
+              onPressed: () {
+                _showSiriOverlay(context);
+              },
             ),
-          ),
-        ],
+
+            const SizedBox(width: 4),
+
+            // Send button
+            widget.isLoading
+                ? const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    child: SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: AppTheme.accentPrimary,
+                      ),
+                    ),
+                  )
+                : AnimatedScale(
+                    scale: _hasText ? 1.0 : 0.9,
+                    duration: 150.ms,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.send_rounded,
+                        color: _hasText ? AppTheme.accentPrimary : AppTheme.textMuted,
+                      ),
+                      onPressed: _handleSend,
+                    ),
+                  ),
+          ],
+        ),
       ),
     );
   }

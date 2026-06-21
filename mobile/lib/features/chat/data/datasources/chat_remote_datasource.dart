@@ -17,12 +17,14 @@ class ChatRemoteDataSource {
   Future<Map<String, dynamic>> sendMessage({
     required String question,
     int topK = 5,
+    String? conversationId,
   }) async {
     final response = await _dio.post(
       ApiConstants.chat,
       data: {
         'question': question,
         'topK': topK,
+        if (conversationId != null) 'conversation_id': conversationId,
       },
     );
 
