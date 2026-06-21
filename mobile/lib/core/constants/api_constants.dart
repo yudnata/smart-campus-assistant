@@ -3,19 +3,22 @@
 // Semua URL dan endpoint API backend Express.js
 // ============================================================
 
+import 'package:flutter/foundation.dart';
+
 class ApiConstants {
   ApiConstants._(); // prevent instantiation
 
-  // Ganti dengan IP lokal mesin kamu saat development
-  // Android emulator: 10.0.2.2
-  // iOS Simulator: localhost atau 127.0.0.1
-  // Device fisik: IP LAN mesin backend (cek dengan `ipconfig`)
-  static const String _baseUrl = 'http://10.0.2.2:3001';
+  // Membaca Base URL dari environment variable (--dart-define=API_URL=...)
+  // Dengan fallback ke localhost untuk Web dan 10.0.2.2 untuk Android Emulator
+  static const String baseUrl = String.fromEnvironment(
+    'API_URL',
+    defaultValue: kIsWeb ? 'http://localhost:3001' : 'http://10.0.2.2:3001',
+  );
 
   // ── Endpoints ──────────────────────────────────────────────
-  static const String chat = '$_baseUrl/api/chat';
-  static const String stats = '$_baseUrl/api/stats';
-  static const String health = '$_baseUrl/health';
+  static const String chat = '$baseUrl/api/chat';
+  static const String stats = '$baseUrl/api/stats';
+  static const String health = '$baseUrl/health';
 
   // ── Timeouts ───────────────────────────────────────────────
   static const Duration connectTimeout = Duration(seconds: 10);
