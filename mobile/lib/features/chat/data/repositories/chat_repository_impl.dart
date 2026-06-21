@@ -17,6 +17,7 @@ class ChatRepositoryImpl implements ChatRepository {
 
   const ChatRepositoryImpl(this._dataSource);
 
+  @override
   Future<Either<Failure, ChatQueryResult>> sendMessage({
     required String question,
     int topK = 5,
