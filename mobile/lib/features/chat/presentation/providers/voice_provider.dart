@@ -68,7 +68,7 @@ class VoiceNotifier extends StateNotifier<VoiceState> {
       }
       
       await _tts.setPitch(1.0);
-      await _tts.setSpeechRate(1.0); // Dipercepat menjadi ~2.0x sesuai permintaan user
+      await _tts.setSpeechRate(0.50); // Dikembalikan ke kecepatan normal ~1.0x
 
       _tts.setStartHandler(() {
         state = state.copyWith(isSpeaking: true);
