@@ -1,11 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:dio/dio.dart';
+import '../../../core/constants/api_constants.dart';
 
 // Dio instance untuk auth
 final authDioProvider = Provider<Dio>((ref) {
   return Dio(BaseOptions(
-    baseUrl: 'http://10.0.2.2:3001/api', // Ubah sesuai environment (localhost 10.0.2.2 untuk emulator android)
+    baseUrl: '${ApiConstants.baseUrl}/api',
     connectTimeout: const Duration(seconds: 10),
     receiveTimeout: const Duration(seconds: 10),
   ));
