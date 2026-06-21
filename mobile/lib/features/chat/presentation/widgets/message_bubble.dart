@@ -33,7 +33,7 @@ class MessageBubble extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 4, left: 4, right: 4),
             child: Text(
-              message.isUser ? 'Kamu' : '🎓 Asisten Akademik',
+              message.isUser ? 'Kamu' : 'Asisten',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: AppTheme.textMuted,
                     fontWeight: FontWeight.w500,
