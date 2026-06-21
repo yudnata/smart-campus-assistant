@@ -133,9 +133,14 @@ class _ChatInputState extends State<ChatInput> {
                   TextButton(
                     onPressed: () {
                       Navigator.pop(context);
-                      // Fill text with mockup question
+                      // Fill/append text with mockup question
                       setState(() {
-                        _controller.text = 'Berapa syarat minimum kelulusan IPK?';
+                        const newText = 'Berapa syarat minimum kelulusan IPK?';
+                        if (_controller.text.isNotEmpty) {
+                          _controller.text = '${_controller.text.trim()} $newText';
+                        } else {
+                          _controller.text = newText;
+                        }
                       });
                     },
                     style: TextButton.styleFrom(
@@ -236,14 +241,12 @@ class _ChatInputState extends State<ChatInput> {
                     horizontal: 18,
                     vertical: 12,
                   ),
-                  suffixIcon: _hasText
-                      ? null
-                      : IconButton(
-                          icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
-                          onPressed: () {
-                            _showSiriOverlay(context);
-                          },
-                        ),
+                  suffixIcon: IconButton(
+                    icon: const Icon(Icons.mic_none_rounded, color: AppTheme.accentPrimary),
+                    onPressed: () {
+                      _showSiriOverlay(context);
+                    },
+                  ),
                 ),
               ),
             ),

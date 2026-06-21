@@ -26,7 +26,7 @@ class DocumentChunk(Base):
 
     metadata_json = Column("metadata", JSONB, nullable=False)
 
-    # paraphrase-multilingual-MiniLM-L12-v2 menghasilkan embedding 384 dimensi
-    embedding = Column(Vector(384), nullable=False)
+    # Model embedding seperti intfloat/multilingual-e5-large menghasilkan embedding 1024 dimensi
+    embedding = Column(Vector(1024), nullable=False)
 
     created_at = Column(DateTime(timezone=True), server_default=func.now())

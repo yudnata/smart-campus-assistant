@@ -7,7 +7,7 @@ from sqlalchemy import text
 from app.core.database import SessionLocal
 
 
-MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+MODEL_NAME = "intfloat/multilingual-e5-large"
 
 
 @lru_cache(maxsize=1)
