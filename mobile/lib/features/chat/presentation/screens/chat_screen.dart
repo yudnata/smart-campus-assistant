@@ -124,6 +124,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                     ? _EmptyState()
                     : ListView.builder(
                         controller: _scrollController,
+                        cacheExtent: 99999,
                         padding: const EdgeInsets.only(top: 12, bottom: 8),
                         itemCount: chatState.messages.length,
                         itemBuilder: (context, index) {
