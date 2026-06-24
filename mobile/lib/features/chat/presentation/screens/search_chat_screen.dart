@@ -5,35 +5,25 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../providers/history_provider.dart';
+import '../providers/chat_provider.dart';
 
-class SearchChatScreen extends StatefulWidget {
+class SearchChatScreen extends ConsumerStatefulWidget {
   const SearchChatScreen({super.key});
 
   @override
-  State<SearchChatScreen> createState() => _SearchChatScreenState();
+  ConsumerState<SearchChatScreen> createState() => _SearchChatScreenState();
 }
 
-class _SearchChatScreenState extends State<SearchChatScreen> {
+class _SearchChatScreenState extends ConsumerState<SearchChatScreen> {
   final _searchController = TextEditingController();
-  final List<String> _allChats = [
-    'Syarat Sidang Skripsi 2026',
-    'Batas KRS Semester Ganjil',
-    'Prosedur Cuti Akademik',
-    'Sanksi Keterlambatan SPP',
-    'Registrasi Ulang Mahasiswa Baru',
-    'Persyaratan Beasiswa PPA',
-    'Panduan Magang Industri',
-    'Alur Pengajuan Judul Tugas Akhir',
-    'Cara Mengurus KTM Hilang',
-    'Kalender Akademik 2026/2027',
-  ];
-  List<String> _filteredChats = [];
+  String _searchQuery = '';
 
   @override
   void initState() {
     super.initState();
-    _filteredChats = List.from(_allChats);
     _searchController.addListener(_onSearchChanged);
   }
 
@@ -45,20 +35,23 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
   }
 
   void _onSearchChanged() {
-    final query = _searchController.text.toLowerCase().trim();
     setState(() {
-      if (query.isEmpty) {
-        _filteredChats = List.from(_allChats);
-      } else {
-        _filteredChats = _allChats
-            .where((chat) => chat.toLowerCase().contains(query))
-            .toList();
-      }
+      _searchQuery = _searchController.text.toLowerCase().trim();
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    final historyState = ref.watch(historyProvider);
+    final allChats = historyState.conversations;
+
+    final filteredChats = _searchQuery.isEmpty
+        ? allChats
+        : allChats.where((chat) {
+            final title = (chat['title'] as String?) ?? 'Obrolan';
+            return title.toLowerCase().contains(_searchQuery);
+          }).toList();
+
     return Scaffold(
       backgroundColor: AppTheme.backgroundLight,
       appBar: AppBar(
@@ -117,7 +110,7 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
           ),
         ),
       ),
-      body: _filteredChats.isEmpty
+      body: filteredChats.isEmpty
           ? Center(
               child: const Column(
                 mainAxisSize: MainAxisSize.min,
@@ -147,8 +140,10 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
             )
           : ListView.builder(
               padding: const EdgeInsets.all(16),
-              itemCount: _filteredChats.length,
+              itemCount: filteredChats.length,
               itemBuilder: (context, index) {
+                final chat = filteredChats[index];
+                final title = chat['title'] ?? 'Obrolan';
                 return Card(
                   margin: const EdgeInsets.only(bottom: 8),
                   elevation: 0,
@@ -172,7 +167,7 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
                       ),
                     ),
                     title: Text(
-                      _filteredChats[index],
+                      title,
                       style: const TextStyle(
                         fontFamily: 'Quicksand',
                         fontWeight: FontWeight.w600,
@@ -191,12 +186,7 @@ class _SearchChatScreenState extends State<SearchChatScreen> {
                     trailing: const Icon(Icons.chevron_right_rounded, color: AppTheme.textMuted),
                     onTap: () {
                       Navigator.pop(context);
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('Membuka obrolan: ${_filteredChats[index]}'),
-                          behavior: SnackBarBehavior.floating,
-                        ),
-                      );
+                      ref.read(chatProvider.notifier).loadConversation(chat['id']);
                     },
                   ),
                 ).animate().fadeIn(delay: (index * 50).ms).slideY(begin: 0.1, end: 0);

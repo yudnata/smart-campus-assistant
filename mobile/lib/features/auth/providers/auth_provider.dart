@@ -80,10 +80,18 @@ class AuthNotifier extends StateNotifier<AuthState> {
         user: response.data,
       );
     } catch (e) {
-      // Token invalid / expired
       final prefs = await SharedPreferences.getInstance();
-      await prefs.remove('auth_token');
-      state = state.copyWith(isLoading: false, isGuest: true, isAuthenticated: false, token: null, user: null);
+      
+      // Hanya hapus token jika server merespons dengan 401 (Unauthorized) atau 403 (Forbidden).
+      // Jangan hapus jika hanya karena masalah koneksi internet/server offline.
+      if (e is DioException && e.response != null && 
+          (e.response!.statusCode == 401 || e.response!.statusCode == 403)) {
+        await prefs.remove('auth_token');
+        state = state.copyWith(isLoading: false, isGuest: true, isAuthenticated: false, token: null, user: null);
+      } else {
+        // Jika offline atau server down, tetap pertahankan status guest / error sementara tanpa menghapus token
+        state = state.copyWith(isLoading: false, isGuest: true, error: "Gagal terhubung ke server.");
+      }
     }
   }
 

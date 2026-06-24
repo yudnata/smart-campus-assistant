@@ -4,7 +4,11 @@ from sqlalchemy.orm import sessionmaker
 from pgvector.sqlalchemy import Vector
 from .config import settings
 
-engine = create_engine(settings.database_url)
+engine = create_engine(
+    settings.database_url,
+    pool_pre_ping=True,
+    pool_recycle=300
+)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()

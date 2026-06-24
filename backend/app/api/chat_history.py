@@ -11,7 +11,7 @@ from app.schemas.chat_history import ConversationResponse, ConversationCreate, M
 
 router = APIRouter()
 
-@router.post("/", response_model=ConversationResponse)
+@router.post("", response_model=ConversationResponse)
 def create_conversation(data: ConversationCreate, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     new_conv = Conversation(
         user_id=current_user.id,
@@ -22,7 +22,7 @@ def create_conversation(data: ConversationCreate, db: Session = Depends(get_db),
     db.refresh(new_conv)
     return new_conv
 
-@router.get("/", response_model=List[ConversationResponse])
+@router.get("", response_model=List[ConversationResponse])
 def get_conversations(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     # Get all conversations for the logged in user, order by updated_at descending
     return db.query(Conversation).filter(Conversation.user_id == current_user.id).order_by(Conversation.updated_at.desc()).all()
