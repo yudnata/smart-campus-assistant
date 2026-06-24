@@ -23,7 +23,7 @@ class _VerifyEmailScreenState extends ConsumerState<VerifyEmailScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Email berhasil diverifikasi! Silakan login.'), backgroundColor: AppTheme.successColor),
       );
-      Navigator.popUntil(context, (route) => route.isFirst);
+      Navigator.pop(context); // Kembali ke LoginScreen
     } else if (mounted) {
       final error = ref.read(authProvider).error;
       ScaffoldMessenger.of(context).showSnackBar(
