@@ -20,7 +20,7 @@ class ChatRepositoryImpl implements ChatRepository {
   @override
   Future<Either<Failure, ChatQueryResult>> sendMessage({
     required String question,
-    int topK = 5,
+    int topK = 10,
     String? conversationId,
   }) async {
     try {

@@ -1,4 +1,4 @@
-﻿import logging
+import logging
 import time
 
 from sqlalchemy import text
@@ -70,6 +70,7 @@ def _build_sources(rows) -> list[dict]:
         item = row._mapping
         metadata = item.get("metadata_json") or {}
         content = item.get("content") or ""
+        cosine_sim = float(item.get("cosine_similarity") or 0.0)
 
         sources.append(
             {
@@ -83,7 +84,8 @@ def _build_sources(rows) -> list[dict]:
                 "section": item.get("section"),
                 "subsection": item.get("subsection"),
                 "section_path": item.get("section_path"),
-                "preview": content[:180] + ("..." if len(content) > 180 else ""),
+                "preview": content[:500] + ("..." if len(content) > 500 else ""),
+                "similarity": cosine_sim,
                 "score": float(item.get("rrf_score") or 0.0),
                 "metadata": metadata,
             }
@@ -122,6 +124,7 @@ def chat_rag(question: str, top_k: int, db: Session):
                 subsection,
                 section_path,
                 metadata AS metadata_json,
+                1 - (embedding <=> CAST(:vector AS vector)) AS cosine_similarity,
                 RANK() OVER (ORDER BY embedding <=> CAST(:vector AS vector)) AS rank
             FROM public.document_chunks
             ORDER BY embedding <=> CAST(:vector AS vector)
@@ -141,6 +144,7 @@ def chat_rag(question: str, top_k: int, db: Session):
                 subsection,
                 section_path,
                 metadata AS metadata_json,
+                NULL::float AS cosine_similarity,
                 RANK() OVER (
                     ORDER BY ts_rank_cd(
                         to_tsvector('simple', content),
@@ -168,6 +172,7 @@ def chat_rag(question: str, top_k: int, db: Session):
             COALESCE(s.subsection, k.subsection) AS subsection,
             COALESCE(s.section_path, k.section_path) AS section_path,
             COALESCE(s.metadata_json, k.metadata_json) AS metadata_json,
+            COALESCE(s.cosine_similarity, 0.0) AS cosine_similarity,
             (1.0 / (60 + COALESCE(s.rank, 10000))) +
             (1.0 / (60 + COALESCE(k.rank, 10000))) AS rrf_score
         FROM semantic_search s

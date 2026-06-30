@@ -18,6 +18,7 @@ class SourceChunk extends Equatable {
 
   factory SourceChunk.fromJson(Map<String, dynamic> json) {
     final pageVal = json['page'] ?? json['page_start'] ?? json['metadata']?['page_start'] ?? 0;
+    // Utamakan cosine similarity (0-1), fallback ke score jika tidak ada
     final similarityVal = json['similarity'] ?? json['score'] ?? 0.0;
     return SourceChunk(
       page: (pageVal as num).toInt(),

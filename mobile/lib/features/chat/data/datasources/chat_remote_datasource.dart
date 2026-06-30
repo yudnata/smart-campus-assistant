@@ -16,7 +16,7 @@ class ChatRemoteDataSource {
   /// Throws [DioException] jika terjadi error jaringan/server
   Future<Map<String, dynamic>> sendMessage({
     required String question,
-    int topK = 5,
+    int topK = 10,
     String? conversationId,
   }) async {
     final response = await _dio.post(

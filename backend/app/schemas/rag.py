@@ -1,4 +1,4 @@
-﻿from typing import Any
+from typing import Any
 
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field
 
@@ -6,7 +6,7 @@ from pydantic import AliasChoices, BaseModel, ConfigDict, Field
 class ChatRequest(BaseModel):
     question: str = Field(..., min_length=1)
     top_k: int = Field(
-        default=5,
+        default=10,
         ge=1,
         le=20,
         validation_alias=AliasChoices("top_k", "topK"),
@@ -28,6 +28,7 @@ class SourceResponse(BaseModel):
     subsection: str | None = None
     section_path: str | None = None
     preview: str
+    similarity: float = 0.0
     score: float
     metadata: dict[str, Any] = Field(default_factory=dict)
 
