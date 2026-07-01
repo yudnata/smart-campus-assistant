@@ -21,6 +21,8 @@ class AdminPanelScreen extends ConsumerStatefulWidget {
 class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
   final _prodiController = TextEditingController();
   final _babController = TextEditingController();
+  final _semesterController = TextEditingController();
+  final _tahunAkademikController = TextEditingController();
   bool _overwriteOld = true;
   
   PlatformFile? _selectedFile;
@@ -118,6 +120,8 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
   void dispose() {
     _prodiController.dispose();
     _babController.dispose();
+    _semesterController.dispose();
+    _tahunAkademikController.dispose();
     super.dispose();
   }
 
@@ -142,7 +146,7 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
     }
   }
 
-  Future<void> _uploadAndProcess() async {
+  Future<void> _uploadAndPreview() async {
     if (_selectedFile == null) {
       setState(() {
         _statusMessage = 'Pilih file terlebih dahulu!';
@@ -167,30 +171,342 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
     final token = ref.read(authProvider).token;
 
     try {
-      final response = await _adminDataSource.uploadDocument(
+      final response = await _adminDataSource.previewDocument(
         fileBytes: fileBytes,
         filename: _selectedFile!.name,
         token: token,
         prodi: _prodiController.text.trim(),
         bab: _babController.text.trim(),
-        overwriteOld: _overwriteOld,
+        semester: _semesterController.text.trim(),
+        tahunAkademik: _tahunAkademikController.text.trim(),
         onProgress: (progress) {
           setState(() {
             _uploadProgress = progress;
             if (progress < 1.0) {
               _statusMessage = 'Mengunggah file: ${(progress * 100).toStringAsFixed(0)}%';
             } else {
-              _statusMessage = 'File terkirim! Server sedang mengekstrak teks & membuat representasi vektor (RAG). Harap tunggu...';
+              _statusMessage = 'File terkirim! Server sedang mengekstrak teks pratinjau. Harap tunggu...';
             }
           });
         },
       );
 
-      final chunksCount = response['chunks_added'] ?? 0;
+      final chunks = response['chunks'] as List<dynamic>? ?? [];
+      final docType = response['doc_type'] as String? ?? 'pedoman_akademik';
+      final filename = response['filename'] as String? ?? _selectedFile!.name;
 
       setState(() {
         _isUploading = false;
         _uploadProgress = 1.0;
+        _statusMessage = null;
+      });
+
+      if (mounted) {
+        if (chunks.isEmpty) {
+          setState(() {
+            _statusMessage = 'Ekstraksi dokumen menghasilkan 0 chunk teks. Silakan periksa dokumen Anda.';
+          });
+          return;
+        }
+        _showPreviewDialog(chunks: chunks, docType: docType, filename: filename);
+      }
+    } catch (e) {
+      setState(() {
+        _isUploading = false;
+        _statusMessage = 'Error: $e';
+      });
+    }
+  }
+
+  void _showPreviewDialog({
+    required List<dynamic> chunks,
+    required String docType,
+    required String filename,
+  }) {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) {
+        return Dialog(
+          insetPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          backgroundColor: AppTheme.backgroundLight,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+            side: const BorderSide(color: AppTheme.surfaceBorder),
+          ),
+          child: Container(
+            constraints: BoxConstraints(
+              maxHeight: MediaQuery.of(context).size.height * 0.85,
+              maxWidth: MediaQuery.of(context).size.width * 0.95,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Header
+                Container(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+                    border: Border(bottom: BorderSide(color: AppTheme.surfaceBorder)),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: AppTheme.accentPrimary.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Icon(
+                          Icons.preview_rounded,
+                          color: AppTheme.accentPrimary,
+                          size: 24,
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Pratinjau Ekstraksi Dokumen',
+                              style: TextStyle(
+                                fontFamily: 'Quicksand',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                color: AppTheme.textPrimary,
+                              ),
+                            ),
+                            Text(
+                              filename,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontFamily: 'Quicksand',
+                                fontSize: 12,
+                                color: AppTheme.textSecondary,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                
+                // Info Box
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  color: AppTheme.accentTertiary.withOpacity(0.08),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.check_circle_outline_rounded, color: AppTheme.accentTertiary, size: 18),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'Berhasil memparse dokumen menjadi ${chunks.length} chunk teks. Periksa di bawah.',
+                          style: const TextStyle(
+                            fontFamily: 'Quicksand',
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            color: AppTheme.accentTertiary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // List of chunks
+                Expanded(
+                  child: ListView.separated(
+                    padding: const EdgeInsets.all(20),
+                    itemCount: chunks.length,
+                    separatorBuilder: (context, index) => const Gap(16),
+                    itemBuilder: (context, index) {
+                      final chunk = chunks[index];
+                      final content = chunk['page_content'] as String? ?? '';
+                      final metadata = chunk['metadata'] as Map<dynamic, dynamic>? ?? {};
+                      
+                      final page = metadata['page'];
+                      final prodi = metadata['prodi'];
+                      final bab = metadata['bab'];
+
+                      return Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(color: AppTheme.surfaceBorder),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: AppTheme.textPrimary.withOpacity(0.05),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Text(
+                                    'Chunk #${index + 1}',
+                                    style: const TextStyle(
+                                      fontFamily: 'Quicksand',
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                      color: AppTheme.textPrimary,
+                                    ),
+                                  ),
+                                ),
+                                Wrap(
+                                  spacing: 6,
+                                  runSpacing: 4,
+                                  children: [
+                                    if (page != null)
+                                      _buildTag('Hal ${page is int ? page + 1 : page}'),
+                                    if (prodi != null && prodi.toString().isNotEmpty)
+                                      _buildTag(prodi.toString()),
+                                    if (bab != null && bab.toString().isNotEmpty)
+                                      _buildTag(bab.toString()),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            const Gap(12),
+                            const Divider(height: 1),
+                            const Gap(12),
+                            Container(
+                              padding: const EdgeInsets.all(12),
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: AppTheme.backgroundLight,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(color: AppTheme.surfaceBorder.withOpacity(0.5)),
+                              ),
+                              child: Text(
+                                content,
+                                style: const TextStyle(
+                                  fontFamily: 'Quicksand',
+                                  fontSize: 12,
+                                  height: 1.5,
+                                  color: AppTheme.textSecondary,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+                ),
+
+                // Footer
+                Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.vertical(bottom: Radius.circular(24)),
+                    border: Border(top: BorderSide(color: AppTheme.surfaceBorder)),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: OutlinedButton(
+                          onPressed: () => Navigator.pop(ctx),
+                          style: OutlinedButton.styleFrom(
+                            side: const BorderSide(color: AppTheme.surfaceBorder),
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                          ),
+                          child: const Text(
+                            'Batal',
+                            style: TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontWeight: FontWeight.bold,
+                              color: AppTheme.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.pop(ctx);
+                            _saveDocument(chunks, docType, filename);
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppTheme.accentPrimary,
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                            elevation: 0,
+                          ),
+                          child: const Text(
+                            'Lanjut & Simpan',
+                            style: TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildTag(String label) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+      decoration: BoxDecoration(
+        color: AppTheme.accentPrimary.withOpacity(0.08),
+        borderRadius: BorderRadius.circular(6),
+        border: Border.all(color: AppTheme.accentPrimary.withOpacity(0.15)),
+      ),
+      child: Text(
+        label,
+        style: const TextStyle(
+          fontFamily: 'Quicksand',
+          fontSize: 9,
+          fontWeight: FontWeight.bold,
+          color: AppTheme.accentPrimary,
+        ),
+      ),
+    );
+  }
+
+  Future<void> _saveDocument(List<dynamic> chunks, String docType, String filename) async {
+    setState(() {
+      _isUploading = true;
+      _uploadProgress = 1.0;
+      _statusMessage = 'Menyimpan & melakukan embedding berkas. Harap tunggu...';
+    });
+
+    final token = ref.read(authProvider).token;
+
+    try {
+      final response = await _adminDataSource.confirmSaveDocument(
+        chunks: chunks,
+        docType: docType,
+        token: token,
+        overwriteOld: _overwriteOld,
+      );
+
+      final chunksCount = response['chunks_added'] ?? chunks.length;
+
+      setState(() {
+        _isUploading = false;
         _selectedFile = null;
         _statusMessage = null;
       });
@@ -202,8 +518,16 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
     } catch (e) {
       setState(() {
         _isUploading = false;
-        _statusMessage = 'Error: $e';
+        _statusMessage = 'Gagal menyimpan: $e';
       });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error: $e'),
+            backgroundColor: AppTheme.errorColor,
+          ),
+        );
+      }
     }
   }
 
@@ -252,14 +576,9 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: canPop
-            ? IconButton(
-                icon: const Icon(Icons.arrow_back_ios_new_rounded, color: AppTheme.textSecondary),
-                onPressed: () => Navigator.pop(context),
-              )
-            : const Center(
-                child: Icon(Icons.admin_panel_settings_rounded, color: AppTheme.accentPrimary, size: 28),
-              ),
+        leading: const Center(
+          child: Icon(Icons.admin_panel_settings_rounded, color: AppTheme.accentPrimary, size: 28),
+        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout_rounded, color: AppTheme.errorColor),
@@ -343,6 +662,36 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
                       labelText: 'Bab Dokumen (e.g. Bab 1 / Bab 2)',
                       labelStyle: const TextStyle(fontFamily: 'Quicksand'),
                       prefixIcon: const Icon(Icons.menu_book_outlined, size: 20),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    ),
+                  ),
+                  const Gap(16),
+
+                  // Semester Input
+                  TextField(
+                    controller: _semesterController,
+                    enabled: !_isUploading,
+                    style: const TextStyle(fontFamily: 'Quicksand'),
+                    decoration: InputDecoration(
+                      labelText: 'Semester (e.g. gasal / genap)',
+                      labelStyle: const TextStyle(fontFamily: 'Quicksand'),
+                      prefixIcon: const Icon(Icons.timelapse_outlined, size: 20),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    ),
+                  ),
+                  const Gap(16),
+
+                  // Tahun Akademik Input
+                  TextField(
+                    controller: _tahunAkademikController,
+                    enabled: !_isUploading,
+                    style: const TextStyle(fontFamily: 'Quicksand'),
+                    decoration: InputDecoration(
+                      labelText: 'Tahun Akademik (e.g. 2026/2027)',
+                      labelStyle: const TextStyle(fontFamily: 'Quicksand'),
+                      prefixIcon: const Icon(Icons.calendar_today_outlined, size: 20),
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
                       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     ),
@@ -493,7 +842,7 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
 
             // Process Button
              ElevatedButton(
-              onPressed: _isUploading || _selectedFile == null ? null : _uploadAndProcess,
+              onPressed: _isUploading || _selectedFile == null ? null : _uploadAndPreview,
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppTheme.accentPrimary,
                 disabledBackgroundColor: AppTheme.surfaceBorder,
@@ -502,7 +851,7 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
               ),
               child: const Text(
-                'Unggah & Proses Dokumen',
+                'Pratinjau & Unggah Dokumen',
                 style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold, fontSize: 15, color: Colors.white),
               ),
             ),

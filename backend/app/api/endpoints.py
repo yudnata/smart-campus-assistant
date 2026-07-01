@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile, status
+from typing import List, Dict, Any
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -68,6 +69,8 @@ async def ingest_file_endpoint(
     file: UploadFile = File(...),
     prodi: str = Form(None),
     bab: str = Form(None),
+    semester: str = Form(None),
+    tahun_akademik: str = Form(None),
     overwrite_old: bool = Form(True),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_admin),
@@ -80,33 +83,93 @@ async def ingest_file_endpoint(
 
     if ext == ".pdf":
         try:
-            chunks_added = ingest_pdf(content, file.filename, db, prodi, bab, overwrite_old)
+            chunks_added = ingest_pdf(content, file.filename, db, prodi, bab, semester, tahun_akademik, overwrite_old)
             return {"message": "Berhasil memproses PDF", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses PDF: {str(e)}") from e
 
     if ext == ".csv":
         try:
-            chunks_added = ingest_csv(content, file.filename, db, prodi, bab, overwrite_old)
+            chunks_added = ingest_csv(content, file.filename, db, prodi, bab, semester, tahun_akademik, overwrite_old)
             return {"message": "Berhasil memproses CSV", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses CSV: {str(e)}") from e
 
     if ext == ".json":
         try:
-            chunks_added = ingest_json(content, file.filename, db, prodi, bab, overwrite_old)
+            chunks_added = ingest_json(content, file.filename, db, prodi, bab, semester, tahun_akademik, overwrite_old)
             return {"message": "Berhasil memproses JSON", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses JSON: {str(e)}") from e
 
     if ext in {".png", ".jpg", ".jpeg", ".webp"}:
         try:
-            chunks_added = ingest_image(content, file.filename, db, prodi, bab, overwrite_old)
+            chunks_added = ingest_image(content, file.filename, db, prodi, bab, semester, tahun_akademik, overwrite_old)
             return {"message": "Berhasil memproses Gambar (OCR)", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses Gambar (OCR): {str(e)}") from e
 
     raise HTTPException(status_code=400, detail="Hanya file PDF, CSV, JSON, dan Gambar (PNG/JPG/JPEG/WEBP) yang didukung")
+
+
+class ConfirmSaveChunk(BaseModel):
+    page_content: str
+    metadata: Dict[str, Any]
+
+
+class ConfirmSaveRequest(BaseModel):
+    chunks: List[ConfirmSaveChunk]
+    doc_type: str
+    overwrite_old: bool = True
+
+
+@router.post("/ingest/preview-file")
+async def ingest_preview_file_endpoint(
+    file: UploadFile = File(...),
+    prodi: str = Form(None),
+    bab: str = Form(None),
+    semester: str = Form(None),
+    tahun_akademik: str = Form(None),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_admin),
+):
+    from app.services.ingest_service import parse_and_split_file
+    
+    try:
+        content = await file.read()
+        chunks, doc_type = parse_and_split_file(content, file.filename, prodi, bab, semester, tahun_akademik)
+        return {
+            "filename": file.filename,
+            "doc_type": doc_type,
+            "chunks": [
+                {
+                    "page_content": chunk.page_content,
+                    "metadata": chunk.metadata
+                }
+                for chunk in chunks
+            ]
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Gagal mempratinjau file: {str(e)}") from e
+
+
+@router.post("/ingest/confirm-save")
+def ingest_confirm_save_endpoint(
+    req: ConfirmSaveRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_admin),
+):
+    from app.services.ingest_service import save_chunks_to_db
+    
+    try:
+        chunks_data = [
+            {"page_content": chunk.page_content, "metadata": chunk.metadata}
+            for chunk in req.chunks
+        ]
+        chunks_added = save_chunks_to_db(chunks_data, req.doc_type, req.overwrite_old, db)
+        return {"message": "Berhasil menyimpan dokumen ke database RAG", "chunks_added": chunks_added}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Gagal menyimpan dokumen: {str(e)}") from e
 
 
 @router.post("/ingest/url")

@@ -41,13 +41,15 @@ class AuthState {
     String? token,
     Map<String, dynamic>? user,
     String? error,
+    bool clearUser = false,
+    bool clearToken = false,
   }) {
     return AuthState(
       isLoading: isLoading ?? this.isLoading,
       isGuest: isGuest ?? this.isGuest,
       isAuthenticated: isAuthenticated ?? this.isAuthenticated,
-      token: token ?? this.token,
-      user: user ?? this.user,
+      token: clearToken ? null : (token ?? this.token),
+      user: clearUser ? null : (user ?? this.user),
       error: error,
     );
   }
@@ -98,7 +100,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
       if (e is DioException && e.response != null && 
           (e.response!.statusCode == 401 || e.response!.statusCode == 403)) {
         await prefs.remove('auth_token');
-        state = state.copyWith(isLoading: false, isGuest: true, isAuthenticated: false, token: null, user: null);
+        state = state.copyWith(isLoading: false, isGuest: true, isAuthenticated: false, clearToken: true, clearUser: true);
       } else {
         // Jika offline atau server down, tetap pertahankan status guest / error sementara tanpa menghapus token
         state = state.copyWith(isLoading: false, isGuest: true, error: "Gagal terhubung ke server.");
@@ -175,13 +177,13 @@ class AuthNotifier extends StateNotifier<AuthState> {
   }
 
   void continueAsGuest() {
-    state = state.copyWith(isGuest: true, isAuthenticated: false, user: null, token: null);
+    state = state.copyWith(isGuest: true, isAuthenticated: false, clearToken: true, clearUser: true);
   }
 
   Future<void> logout() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove('auth_token');
-    state = state.copyWith(isAuthenticated: false, user: null, token: null, isGuest: true);
+    state = state.copyWith(isAuthenticated: false, clearToken: true, clearUser: true, isGuest: false);
   }
 }
 

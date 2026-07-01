@@ -1,4 +1,5 @@
 import logging
+import re
 import time
 
 from sqlalchemy import text
@@ -14,6 +15,109 @@ NO_CONTEXT_ANSWER = "Informasi tersebut tidak ditemukan di dokumen yang tersedia
 
 def _format_pgvector(vector: list[float]) -> str:
     return "[" + ",".join(str(value) for value in vector) + "]"
+
+
+# ============================================================
+# YEAR-AWARE + KEYWORD RE-RANKING
+# ============================================================
+
+# Stopword Indonesia umum yang tidak memberi info topik
+_STOPWORDS_ID = {
+    "kapan", "apa", "siapa", "dimana", "kenapa", "bagaimana", "apakah",
+    "yang", "dan", "atau", "di", "ke", "dari", "pada", "untuk", "dengan",
+    "adalah", "ini", "itu", "akan", "sudah", "ada", "tidak", "bisa",
+    "dalam", "tentang", "saat", "waktu", "saya", "kamu", "kita", "mereka",
+    "jadwal", "kegiatan", "tanggal", "tahun", "semester",
+}
+
+
+def _extract_years_from_query(question: str) -> list[int]:
+    """Ekstrak tahun 4-digit (2020–2030) yang disebutkan dalam pertanyaan."""
+    years = re.findall(r'\b(202[0-9])\b', question)
+    return list({int(y) for y in years})
+
+
+def _extract_query_keywords(question: str) -> list[str]:
+    """Ekstrak kata kunci penting dari query (buang stopword, min 3 karakter)."""
+    words = re.findall(r'\b[a-zA-Z]{3,}\b', question.lower())
+    return [w for w in words if w not in _STOPWORDS_ID]
+
+
+def _compute_year_boost(item: dict, target_years: list[int]) -> float:
+    """
+    Hitung faktor penguat skor berdasarkan relevansi tahun.
+    Hanya memeriksa ISI KONTEN chunk (bukan nama file) karena nama file
+    bisa ambigu — misalnya "2025-2026.pdf" mengandung kedua tahun.
+
+      - 2.0  → konten mengandung tahun yang ditanyakan (match kuat)
+      - 0.4  → konten secara eksplisit menyebut HANYA tahun lain (penalty)
+      - 1.0  → netral (tidak ada info tahun eksplisit di konten)
+    """
+    if not target_years:
+        return 1.0
+
+    content = (item.get("content") or "").lower()
+    years_in_content = {int(y) for y in re.findall(r'\b(202[0-9])\b', content)}
+
+    if not years_in_content:
+        return 1.0  # Konten tidak menyebut tahun → netral
+
+    target_set = set(target_years)
+    if years_in_content & target_set:
+        return 2.0  # Ada tahun yang cocok → boost
+
+    return 0.4  # Hanya tahun lain → penalty
+
+
+def _compute_keyword_boost(item: dict, keywords: list[str]) -> float:
+    """
+    Boost tambahan berdasarkan kata kunci query yang muncul di konten.
+    Setiap kata kunci yang cocok menambah +0.5 faktor (max 2.0x).
+    """
+    if not keywords:
+        return 1.0
+
+    content = (item.get("content") or "").lower()
+    matches = sum(1 for kw in keywords if kw in content)
+
+    if matches == 0:
+        return 1.0
+
+    # +50% per keyword yang cocok, dibatasi 2.0x
+    return min(1.0 + 0.5 * matches, 2.0)
+
+
+def _rerank_by_year(results, question: str):
+    """
+    Re-rank hasil retrieval dengan boost gabungan:
+      final_score = rrf_score × year_boost × keyword_boost
+
+    - year_boost   → naik jika tahun di konten cocok dengan query
+    - keyword_boost → naik jika kata kunci query ada di konten chunk
+    """
+    target_years = _extract_years_from_query(question)
+    keywords = _extract_query_keywords(question)
+
+    # Jika tidak ada tahun maupun keyword signifikan, lewati re-ranking
+    if not target_years and not keywords:
+        return results
+
+    logging.info(
+        "Re-ranking aktif — tahun: %s, keywords: %s",
+        target_years, keywords,
+    )
+
+    scored = []
+    for row in results:
+        item = dict(row._mapping)
+        rrf_score = float(item.get("rrf_score") or 0.0)
+        year_boost = _compute_year_boost(item, target_years)
+        kw_boost = _compute_keyword_boost(item, keywords)
+        final_score = rrf_score * year_boost * kw_boost
+        scored.append((final_score, row))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return [row for _, row in scored]
 
 
 def _format_page_range(page_start, page_end) -> str | None:
@@ -192,6 +296,9 @@ def chat_rag(question: str, top_k: int, db: Session):
             "answer": NO_CONTEXT_ANSWER,
             "sources": [],
         }
+
+    # Re-rank berdasarkan tahun yang disebutkan dalam pertanyaan
+    results = _rerank_by_year(results, question)
 
     context_text = _build_context(results)
     answer = generate_answer(question=question, context=context_text)

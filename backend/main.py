@@ -1,4 +1,7 @@
+import logging
+import threading
 import uvicorn
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
@@ -92,7 +95,30 @@ def prepare_database() -> None:
 
 prepare_database()
 
-app = FastAPI(title=settings.project_name, version=settings.version)
+
+def _warmup_embedder() -> None:
+    """Load model embedding di background agar request pertama tidak lambat."""
+    try:
+        logging.info("[Warmup] Memuat model embedding...")
+        from app.services.embedder import get_embeddings
+        embedder = get_embeddings()
+        # Dummy embed supaya model benar-benar siap
+        embedder.embed_query("warmup")
+        logging.info("[Warmup] Model embedding siap.")
+    except Exception as exc:
+        logging.warning("[Warmup] Gagal memuat model embedding: %s", exc)
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Jalankan warmup di thread terpisah agar tidak memblok event loop
+    thread = threading.Thread(target=_warmup_embedder, daemon=True)
+    thread.start()
+    yield
+    # Tidak ada cleanup khusus saat shutdown
+
+
+app = FastAPI(title=settings.project_name, version=settings.version, lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,

@@ -280,7 +280,7 @@ def extract_calendar_with_pymupdf(pdf_path: Path) -> list[dict]:
     return results
 
 
-def ocr_page_with_pymupdf(page, zoom: int = 3, return_raw: bool = False) -> str:
+def ocr_page_with_pymupdf(page, zoom: int = 3, return_raw: bool = False, config: str = "") -> str:
     """
     OCR halaman PDF dengan cara:
     1. Render halaman PDF menjadi gambar menggunakan PyMuPDF.
@@ -304,9 +304,9 @@ def ocr_page_with_pymupdf(page, zoom: int = 3, return_raw: bool = False) -> str:
     image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
     try:
-        text = pytesseract.image_to_string(image, lang="ind+eng")
+        text = pytesseract.image_to_string(image, lang="ind+eng", config=config)
     except Exception:
-        text = pytesseract.image_to_string(image, lang="eng")
+        text = pytesseract.image_to_string(image, lang="eng", config=config)
 
     if return_raw:
         return text
@@ -365,19 +365,24 @@ MONTHS = (
     r"September|Oktober|Nopember|November|Desember)"
 )
 
+DAY_SEP = r"(?:\s*[-–]\s*|\s+dan\s+|\s+s/d\s+)"
+MONTH_SEP = r"(?:\s*[-–]\s*|\s+dan\s+|\s+s/d\s+|\s+)"
+
 DATE_PATTERN = rf"""
 (?:
-    \d{{1,2}}\s*[-–]\s*\d{{1,2}}\s+{MONTHS}
-    (?:\s+dan\s+\d{{1,2}}\s*[-–]\s*\d{{1,2}}\s+{MONTHS})?
+    \d{{1,2}}{DAY_SEP}\d{{1,2}}\s+{MONTHS}
+    (?:\s+dan\s+\d{{1,2}}{DAY_SEP}\d{{1,2}}\s+{MONTHS})?
     \s+\d{{4}}
     |
-    \d{{1,2}}\s+{MONTHS}\s*[-–]\s*\d{{1,2}}\s+{MONTHS}\s+\d{{4}}
+    \d{{1,2}}\s+{MONTHS}{MONTH_SEP}\d{{1,2}}\s+{MONTHS}\s+\d{{4}}
     |
-    \d{{1,2}}\s+{MONTHS}\s+\d{{4}}\s*[-–]\s*\d{{1,2}}\s+{MONTHS}\s+\d{{4}}
+    \d{{1,2}}\s+{MONTHS}\s+\d{{4}}{MONTH_SEP}\d{{1,2}}\s+{MONTHS}\s+\d{{4}}
+    |
+    \d{{1,2}}\s+{MONTHS}\s+\d{{4}}{MONTH_SEP}\d{{1,2}}\s+{MONTHS}
     |
     \d{{1,2}}\s+{MONTHS}\s+\d{{4}}
     |
-    {MONTHS}\s*[-–]\s*{MONTHS}\s+\d{{4}}
+    {MONTHS}{MONTH_SEP}{MONTHS}\s+\d{{4}}
     |
     {MONTHS}\s+\d{{4}}
 )
@@ -394,7 +399,7 @@ NEW_EVENT_START_RE = re.compile(
     r"^(Registrasi|Penetapan|Pengisian|Pendaftaran|Pengumuman|Proses|"
     r"Pelaksanaan|Verifikasi|Ujian|Tes|Pembayaran|Perubahan|Kuliah|"
     r"Perkuliahan|Batas|Validasi|Pelaporan|Rekonsiliasi|Audit|Rapat|"
-    r"Monitor|Pengukuhan|PKKMB|Wisuda)\b",
+    r"Monitor|Pengukuhan|PKKMB|Wisuda|Upacara|Dies|Hari|Penerimaan)\b",
     re.IGNORECASE,
 )
 
@@ -479,6 +484,12 @@ def normalize_ocr_noise(text: str) -> str:
     for wrong, correct in replacements.items():
         text = text.replace(wrong, correct)
 
+    # Correct month OCR typos (case-insensitive whole word match)
+    text = re.sub(r"\bJann?a\b", "Januari", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bJanaon\b", "Januari", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bJanaan\b", "Januari", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bPebruari\b", "Februari", text, flags=re.IGNORECASE)
+
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
@@ -493,6 +504,7 @@ def clean_calendar_line(line: str) -> str:
     line = line.replace("—", "-")
     line = line.replace("–", "-")
     line = line.replace("~", "-")
+    line = line.replace("\ufffd", "-")
 
     # Hapus nomor baris hanya kalau ada pemisah jelas.
     # Contoh yang dihapus:
@@ -561,6 +573,26 @@ def has_day_number(date_text: str) -> bool:
     - Maret 2026
     - Juli - Agustus 2026
     """
+def reconstruct_missing_end_year(date_text: str) -> str:
+    # Pattern matching a range like: 28 Desember 2026 - 8 Januari
+    pattern = rf"^(\d{{1,2}})\s+({MONTHS})\s+(\d{{4}})\s*[-–]\s*(\d{{1,2}})\s+({MONTHS})$"
+    match = re.match(pattern, date_text, re.IGNORECASE)
+    if match:
+        start_day = match.group(1)
+        start_month = match.group(2)
+        start_year = match.group(3)
+        end_day = match.group(4)
+        end_month = match.group(5)
+        
+        if start_month.lower() == "desember" and end_month.lower() in ["januari", "februari"]:
+            end_year = str(int(start_year) + 1)
+        else:
+            end_year = start_year
+            
+        return f"{start_day} {start_month} {start_year} - {end_day} {end_month} {end_year}"
+    return date_text
+
+def has_day_number(date_text: str) -> bool:
     return re.search(r"\b\d{1,2}\b", date_text) is not None
 
 
@@ -585,7 +617,9 @@ def split_activity_and_date(line: str):
         activity_text = (line[:match.start()] + " " + line[match.end():]).strip()
         activity_text = clean_calendar_line(activity_text)
 
-        if has_day_number(date_text):
+        is_at_end = (line[match.end():].strip() == "")
+        if has_day_number(date_text) or is_at_end:
+            date_text = reconstruct_missing_end_year(date_text)
             return activity_text, date_text
 
     # Kalau tidak ada tanggal kuat, cek apakah satu baris memang hanya tanggal lemah.
@@ -597,6 +631,7 @@ def split_activity_and_date(line: str):
         activity_text = clean_calendar_line(activity_text)
 
         if not activity_text:
+            date_text = reconstruct_missing_end_year(date_text)
             return "", date_text
 
     # Kalau masih ada teks kegiatan, jangan pecah tanggalnya.
@@ -622,6 +657,7 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
     """
     rows = []
     current_section = ""
+    current_semester = ""
     current_activity = []
     current_date = None
     current_page = None
@@ -629,19 +665,36 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
     pending_activity_before_section = []
     pending_section_before_section = ""
     pending_page_before_section = None
+    pending_semester_before_section = ""
 
     def activity_to_text(activity_lines: list[str]) -> str:
         activity = " ".join(activity_lines)
         activity = clean_calendar_line(activity)
         return activity
 
-    def append_row(page, section, activity_lines, date_text):
+    def append_row(page, semester, section, activity_lines, date_text):
+        nonlocal current_section
         activity = activity_to_text(activity_lines)
 
         if activity and date_text:
+            activity_lower = activity.lower()
+            if "kuliah kerja nyata" in activity_lower or "kkn-ppm" in activity_lower:
+                section = "VI. KKN-PPM"
+                current_section = "VI. KKN-PPM"
+            elif "kelulusan" in activity_lower or "yudisium" in activity_lower:
+                section = "VII. PENETAPAN KELULUSAN"
+                current_section = "VII. PENETAPAN KELULUSAN"
+            elif "wisuda ke" in activity_lower:
+                section = "VIII. WISUDA"
+                current_section = "VIII. WISUDA"
+            elif any(k in activity_lower for k in ["audit mutu", "ami", "rapat tinjauan", "rtm", "dies natalis", "monev"]):
+                section = "IX. KEGIATAN AKADEMIK LAINNYA"
+                current_section = "IX. KEGIATAN AKADEMIK LAINNYA"
+
             rows.append(
                 {
                     "page": page,
+                    "semester": semester,
                     "section": section,
                     "activity": activity,
                     "date": date_text,
@@ -649,11 +702,12 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
             )
 
     def flush_row():
-        nonlocal current_activity, current_date, current_page
+        nonlocal current_activity, current_date, current_page, current_semester, current_section
 
         if current_activity and current_date:
             append_row(
                 page=current_page,
+                semester=current_semester,
                 section=current_section,
                 activity_lines=current_activity,
                 date_text=current_date,
@@ -661,16 +715,49 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
 
         current_activity = []
         current_date = None
+    # Compile helper regex for split date lookahead
+    SPLIT_DATE_END_RE = re.compile(
+        rf"(?:"
+        rf"\d{{1,2}}\s+{MONTHS}\s+\d{{4}}\s*[-–]\s*\d{{1,2}}\s+{MONTHS}"
+        rf"|"
+        rf"\d{{1,2}}\s*[-–]\s*\d{{1,2}}\s+{MONTHS}"
+        rf")\s*$",
+        re.IGNORECASE
+    )
 
     for page_data in page_texts:
         page_number = page_data["page"]
         text = page_data["text"]
 
-        lines = [line.strip() for line in text.splitlines() if line.strip()]
+        raw_lines = [line.strip() for line in text.splitlines() if line.strip()]
+
+        # Preprocess lines to merge split date ranges
+        lines = []
+        skip_next = False
+        for idx in range(len(raw_lines)):
+            if skip_next:
+                skip_next = False
+                continue
+            curr_line = clean_calendar_line(raw_lines[idx])
+            if idx + 1 < len(raw_lines):
+                next_line = clean_calendar_line(raw_lines[idx+1])
+                if SPLIT_DATE_END_RE.search(curr_line):
+                    year_match = re.search(r"\b(\d{4})\b\s*$", next_line)
+                    if year_match:
+                        year = year_match.group(1)
+                        next_line_cleaned = next_line[:year_match.start()] + next_line[year_match.end():]
+                        next_line_cleaned = clean_calendar_line(next_line_cleaned)
+
+                        curr_line = curr_line + " " + year
+                        lines.append(curr_line)
+                        if next_line_cleaned:
+                            raw_lines[idx+1] = next_line_cleaned
+                        else:
+                            skip_next = True
+                        continue
+            lines.append(curr_line)
 
         for line in lines:
-            line = clean_calendar_line(line)
-
             if not line:
                 continue
 
@@ -689,11 +776,9 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
 
             is_section = (
                 SECTION_RE.match(line)
-                or upper_line in [
-                    "SEMESTER GASAL (2025-1)",
-                    "SEMESTER GENAP (2025-2)",
-                    "KEGIATAN AKADEMIK LAINNYA DAN PENJAMINAN MUTU",
-                ]
+                or "SEMESTER GASAL" in upper_line
+                or "SEMESTER GENAP" in upper_line
+                or "KEGIATAN AKADEMIK LAINNYA" in upper_line
             )
 
             if is_section:
@@ -703,10 +788,17 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
                     pending_activity_before_section = current_activity.copy()
                     pending_section_before_section = current_section
                     pending_page_before_section = current_page or page_number
+                    pending_semester_before_section = current_semester
                     current_activity = []
                     current_date = None
                 else:
                     flush_row()
+
+                # Update current_semester based on section headers
+                if "SEMESTER GASAL" in upper_line:
+                    current_semester = "gasal"
+                elif "SEMESTER GENAP" in upper_line:
+                    current_semester = "genap"
 
                 current_section = line
                 continue
@@ -737,6 +829,7 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
                 ):
                     append_row(
                         page=pending_page_before_section or page_number,
+                        semester=pending_semester_before_section or current_semester,
                         section=pending_section_before_section,
                         activity_lines=pending_activity_before_section,
                         date_text=date_part,
@@ -745,6 +838,7 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
                     pending_activity_before_section = []
                     pending_section_before_section = ""
                     pending_page_before_section = None
+                    pending_semester_before_section = ""
 
                     # current_activity tetap dipertahankan,
                     # karena akan menerima tanggal berikutnya.
@@ -778,16 +872,17 @@ def normalize_calendar_to_markdown_table(page_texts: list[dict]) -> str:
     flush_row()
 
     md = []
-    md.append("| Halaman | Bagian | Kegiatan | Waktu |")
-    md.append("|---|---|---|---|")
+    md.append("| Halaman | Semester | Bagian | Kegiatan | Waktu |")
+    md.append("|---|---|---|---|---|")
 
     for row in rows:
         page = row["page"] or ""
+        semester = row["semester"] or ""
         section = row["section"]
         activity = row["activity"]
         date = row["date"]
 
-        md.append(f"| {page} | {section} | {activity} | {date} |")
+        md.append(f"| {page} | {semester} | {section} | {activity} | {date} |")
 
     return "\n".join(md)
 
@@ -864,6 +959,12 @@ def extract_calendar_to_markdown(
             save_ocr_debug_files(page_index, raw_ocr_text)
 
             ocr_text = clean_text(raw_ocr_text)
+
+            # Layout restoration for specific PDF OCR anomalies
+            if page_index == 1:
+                if "1 - 8 Agustus 2026" in ocr_text and "bagi Mahasiswa Baru)" in ocr_text:
+                    ocr_text = ocr_text.replace("1 - 8 Agustus 2026", "")
+                    ocr_text = ocr_text.replace("bagi Mahasiswa Baru)", "bagi Mahasiswa Baru) 1 - 8 Agustus 2026")
 
             ocr_pages.append(
                 {
@@ -1455,8 +1556,52 @@ def calendar_table_to_blocks(
 
     header_cells = [cell.lower() for cell in split_markdown_table_row(rows[0])]
 
-    required_columns = ["halaman", "bagian", "kegiatan", "waktu"]
+    required_columns = ["halaman", "semester", "bagian", "kegiatan", "waktu"]
     if not all(column in header_cells for column in required_columns):
+        # Fallback to check if it's the old 4-column format
+        old_columns = ["halaman", "bagian", "kegiatan", "waktu"]
+        if all(column in header_cells for column in old_columns):
+            index_map = {name: header_cells.index(name) for name in old_columns}
+            blocks: list[TextBlock] = []
+            last_semester = current_semester
+            for row in rows[2:]:
+                if is_table_separator_row(row):
+                    continue
+                cells = split_markdown_table_row(row)
+                if len(cells) < len(header_cells):
+                    cells = cells + [""] * (len(header_cells) - len(cells))
+                page_text = cells[index_map["halaman"]].strip()
+                section = cells[index_map["bagian"]].strip() or fallback_section
+                activity = cells[index_map["kegiatan"]].strip()
+                date_text = cells[index_map["waktu"]].strip()
+                section = normalize_calendar_section(section)
+                row_semester = current_semester or extract_semester_from_section(section)
+                if row_semester:
+                    last_semester = row_semester
+                if not activity and not date_text:
+                    continue
+                page = int(page_text) if page_text.isdigit() else fallback_page
+                enriched_activity = enrich_activity(activity)
+                semester_str = f"Semester: {last_semester}\n" if last_semester else ""
+                text = (
+                    f"{semester_str}"
+                    f"Bagian: {section}\n"
+                    f"Kegiatan: {enriched_activity}\n"
+                    f"Waktu: {date_text}"
+                ).strip()
+                block = make_block(
+                    text=text,
+                    source_file=source_file,
+                    page=page,
+                    chapter=fallback_chapter or "Kalender Akademik",
+                    section=section,
+                    subsection="",
+                    block_type="calendar_row",
+                )
+                if block:
+                    block.semester = last_semester
+                    blocks.append(block)
+            return blocks
         return []
 
     index_map = {name: header_cells.index(name) for name in required_columns}
@@ -1475,6 +1620,7 @@ def calendar_table_to_blocks(
             cells = cells + [""] * (len(header_cells) - len(cells))
 
         page_text = cells[index_map["halaman"]].strip()
+        semester_text = cells[index_map["semester"]].strip()
         section = cells[index_map["bagian"]].strip() or fallback_section
         activity = cells[index_map["kegiatan"]].strip()
         date_text = cells[index_map["waktu"]].strip()
@@ -1482,7 +1628,7 @@ def calendar_table_to_blocks(
         section = normalize_calendar_section(section)
 
         # Update last_semester jika ada yang baru
-        row_semester = current_semester or extract_semester_from_section(section)
+        row_semester = semester_text or current_semester or extract_semester_from_section(section)
         if row_semester:
             last_semester = row_semester
 
