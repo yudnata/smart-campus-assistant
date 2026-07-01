@@ -11,6 +11,7 @@ import '../../../auth/providers/auth_provider.dart';
 import '../providers/history_provider.dart';
 import '../providers/chat_provider.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
+import '../screens/admin_panel_screen.dart';
 
 class ChatDrawer extends ConsumerWidget {
   const ChatDrawer({super.key});
@@ -149,6 +150,53 @@ class ChatDrawer extends ConsumerWidget {
                         ),
                       ),
                     ),
+
+                  // Panel Admin Button (Hanya tampil jika user adalah admin)
+                  if (authState.isAuthenticated && authState.user != null && authState.user!['is_admin'] == true) ...[
+                    const SizedBox(height: 12),
+                    Container(
+                      width: double.infinity,
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: AppTheme.accentPrimary.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                            color: AppTheme.accentPrimary.withValues(alpha: 0.3), width: 1.5),
+                      ),
+                      child: Material(
+                        color: Colors.transparent,
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(24),
+                          onTap: () {
+                            Navigator.pop(context); // close drawer
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const AdminPanelScreen(),
+                              ),
+                            );
+                          },
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.admin_panel_settings_rounded,
+                                  color: AppTheme.accentPrimary, size: 20),
+                              SizedBox(width: 8),
+                              Text(
+                                'Panel Admin',
+                                style: TextStyle(
+                                  fontFamily: 'Quicksand',
+                                  fontWeight: FontWeight.w600,
+                                  color: AppTheme.accentPrimary,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),

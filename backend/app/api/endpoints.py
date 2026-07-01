@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile, status
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -7,8 +7,18 @@ from app.models.document_chunk import DocumentChunk
 from app.models.message import Message
 from app.schemas.rag import ChatRequest, ChatResponse
 from app.services.chat_service import chat_rag
+from app.api.auth import get_current_user
+from app.models.user import User
 
 router = APIRouter()
+
+def get_current_admin(current_user: User = Depends(get_current_user)):
+    if not getattr(current_user, "is_admin", False):
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Hanya admin yang diperbolehkan mengakses fitur ini."
+        )
+    return current_user
 
 from app.models.message import Message
 
@@ -60,37 +70,51 @@ async def ingest_file_endpoint(
     bab: str = Form(None),
     overwrite_old: bool = Form(True),
     db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_admin),
 ):
-    from app.services.ingest_service import ingest_csv, ingest_json, ingest_pdf
+    from app.services.ingest_service import ingest_csv, ingest_json, ingest_pdf, ingest_image
+    import os
 
     content = await file.read()
+    ext = os.path.splitext(file.filename)[1].lower()
 
-    if file.filename.endswith(".pdf"):
+    if ext == ".pdf":
         try:
             chunks_added = ingest_pdf(content, file.filename, db, prodi, bab, overwrite_old)
             return {"message": "Berhasil memproses PDF", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses PDF: {str(e)}") from e
 
-    if file.filename.endswith(".csv"):
+    if ext == ".csv":
         try:
             chunks_added = ingest_csv(content, file.filename, db, prodi, bab, overwrite_old)
             return {"message": "Berhasil memproses CSV", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses CSV: {str(e)}") from e
 
-    if file.filename.endswith(".json"):
+    if ext == ".json":
         try:
             chunks_added = ingest_json(content, file.filename, db, prodi, bab, overwrite_old)
             return {"message": "Berhasil memproses JSON", "chunks_added": chunks_added}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Gagal memproses JSON: {str(e)}") from e
 
-    raise HTTPException(status_code=400, detail="Hanya file PDF, CSV, dan JSON yang didukung")
+    if ext in {".png", ".jpg", ".jpeg", ".webp"}:
+        try:
+            chunks_added = ingest_image(content, file.filename, db, prodi, bab, overwrite_old)
+            return {"message": "Berhasil memproses Gambar (OCR)", "chunks_added": chunks_added}
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Gagal memproses Gambar (OCR): {str(e)}") from e
+
+    raise HTTPException(status_code=400, detail="Hanya file PDF, CSV, JSON, dan Gambar (PNG/JPG/JPEG/WEBP) yang didukung")
 
 
 @router.post("/ingest/url")
-def ingest_url_endpoint(req: WebIngestRequest, db: Session = Depends(get_db)):
+def ingest_url_endpoint(
+    req: WebIngestRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_admin),
+):
     from app.services.ingest_service import ingest_web
 
     try:
@@ -98,6 +122,46 @@ def ingest_url_endpoint(req: WebIngestRequest, db: Session = Depends(get_db)):
         return {"message": "Berhasil", "chunks_added": chunks_added}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) from e
+
+
+@router.get("/ingest/documents")
+def get_ingested_documents(
+    db: Session = Depends(get_db),
+    current_admin: User = Depends(get_current_admin)
+):
+    from sqlalchemy import func
+    results = db.query(
+        DocumentChunk.source_file,
+        DocumentChunk.doc_type,
+        func.count(DocumentChunk.id).label("total_chunks"),
+        func.min(DocumentChunk.created_at).label("first_created")
+    ).group_by(
+        DocumentChunk.source_file,
+        DocumentChunk.doc_type
+    ).order_by(
+        func.min(DocumentChunk.created_at).desc()
+    ).all()
+    
+    return [
+        {
+            "source_file": r.source_file or "Unknown Source",
+            "doc_type": r.doc_type or "Unknown Type",
+            "total_chunks": r.total_chunks,
+            "created_at": r.first_created.isoformat() if r.first_created else None
+        }
+        for r in results
+    ]
+
+
+@router.delete("/ingest/documents")
+def delete_ingested_document(
+    source_file: str,
+    db: Session = Depends(get_db),
+    current_admin: User = Depends(get_current_admin)
+):
+    deleted_count = db.query(DocumentChunk).filter(DocumentChunk.source_file == source_file).delete()
+    db.commit()
+    return {"message": f"Berhasil menghapus dokumen {source_file}", "chunks_deleted": deleted_count}
 
 
 @router.get("/stats")

@@ -1,4 +1,4 @@
-﻿import uvicorn
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
@@ -32,6 +32,48 @@ def prepare_database() -> None:
         print(f"Warning: Could not create database tables automatically: {e}")
         return
 
+    # Auto-migration: Ensure is_admin column exists in users table
+    try:
+        with engine.connect() as conn:
+            conn.execute(text("ALTER TABLE users ADD COLUMN IF NOT EXISTS is_admin BOOLEAN DEFAULT FALSE;"))
+            conn.commit()
+    except Exception as e:
+        print(f"Warning: Could not add is_admin column automatically: {e}")
+
+    # Auto-creation: Ensure admin@gmail.com exists with password admin123
+    try:
+        from sqlalchemy.orm import Session
+        from app.core.database import SessionLocal
+        from app.models.user import User
+        from app.core.security import get_password_hash
+
+        db: Session = SessionLocal()
+        try:
+            admin_user = db.query(User).filter(User.email == "admin@gmail.com").first()
+            if not admin_user:
+                hashed_pw = get_password_hash("admin123")
+                new_admin = User(
+                    email="admin@gmail.com",
+                    name="Administrator",
+                    hashed_password=hashed_pw,
+                    is_verified=True,
+                    is_admin=True
+                )
+                db.add(new_admin)
+                db.commit()
+                print("Admin user created successfully (admin@gmail.com / admin123)")
+            else:
+                # Ensure existing admin has is_admin and is_verified set to True
+                if not admin_user.is_admin or not admin_user.is_verified:
+                    admin_user.is_admin = True
+                    admin_user.is_verified = True
+                    db.commit()
+                    print("Admin user permissions updated successfully")
+        finally:
+            db.close()
+    except Exception as e:
+        print(f"Warning: Could not auto-create admin user: {e}")
+
     try:
         with engine.connect() as conn:
             conn.execute(
@@ -55,7 +97,7 @@ app = FastAPI(title=settings.project_name, version=settings.version)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

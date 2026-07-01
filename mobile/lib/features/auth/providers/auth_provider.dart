@@ -9,6 +9,11 @@ final authDioProvider = Provider<Dio>((ref) {
     baseUrl: '${ApiConstants.baseUrl}/api',
     connectTimeout: const Duration(seconds: 10),
     receiveTimeout: const Duration(seconds: 10),
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'ngrok-skip-browser-warning': 'true',
+    },
   ));
 });
 
@@ -80,6 +85,12 @@ class AuthNotifier extends StateNotifier<AuthState> {
         user: response.data,
       );
     } catch (e) {
+      // ignore: avoid_print
+      print('[AuthNotifier] _fetchMe failed: $e');
+      if (e is DioException) {
+        // ignore: avoid_print
+        print('[AuthNotifier] _fetchMe DioException: ${e.response?.statusCode} - ${e.response?.data}');
+      }
       final prefs = await SharedPreferences.getInstance();
       
       // Hanya hapus token jika server merespons dengan 401 (Unauthorized) atau 403 (Forbidden).
@@ -110,6 +121,12 @@ class AuthNotifier extends StateNotifier<AuthState> {
       await _fetchMe(token);
       return true;
     } catch (e) {
+      // ignore: avoid_print
+      print('[AuthNotifier] login failed: $e');
+      if (e is DioException) {
+        // ignore: avoid_print
+        print('[AuthNotifier] login DioException: ${e.response?.statusCode} - ${e.response?.data}');
+      }
       String errorMessage = "Login gagal. Periksa kembali email & password Anda.";
       if (e is DioException && e.response != null) {
         errorMessage = e.response?.data['detail'] ?? errorMessage;
