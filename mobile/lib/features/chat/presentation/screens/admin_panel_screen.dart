@@ -564,8 +564,6 @@ class _AdminPanelScreenState extends ConsumerState<AdminPanelScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final canPop = Navigator.canPop(context);
-    
     return Scaffold(
       backgroundColor: AppTheme.backgroundLight,
       appBar: AppBar(

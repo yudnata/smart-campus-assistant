@@ -392,40 +392,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       ],
     );
   }
-
-  void _showClearDialog(BuildContext context, ChatNotifier notifier) {
-    showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppTheme.surfaceCard,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: const BorderSide(color: AppTheme.surfaceBorder),
-        ),
-        title: const Text('Hapus Percakapan',
-            style: TextStyle(color: AppTheme.textPrimary)),
-        content: const Text(
-          'Semua pesan akan dihapus. Lanjutkan?',
-          style: TextStyle(color: AppTheme.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: const Text('Batal',
-                style: TextStyle(color: AppTheme.textMuted)),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(ctx);
-              notifier.clearChat();
-            },
-            child: const Text('Hapus',
-                style: TextStyle(color: AppTheme.errorColor)),
-          ),
-        ],
-      ),
-    );
-  }
 }
 
 // ── Empty State ─────────────────────────────────────────────
